@@ -5,3 +5,6 @@
 # también al clonar desde Windows con core.autocrlf habilitado.
 docs/verificacion/** -text
 docs/casos/** -text
+
+# Cabeceras HTTP crudas: conservar CRLF y delimitador final sin diff textual.
+docs/verificacion/cierre-minimo-20261101/*.headers.txt -diff

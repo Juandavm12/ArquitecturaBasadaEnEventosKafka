@@ -1,0 +1,63 @@
+
+> taller-integracion-kafka@0.1.0 test
+> node --test test/*.test.js
+
+✔ 202 confirma publicación y conserva contrato, headers y metadata (156.385359ms)
+✔ inválido: no publica (29.349574ms)
+✔ JSON roto: no publica (10.242038ms)
+✔ grande: no publica (22.436025ms)
+✔ fallo broker: 503 sin accepted ni stack; conserva IDs internos (18.254419ms)
+✔ health true sin publicar (19.248212ms)
+✔ health false sin publicar (18.703807ms)
+✔ espera send iniciado antes de responder (52.596267ms)
+✔ settings validate role and bounded integer delay (3.051434ms)
+✔ listeners precede run; only group join marks ready; disconnect clears (4.699525ms)
+✔ crash even when run resolves clears marker and exits via cleanup (1.517874ms)
+✔ bootstrap errors propagate after fatal cleanup (1.70779ms)
+✔ shutdown is idempotent and waits for stop then disconnect (2.6385ms)
+✔ shutdown during connect waits, then disconnects without starting run (1.866623ms)
+✔ stop failure still disconnects, rejects and takes fatal exit path (2.370865ms)
+✔ deadline forces fatal exit while cleanup is pending, without real timers (4.500183ms)
+✔ subscribe bootstrap failure cleans up and rejects (1.218405ms)
+✔ run bootstrap failure cleans up and rejects (2.466123ms)
+✔ disconnect failure rejects and takes fatal exit path (1.281133ms)
+✔ tres roles tienen grupos, servicios y acciones semánticas distintos (13.300668ms)
+✔ registra evento y trazas; heartbeat rodea acción y commit es último (1.839643ms)
+✔ no resuelve ni confirma mientras acción está pendiente (0.96381ms)
+✔ error de acción se propaga sin commit (0.885449ms)
+✔ JSON, tipo, versión, IDs y metadata inválidos no actúan ni confirman (14.218349ms)
+✔ offset grande no pierde precisión (2.620716ms)
+✔ offset inválido se rechaza antes de acción (1.499438ms)
+✔ error de commit se propaga sin registrar offset-committed (0.685323ms)
+✔ fallo de heartbeat pre/post impide commit y propaga error (6.28928ms)
+✔ no modifica bytes ni evento recibido (1.90754ms)
+✔ delay opt-in usa sleep inyectado; rechaza valores inválidos (1.993062ms)
+✔ construye el contrato OrderCreated del anexo 2 sin modificar la entrada (18.254915ms)
+✔ genera identificadores diferentes en pedidos consecutivos (2.536458ms)
+✔ calcula total y conserva únicamente campos del contrato (1.705828ms)
+✔ rechaza datos inválidos: null (2.755043ms)
+✔ rechaza datos inválidos: [] (0.668323ms)
+✔ rechaza datos inválidos: "texto" (0.405853ms)
+✔ rechaza datos inválidos: {} (2.471129ms)
+✔ rechaza datos inválidos: {"customerName":"","product":"Libro de arquitectura","quantity":1,"unitPrice":85000} (0.561242ms)
+✔ rechaza datos inválidos: {"customerName":"   ","product":"Libro de arquitectura","quantity":1,"unitPrice":85000} (0.794517ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":12,"quantity":1,"unitPrice":85000} (1.705909ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":0,"unitPrice":85000} (0.547674ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":-1,"unitPrice":85000} (0.266602ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1.5,"unitPrice":85000} (0.227395ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":"1","unitPrice":85000} (0.365009ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":9007199254740992,"unitPrice":85000} (0.182765ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":-1} (0.269686ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":"85000"} (0.189876ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":null} (0.215046ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":null} (0.200133ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":2,"unitPrice":1.7976931348623157e+308} (0.235994ms)
+✔ admite precio cero: no se impone una regla comercial ausente en la guía (0.51367ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 797.704963

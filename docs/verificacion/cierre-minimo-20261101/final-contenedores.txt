@@ -1,0 +1,6 @@
+qa-taller-integracion-kafka-inventory-consumer-1	24326effb3e1	Up About a minute (healthy)
+qa-taller-integracion-kafka-notification-consumer-1	3ce4bcc7867e	Up 2 hours (healthy)
+qa-taller-integracion-kafka-billing-consumer-1	5caff4b88c36	Up 2 minutes (healthy)
+qa-taller-integracion-kafka-orders-api-1	eff545def17b	Up 3 hours (healthy)
+qa-taller-integracion-kafka-kafka-ui-1	5a51c1295022	Up 3 hours
+qa-taller-integracion-kafka-kafka-1	8719d42973a5	Up 3 hours (healthy)

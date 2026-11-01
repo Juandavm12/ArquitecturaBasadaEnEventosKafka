@@ -1,6 +1,6 @@
 # Arquitectura basada en eventos con Kafka
 
-Prueba de concepto del taller de Pruebas de Integración de Aseguramiento de la Calidad. **Entrega parcial: 7/10 casos documentados (CP-01, CP-04, CP-05, CP-06, CP-07, CP-08 y CP-09).** CP-10, CP-11, CP-12 y el informe PDF global están pendientes; no se presentan como completados.
+Prueba de concepto del taller de Pruebas de Integración de Aseguramiento de la Calidad. **Kafka: 10/10 casos técnicamente verificados y documentados (CP-01 y CP-04 a CP-12).** CP-10/11/12 se cerraron con cinco pedidos en una prueba mínima real. El informe PDF global, la reproducción Windows nativa y las capturas GUI adicionales de estos tres casos siguen pendientes; sus vistas CLI/JSON están identificadas como derivadas.
 
 ## Estado
 
@@ -18,8 +18,12 @@ Prueba de concepto del taller de Pruebas de Integración de Aseguramiento de la 
 - [CP-06 — Trazabilidad del flujo: Cumple](docs/casos/CP06/reporteCP06.md). Mismos identificadores en API, log persistente del broker y las tres fases de cada consumidor; evidencia histórica del 27 de octubre.
 - [CP-07 — Responsive: Cumple](docs/casos/CP07/reporteCP07.md). HTTP 202/239 ms; respuesta observada 2991 ms antes del fin de inventario con demora experimental de 3000 ms, no SLA.
 - [CP-08 — Message-driven: Cumple](docs/casos/CP08/reporteCP08.md). Flujo auditado mediado por Kafka, evidencia CP-07 compartida y auditoría de hashes posterior; sin otra publicación.
-- [CP-09 — Resilient: Cumple](docs/casos/CP09/reporteCP09.md), parada controlada de inventario, HTTP 202 y continuidad de los otros dos consumidores; restauración verificada. CP-10/11/12 siguen pendientes; sin nueva ejecución para este cierre.
-- Pendientes: tres reportes de integración (CP-10/11/12), sus escenarios/evidencias faltantes y el PDF.
+- [CP-09 — Resilient: Cumple](docs/casos/CP09/reporteCP09.md), parada controlada de inventario, HTTP 202 y continuidad de los otros dos consumidores; restauración histórica verificada.
+- [CP-10 — Elastic: Cumple](docs/casos/CP10/reporteCP10.md). Dos instancias del mismo grupo, cuatro pedidos repartidos 2+2 y confirmados; réplica temporal retirada.
+- [CP-11 — Desacoplamiento temporal: Cumple](docs/casos/CP11/reporteCP11.md). Publicación con inventario apagado y procesamiento posterior del mismo evento.
+- [CP-12 — Recuperación: Cumple](docs/casos/CP12/reporteCP12.md). Mismo contenedor recupera el evento pendiente; lag 1→0, IDs y offset correlacionados. Comparte un único pedido con CP-11.
+- [Cierre mínimo: comandos, evidencia original y límites](docs/verificacion/cierre-minimo-20261101/RESUMEN.md). Sin cambios de aplicación ni infraestructura persistente.
+- Pendientes de presentación: informe PDF global y capturas GUI adicionales si las exige el docente. Las vistas de CP-10/11/12 son derivadas de CLI/JSON, no pantallazos. Validación Windows nativa aún no realizada.
 - Repositorio de entrega: [Juandavm12/ArquitecturaBasadaEnEventosKafka](https://github.com/Juandavm12/ArquitecturaBasadaEnEventosKafka).
 - Se incluyen código, configuración, pruebas, reportes y evidencias de los casos documentados. Dependencias instaladas, configuración privada y archivos temporales quedan fuera mediante `.gitignore`.
 
@@ -54,7 +58,7 @@ La suite del contrato sigue siendo independiente de Docker. Las dos comprobacion
 | `billing-consumer` | Simular facturación |
 | `notification-consumer` | Simular notificación |
 
-El montaje se verifica por etapas; levantar inicialmente broker y UI no completa esta arquitectura. Para CP-10 se añadirá temporalmente otra instancia de una misma responsabilidad dentro de su grupo.
+El montaje se verifica por etapas; levantar inicialmente broker y UI no completa esta arquitectura. Para CP-10 se añadió y retiró una instancia temporal de inventario dentro de su mismo grupo, sin modificar esta arquitectura persistente.
 
 [Fuentes técnicas y adaptación del ejemplo Docker](docs/FUENTES_TECNICAS.md).
 

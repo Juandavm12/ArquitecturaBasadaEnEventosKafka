@@ -1,0 +1,4 @@
+
+GROUP                   TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                          HOST            CLIENT-ID
+inventory-service-group orders.events   1          6               6               0               inventory-consumer-24326effb3e1-b4d69e4a-8ff6-4c83-8688-7e15208dcfa5 /172.24.0.4     inventory-consumer-24326effb3e1
+inventory-service-group orders.events   0          3               3               0               inventory-consumer-29d790ddf683-7e0a0ef9-57c7-4ade-a8d1-1e1381bf3a4c /172.24.0.8     inventory-consumer-29d790ddf683

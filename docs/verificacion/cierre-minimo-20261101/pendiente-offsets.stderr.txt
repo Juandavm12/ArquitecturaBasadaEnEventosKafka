@@ -1,0 +1,2 @@
+
+Consumer group 'inventory-service-group' has no active members.

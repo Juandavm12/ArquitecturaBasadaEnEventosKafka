@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-01T05:18:17.382Z",
+  "kind": "Validacion offline de evidencias reales; sin operaciones Docker ni POST",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "HTTP202 mientras inventario apagado",
+      "status": "PASS"
+    },
+    {
+      "name": "CP11+CP12 mismos IDs procesados y confirmados tras start",
+      "status": "PASS"
+    },
+    {
+      "name": "Pendiente p1 current3 end4 lag1 sin miembro",
+      "status": "PASS"
+    },
+    {
+      "name": "Recuperacion p1 current4 end4 lag0",
+      "status": "PASS"
+    },
+    {
+      "name": "Mismo contenedor e imagen antes y despues",
+      "status": "PASS"
+    },
+    {
+      "name": "CP10 dos miembros de misma imagen con particiones disjuntas",
+      "status": "PASS"
+    },
+    {
+      "name": "CP10 pedido1: HTTP202 y 3 fases en una sola instancia",
+      "status": "PASS"
+    },
+    {
+      "name": "CP10 pedido2: HTTP202 y 3 fases en una sola instancia",
+      "status": "PASS"
+    },
+    {
+      "name": "CP10 pedido3: HTTP202 y 3 fases en una sola instancia",
+      "status": "PASS"
+    },
+    {
+      "name": "CP10 pedido4: HTTP202 y 3 fases en una sola instancia",
+      "status": "PASS"
+    },
+    {
+      "name": "CP10 reparto2+2 y offsets confirmados sin lag",
+      "status": "PASS"
+    },
+    {
+      "name": "Replica detenida exit0 y retirada; seis originales running",
+      "status": "PASS"
+    }
+  ]
+}

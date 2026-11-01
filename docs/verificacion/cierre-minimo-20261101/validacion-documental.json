@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-01T05:22:13.358Z",
+  "status": "PASS",
+  "historicalEvidenceHashesPreserved": 76,
+  "caseReports": 3,
+  "fieldsPerReport": 11,
+  "localLinksChecked": 74,
+  "npmTests": {
+    "pass": 51,
+    "fail": 0,
+    "exitcode": 0
+  },
+  "svgInspection": "Estructura textual y ausencia de contenido activo verificadas; no revision raster ni captura GUI",
+  "sourceCodeChanges": false
+}

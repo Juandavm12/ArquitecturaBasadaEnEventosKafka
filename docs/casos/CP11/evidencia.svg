@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="414" viewBox="0 0 1100 414" role="img" aria-labelledby="title desc"><title id="title">CP-11 - Desacoplamiento temporal</title><desc id="desc">Vista documental derivada de logs CLI y JSON reales, no captura GUI. Corrida 2026-11-01 UTC.</desc><rect width="100%" height="100%" fill="#0f172a"/><text x="28" y="42" fill="#86efac" font-family="sans-serif" font-size="24">CP-11 - Desacoplamiento temporal: CUMPLE</text><text x="28" y="76" fill="#fcd34d" font-family="sans-serif" font-size="16">Vista derivada CLI/JSON; NO captura GUI | 2026-11-01 UTC</text><text x="28" y="126" fill="#e2e8f0" font-family="monospace" font-size="14">Pedido: ORD-e23d4de9-5c1a-4b8b-8349-c2684eae1389</text>
+<text x="28" y="156" fill="#e2e8f0" font-family="monospace" font-size="14">Evento: 5a3cc7ca-eab1-45a1-8eda-2b000a1bb931</text>
+<text x="28" y="186" fill="#e2e8f0" font-family="monospace" font-size="14">Correlacion: c72c3bf8-0417-4191-9228-fc1477992d35</text>
+<text x="28" y="216" fill="#e2e8f0" font-family="monospace" font-size="14">Consumidor apagado: HTTP 202; p1 current3 / end4 / lag1</text>
+<text x="28" y="246" fill="#e2e8f0" font-family="monospace" font-size="14">Mismo contenedor: 24326effb3e1</text>
+<text x="28" y="276" fill="#e2e8f0" font-family="monospace" font-size="14">Procesado: 2026-11-01T05:15:36.458Z</text>
+<text x="28" y="306" fill="#e2e8f0" font-family="monospace" font-size="14">Confirmado: 2026-11-01T05:15:36.468Z</text>
+<text x="28" y="336" fill="#e2e8f0" font-family="monospace" font-size="14">Consumidor iniciado: p1 current4 / end4 / lag0</text><text x="28" y="385" fill="#94a3b8" font-family="sans-serif" font-size="14">Fuentes y SHA-256: docs/verificacion/cierre-minimo-20261101/</text></svg>

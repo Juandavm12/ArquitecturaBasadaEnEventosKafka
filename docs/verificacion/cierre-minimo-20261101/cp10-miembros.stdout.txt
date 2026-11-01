@@ -1,0 +1,4 @@
+
+GROUP                   CONSUMER-ID                                                          HOST            CLIENT-ID                       #PARTITIONS     ASSIGNMENT
+inventory-service-group inventory-consumer-24326effb3e1-b4d69e4a-8ff6-4c83-8688-7e15208dcfa5 /172.24.0.4     inventory-consumer-24326effb3e1 1               (1)
+inventory-service-group inventory-consumer-29d790ddf683-7e0a0ef9-57c7-4ade-a8d1-1e1381bf3a4c /172.24.0.8     inventory-consumer-29d790ddf683 1               (0)

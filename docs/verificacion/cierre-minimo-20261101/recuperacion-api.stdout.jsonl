@@ -1,0 +1,1 @@
+{"date":"2026-11-01T05:15:15.906Z","service":"orders-api","hostname":"eff545def17b","orderId":"ORD-e23d4de9-5c1a-4b8b-8349-c2684eae1389","eventId":"5a3cc7ca-eab1-45a1-8eda-2b000a1bb931","correlationId":"c72c3bf8-0417-4191-9228-fc1477992d35","topic":"orders.events","partition":1,"baseOffset":"3"}
