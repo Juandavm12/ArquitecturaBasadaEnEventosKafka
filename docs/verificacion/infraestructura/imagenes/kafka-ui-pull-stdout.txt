@@ -1,0 +1,25 @@
+v0.7.2: Pulling from provectuslabs/kafka-ui
+396900a6066f: Pulling fs layer
+f86135b615e8: Pulling fs layer
+7efc01291e39: Pulling fs layer
+4f27eecc6d58: Pulling fs layer
+61256e5d038d: Pulling fs layer
+0ce1dd7918a4: Pulling fs layer
+03798d644f93: Pulling fs layer
+03798d644f93: Download complete
+7efc01291e39: Download complete
+61256e5d038d: Download complete
+f86135b615e8: Download complete
+0ce1dd7918a4: Download complete
+0ce1dd7918a4: Pull complete
+396900a6066f: Download complete
+03798d644f93: Pull complete
+7efc01291e39: Pull complete
+f86135b615e8: Pull complete
+396900a6066f: Pull complete
+61256e5d038d: Pull complete
+4f27eecc6d58: Download complete
+4f27eecc6d58: Pull complete
+Digest: sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818
+Status: Downloaded newer image for provectuslabs/kafka-ui:v0.7.2
+docker.io/provectuslabs/kafka-ui:v0.7.2

@@ -1,0 +1,32 @@
+# Dependencias y resultados generados
+node_modules/
+coverage/
+.nyc_output/
+.cache/
+*.tsbuildinfo
+
+# Configuración privada; se permiten plantillas sin secretos
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs de desarrollo (las evidencias documentales se conservan)
+*.log
+!docs/**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor y archivos temporales locales
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Metadatos del sistema operativo
+.DS_Store
+Thumbs.db
+*:Zone.Identifier

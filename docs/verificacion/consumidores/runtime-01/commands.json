@@ -1,0 +1,226 @@
+[
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-consumer-groups.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--list"
+    ],
+    "start": "2026-10-27T13:34:38.462578+00:00",
+    "end": "2026-10-27T13:34:42.122994+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T13:34:42.123239+00:00",
+    "end": "2026-10-27T13:34:44.861877+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "build",
+      "inventory-consumer",
+      "billing-consumer",
+      "notification-consumer"
+    ],
+    "start": "2026-10-27T13:34:44.862093+00:00",
+    "end": "2026-10-27T13:34:48.091247+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "up",
+      "-d",
+      "--no-deps",
+      "--no-build",
+      "--wait",
+      "--wait-timeout",
+      "180",
+      "inventory-consumer",
+      "billing-consumer",
+      "notification-consumer"
+    ],
+    "start": "2026-10-27T13:34:48.092377+00:00",
+    "end": "2026-10-27T13:35:00.238882+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--timestamps",
+      "inventory-consumer"
+    ],
+    "start": "2026-10-27T13:35:00.240384+00:00",
+    "end": "2026-10-27T13:35:00.463283+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-consumer-groups.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--describe",
+      "--group",
+      "inventory-service-group"
+    ],
+    "start": "2026-10-27T13:35:00.464287+00:00",
+    "end": "2026-10-27T13:35:03.484133+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--timestamps",
+      "billing-consumer"
+    ],
+    "start": "2026-10-27T13:35:03.484751+00:00",
+    "end": "2026-10-27T13:35:03.622858+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-consumer-groups.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--describe",
+      "--group",
+      "billing-service-group"
+    ],
+    "start": "2026-10-27T13:35:03.623270+00:00",
+    "end": "2026-10-27T13:35:06.708668+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--timestamps",
+      "notification-consumer"
+    ],
+    "start": "2026-10-27T13:35:06.709174+00:00",
+    "end": "2026-10-27T13:35:06.928877+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-consumer-groups.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--describe",
+      "--group",
+      "notification-service-group"
+    ],
+    "start": "2026-10-27T13:35:06.930819+00:00",
+    "end": "2026-10-27T13:35:10.548133+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T13:35:10.548511+00:00",
+    "end": "2026-10-27T13:35:13.529805+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "start": "2026-10-27T13:35:13.531151+00:00",
+    "end": "2026-10-27T13:35:13.735103+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "inspect",
+      "qa-taller-integracion-kafka-kafka-1",
+      "qa-taller-integracion-kafka-kafka-ui-1",
+      "qa-taller-integracion-kafka-orders-api-1"
+    ],
+    "start": "2026-10-27T13:35:13.736525+00:00",
+    "end": "2026-10-27T13:35:13.831986+00:00",
+    "exitcode": 0
+  }
+]

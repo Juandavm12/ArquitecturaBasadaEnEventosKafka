@@ -1,0 +1,95 @@
+kafka-ui-1  | 2026-10-27T11:25:40.481485685Z Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+kafka-ui-1  | 2026-10-27T11:25:43.092369061Z  _   _ ___    __             _                _          _  __      __ _
+kafka-ui-1  | 2026-10-27T11:25:43.092421993Z | | | |_ _|  / _|___ _ _    /_\  _ __ __ _ __| |_  ___  | |/ /__ _ / _| |_____
+kafka-ui-1  | 2026-10-27T11:25:43.092425261Z | |_| || |  |  _/ _ | '_|  / _ \| '_ / _` / _| ' \/ -_) | ' </ _` |  _| / / _`|
+kafka-ui-1  | 2026-10-27T11:25:43.092427913Z  \___/|___| |_| \___|_|   /_/ \_| .__\__,_\__|_||_\___| |_|\_\__,_|_| |_\_\__,|
+kafka-ui-1  | 2026-10-27T11:25:43.092430394Z                                  |_|                                             
+kafka-ui-1  | 2026-10-27T11:25:43.092432552Z 
+kafka-ui-1  | 2026-10-27T11:25:43.356553997Z [30m2026-10-27 11:25:43,349[0;39m [34mINFO [0;39m [[34mmain[0;39m] [33mc.p.k.u.KafkaUiApplication[0;39m: Starting KafkaUiApplication using Java 17.0.6 with PID 1 (/kafka-ui-api.jar started by kafkaui in /)
+kafka-ui-1  | 2026-10-27T11:25:43.357830728Z [30m2026-10-27 11:25:43,357[0;39m [39mDEBUG[0;39m [[34mmain[0;39m] [33mc.p.k.u.KafkaUiApplication[0;39m: Running with Spring Boot v3.1.3, Spring v6.0.11
+kafka-ui-1  | 2026-10-27T11:25:43.362744240Z [30m2026-10-27 11:25:43,362[0;39m [34mINFO [0;39m [[34mmain[0;39m] [33mc.p.k.u.KafkaUiApplication[0;39m: No active profile set, falling back to 1 default profile: "default"
+kafka-ui-1  | 2026-10-27T11:25:47.249414557Z [30m2026-10-27 11:25:47,247[0;39m [39mDEBUG[0;39m [[34mmain[0;39m] [33mc.p.k.u.s.SerdesInitializer[0;39m: Configuring serdes for cluster laboratorio
+kafka-ui-1  | 2026-10-27T11:25:48.458361595Z [30m2026-10-27 11:25:48,457[0;39m [34mINFO [0;39m [[34mmain[0;39m] [33mo.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration[0;39m: 
+kafka-ui-1  | 2026-10-27T11:25:48.458426255Z 
+kafka-ui-1  | 2026-10-27T11:25:48.458430315Z Using generated security password: [REDACTADO_PARA_PUBLICACION]
+kafka-ui-1  | 2026-10-27T11:25:48.458433502Z 
+kafka-ui-1  | 2026-10-27T11:25:48.757212268Z [30m2026-10-27 11:25:48,756[0;39m [31mWARN [0;39m [[34mmain[0;39m] [33mc.p.k.u.c.a.DisabledAuthSecurityConfig[0;39m: Authentication is disabled. Access will be unrestricted.
+kafka-ui-1  | 2026-10-27T11:25:49.150758443Z [30m2026-10-27 11:25:49,150[0;39m [34mINFO [0;39m [[34mmain[0;39m] [33mo.s.b.a.e.w.EndpointLinksResolver[0;39m: Exposing 3 endpoint(s) beneath base path '/actuator'
+kafka-ui-1  | 2026-10-27T11:25:50.106415548Z [30m2026-10-27 11:25:50,105[0;39m [34mINFO [0;39m [[34mmain[0;39m] [33mo.s.b.w.e.n.NettyWebServer[0;39m: Netty started on port 8080
+kafka-ui-1  | 2026-10-27T11:25:50.132388915Z [30m2026-10-27 11:25:50,131[0;39m [34mINFO [0;39m [[34mmain[0;39m] [33mc.p.k.u.KafkaUiApplication[0;39m: Started KafkaUiApplication in 8.878 seconds (process running for 10.275)
+kafka-ui-1  | 2026-10-27T11:25:51.687069700Z [30m2026-10-27 11:25:51,686[0;39m [39mDEBUG[0;39m [[34mparallel-3[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Start getting metrics for kafkaCluster: laboratorio
+kafka-ui-1  | 2026-10-27T11:25:51.710612774Z [30m2026-10-27 11:25:51,710[0;39m [34mINFO [0;39m [[34mparallel-3[0;39m] [33mo.a.k.c.a.AdminClientConfig[0;39m: AdminClientConfig values: 
+kafka-ui-1  | 2026-10-27T11:25:51.710661373Z 	auto.include.jmx.reporter = true
+kafka-ui-1  | 2026-10-27T11:25:51.710665163Z 	bootstrap.servers = [kafka:9092]
+kafka-ui-1  | 2026-10-27T11:25:51.710667641Z 	client.dns.lookup = use_all_dns_ips
+kafka-ui-1  | 2026-10-27T11:25:51.710669856Z 	client.id = kafka-ui-admin-1793100351-1
+kafka-ui-1  | 2026-10-27T11:25:51.710672170Z 	connections.max.idle.ms = 300000
+kafka-ui-1  | 2026-10-27T11:25:51.710748243Z 	default.api.timeout.ms = 60000
+kafka-ui-1  | 2026-10-27T11:25:51.710752760Z 	metadata.max.age.ms = 300000
+kafka-ui-1  | 2026-10-27T11:25:51.710755526Z 	metric.reporters = []
+kafka-ui-1  | 2026-10-27T11:25:51.710758083Z 	metrics.num.samples = 2
+kafka-ui-1  | 2026-10-27T11:25:51.710760174Z 	metrics.recording.level = INFO
+kafka-ui-1  | 2026-10-27T11:25:51.710762487Z 	metrics.sample.window.ms = 30000
+kafka-ui-1  | 2026-10-27T11:25:51.710764776Z 	receive.buffer.bytes = 65536
+kafka-ui-1  | 2026-10-27T11:25:51.710767069Z 	reconnect.backoff.max.ms = 1000
+kafka-ui-1  | 2026-10-27T11:25:51.710769353Z 	reconnect.backoff.ms = 50
+kafka-ui-1  | 2026-10-27T11:25:51.710771648Z 	request.timeout.ms = 30000
+kafka-ui-1  | 2026-10-27T11:25:51.710777520Z 	retries = 2147483647
+kafka-ui-1  | 2026-10-27T11:25:51.710779899Z 	retry.backoff.ms = 100
+kafka-ui-1  | 2026-10-27T11:25:51.710782187Z 	sasl.client.callback.handler.class = null
+kafka-ui-1  | 2026-10-27T11:25:51.710786352Z 	sasl.jaas.config = null
+kafka-ui-1  | 2026-10-27T11:25:51.710789489Z 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+kafka-ui-1  | 2026-10-27T11:25:51.710791960Z 	sasl.kerberos.min.time.before.relogin = 60000
+kafka-ui-1  | 2026-10-27T11:25:51.710794418Z 	sasl.kerberos.service.name = null
+kafka-ui-1  | 2026-10-27T11:25:51.710796630Z 	sasl.kerberos.ticket.renew.jitter = 0.05
+kafka-ui-1  | 2026-10-27T11:25:51.710798980Z 	sasl.kerberos.ticket.renew.window.factor = 0.8
+kafka-ui-1  | 2026-10-27T11:25:51.710801386Z 	sasl.login.callback.handler.class = null
+kafka-ui-1  | 2026-10-27T11:25:51.710803714Z 	sasl.login.class = null
+kafka-ui-1  | 2026-10-27T11:25:51.710808872Z 	sasl.login.connect.timeout.ms = null
+kafka-ui-1  | 2026-10-27T11:25:51.710811615Z 	sasl.login.read.timeout.ms = null
+kafka-ui-1  | 2026-10-27T11:25:51.710813908Z 	sasl.login.refresh.buffer.seconds = 300
+kafka-ui-1  | 2026-10-27T11:25:51.710816386Z 	sasl.login.refresh.min.period.seconds = 60
+kafka-ui-1  | 2026-10-27T11:25:51.710819505Z 	sasl.login.refresh.window.factor = 0.8
+kafka-ui-1  | 2026-10-27T11:25:51.710822009Z 	sasl.login.refresh.window.jitter = 0.05
+kafka-ui-1  | 2026-10-27T11:25:51.710824477Z 	sasl.login.retry.backoff.max.ms = 10000
+kafka-ui-1  | 2026-10-27T11:25:51.710826821Z 	sasl.login.retry.backoff.ms = 100
+kafka-ui-1  | 2026-10-27T11:25:51.710829178Z 	sasl.mechanism = GSSAPI
+kafka-ui-1  | 2026-10-27T11:25:51.710850728Z 	sasl.oauthbearer.clock.skew.seconds = 30
+kafka-ui-1  | 2026-10-27T11:25:51.710853603Z 	sasl.oauthbearer.expected.audience = null
+kafka-ui-1  | 2026-10-27T11:25:51.710856087Z 	sasl.oauthbearer.expected.issuer = null
+kafka-ui-1  | 2026-10-27T11:25:51.710858780Z 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+kafka-ui-1  | 2026-10-27T11:25:51.710861059Z 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+kafka-ui-1  | 2026-10-27T11:25:51.710863377Z 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+kafka-ui-1  | 2026-10-27T11:25:51.710865649Z 	sasl.oauthbearer.jwks.endpoint.url = null
+kafka-ui-1  | 2026-10-27T11:25:51.710867817Z 	sasl.oauthbearer.scope.claim.name = scope
+kafka-ui-1  | 2026-10-27T11:25:51.710870325Z 	sasl.oauthbearer.sub.claim.name = sub
+kafka-ui-1  | 2026-10-27T11:25:51.710872485Z 	sasl.oauthbearer.token.endpoint.url = null
+kafka-ui-1  | 2026-10-27T11:25:51.710874720Z 	security.protocol = PLAINTEXT
+kafka-ui-1  | 2026-10-27T11:25:51.710876861Z 	security.providers = null
+kafka-ui-1  | 2026-10-27T11:25:51.710879190Z 	send.buffer.bytes = 131072
+kafka-ui-1  | 2026-10-27T11:25:51.710881458Z 	socket.connection.setup.timeout.max.ms = 30000
+kafka-ui-1  | 2026-10-27T11:25:51.710883713Z 	socket.connection.setup.timeout.ms = 10000
+kafka-ui-1  | 2026-10-27T11:25:51.710886298Z 	ssl.cipher.suites = null
+kafka-ui-1  | 2026-10-27T11:25:51.710890712Z 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+kafka-ui-1  | 2026-10-27T11:25:51.710893213Z 	ssl.endpoint.identification.algorithm = https
+kafka-ui-1  | 2026-10-27T11:25:51.710895496Z 	ssl.engine.factory.class = null
+kafka-ui-1  | 2026-10-27T11:25:51.710897722Z 	ssl.key.password = null
+kafka-ui-1  | 2026-10-27T11:25:51.710900145Z 	ssl.keymanager.algorithm = SunX509
+kafka-ui-1  | 2026-10-27T11:25:51.710902255Z 	ssl.keystore.certificate.chain = null
+kafka-ui-1  | 2026-10-27T11:25:51.710904590Z 	ssl.keystore.key = null
+kafka-ui-1  | 2026-10-27T11:25:51.710907060Z 	ssl.keystore.location = null
+kafka-ui-1  | 2026-10-27T11:25:51.710909709Z 	ssl.keystore.password = null
+kafka-ui-1  | 2026-10-27T11:25:51.710912127Z 	ssl.keystore.type = JKS
+kafka-ui-1  | 2026-10-27T11:25:51.710914568Z 	ssl.protocol = TLSv1.3
+kafka-ui-1  | 2026-10-27T11:25:51.710916947Z 	ssl.provider = null
+kafka-ui-1  | 2026-10-27T11:25:51.710919299Z 	ssl.secure.random.implementation = null
+kafka-ui-1  | 2026-10-27T11:25:51.710921889Z 	ssl.trustmanager.algorithm = PKIX
+kafka-ui-1  | 2026-10-27T11:25:51.710924261Z 	ssl.truststore.certificates = null
+kafka-ui-1  | 2026-10-27T11:25:51.710926836Z 	ssl.truststore.location = null
+kafka-ui-1  | 2026-10-27T11:25:51.710929318Z 	ssl.truststore.password = null
+kafka-ui-1  | 2026-10-27T11:25:51.710931839Z 	ssl.truststore.type = JKS
+kafka-ui-1  | 2026-10-27T11:25:51.710934358Z 
+kafka-ui-1  | 2026-10-27T11:25:51.927615447Z [30m2026-10-27 11:25:51,926[0;39m [34mINFO [0;39m [[34mparallel-3[0;39m] [33mo.a.k.c.u.AppInfoParser[0;39m: Kafka version: 3.5.0
+kafka-ui-1  | 2026-10-27T11:25:51.928507008Z [30m2026-10-27 11:25:51,927[0;39m [34mINFO [0;39m [[34mparallel-3[0;39m] [33mo.a.k.c.u.AppInfoParser[0;39m: Kafka commitId: c97b88d5db4de28d
+kafka-ui-1  | 2026-10-27T11:25:51.928816791Z [30m2026-10-27 11:25:51,928[0;39m [34mINFO [0;39m [[34mparallel-3[0;39m] [33mo.a.k.c.u.AppInfoParser[0;39m: Kafka startTimeMs: 1793100351922
+kafka-ui-1  | 2026-10-27T11:25:53.072168924Z [30m2026-10-27 11:25:53,071[0;39m [39mDEBUG[0;39m [[34mparallel-4[0;39m] [33mc.p.k.u.s.ClustersStatisticsScheduler[0;39m: Metrics updated for cluster: laboratorio

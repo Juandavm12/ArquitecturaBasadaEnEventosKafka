@@ -1,0 +1,4 @@
+Dumping /var/lib/kafka/data/orders.events-1/00000000000000000000.log
+Log starting offset: 0
+baseOffset: 0 lastOffset: 0 count: 1 baseSequence: 0 lastSequence: 0 producerId: -1 producerEpoch: 0 partitionLeaderEpoch: 0 isTransactional: false isControl: false deleteHorizonMs: OptionalLong.empty position: 0 CreateTime: 1793103578167 size: 585 magic: 2 compresscodec: none crc: 2470201459 isvalid: true
+| offset: 0 CreateTime: 1793103578167 keySize: 40 valueSize: 379 sequence: 0 headerKeys: [correlationId,eventId] key: ORD-f2035454-c380-4e9f-b682-b48ef72ca568 payload: {"eventId":"657b734d-55ed-4d10-ba08-5277b9eba6b2","eventType":"OrderCreated","eventVersion":"1.0","occurredAt":"2026-10-27T12:19:38.136Z","source":"orders-api","correlationId":"cdb824fe-f331-4a6d-8c84-2dbb89ba6566","data":{"orderId":"ORD-f2035454-c380-4e9f-b682-b48ef72ca568","customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":85000,"total":85000}}

@@ -1,0 +1,11 @@
+24-bookworm-slim: Pulling from library/node
+c0e48fd1aa25: Pulling fs layer
+6d793208473a: Pulling fs layer
+f2b8e65232e1: Pulling fs layer
+47e82ed2c720: Pulling fs layer
+11422d7ca1a4: Pulling fs layer
+b9f64e0df7e3: Download complete
+6d793208473a: Download complete
+47e82ed2c720: Download complete
+54f01d52c098: Download complete
+f2b8e65232e1: Download complete

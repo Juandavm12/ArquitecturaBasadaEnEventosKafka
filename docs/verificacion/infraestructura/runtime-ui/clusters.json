@@ -1,0 +1,1 @@
+[{"name":"laboratorio","defaultCluster":null,"status":"online","lastError":null,"brokerCount":1,"onlinePartitionCount":2,"topicCount":1,"bytesInPerSec":null,"bytesOutPerSec":null,"readOnly":true,"version":"3.9-IV0","features":["TOPIC_DELETION"]}]

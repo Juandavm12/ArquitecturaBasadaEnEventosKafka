@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-10-27T11:25:21.487Z",
+  "finishedAt": "2026-10-27T11:25:21.497Z",
+  "target": "127.0.0.1:29092",
+  "protocol": "Kafka ApiVersions v0",
+  "exitcode": 0,
+  "correlationId": 99,
+  "errorCode": 0,
+  "apiCount": 61,
+  "scope": "Bootstrap externo desde host; no publicación/consumo ni prueba completa de metadata."
+}

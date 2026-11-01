@@ -1,0 +1,33 @@
+{
+  "file": "03-inventory-consumer-procesamiento.png",
+  "sha256": "8d121166a16b057b5ace086a98594c07edef86892fbcb243c7c74fb0e086bf8e",
+  "bytes": 139607,
+  "registeredAtUTC": "2026-10-31T17:15:50.704078+00:00",
+  "source": "/tmp/gpyFWc3j/pi-clipboard-db8ad39f-c6b6-4f7f-bea7-d20b7ed805b6.png",
+  "observed": {
+    "service": "inventory-consumer",
+    "instanceId": "b8d3a808fc2c",
+    "groupId": "inventory-service-group",
+    "phases": [
+      "received",
+      "processed",
+      "offset-committed"
+    ],
+    "action": "simulate-stock-reservation",
+    "orderId": "ORD-f2035454-c380-4e9f-b682-b48ef72ca568",
+    "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+    "correlationId": "cdb824fe-f331-4a6d-8c84-2dbb89ba6566",
+    "topic": "orders.events",
+    "partition": 1,
+    "processedRecordOffset": "0",
+    "receivedAndProcessedAt": "2026-10-27T13:34:57.080Z",
+    "offsetCommittedLogAt": "2026-10-27T13:34:57.091Z"
+  },
+  "limits": [
+    "Logs históricos del 27 de octubre, no un nuevo procesamiento del 31",
+    "offset de trace identifica el registro procesado; no es el siguiente offset confirmado del grupo",
+    "Acción simulada, no reserva de inventario real",
+    "Cabecera de errores iniciales parcialmente visible, no ocultar ni declarar logs sin errores",
+    "No cierra por sí sola CP-05/06 ni demuestra recuperación CP-12"
+  ]
+}

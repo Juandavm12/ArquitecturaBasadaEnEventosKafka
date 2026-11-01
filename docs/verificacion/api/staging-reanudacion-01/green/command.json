@@ -1,0 +1,1 @@
+{"command":["node","--test","test/order-event.test.js","test/app.test.js"],"start":"2026-10-27T12:07:37.445Z","end":"2026-10-27T12:07:38.306Z","exitCode":0}

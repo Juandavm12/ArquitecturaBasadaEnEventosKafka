@@ -1,0 +1,6 @@
+ Image qa-taller-integracion-kafka-inventory-consumer Building 
+ Image qa-taller-integracion-kafka-billing-consumer Building 
+ Image qa-taller-integracion-kafka-notification-consumer Building 
+ Image qa-taller-integracion-kafka-inventory-consumer Built 
+ Image qa-taller-integracion-kafka-billing-consumer Built 
+ Image qa-taller-integracion-kafka-notification-consumer Built 

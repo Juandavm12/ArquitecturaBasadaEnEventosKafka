@@ -1,0 +1,1142 @@
+{
+  "schemaVersion": 1,
+  "architecture": "Kafka",
+  "case": "CP-07",
+  "destinationsRelativeTo": "ArquitecturaBasadaEnEventosKafka/",
+  "originals": [
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-01-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-01-command.json",
+      "bytes": 390,
+      "sha256": "0796c5a0bd4abb971283a9eee143cd362f9bc6c94a898b02fd64527af7850d3a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-01-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-01-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-01-stdout.txt",
+      "bytes": 30,
+      "sha256": "e7550973b2ff3e9fa73604ad19f926e406b5e7153c2628a7b9d8f489884c6aac"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-02-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-02-command.json",
+      "bytes": 379,
+      "sha256": "ed13547b7cc483213073915558fdb930cbfe33e8d1627a4d903dcdab3dd8d7f6"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-02-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-02-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-02-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-02-stdout.txt",
+      "bytes": 7,
+      "sha256": "4871e93398a3049bd6d4db8e6f6e7d554bb4bcf7ee774b0a0630c24a9bad8a36"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-03-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-03-command.json",
+      "bytes": 405,
+      "sha256": "07bb0004de59ccf829cb44278f9d3899f6cb8c1d69ba11f15fc1e08cccf595cd"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-03-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-03-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-03-stdout.txt",
+      "bytes": 12417,
+      "sha256": "34d75c928214730f69aef0d309321e14817d24717c9a292ddf384249e0b2fbf0"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-04-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-04-command.json",
+      "bytes": 465,
+      "sha256": "35449d6406ebaf853c72b99f5fe17efc008d53a5f37cb74427522bb9544ce909"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-04-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-04-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-04-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-04-stdout.txt",
+      "bytes": 78,
+      "sha256": "c28c17cdfe4bdb5d7f992c0a9684ec1d0217e64263101ab033e8658289377e91"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-05-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-05-command.json",
+      "bytes": 495,
+      "sha256": "abc45dfa568e34e2c87a33566c403fa852b92a5a7fe469491c49ffa6033d3800"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-05-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-05-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-05-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-05-stdout.txt",
+      "bytes": 66013,
+      "sha256": "3584ea483f972eb9387892ccee99868e13931f2dba955ed08d70d8fd3bca6742"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-06-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-06-command.json",
+      "bytes": 671,
+      "sha256": "20768a965eb9d7e416f6ad4c269c7b42633084de30389273ce7bb13792d9f20a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-06-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-06-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-06-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-06-stdout.txt",
+      "bytes": 544797,
+      "sha256": "0ba55de7b03025365ce15083de5342d63e9a6b275185ebcf7cbd2601ca8fae7d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-07-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-07-command.json",
+      "bytes": 675,
+      "sha256": "6d71dfeae106e3f28d08f688005e68d64b2613546277672e396be02f5da58acd"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-07-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-07-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-07-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-07-stdout.txt",
+      "bytes": 27822,
+      "sha256": "7defe60d6ce43c85fb18fd04b97461d6c9893cc0703af3a057cef4b0a42b039d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-08-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-08-command.json",
+      "bytes": 677,
+      "sha256": "97cd09ed9f492b412621f8c57af710e28493982c4154d8b5b77586b3f7ee4796"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-08-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-08-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-08-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-08-stdout.txt",
+      "bytes": 4186,
+      "sha256": "70258a2a5225a5902a9a32d14c9dde5aa08e526f38c1a70e87164f1958b7d4ab"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-09-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-09-command.json",
+      "bytes": 685,
+      "sha256": "64e602fdd97522d88ee49c3f1be07542a32eb9fa8e5eb5fa95dfd6fdb1ae5dce"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-09-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-09-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-09-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-09-stdout.txt",
+      "bytes": 63313,
+      "sha256": "480479527b532194b86be49c0651ad0fa0c416b63cefa4aad8218046a2931e0a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-10-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-10-command.json",
+      "bytes": 683,
+      "sha256": "7ffa9e5affd9716d32688d00074278d674cf74365a3a8f8bb5d20ab56894bdf1"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-10-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-10-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-10-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-10-stdout.txt",
+      "bytes": 52336,
+      "sha256": "cabb942b02df85f89694c1b8f443845bddf37de9ea59fbcfaebe3413a5015fd3"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-11-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-11-command.json",
+      "bytes": 688,
+      "sha256": "f8b01673dadbf7fc4053b116d940c467ea05c1f15cace3b73b2e8a160fc6dc66"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-11-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-11-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-11-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-11-stdout.txt",
+      "bytes": 59552,
+      "sha256": "0382c3858dac2115142632f4acbee0ee9e7538df747454a7a7b6e213cb66c457"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-12-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-12-command.json",
+      "bytes": 497,
+      "sha256": "c16cc0eb2a8ea816bd18ade5acabe013d9099bc1cb52f2e4f6935429f6d26673"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-12-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-12-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-12-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-12-stdout.txt",
+      "bytes": 14,
+      "sha256": "66cb861823944efac770e26e313b388a1c9c66607aed6929d54fb08f33621dc5"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-13-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-13-command.json",
+      "bytes": 496,
+      "sha256": "e77927f22028cf04448df762a8ff29805951053feaf6c312e563e5db095bde29"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-13-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-13-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-13-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-13-stdout.txt",
+      "bytes": 14,
+      "sha256": "e98f1e131e2941b6d77b470f89aa261f0b0375f50294c95f4fc09942084413be"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-billing-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-billing-consumer-logs.txt",
+      "bytes": 52336,
+      "sha256": "cabb942b02df85f89694c1b8f443845bddf37de9ea59fbcfaebe3413a5015fd3"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-clocks.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-clocks.json",
+      "bytes": 305,
+      "sha256": "78f33f056138116c3cc111573d191dbdfd8f4c8ac1a63a5918d216af0e766af4"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-complete.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-complete.json",
+      "bytes": 49,
+      "sha256": "a9e7e68b896648da917691701d3538f58fef93280fb8c04c6371dabcccfe4aef"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-inventory-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-inventory-consumer-logs.txt",
+      "bytes": 63313,
+      "sha256": "480479527b532194b86be49c0651ad0fa0c416b63cefa4aad8218046a2931e0a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-kafka-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-kafka-logs.txt",
+      "bytes": 544797,
+      "sha256": "0ba55de7b03025365ce15083de5342d63e9a6b275185ebcf7cbd2601ca8fae7d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-kafka-ui-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-kafka-ui-logs.txt",
+      "bytes": 27822,
+      "sha256": "7defe60d6ce43c85fb18fd04b97461d6c9893cc0703af3a057cef4b0a42b039d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-notification-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-notification-consumer-logs.txt",
+      "bytes": 59552,
+      "sha256": "0382c3858dac2115142632f4acbee0ee9e7538df747454a7a7b6e213cb66c457"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before-orders-api-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before-orders-api-logs.txt",
+      "bytes": 4186,
+      "sha256": "70258a2a5225a5902a9a32d14c9dde5aa08e526f38c1a70e87164f1958b7d4ab"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before.json",
+      "bytes": 5683,
+      "sha256": "d315f83c57de86152d8a5d6d594cbca321f0198d27374fd1c86e2202057ca5c6"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/before.lock",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/before.lock",
+      "bytes": 25,
+      "sha256": "4aad62e674f1d2e0e0abd3f275b2092bfb3c978e7fd544ab4a2edbdead3a414c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-01-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-01-command.json",
+      "bytes": 685,
+      "sha256": "aa209e5c492380659af3ecc7894d59341e5bbf4b3caad7a0bfe00fdad909b562"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-01-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-01-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-01-stdout.txt",
+      "bytes": 2276,
+      "sha256": "1477534a2a696c8cff26e64b5cac47d8763fe8fa9e5a5cebb5ada101cb389c01"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-02-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-02-command.json",
+      "bytes": 685,
+      "sha256": "06b27e29ee37e012761d180e14676f7ed3599cbcbdc11d4447417bd0e8490c64"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-02-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-02-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-02-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-02-stdout.txt",
+      "bytes": 2276,
+      "sha256": "1477534a2a696c8cff26e64b5cac47d8763fe8fa9e5a5cebb5ada101cb389c01"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-03-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-03-command.json",
+      "bytes": 685,
+      "sha256": "5231e15e3f10e7beaedd3fdc8cd88f18acdddb3fff1cc543b21a47e20705f166"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-03-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-03-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-03-stdout.txt",
+      "bytes": 2276,
+      "sha256": "1477534a2a696c8cff26e64b5cac47d8763fe8fa9e5a5cebb5ada101cb389c01"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-04-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-04-command.json",
+      "bytes": 685,
+      "sha256": "d3374132c6f5a26496e75c0145e34180560d49ee34ea40529b241a8a5b39bca5"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-04-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-04-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-04-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-04-stdout.txt",
+      "bytes": 3551,
+      "sha256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-05-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-05-command.json",
+      "bytes": 677,
+      "sha256": "27316d6c7c17f41f6113e729b87e1503553e9a9a9da031ae3ab1d177cf17ba31"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-05-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-05-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-05-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-05-stdout.txt",
+      "bytes": 4530,
+      "sha256": "6f2260ebc3bc3c957baf132e21571100f8493a716d127771a0db0141eb01dc9a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-06-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-06-command.json",
+      "bytes": 685,
+      "sha256": "57ffa025e1925f451ff5ae6b05cf0d7d68ea04075ebb0cb6bff6ed9e8b07a926"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-06-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-06-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-06-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-06-stdout.txt",
+      "bytes": 3551,
+      "sha256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-07-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-07-command.json",
+      "bytes": 683,
+      "sha256": "2295b3f424983649cd06128d58aa9110e650a696abe2a753042a03b01f391d0b"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-07-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-07-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-07-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-07-stdout.txt",
+      "bytes": 54539,
+      "sha256": "45fd8f2e13a8b039e963391986ae6042afad1d893916f687610f359f1cdb4d87"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-08-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-08-command.json",
+      "bytes": 688,
+      "sha256": "27b4bdb9e97894871bd1646d1b1b0e2bf7e7fc82c95cc2fd5bb2daa57d0b3c9a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-08-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-08-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-08-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-08-stdout.txt",
+      "bytes": 61842,
+      "sha256": "67a9ad4a593a0e5b7730f61bfb606a3021f143c92e563be1202a98817f90d4d4"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-09-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-09-command.json",
+      "bytes": 800,
+      "sha256": "a834c6898c3120fd34e6fa5095f6ab6c1d2046a6f9fe3b801369554c94416996"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-09-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-09-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-09-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-09-stdout.txt",
+      "bytes": 626,
+      "sha256": "6242dd25e4167f80e5aacfafda49ecc21377f7b0596f54003bd7d2a41c62484a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-10-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-10-command.json",
+      "bytes": 768,
+      "sha256": "344ff2d381a308ecb714aaecf8d0bb5669c5861f8f0478711de359640f068f08"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-10-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-10-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-10-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-10-stdout.txt",
+      "bytes": 36,
+      "sha256": "9ff19d462020b8bcf70f10dffa53c89ed4ad944c5955c3044a324fe8f6eba40e"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-11-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-11-command.json",
+      "bytes": 497,
+      "sha256": "4719d6c18e03eba69fd8874fd60138c36f995b78bfa27386ddb6e368684ce3a8"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-11-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-11-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-11-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-11-stdout.txt",
+      "bytes": 14,
+      "sha256": "e2d2f299eaa00113d12ca3eceded1c347caff8311a8985f3b2b7b7f0b0a7e6b7"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-12-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-12-command.json",
+      "bytes": 497,
+      "sha256": "665526a64c9de0d97f270d429af8ec5de8e695b884692d9155c20be87089d2ed"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-12-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-12-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-12-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-12-stdout.txt",
+      "bytes": 14,
+      "sha256": "562757edba1bd88aef26b2303748d66f53e9713f1a2d3a10ac93e9619c79ef2b"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-clocks.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-clocks.json",
+      "bytes": 305,
+      "sha256": "edf222a471138d004cc824281723d979d1602532fa3efc95d272b438b2772824"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect-complete.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect-complete.json",
+      "bytes": 49,
+      "sha256": "3b25fcad4ae939b6d449aa07f29b02a2b4247c3f11fa64b54ea780f62c983785"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collect.lock",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collect.lock",
+      "bytes": 25,
+      "sha256": "0234ec1df39df96d7c5e0d8f68e493d68e9f753b9b46147319e01fe6c4421b13"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collected-billing-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collected-billing-consumer-logs.txt",
+      "bytes": 54539,
+      "sha256": "45fd8f2e13a8b039e963391986ae6042afad1d893916f687610f359f1cdb4d87"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collected-inventory-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+      "bytes": 3551,
+      "sha256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collected-notification-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collected-notification-consumer-logs.txt",
+      "bytes": 61842,
+      "sha256": "67a9ad4a593a0e5b7730f61bfb606a3021f143c92e563be1202a98817f90d4d4"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collected-orders-api-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collected-orders-api-logs.txt",
+      "bytes": 4530,
+      "sha256": "6f2260ebc3bc3c957baf132e21571100f8493a716d127771a0db0141eb01dc9a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/collection-executed.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/collection-executed.json",
+      "bytes": 2667,
+      "sha256": "75ca6d3f2b56604d69232ed8e0a41fc78a2f65fa28ef4cdaae1035d84a70a040"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/compose-base.yml",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/compose-base.yml",
+      "bytes": 3201,
+      "sha256": "2aa567a3d5bc2b16e3c706f91418958a54a49ef2d65a610de832afbe6ab2a87c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/delayed.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/delayed.json",
+      "bytes": 5686,
+      "sha256": "39b9e11be8c5dc6d0611ebd2b218721e396814936844dc7ed4e4756bd9793117"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/http.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/http.json",
+      "bytes": 113,
+      "sha256": "7929404f3ec71f40d969e56a5f84b8ba09ae45237597645c07b071cc0d1e9555"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/post-attempt-once.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/post-attempt-once.json",
+      "bytes": 159,
+      "sha256": "c31517833bba0913d73cf0d9b7c352e8e052436435a21e98d17ffb010a353723"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/postman-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/postman-stdout.txt",
+      "bytes": 2592,
+      "sha256": "7212bede13f2e143b4b9a1432351f51d60dd0f990c4da0b867df8bc7c6bff230"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/pre-publish.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/pre-publish.json",
+      "bytes": 5686,
+      "sha256": "39b9e11be8c5dc6d0611ebd2b218721e396814936844dc7ed4e4756bd9793117"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-01-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-01-command.json",
+      "bytes": 464,
+      "sha256": "d8f90f9ef98b349f4659929a27ea837377c0c31be7a8f587d81ddc5d7f0adafd"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-01-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-01-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-01-stdout.txt",
+      "bytes": 78,
+      "sha256": "bc96f93c6456c701005c95ca3128a205fc5c8bc1d5e8e2c67467aefa3f5d849a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-02-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-02-command.json",
+      "bytes": 495,
+      "sha256": "feae6fda1a74d4ef7ec2ff396b44862aaf102a43adfc73db39bd51e56ef97e1c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-02-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-02-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-02-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-02-stdout.txt",
+      "bytes": 65650,
+      "sha256": "c2ffd95ad88f7b30aacc5966c8cb047a0352413626e9f30c606d7efff35323d9"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-03-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-03-command.json",
+      "bytes": 768,
+      "sha256": "1a38e1bbc5e1fb0aa7fa24932c5e830a1e7b2813a243123444f73aa82743afa2"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-03-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-03-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-03-stdout.txt",
+      "bytes": 2592,
+      "sha256": "7212bede13f2e143b4b9a1432351f51d60dd0f990c4da0b867df8bc7c6bff230"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish-complete.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish-complete.json",
+      "bytes": 49,
+      "sha256": "a69f72c17206cdf7c7a075e1e51a652a4ce9ab686c63c546e601b3552566d21b"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/publish.lock",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/publish.lock",
+      "bytes": 25,
+      "sha256": "93eec4f769a7023f467f4733079f93185f1d01d18843fc63ec2ea7f0abb56045"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-01-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-01-command.json",
+      "bytes": 651,
+      "sha256": "e95db0c50500f188b24dd0eacffe8348a579217b7a11dee062c98356ff0d21ef"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-01-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-01-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-01-stdout.txt",
+      "bytes": 7267,
+      "sha256": "2181978f3b5389ceef7cb34f14255ec4d3bacd372b6052a9a58d6570f3c14473"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-02-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-02-command.json",
+      "bytes": 788,
+      "sha256": "94f772b430aa4f2c646fce8bc3caba3c18a8efd96e555476adbc01b27df5978d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-02-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-02-stderr.txt",
+      "bytes": 418,
+      "sha256": "985ee362987801ce0eab69d4ce0205ab9ed01cdeaffbfb12a4461364d2f0e9ac"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-02-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-02-stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-03-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-03-command.json",
+      "bytes": 465,
+      "sha256": "54bdb46e318659dfe9b4cd925aad70e3b671bffb5d72ed304fe2fa226757c60f"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-03-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-03-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-03-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-04-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-04-command.json",
+      "bytes": 495,
+      "sha256": "187a0f9e255b5b35e2d8df3f5255acb0d01229d01d9078d9e2e56c1cc4b17909"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-04-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-04-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-04-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-04-stdout.txt",
+      "bytes": 64811,
+      "sha256": "ca0e001d575871f6b1484d51f826d8c5b02b09a57632c2b7db700511df81915c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-05-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-05-command.json",
+      "bytes": 496,
+      "sha256": "987ce19d6ec996e2cae8ff6bad8a9f0b54b6a77b100e04a9e2033902c8b2f48f"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-05-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-05-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-05-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-05-stdout.txt",
+      "bytes": 14,
+      "sha256": "c6c8d3c0dcad9524f084c294fed68abc563532057dbbf4dbb6ba8029436aa3ec"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-06-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-06-command.json",
+      "bytes": 497,
+      "sha256": "75468cbb5122c78c4534fbd0361e4e7d2d1800247ec0fc8c98fc75dd8e289454"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-06-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-06-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-06-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-06-stdout.txt",
+      "bytes": 14,
+      "sha256": "6f72a5beb21a31386d99c95dbcc4d793c905be11846e3d0717cf7e6c8d15de71"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-clocks.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-clocks.json",
+      "bytes": 305,
+      "sha256": "bd5633bb37e544829e3ed1e3e9830271a3cb5afc0b20458cf84ef1e3b294bbff"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore-complete.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore-complete.json",
+      "bytes": 49,
+      "sha256": "ad8156f6d0c87818dcdc66d00aea61c5c1e64221d63f4907493ac077833b6223"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restore.lock",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restore.lock",
+      "bytes": 25,
+      "sha256": "3e86d9c0496b7f4cd496ef8f01d26a3d30e785c176967bcd7205b996ed60a6d8"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/restored.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/restored.json",
+      "bytes": 5683,
+      "sha256": "5006d9b40c342fa275088c78bec76769a62d3bef418863aef5a89c071555b6a5"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/result.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/result.json",
+      "bytes": 10061,
+      "sha256": "13a173b7e00e292942795f2d9e6c68d41ebb64491e72385df21505608ebe3ddc"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-01-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-01-command.json",
+      "bytes": 834,
+      "sha256": "d7f3ae6ff069f71ec7d37f374667cfeacd9e1901d44b0c2143b49a4adb09851c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-01-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-01-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-01-stdout.txt",
+      "bytes": 7270,
+      "sha256": "bbaa40e58d18e0a3a77e42825587458fc045d046b747b61d1bb424e88d0177e4"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-02-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-02-command.json",
+      "bytes": 972,
+      "sha256": "c6b48d764873740b8d37dc3ecd7f14f1d86a2517b875d2082c1fa0e846887b15"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-02-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-02-stderr.txt",
+      "bytes": 418,
+      "sha256": "985ee362987801ce0eab69d4ce0205ab9ed01cdeaffbfb12a4461364d2f0e9ac"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-02-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-02-stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-03-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-03-command.json",
+      "bytes": 464,
+      "sha256": "af07bd6c63e5a6634784146c9f99bfa6afdf995863db65ce7864e4608425c66b"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-03-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-03-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-03-stdout.txt",
+      "bytes": 78,
+      "sha256": "bc96f93c6456c701005c95ca3128a205fc5c8bc1d5e8e2c67467aefa3f5d849a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-04-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-04-command.json",
+      "bytes": 495,
+      "sha256": "17919499fb1da3ce04d0df8f59ae7b56a74456bdd8c78b65d24dc46a80e2373f"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-04-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-04-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-04-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-04-stdout.txt",
+      "bytes": 64888,
+      "sha256": "ffc244f701415985d9ffd60dfb481a646c08f60a264cfab932e9453fc7cef890"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-05-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-05-command.json",
+      "bytes": 497,
+      "sha256": "09a3362df7d2670ec6e634c864b989b3133af5860dfa5dcb6669ae72f58db7bd"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-05-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-05-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-05-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-05-stdout.txt",
+      "bytes": 14,
+      "sha256": "729227da701fc7f17b0ac11ab7fdf106d6f5b3d3b98d67ff56b2d3bf2eba5a2c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-06-command.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-06-command.json",
+      "bytes": 497,
+      "sha256": "6968fc6010ee7575ee296c76b4f61e7c64a8321e7e2f8720659812fdf3e1e78a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-06-stderr.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-06-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-06-stdout.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-06-stdout.txt",
+      "bytes": 14,
+      "sha256": "4b66465cf658e91d38bb0ff79d6984216443ccf1e8b152eb40336d7eebe1a64a"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-clocks.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-clocks.json",
+      "bytes": 305,
+      "sha256": "0b1bdaf7d2e9ac90c6c19a462a197db27485686e3c7edfc0510157dd46989b9d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow-complete.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow-complete.json",
+      "bytes": 49,
+      "sha256": "2ed47ec0c27c7c00dc9202d517430b1a4a30cafd430e2dd644b378d19674105c"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/slow.lock",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/slow.lock",
+      "bytes": 25,
+      "sha256": "7e0f14fedec2d62cc379bbddd4d2ca37463da76dfdb7817dca867988be871035"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/sources-before.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/sources-before.json",
+      "bytes": 94744,
+      "sha256": "92ec608ab82b10b2dd1c9df448a21efe58b9a143d39da6dda4ae533bfff43c23"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/verify-complete.json",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/verify-complete.json",
+      "bytes": 49,
+      "sha256": "c532a11f5217a9e03e9af21a13077cf9639dad4bf6a549996c7ea20eeeb6cdf6"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/verify.lock",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/verify.lock",
+      "bytes": 25,
+      "sha256": "f2366f55f5517dda53ad571cfdd4efe8f16181343dd53fb7cb1f8d6bb7412f0e"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/wait-1-inventory-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/wait-1-inventory-consumer-logs.txt",
+      "bytes": 2276,
+      "sha256": "1477534a2a696c8cff26e64b5cac47d8763fe8fa9e5a5cebb5ada101cb389c01"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/wait-2-inventory-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/wait-2-inventory-consumer-logs.txt",
+      "bytes": 2276,
+      "sha256": "1477534a2a696c8cff26e64b5cac47d8763fe8fa9e5a5cebb5ada101cb389c01"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/wait-3-inventory-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/wait-3-inventory-consumer-logs.txt",
+      "bytes": 2276,
+      "sha256": "1477534a2a696c8cff26e64b5cac47d8763fe8fa9e5a5cebb5ada101cb389c01"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runtime/wait-4-inventory-consumer-logs.txt",
+      "destination": "docs/verificacion/reactivas/cp07/corrida-01/wait-4-inventory-consumer-logs.txt",
+      "bytes": 3551,
+      "sha256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63"
+    }
+  ],
+  "outputs": [
+    {
+      "destination": "docs/casos/CP07/reporteCP07.md",
+      "bytes": 7773,
+      "sha256": "15f7d69f0b9f64f24d4690c88a1b8e00e2f0636688ffa20cc883f5dda098ad71"
+    },
+    {
+      "destination": "docs/casos/CP07/01-postman-cli.svg",
+      "bytes": 4661,
+      "sha256": "7f625c906fc5a03aa2ce2dc7aa909d78ae7c356114858b27f54b77c380832068"
+    },
+    {
+      "destination": "docs/casos/CP07/02-linea-tiempo.svg",
+      "bytes": 7146,
+      "sha256": "58d87c3f3b06c080d6bce1eaad3876c299ab00a2559ed8667f0d48d56e7a0735"
+    }
+  ],
+  "collection": {
+    "source": "../../trabajos/entrega-kafka/cp07-responsive-01/CP07.postman_collection.json",
+    "destination": "pruebas/CP07.postman_collection.json",
+    "sha256": "75ca6d3f2b56604d69232ed8e0a41fc78a2f65fa28ef4cdaae1035d84a70a040"
+  },
+  "supportingSources": [
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/verify.cjs",
+      "sha256": "bee75fb6c2db8788c1ee119ead883a80ff50be20c42e9f805f677389cd52d929"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/runner.cjs",
+      "sha256": "4e527bbe5e0487786476295a46cac6eccec231034ec48a64cd8ed60e1dd04e72"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/override.delay.yml",
+      "sha256": "81db32b0bb845b56ae74947855069bb678afa85278be9245eed3c8d461669fa9"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-responsive-01/HANDOFF.md",
+      "sha256": "f0773e541eae9a44af2818993f86342a26b8b22aabd61ff36c0bdc49402354bd"
+    }
+  ],
+  "controlSources": [
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/planes-antes.json",
+      "sha256": "687a4cfa1465077cd65b4239cc64ae9d822587b842e609bbc1cf160ede135bbc"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/live-phases-exitcodes.json",
+      "sha256": "c895af68377a637f29c47ad830bf26a9e3551b269fb47292e98c38681fb1f837"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/suite-command.txt",
+      "sha256": "f135f9fa4f38fd0c92563221116e2f79df0838f5ff86440ae44d4b428576fc62"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/suite-start-utc.txt",
+      "sha256": "b38fe0b3a182d0a1bdfe163c6e88c4515cd4a62d66b60247e5343dbaf2b6c51b"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/suite-end-utc.txt",
+      "sha256": "1956bcbbe1eb20e12aabf5a876c08ec31d6cf76d3d46b55b6bfaddb2f4503b25"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/suite-exitcode.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/suite-stdout.txt",
+      "sha256": "e9fa6c7fb3fee7f022580d0d6672e1d2f089f44b0a3ecff8b580c953a729c3dd"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/suite-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/helper-check-command.txt",
+      "sha256": "b66d516ae482d1298a23cdf02b19caf505b0ea20d8d278d998bc22b2a356d60d"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/helper-check-start-utc.txt",
+      "sha256": "1b79b4b80e216c9c5c650571bc27f0702707c0c39eda83da48575e86d89240f3"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/helper-check-end-utc.txt",
+      "sha256": "1b79b4b80e216c9c5c650571bc27f0702707c0c39eda83da48575e86d89240f3"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/helper-check-exitcode.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/helper-check-stdout.txt",
+      "sha256": "9d34ab659e872af02386772dfcdfbbd4b41d2b72a677d403115be76a16aa5188"
+    },
+    {
+      "source": "../../trabajos/entrega-kafka/cp07-control-padre-01/helper-check-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "conversions": [
+    {
+      "destination": "docs/casos/CP07/01-postman-cli.svg",
+      "source": "docs/verificacion/reactivas/cp07/corrida-01/publish-03-stdout.txt",
+      "originalSHA256": "7212bede13f2e143b4b9a1432351f51d60dd0f990c4da0b867df8bc7c6bff230",
+      "method": "Complete UTF-8 stdout; ANSI CSI stripped; hard wrap 112 Unicode code points per line; XML escaped; no omissions, including warnings and final newline."
+    },
+    {
+      "destination": "docs/casos/CP07/02-linea-tiempo.svg",
+      "method": "Derived log view; four literal original lines selected by orderId; visual UTC summary uses internal date fields and CLI sandbox marker; no GUI/desktop source.",
+      "selections": [
+        {
+          "source": "docs/verificacion/reactivas/cp07/corrida-01/collected-orders-api-logs.txt",
+          "lineStart": 18,
+          "lineEnd": 18,
+          "byteStart": 4186,
+          "byteEndExclusive": 4530,
+          "utf8": "orders-api-1  | 2026-10-31T23:20:30.920506048Z {\"date\":\"2026-10-31T23:20:30.913Z\",\"service\":\"orders-api\",\"hostname\":\"eff545def17b\",\"orderId\":\"ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c\",\"eventId\":\"f435ba0a-d045-412b-a3b9-45c875f21faf\",\"correlationId\":\"f3b52280-d60f-418b-97e9-a2109589f72e\",\"topic\":\"orders.events\",\"partition\":1,\"baseOffset\":\"1\"}\n",
+          "sha256": "9a23e4312da68e884942e63017da8204a423f345fc8695d0955b7cc65ee9c5f8"
+        },
+        {
+          "source": "docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+          "lineStart": 7,
+          "lineEnd": 7,
+          "byteStart": 1306,
+          "byteEndExclusive": 2276,
+          "utf8": "inventory-consumer-1  | 2026-10-31T23:20:30.950650533Z {\"date\":\"2026-10-31T23:20:30.950Z\",\"hostname\":\"3664fcf5dc8c\",\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"3664fcf5dc8c\",\"phase\":\"received\",\"action\":\"simulate-stock-reservation\",\"trace\":{\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"3664fcf5dc8c\",\"orderId\":\"ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c\",\"eventId\":\"f435ba0a-d045-412b-a3b9-45c875f21faf\",\"correlationId\":\"f3b52280-d60f-418b-97e9-a2109589f72e\",\"topic\":\"orders.events\",\"partition\":1,\"offset\":\"1\"},\"event\":{\"eventId\":\"f435ba0a-d045-412b-a3b9-45c875f21faf\",\"eventType\":\"OrderCreated\",\"eventVersion\":\"1.0\",\"occurredAt\":\"2026-10-31T23:20:30.787Z\",\"source\":\"orders-api\",\"correlationId\":\"f3b52280-d60f-418b-97e9-a2109589f72e\",\"data\":{\"orderId\":\"ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c\",\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1,\"unitPrice\":85000,\"total\":85000}}}\n",
+          "sha256": "86116482227bca2e609aa2ced0605a088f9e0a8a0d2b46e6a044a9d8e22b93e4"
+        },
+        {
+          "source": "docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+          "lineStart": 8,
+          "lineEnd": 8,
+          "byteStart": 2276,
+          "byteEndExclusive": 2961,
+          "utf8": "inventory-consumer-1  | 2026-10-31T23:20:33.953029758Z {\"date\":\"2026-10-31T23:20:33.952Z\",\"hostname\":\"3664fcf5dc8c\",\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"3664fcf5dc8c\",\"phase\":\"processed\",\"action\":\"simulate-stock-reservation\",\"trace\":{\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"3664fcf5dc8c\",\"orderId\":\"ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c\",\"eventId\":\"f435ba0a-d045-412b-a3b9-45c875f21faf\",\"correlationId\":\"f3b52280-d60f-418b-97e9-a2109589f72e\",\"topic\":\"orders.events\",\"partition\":1,\"offset\":\"1\"},\"result\":{\"action\":\"simulate-stock-reservation\",\"orderId\":\"ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c\"}}\n",
+          "sha256": "08327c6b7b956ce1b0e585c5571fc8465607c14a7d419b9c789e7de18dd0d921"
+        },
+        {
+          "source": "docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+          "lineStart": 9,
+          "lineEnd": 9,
+          "byteStart": 2961,
+          "byteEndExclusive": 3551,
+          "utf8": "inventory-consumer-1  | 2026-10-31T23:20:33.962688383Z {\"date\":\"2026-10-31T23:20:33.962Z\",\"hostname\":\"3664fcf5dc8c\",\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"3664fcf5dc8c\",\"phase\":\"offset-committed\",\"action\":\"simulate-stock-reservation\",\"trace\":{\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"3664fcf5dc8c\",\"orderId\":\"ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c\",\"eventId\":\"f435ba0a-d045-412b-a3b9-45c875f21faf\",\"correlationId\":\"f3b52280-d60f-418b-97e9-a2109589f72e\",\"topic\":\"orders.events\",\"partition\":1,\"offset\":\"1\"}}\n",
+          "sha256": "c40724617c6dff8aebf2a8e9c780ea5fc5ccf28c29f703c2f93af0bd7d951536"
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "columns": 112,
+    "fontPx": 18,
+    "lineHeightPx": 23,
+    "widthPx": 1400,
+    "renderer": "../../trabajos/entrega-kafka/cp07-documentacion-01/renderer.cjs"
+  },
+  "clockBound": {
+    "method": "Sum for orders-api and inventory-consumer of maximum over before/slow/collect: max(abs(containerEpochMs-hostBefore),abs(containerEpochMs-hostAfter))+100ms.",
+    "boundMs": 762,
+    "gapMs": 2991,
+    "samplingLimitation": "Sampled conservative observation; not a guarantee of clock stability between samples."
+  },
+  "validation": {
+    "method": "Post-authoring structural and functional offline checks, not documentation TDD; checker imports only read-only verify.cjs, never runner.cjs.",
+    "command": "timeout 30s node checker.cjs",
+    "integratedCommand": "timeout 30s node checker.cjs --integrated",
+    "nativeApproval": false
+  },
+  "officialStateBeforeIntegration": "4/10; proposed after integration 5/10 (CP01/04/05/06/07), five pending CP08–12; historical counters preserved."
+}

@@ -1,0 +1,35 @@
+3.9.1: Pulling from apache/kafka
+e6744199aa66: Pulling fs layer
+cda86626eeb3: Pulling fs layer
+f7cdaeb78991: Pulling fs layer
+f18232174bc9: Pulling fs layer
+34d370b15c91: Pulling fs layer
+f6cd406c8d97: Pulling fs layer
+74f6a226ed93: Pulling fs layer
+6e6e21ba9841: Pulling fs layer
+304e58a73598: Pulling fs layer
+a34edb4da622: Pulling fs layer
+434e8934394d: Download complete
+f7cdaeb78991: Download complete
+a34edb4da622: Download complete
+cda86626eeb3: Download complete
+34d370b15c91: Download complete
+e6744199aa66: Download complete
+6e6e21ba9841: Download complete
+f18232174bc9: Download complete
+f18232174bc9: Pull complete
+f6cd406c8d97: Download complete
+f6cd406c8d97: Pull complete
+74f6a226ed93: Download complete
+74f6a226ed93: Pull complete
+e6744199aa66: Pull complete
+cda86626eeb3: Pull complete
+304e58a73598: Download complete
+34d370b15c91: Pull complete
+304e58a73598: Pull complete
+f7cdaeb78991: Pull complete
+a34edb4da622: Pull complete
+6e6e21ba9841: Pull complete
+Digest: sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed
+Status: Downloaded newer image for apache/kafka:3.9.1
+docker.io/apache/kafka:3.9.1

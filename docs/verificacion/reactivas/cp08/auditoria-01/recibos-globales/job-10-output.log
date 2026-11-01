@@ -1,0 +1,16 @@
+{
+  "status": "FAIL",
+  "atUTC": "2026-10-31T23:44:44.885Z",
+  "step": "command 03 docker exec eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+  "error": {
+    "stack": "AssertionError [ERR_ASSERTION]: node:fs:621\n  return binding.open(\n                 ^\n\nError: ENOENT: no such file or directory, open '/app/src/consumer-runtime.js'\n    at Object.openSync (node:fs:621:18)\n    at Object.readFileSync (node:fs:487:35)\n    at [eval]:1:338\n    at Array.map (<anonymous>)\n    at [eval]:1:290\n    at [eval]:1:385\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    at [eval]-wrapper:6:24\n    at runScriptInContext (node:internal/process/execution:449:60) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/app/src/consumer-runtime.js'\n}\n\nNode.js v24.22.1\n\n\n1 !== 0\n\n    at capture ([stdin]:21:9)\n    at [stdin]:44:15\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:485:12\n    at [stdin]-wrapper:6:24\n    at runScriptInContext (node:internal/process/execution:483:60)\n    at evalFunction (node:internal/process/execution:317:30)\n    at evalTypeScript (node:internal/process/execution:329:3)\n    at node:internal/main/eval_stdin:51:5\n    at Socket.<anonymous> (node:internal/process/execution:239:5)",
+    "message": "node:fs:621\n  return binding.open(\n                 ^\n\nError: ENOENT: no such file or directory, open '/app/src/consumer-runtime.js'\n    at Object.openSync (node:fs:621:18)\n    at Object.readFileSync (node:fs:487:35)\n    at [eval]:1:338\n    at Array.map (<anonymous>)\n    at [eval]:1:290\n    at [eval]:1:385\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    at [eval]-wrapper:6:24\n    at runScriptInContext (node:internal/process/execution:449:60) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/app/src/consumer-runtime.js'\n}\n\nNode.js v24.22.1\n\n\n1 !== 0\n",
+    "generatedMessage": false,
+    "name": "AssertionError",
+    "code": "ERR_ASSERTION",
+    "actual": 1,
+    "expected": 0,
+    "operator": "strictEqual",
+    "diff": "simple"
+  }
+}

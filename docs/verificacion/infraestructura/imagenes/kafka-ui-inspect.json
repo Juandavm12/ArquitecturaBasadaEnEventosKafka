@@ -1,0 +1,64 @@
+[
+    {
+        "Id": "sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818",
+        "RepoTags": [
+            "provectuslabs/kafka-ui:v0.7.2"
+        ],
+        "RepoDigests": [
+            "provectuslabs/kafka-ui@sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-04-10T09:43:54.708883763Z",
+        "Config": {
+            "User": "kafkaui",
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "TZ=Etc/UTC",
+                "JAVA_HOME=/usr/lib/jvm/zulu17",
+                "JAVA_OPTS="
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "java --add-opens java.rmi/javax.rmi.ssl=ALL-UNNAMED  $JAVA_OPTS -jar kafka-ui-api.jar"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 154462994,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:49f62469da7651bcaf2d76af7a56680c2dd9b7cf177ead3e8a675b160500b68e",
+                "sha256:26eb2b7267a4ca4cef718e4ee30e96ff34f61f7147c533afbcec90a222227dbe",
+                "sha256:9cf31f3e693dca12c9446ae1da1b61f0ecd65134423563708b6ebc630c612f75",
+                "sha256:a74f77bfc8274de008fe0127ef13d839c695ae6280de7e2be976587657435e0c",
+                "sha256:f2d29edae908ca7fbee71b32c70379e86d6a2002a5b12048b09ef99c3e9d453f",
+                "sha256:620410395064bae43e824f2f162c531b21f28ac10dbf903ce361414d8e375715",
+                "sha256:c8d825310a9e653269ec703c86a1cb06a4f5cd69c1fb1dcbf52af2bfb9a68180"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-27T11:25:11.900822398Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "digest": "sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818",
+            "size": 685
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/provectuslabs/kafka-ui"
+                }
+            ]
+        }
+    }
+]

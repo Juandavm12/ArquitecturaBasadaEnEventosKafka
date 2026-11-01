@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "docker",
+    "inspect",
+    "24326effb3e1",
+    "3ce4bcc7867e",
+    "5caff4b88c36",
+    "eff545def17b",
+    "5a51c1295022",
+    "8719d42973a5"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester",
+  "startedUTC": "2026-10-31T23:44:44.192Z",
+  "finishedUTC": "2026-10-31T23:44:44.419Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

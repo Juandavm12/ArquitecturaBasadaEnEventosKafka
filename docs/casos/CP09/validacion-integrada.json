@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "role": "writer integrated documentary readback",
+  "parentFinalReadbackPerformed": false,
+  "receipt": {
+    "argv": [
+      "node",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/documentacion-evidence/documentacion.cjs",
+      "check"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester",
+    "startUTC": "2026-11-01T04:01:38.859Z",
+    "endUTC": "2026-11-01T04:01:39.400Z",
+    "exitCode": 0,
+    "signal": null,
+    "error": null
+  },
+  "checks": {
+    "status": "PASS",
+    "role": "implementation-writer offline documentary check; not parent final readback",
+    "verifiedUTC": "2026-11-01T04:01:39.386Z",
+    "strictTDD": false,
+    "baselineOriginals": 566,
+    "oldUnchanged": 562,
+    "oldChanged": [
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/PLAN_KAFKA.md",
+        "before": "acf64c176f1ec0f018de3888f0e1aaf7412d8a28e5b3aae8692e8f36285c1e87",
+        "after": "eab3cdfefe37c96062afadc5486dc4fb8191536341ea388bedc11ae590cc0530"
+      },
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/README.md",
+        "before": "80ecb42a1dfc37a26ed4542c970da0f9a10c99f1a582c9c61f132c9a4b80a4f3",
+        "after": "5318bbedc4f449b094c0fd3d80115ccd45aa34cc713da600eb196ae95ef95a73"
+      },
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/consumidores/RESUMEN.md",
+        "before": "a7c21e25e52684744de60f0fb4ef3d8d9ca0e1042bec7e8f00f49547bd16b274",
+        "after": "0edf1674ff4c27e3e25d125e0048223c050e182328bc04c9099da5c7e5bcc51a"
+      },
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/PLAN_DE_TRABAJO.md",
+        "before": "965b1d1446d93b729bdbe8cbcebe9e6003f1422c61d4c1c1bd5b49af5af22366",
+        "after": "cf4dec97a6fee136a47c7c66e60c529adde3488222bbd995ceb8114e729d6d37"
+      }
+    ],
+    "allowedPlanExceptions": [
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/PLAN_DE_TRABAJO.md",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/README.md",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/PLAN_KAFKA.md",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/consumidores/RESUMEN.md"
+    ],
+    "planChanges": [
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/PLAN_DE_TRABAJO.md",
+        "before": "965b1d1446d93b729bdbe8cbcebe9e6003f1422c61d4c1c1bd5b49af5af22366",
+        "after": "cf4dec97a6fee136a47c7c66e60c529adde3488222bbd995ceb8114e729d6d37",
+        "inOriginals": true
+      },
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/README.md",
+        "before": "80ecb42a1dfc37a26ed4542c970da0f9a10c99f1a582c9c61f132c9a4b80a4f3",
+        "after": "5318bbedc4f449b094c0fd3d80115ccd45aa34cc713da600eb196ae95ef95a73",
+        "inOriginals": true
+      },
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/PLAN_KAFKA.md",
+        "before": "acf64c176f1ec0f018de3888f0e1aaf7412d8a28e5b3aae8692e8f36285c1e87",
+        "after": "eab3cdfefe37c96062afadc5486dc4fb8191536341ea388bedc11ae590cc0530",
+        "inOriginals": true
+      },
+      {
+        "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/consumidores/RESUMEN.md",
+        "before": "a7c21e25e52684744de60f0fb4ef3d8d9ca0e1042bec7e8f00f49547bd16b274",
+        "after": "0edf1674ff4c27e3e25d125e0048223c050e182328bc04c9099da5c7e5bcc51a",
+        "inOriginals": true
+      }
+    ],
+    "matrixRows": 12,
+    "matrixChangedRows": [
+      {
+        "before": "| CP-09 — Resilient | Provocar caída del consumidor y comprobar continuidad de aceptación/publicación de la API; registrar caída y recuperación. | [x] | [ ] |",
+        "after": "| CP-09 — Resilient | Provocar caída del consumidor y comprobar continuidad de aceptación/publicación de la API; registrar caída y recuperación. | [x] | [x] |"
+      }
+    ],
+    "copies": 193,
+    "bytes": 21015457,
+    "runtimeFiles": 159,
+    "reportFields": 11,
+    "linksChecked": 20,
+    "svgXML": "SVG XML PASS",
+    "svgRasterChecked": false,
+    "provenanceEntries": 18,
+    "peerTraces": [
+      {
+        "role": "billing",
+        "phase": "received",
+        "date": "2026-11-01T03:54:42.868Z"
+      },
+      {
+        "role": "billing",
+        "phase": "processed",
+        "date": "2026-11-01T03:54:42.878Z"
+      },
+      {
+        "role": "billing",
+        "phase": "offset-committed",
+        "date": "2026-11-01T03:54:43.609Z"
+      },
+      {
+        "role": "notification",
+        "phase": "received",
+        "date": "2026-11-01T03:54:42.880Z"
+      },
+      {
+        "role": "notification",
+        "phase": "processed",
+        "date": "2026-11-01T03:54:42.895Z"
+      },
+      {
+        "role": "notification",
+        "phase": "offset-committed",
+        "date": "2026-11-01T03:54:43.618Z"
+      }
+    ],
+    "empiricalParentValidationUTC": "2026-11-01T03:55:52.704Z",
+    "newRuntimeCommands": 0,
+    "guardFilesUnmodified": true
+  },
+  "empiricalRuntimeParentReceipt": "../../verificacion/reactivas/cp09/corrida-01/control/cp09-run-real-01/validation-parent.json",
+  "note": "Actual offline writer check after integration; distinct from historical empirical parent runtime validation and any future parent final readback."
+}

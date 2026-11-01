@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-01T05:06:05.532Z",
+  "razon": "Saneamiento autorizado para publicación pública: contraseña autogenerada Spring; sin nueva ejecución ni cambio de resultados.",
+  "tipo": "Overlay de publicación; no sustituye manifiestos históricos",
+  "nota": "../../PUBLICACION.md",
+  "archivos": [
+    {
+      "path": "docs/verificacion/infraestructura/runtime-ui/logs-stdout.txt",
+      "sha256_original": "0c2a6aaa2d0afab12f5e2641c717bb433afaa9a40351400d2880111fbbc081bd",
+      "sha256_publico": "ebee977b2a96a9428cb3dcf8d9dec303f244a0776a327967a3baba57868ff58e",
+      "reemplazos": 1,
+      "marcador": "[REDACTADO_PARA_PUBLICACION]",
+      "procedencia": "Original privado conservado fuera del repositorio de entrega"
+    },
+    {
+      "path": "docs/verificacion/reactivas/cp07/corrida-01/before-kafka-ui-logs.txt",
+      "sha256_original": "7defe60d6ce43c85fb18fd04b97461d6c9893cc0703af3a057cef4b0a42b039d",
+      "sha256_publico": "1bc5c620d4e8deadae8cb619757435f509ff9a8adaba9e356a492aaff39f8cce",
+      "reemplazos": 1,
+      "marcador": "[REDACTADO_PARA_PUBLICACION]",
+      "procedencia": "Original privado conservado fuera del repositorio de entrega"
+    },
+    {
+      "path": "docs/verificacion/reactivas/cp07/corrida-01/before-07-stdout.txt",
+      "sha256_original": "7defe60d6ce43c85fb18fd04b97461d6c9893cc0703af3a057cef4b0a42b039d",
+      "sha256_publico": "1bc5c620d4e8deadae8cb619757435f509ff9a8adaba9e356a492aaff39f8cce",
+      "reemplazos": 1,
+      "marcador": "[REDACTADO_PARA_PUBLICACION]",
+      "procedencia": "Original privado conservado fuera del repositorio de entrega"
+    }
+  ]
+}

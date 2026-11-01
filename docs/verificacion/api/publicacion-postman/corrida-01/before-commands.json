@@ -1,0 +1,57 @@
+[
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "startedAtUTC": "2026-10-31T17:45:25.625837+00:00",
+    "finishedAtUTC": "2026-10-31T17:45:26.471911+00:00",
+    "exitCode": 0,
+    "stdout": "01-before-stdout.txt",
+    "stderr": "01-before-stderr.txt"
+  },
+  {
+    "command": [
+      "curl",
+      "--silent",
+      "--show-error",
+      "--fail-with-body",
+      "--max-time",
+      "15",
+      "--include",
+      "http://127.0.0.1:3000/health"
+    ],
+    "startedAtUTC": "2026-10-31T17:45:26.472155+00:00",
+    "finishedAtUTC": "2026-10-31T17:45:26.502896+00:00",
+    "exitCode": 0,
+    "stdout": "02-before-stdout.txt",
+    "stderr": "02-before-stderr.txt"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "startedAtUTC": "2026-10-31T17:45:26.503344+00:00",
+    "finishedAtUTC": "2026-10-31T17:45:29.791760+00:00",
+    "exitCode": 0,
+    "stdout": "03-before-stdout.txt",
+    "stderr": "03-before-stderr.txt"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm",
+    "install",
+    "--ignore-scripts",
+    "--no-fund"
+  ],
+  "start": "2026-10-27T12:03:35.583053+00:00",
+  "status": "finished",
+  "end": "2026-10-27T12:03:39.939390+00:00",
+  "exitcode": 0
+}

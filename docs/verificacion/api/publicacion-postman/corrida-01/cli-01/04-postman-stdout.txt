@@ -1,0 +1,73 @@
+No authorization data found. Please use the `postman login` command.
+Refer:https://learning.postman.com/docs/postman-cli/postman-cli-options/#postman-login
+
+Running your collection...
+postman
+
+CP04 Kafka — un POST
+
+Root CP04 — publicar un pedido
+
+  POST http://localhost:3000/orders  
+  202 Accepted * 370 ms time * 374 B^ 362 Bv size * 9^ 6v headers * 0 cookies
+  - ^ raw * 89 B
+  | {"customerName":"Pedro","product":"Libro de arquitectu
+  | ra","quantity":1,"unitPrice":85000}
+  - 
+  - v application/json * text * json * utf8 * 143 B
+  | {"status":"accepted","message":"Pedido recibido y even
+  | to OrderCreated publicado en Kafka","orderId":"ORD-d84
+  | 84470-cb78-48c9-befa-0c88fe1429f9"}
+  -
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total  
+  3 ms      12 ms   2 ms         481 us          347 ms           5 ms       1 ms      374 ms 
+
+  -
+  | 'REQUEST_METHOD POST'
+  | 'REQUEST_URL http://localhost:3000/orders'
+  | 'REQUEST_BODY {"customerName":"Pedro","product":"Libro
+  |  de arquitectura","quantity":1,"unitPrice":85000}'
+  | 'RESPONSE_CODE 202'
+  | 'RESPONSE_BODY {"status":"accepted","message":"Pedido 
+  | recibido y evento OrderCreated publicado en Kafka","or
+  | derId":"ORD-d8484470-cb78-48c9-befa-0c88fe1429f9"}'
+  | 'RESPONSE_TIME_MS 370'
+  | 'ORDER_ID ORD-d8484470-cb78-48c9-befa-0c88fe1429f9'
+  -
+  Pass  HTTP 202
+  Pass  JSON válido
+  Pass  Status accepted
+  Pass  Mensaje exacto
+  Pass  orderId ORD-UUID
+
+--------------------------------------------------------------------------
+|                         |              executed |               failed |
+--------------------------+-----------------------+-----------------------
+|              iterations |                     1 |                    0 |
+--------------------------+-----------------------+-----------------------
+|                requests |                     1 |                    0 |
+--------------------------+-----------------------+-----------------------
+|            test-scripts |                     1 |                    0 |
+--------------------------+-----------------------+-----------------------
+|      prerequest-scripts |                     0 |                    0 |
+--------------------------+-----------------------+-----------------------
+|              assertions |                     5 |                    0 |
+--------------------------------------------------------------------------
+| total run duration: 481 ms                                             |
+--------------------------------------------------------------------------
+| total data received: 143 B (approx)                                    |
+--------------------------------------------------------------------------
+| average response time: 370 ms [min: 370 ms, max: 370 ms, s.d.: 0 us]   |
+--------------------------------------------------------------------------
+| average DNS lookup time: 2 ms [min: 2 ms, max: 2 ms, s.d.: 0 us]       |
+--------------------------------------------------------------------------
+| average first byte time: 347 ms [min: 347 ms, max: 347 ms, s.d.: 0 us] |
+--------------------------------------------------------------------------
+Postman credentials are required for publishing run details to Postman cloud.
+Please specify it by using the `postman login` command
+
+A new version of Postman CLI is available (v1.83.1). Refer https://go.pstmn.io/cli-release-notes for changelogs.
+To update your Postman CLI, run:
+
+postman update
+

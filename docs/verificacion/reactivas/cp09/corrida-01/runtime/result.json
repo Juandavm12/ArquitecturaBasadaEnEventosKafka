@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+  "preservedSourceFiles": 566,
+  "preservedPlans": 4,
+  "basis": "Controlled stop; host sequence, not clock ordering or SLA. CP11/12 not closed."
+}

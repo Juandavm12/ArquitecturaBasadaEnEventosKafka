@@ -1,0 +1,18 @@
+{
+  "file": "01-docker-desktop-seis-servicios.png",
+  "sha256": "6d1f2bf84b45d16db20aac38bc59365e5baed8edb901113d686dd1b3103d3f5c",
+  "bytes": 72899,
+  "registeredAtUTC": "2026-10-31T17:08:58.889401+00:00",
+  "source": "/tmp/gpyFWc3j/pi-clipboard-a19029ad-4635-4a20-b335-3058cfdcfca3.png",
+  "observed": [
+    "Docker Desktop con seis contenedores e indicadores verdes",
+    "IDs: b8d3a808fc2c, 3ce4bcc7867e, 5caff4b88c36, eff545def17b, 5a51c1295022, 8719d42973a5",
+    "Puertos visibles API3000:3000, UI8080:8080, Kafka29092:29092"
+  ],
+  "limits": [
+    "Nombres de proyecto e imágenes parcialmente truncados",
+    "Indicadores verdes no acreditan procesamiento ni healthchecks individuales",
+    "Captura de montaje, no cierre de casos ni prueba CP12",
+    "Hora exacta de captura no inferida; registeredAtUTC es hora de archivo"
+  ]
+}

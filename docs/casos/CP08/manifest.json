@@ -1,0 +1,1008 @@
+{
+  "createdUTC": "2026-11-01T00:05:55.249Z",
+  "scope": "Only inspected PoC flow; no universal absence claim",
+  "publicationUTC": "2026-10-31T23:20:30.913Z",
+  "auditVerifiedUTC": "2026-10-31T23:46:39.217Z",
+  "newPOSTs": 0,
+  "newRuntimeLogs": 0,
+  "cp07SharedPreserved": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/result.json",
+      "sha256": "13a173b7e00e292942795f2d9e6c68d41ebb64491e72385df21505608ebe3ddc"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/restored.json",
+      "sha256": "5006d9b40c342fa275088c78bec76769a62d3bef418863aef5a89c071555b6a5"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/sources-before.json",
+      "sha256": "92ec608ab82b10b2dd1c9df448a21efe58b9a143d39da6dda4ae533bfff43c23"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/publish-03-command.json",
+      "sha256": "1a38e1bbc5e1fb0aa7fa24932c5e830a1e7b2813a243123444f73aa82743afa2"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/publish-03-stdout.txt",
+      "sha256": "7212bede13f2e143b4b9a1432351f51d60dd0f990c4da0b867df8bc7c6bff230"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-orders-api-logs.txt",
+      "sha256": "6f2260ebc3bc3c957baf132e21571100f8493a716d127771a0db0141eb01dc9a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+      "sha256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-billing-consumer-logs.txt",
+      "sha256": "45fd8f2e13a8b039e963391986ae6042afad1d893916f687610f359f1cdb4d87"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-notification-consumer-logs.txt",
+      "sha256": "67a9ad4a593a0e5b7730f61bfb606a3021f143c92e563be1202a98817f90d4d4"
+    }
+  ],
+  "copies": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/01-command.json",
+      "destination": "evidencias/lectura-runtime/01-command.json",
+      "bytes": 321,
+      "sha256": "8b09e9e7cad22806d1f3c49b81f16975d86fb3d745a3a503f68c7fa9a8608abe"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/01-stderr.txt",
+      "destination": "evidencias/lectura-runtime/01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/01-stdout.txt",
+      "destination": "evidencias/lectura-runtime/01-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/02-command.json",
+      "destination": "evidencias/lectura-runtime/02-command.json",
+      "bytes": 351,
+      "sha256": "935045bb777d42500ec83b16e48d8b45a43ab781beea8cee502dc36f57bac3fc"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/02-stderr.txt",
+      "destination": "evidencias/lectura-runtime/02-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/02-stdout.txt",
+      "destination": "evidencias/lectura-runtime/02-stdout.txt",
+      "bytes": 65733,
+      "sha256": "cb610be8cf4d673f212639c3fa3118002d81d057c63557078c0de1c1d683982e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/03-command.json",
+      "destination": "evidencias/lectura-runtime/03-command.json",
+      "bytes": 716,
+      "sha256": "637d7604a336321cb3cf6305408a684c2fa58b8b82e231679d42302faa5c96b6"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/03-stderr.txt",
+      "destination": "evidencias/lectura-runtime/03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/03-stdout.txt",
+      "destination": "evidencias/lectura-runtime/03-stdout.txt",
+      "bytes": 692,
+      "sha256": "81fac52c137c42e4fe27c5f5f5886c98702807a5990ee02564bb8721cd48361b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/04-command.json",
+      "destination": "evidencias/lectura-runtime/04-command.json",
+      "bytes": 716,
+      "sha256": "5033a0bb5e6ca17b2e8ba3aa406c0a43f96bf56b914396e555303b332687bcf9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/04-stderr.txt",
+      "destination": "evidencias/lectura-runtime/04-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/04-stdout.txt",
+      "destination": "evidencias/lectura-runtime/04-stdout.txt",
+      "bytes": 692,
+      "sha256": "81fac52c137c42e4fe27c5f5f5886c98702807a5990ee02564bb8721cd48361b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/05-command.json",
+      "destination": "evidencias/lectura-runtime/05-command.json",
+      "bytes": 716,
+      "sha256": "dffa32a6155b8ee5c3dbbbb8cfd9a53e19aa70338238e1881db298f475538427"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/05-stderr.txt",
+      "destination": "evidencias/lectura-runtime/05-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/05-stdout.txt",
+      "destination": "evidencias/lectura-runtime/05-stdout.txt",
+      "bytes": 692,
+      "sha256": "81fac52c137c42e4fe27c5f5f5886c98702807a5990ee02564bb8721cd48361b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/06-command.json",
+      "destination": "evidencias/lectura-runtime/06-command.json",
+      "bytes": 716,
+      "sha256": "800ad38395e06e4e7049c897a46011d80b2926a43e6ea7d203efe6aa338a3b18"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/06-stderr.txt",
+      "destination": "evidencias/lectura-runtime/06-stderr.txt",
+      "bytes": 615,
+      "sha256": "ba44c1f59ba8c04d93fc8b672a802b21d60310661e9a2a7ad3ec05dfa6a26648"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/06-stdout.txt",
+      "destination": "evidencias/lectura-runtime/06-stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/baseline.json",
+      "destination": "evidencias/lectura-runtime/baseline.json",
+      "bytes": 211984,
+      "sha256": "ea464a9bef183be19bc1550fb4444823bb3f7302a476bba79267ae0d92cf93b5"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/local-source-hashes.json",
+      "destination": "evidencias/lectura-runtime/local-source-hashes.json",
+      "bytes": 725,
+      "sha256": "ebf72768250d97f6765bfe9aa5a2b42ee4071cf5d38f47271ba53a27b4fef751"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/diagnostico-fallo-01/HANDOFF.md",
+      "destination": "evidencias/diagnostico-fallo-01/HANDOFF.md",
+      "bytes": 3617,
+      "sha256": "72a972f65f9c81c52fe3581f398f3ea8715b470a2e9cf4d8ca55a692ca7da494"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/diagnostico-fallo-01/offline-result.json",
+      "destination": "evidencias/diagnostico-fallo-01/offline-result.json",
+      "bytes": 3961,
+      "sha256": "0ef908f61287f5b31a602aabc49994b9254e6114969759b31c2c875e0e8e6910"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/diagnostico-fallo-01/repro.cjs",
+      "destination": "evidencias/diagnostico-fallo-01/repro.cjs",
+      "bytes": 3934,
+      "sha256": "083f7ee183f57f21417fe122de459790536e6e6eb5ea91e34b7ab07d8fff77e4"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/01-command.json",
+      "destination": "evidencias/continuacion-lectura-01/01-command.json",
+      "bytes": 328,
+      "sha256": "c78d0326d78f7f333f68f969a931ac129c4190c945a6bab0d8d188b14d740c51"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/01-stderr.txt",
+      "destination": "evidencias/continuacion-lectura-01/01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/01-stdout.txt",
+      "destination": "evidencias/continuacion-lectura-01/01-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/02-command.json",
+      "destination": "evidencias/continuacion-lectura-01/02-command.json",
+      "bytes": 358,
+      "sha256": "12a005af86481c370f2d0d720d2d3cc606bafcec4692b5e4767b9b5c5179a525"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/02-stderr.txt",
+      "destination": "evidencias/continuacion-lectura-01/02-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/02-stdout.txt",
+      "destination": "evidencias/continuacion-lectura-01/02-stdout.txt",
+      "bytes": 65821,
+      "sha256": "c67b0ccc267f995e911a5a4f4a6e13abc2bd0ec72896203a9bf977bda7fc0771"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/03-command.json",
+      "destination": "evidencias/continuacion-lectura-01/03-command.json",
+      "bytes": 723,
+      "sha256": "440c82c71dd766bdb76978180827fea0fc727a9091295c2780b7d859be60c55a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/03-stderr.txt",
+      "destination": "evidencias/continuacion-lectura-01/03-stderr.txt",
+      "bytes": 615,
+      "sha256": "ba44c1f59ba8c04d93fc8b672a802b21d60310661e9a2a7ad3ec05dfa6a26648"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/03-stdout.txt",
+      "destination": "evidencias/continuacion-lectura-01/03-stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/continuacion-lectura-01/failure.json",
+      "destination": "evidencias/continuacion-lectura-01/failure.json",
+      "bytes": 2216,
+      "sha256": "25db12310854d1d535dac145d29540ac3bcb0785e5bf85d5cef219cda6e1488e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/01-command.json",
+      "destination": "evidencias/lectura-por-rol-01/01-command.json",
+      "bytes": 663,
+      "sha256": "2c5161014d0b758c572f8dfcf657fd06c7da5f91020225a3ee050fc1c6960f75"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/01-stderr.txt",
+      "destination": "evidencias/lectura-por-rol-01/01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/01-stdout.txt",
+      "destination": "evidencias/lectura-por-rol-01/01-stdout.txt",
+      "bytes": 65818,
+      "sha256": "6adc46c807ca4b09fd4008ace83538a6289107076b57f6a4aaa0a61db6fe575d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/02-command.json",
+      "destination": "evidencias/lectura-por-rol-01/02-command.json",
+      "bytes": 604,
+      "sha256": "d88c23bca8ade1e76668610f358e679f3d0f7166bad6f1c966540afc66f78e61"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/02-stderr.txt",
+      "destination": "evidencias/lectura-por-rol-01/02-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/02-stdout.txt",
+      "destination": "evidencias/lectura-por-rol-01/02-stdout.txt",
+      "bytes": 253,
+      "sha256": "7d58e14f2f14bbab817709cd975f02ed5e79d9cc19faf0998e931cbfb9cb2a11"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/03-command.json",
+      "destination": "evidencias/lectura-por-rol-01/03-command.json",
+      "bytes": 623,
+      "sha256": "b8c16f3cbd8e277fe8a8932886a480071fc68e1e77b7680943bfec93772d342e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/03-stderr.txt",
+      "destination": "evidencias/lectura-por-rol-01/03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/03-stdout.txt",
+      "destination": "evidencias/lectura-por-rol-01/03-stdout.txt",
+      "bytes": 272,
+      "sha256": "d78f5e344520013b6ed9575a5f19d51dab33e39d06650a6c3cfb4f5a29775756"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/04-command.json",
+      "destination": "evidencias/lectura-por-rol-01/04-command.json",
+      "bytes": 623,
+      "sha256": "ab2ac1dc8ddbc518919cce7defb3d688c8469dfd25ed927c0391d5130e808249"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/04-stderr.txt",
+      "destination": "evidencias/lectura-por-rol-01/04-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/04-stdout.txt",
+      "destination": "evidencias/lectura-por-rol-01/04-stdout.txt",
+      "bytes": 272,
+      "sha256": "d78f5e344520013b6ed9575a5f19d51dab33e39d06650a6c3cfb4f5a29775756"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/verification.json",
+      "destination": "evidencias/lectura-por-rol-01/verification.json",
+      "bytes": 4390,
+      "sha256": "d605ef345e83aed3adfbcb3511060f368bbea841bbb8636a2fff89ee62a3330b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/job-10-output.log",
+      "destination": "evidencias/recibos-globales/job-10-output.log",
+      "bytes": 2216,
+      "sha256": "25db12310854d1d535dac145d29540ac3bcb0785e5bf85d5cef219cda6e1488e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/job-11-output.log",
+      "destination": "evidencias/recibos-globales/job-11-output.log",
+      "bytes": 123,
+      "sha256": "6849c0de1cd755d74c642f1f0dd26a0758c2f1e2b73294e4974620803413cc1f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/job-9-output.log",
+      "destination": "evidencias/recibos-globales/job-9-output.log",
+      "bytes": 522,
+      "sha256": "641c58c4c33fbee8aaaac4abbb62b4b161f59c6d89695252cf5d713e3c46faec"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/manifest.json",
+      "destination": "evidencias/recibos-globales/manifest.json",
+      "bytes": 1436,
+      "sha256": "02e8d1a6d8956a7030008c7cd7e31f186f1e73baa8c80b69625a760bf27b0397"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/app.js",
+      "destination": "evidencias/fuentes-codigo/kafka/src/app.js",
+      "bytes": 1841,
+      "sha256": "9f7c91d9aa446c4bfdc00d45fa59e28b252b0a001c6f14ad51c043c79d87a833"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/server.js",
+      "destination": "evidencias/fuentes-codigo/kafka/src/server.js",
+      "bytes": 2306,
+      "sha256": "9fe8781551dccf3ce5b455937af46ddfec713e2af3915650f1e2456acf7bf0a7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/order-event.js",
+      "destination": "evidencias/fuentes-codigo/kafka/src/order-event.js",
+      "bytes": 1357,
+      "sha256": "f447c58cebb8f84f24b89132528be11fdf69e6808688ae65b4318e8e1f13cdac"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer-server.js",
+      "destination": "evidencias/fuentes-codigo/kafka/src/consumer-server.js",
+      "bytes": 1163,
+      "sha256": "529997cd044c48a4a155a98ecd5b1a74185cc4900ae6dfc95b1cb8d588d442a6"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer-runtime.js",
+      "destination": "evidencias/fuentes-codigo/kafka/src/consumer-runtime.js",
+      "bytes": 3051,
+      "sha256": "51885d54c1e351e2277cc0e8ed37d553b4438d22b9877c7b411d9c2a0d17098d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer.js",
+      "destination": "evidencias/fuentes-codigo/kafka/src/consumer.js",
+      "bytes": 3356,
+      "sha256": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/Dockerfile",
+      "destination": "evidencias/fuentes-codigo/kafka/Dockerfile",
+      "bytes": 240,
+      "sha256": "ad0c3714df82818bbaa7f544bee6929aa6a85f8891a565c35dbe3d1e40211919"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+      "destination": "evidencias/fuentes-codigo/kafka/docker-compose.yml",
+      "bytes": 3201,
+      "sha256": "2aa567a3d5bc2b16e3c706f91418958a54a49ef2d65a610de832afbe6ab2a87c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/package.json",
+      "destination": "evidencias/fuentes-codigo/kafka/package.json",
+      "bytes": 309,
+      "sha256": "32f36d92451a6db2133d05e42d448d634c9c8723e5019459cc0510316cd97abb"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/package-lock.json",
+      "destination": "evidencias/fuentes-codigo/kafka/package-lock.json",
+      "bytes": 30247,
+      "sha256": "90fbbe702473483fb7588d5b6dc0989eed9e8527cfc9cfa43289b41ef883edee"
+    }
+  ],
+  "outputs": {
+    "reporteCP08.md": "0466a7db6cce388c6974c564a9b90e9c439459c06d1e7f166dc16608c06c08b4",
+    "01-message-driven.svg": "b049f4f14c4f810f57da1e42da514e0c86c005a48d64f3bfdaad26da2230cd4e",
+    "plan-cambios.json": "fb31a794044cd480493d9ccbb7488f6c186d1ebb9c38bc169ccc9b1a99933b53",
+    "lib.cjs": "5d1925a77b4e42c29ac250e7023eb30d904791d11dceecc0828cc921444e04fb",
+    "renderer.cjs": "27e7eff22971f4142b73d0b93a484dd9f4b701d22881995323522c624e77b957",
+    "autor.cjs": "ffe6bd2cd89519e72ac1051d8e7076372cfd384d82678456cb436d3a02e7ea84",
+    "checker.cjs": "3cffb35dd2d03c8d4950a6cbd78ff151e04eae6148bdb97bf89286f7f358a86c",
+    "HANDOFF.md": "ecdc46b36616aafa56ed31b6019fec637b5594dcc29d448b0b1b31dd3c7783af",
+    "planes-propuestos/PLAN_DE_TRABAJO.md": "965b1d1446d93b729bdbe8cbcebe9e6003f1422c61d4c1c1bd5b49af5af22366",
+    "planes-propuestos/README.md": "80ecb42a1dfc37a26ed4542c970da0f9a10c99f1a582c9c61f132c9a4b80a4f3",
+    "planes-propuestos/PLAN_KAFKA.md": "acf64c176f1ec0f018de3888f0e1aaf7412d8a28e5b3aae8692e8f36285c1e87",
+    "planes-propuestos/RESUMEN.md": "a7c21e25e52684744de60f0fb4ef3d8d9ca0e1042bec7e8f00f49547bd16b274"
+  },
+  "codeConfigExcerpts": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/Dockerfile",
+      "sourceSHA256": "ad0c3714df82818bbaa7f544bee6929aa6a85f8891a565c35dbe3d1e40211919",
+      "startLine": 1,
+      "endLine": 8,
+      "selectedBytes": 240,
+      "selectedSHA256": "ad0c3714df82818bbaa7f544bee6929aa6a85f8891a565c35dbe3d1e40211919",
+      "text": "FROM node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205\nWORKDIR /app\nCOPY package.json package-lock.json ./\nRUN npm ci --omit=dev\nCOPY src ./src\nUSER node\nEXPOSE 3000\nCMD [\"node\", \"src/server.js\"]\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+      "sourceSHA256": "2aa567a3d5bc2b16e3c706f91418958a54a49ef2d65a610de832afbe6ab2a87c",
+      "startLine": 72,
+      "endLine": 116,
+      "selectedBytes": 1031,
+      "selectedSHA256": "134687b8b1772622a544fd66947c268b5ea8d21a2198171b537f5e35ecc4c8fc",
+      "text": "        - >-\n          fetch('http://127.0.0.1:3000/health')\n          .then(r => process.exit(r.ok ? 0 : 1))\n          .catch(() => process.exit(1))\n      interval: 10s\n      timeout: 12s\n      retries: 3\n      start_period: 20s\n    stop_grace_period: 15s\n\n  inventory-consumer: &consumer\n    build:\n      context: .\n    command: [node, src/consumer-server.js]\n    environment: &consumer-env\n      CONSUMER_ROLE: inventory\n      KAFKA_BROKER: kafka:9092\n      KAFKA_TOPIC: orders.events\n      PROCESSING_DELAY_MS: \"0\"\n    depends_on:\n      kafka:\n        condition: service_healthy\n    restart: on-failure\n    healthcheck:\n      test: [CMD, test, -f, /tmp/consumer-ready]\n      interval: 10s\n      timeout: 5s\n      retries: 6\n      start_period: 20s\n    stop_grace_period: 15s\n\n  billing-consumer:\n    <<: *consumer\n    environment:\n      <<: *consumer-env\n      CONSUMER_ROLE: billing\n\n  notification-consumer:\n    <<: *consumer\n    environment:\n      <<: *consumer-env\n      CONSUMER_ROLE: notification\n\nvolumes:\n  kafka-data:\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/server.js",
+      "sourceSHA256": "9fe8781551dccf3ce5b455937af46ddfec713e2af3915650f1e2456acf7bf0a7",
+      "startLine": 1,
+      "endLine": 19,
+      "selectedBytes": 969,
+      "selectedSHA256": "c26c40ca6cf1d11224a038795b9a9cad673b6d61a32054953507046e39c4d5e6",
+      "text": "import { Kafka, Partitioners } from 'kafkajs';\nimport { hostname } from 'node:os';\nimport { once } from 'node:events';\nimport { createApp } from './app.js';\n\nconst topic = process.env.KAFKA_TOPIC || 'orders.events';\nconst log = entry => console.log(JSON.stringify(entry));\nconst report = (phase, error) => log({ date: new Date().toISOString(),\n  service: 'orders-api', hostname: hostname(), topic, phase, error: error.message });\nconst kafka = new Kafka({ clientId: 'orders-api',\n  brokers: [process.env.KAFKA_BROKER || 'kafka:9092'],\n  connectionTimeout: 3000, requestTimeout: 10000, enforceRequestTimeout: true,\n  retry: { retries: 2, initialRetryTime: 200, maxRetryTime: 1000 } });\nconst admin = kafka.admin();\nconst producer = kafka.producer({ allowAutoTopicCreation: false,\n  createPartitioner: Partitioners.DefaultPartitioner });\nlet server, stopping = false;\nasync function checkBroker() {\n  const metadata = await admin.fetchTopicMetadata({ topics: [topic] });\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer-runtime.js",
+      "sourceSHA256": "51885d54c1e351e2277cc0e8ed37d553b4438d22b9877c7b411d9c2a0d17098d",
+      "startLine": 1,
+      "endLine": 12,
+      "selectedBytes": 516,
+      "selectedSHA256": "76fa2df9e538117a18efac8f2fc67e42899d26506d020306d7efa0da32bde3ae",
+      "text": "import { getConfig, createSimulatedAction, createMessageHandler } from './consumer.js';\n\nexport function readSettings(env) {\n  const role = env.CONSUMER_ROLE;\n  const config = getConfig(role);\n  const raw = env.PROCESSING_DELAY_MS ?? '0';\n  if (!/^\\d+$/.test(raw) || Number(raw) > 10000) {\n    throw new TypeError('PROCESSING_DELAY_MS must be an integer in 0..10000');\n  }\n  return { ...config, role, delayMs: Number(raw),\n    broker: env.KAFKA_BROKER || 'kafka:9092', topic: env.KAFKA_TOPIC || 'orders.events' };\n}\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    }
+  ],
+  "auditCommands": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-runtime/03-command.json",
+      "sha256": "637d7604a336321cb3cf6305408a684c2fa58b8b82e231679d42302faa5c96b6",
+      "argv": [
+        "docker",
+        "exec",
+        "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+        "node",
+        "-e",
+        "const fs=require('node:fs'),crypto=require('node:crypto');const files=[\"src/app.js\",\"src/consumer-runtime.js\",\"src/consumer-server.js\",\"src/consumer.js\",\"src/order-event.js\",\"src/server.js\",\"package.json\",\"package-lock.json\"];console.log(JSON.stringify(Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync('/app/'+f)).digest('hex')]))));"
+      ],
+      "cwd": "/home/juandav12/projects/8thSemester",
+      "startUTC": "2026-10-31T23:39:58.900Z",
+      "endUTC": "2026-10-31T23:39:59.173Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/01-command.json",
+      "sha256": "2c5161014d0b758c572f8dfcf657fd06c7da5f91020225a3ee050fc1c6960f75",
+      "argv": [
+        "docker",
+        "inspect",
+        "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+        "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696",
+        "5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b",
+        "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+        "5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958",
+        "8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b"
+      ],
+      "startUTC": "2026-10-31T23:46:38.211Z",
+      "endUTC": "2026-10-31T23:46:38.388Z",
+      "cwd": "/home/juandav12/projects/8thSemester",
+      "exitCode": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/02-command.json",
+      "sha256": "d88c23bca8ade1e76668610f358e679f3d0f7166bad6f1c966540afc66f78e61",
+      "argv": [
+        "docker",
+        "exec",
+        "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+        "node",
+        "-e",
+        "const fs=require('node:fs'),crypto=require('node:crypto'); const files=[\"src/server.js\",\"src/app.js\",\"src/order-event.js\"]; console.log(JSON.stringify(Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync('/app/'+f)).digest('hex')]))));"
+      ],
+      "startUTC": "2026-10-31T23:46:38.397Z",
+      "endUTC": "2026-10-31T23:46:38.672Z",
+      "cwd": "/home/juandav12/projects/8thSemester",
+      "exitCode": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/03-command.json",
+      "sha256": "b8c16f3cbd8e277fe8a8932886a480071fc68e1e77b7680943bfec93772d342e",
+      "argv": [
+        "docker",
+        "exec",
+        "5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b",
+        "node",
+        "-e",
+        "const fs=require('node:fs'),crypto=require('node:crypto'); const files=[\"src/consumer-server.js\",\"src/consumer-runtime.js\",\"src/consumer.js\"]; console.log(JSON.stringify(Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync('/app/'+f)).digest('hex')]))));"
+      ],
+      "startUTC": "2026-10-31T23:46:38.672Z",
+      "endUTC": "2026-10-31T23:46:38.910Z",
+      "cwd": "/home/juandav12/projects/8thSemester",
+      "exitCode": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/lectura-por-rol-01/04-command.json",
+      "sha256": "ab2ac1dc8ddbc518919cce7defb3d688c8469dfd25ed927c0391d5130e808249",
+      "argv": [
+        "docker",
+        "exec",
+        "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696",
+        "node",
+        "-e",
+        "const fs=require('node:fs'),crypto=require('node:crypto'); const files=[\"src/consumer-server.js\",\"src/consumer-runtime.js\",\"src/consumer.js\"]; console.log(JSON.stringify(Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync('/app/'+f)).digest('hex')]))));"
+      ],
+      "startUTC": "2026-10-31T23:46:38.910Z",
+      "endUTC": "2026-10-31T23:46:39.185Z",
+      "cwd": "/home/juandav12/projects/8thSemester",
+      "exitCode": 0,
+      "signal": null,
+      "error": null
+    }
+  ],
+  "excerpts": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/app.js",
+      "sourceSHA256": "9f7c91d9aa446c4bfdc00d45fa59e28b252b0a001c6f14ad51c043c79d87a833",
+      "startLine": 25,
+      "endLine": 30,
+      "selectedBytes": 392,
+      "selectedSHA256": "cbba5ab18fdda243ed1d4d3ca9b1877e160149c786800674e8f3215d662ab04b",
+      "text": "      correlationId: event.correlationId, topic };\n    try {\n      const metadata = await producer.send({ topic, acks: -1, timeout: 10000,\n        messages: [{ key: ids.orderId, value: JSON.stringify(event),\n          headers: { correlationId: ids.correlationId, eventId: ids.eventId } }] });\n      for (const { partition, baseOffset } of metadata) record({ ...ids, partition, baseOffset });\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer-runtime.js",
+      "sourceSHA256": "51885d54c1e351e2277cc0e8ed37d553b4438d22b9877c7b411d9c2a0d17098d",
+      "startLine": 70,
+      "endLine": 78,
+      "selectedBytes": 439,
+      "selectedSHA256": "6d8aeb6e00c997610b5b1bc2ff78edd36114b1edbb4db118277190eade543622",
+      "text": "      connecting = consumer.connect();\n      await connecting;\n      if (stopping) return;\n      await consumer.subscribe({ topic, fromBeginning: true });\n      if (stopping) return;\n      await consumer.run({ autoCommit: false,\n        eachMessage: createMessageHandler({ role, instanceId,\n          action: createSimulatedAction({ role, delayMs }), logger: log,\n          commitOffsets: offsets => consumer.commitOffsets(offsets) }) });\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer-server.js",
+      "sourceSHA256": "529997cd044c48a4a155a98ecd5b1a74185cc4900ae6dfc95b1cb8d588d442a6",
+      "startLine": 14,
+      "endLine": 19,
+      "selectedBytes": 372,
+      "selectedSHA256": "8baf46dbbad050073327bce45c7f1d6497f0025f56a959ccf8fb72e8c7542048",
+      "text": "  marker(false);\n  const settings = readSettings(process.env);\n  const kafka = new Kafka({ clientId: `${settings.service}-${instanceId}`,\n    brokers: [settings.broker], retry: { restartOnFailure: async () => false } });\n  const consumer = kafka.consumer({ groupId: settings.groupId });\n  const runtime = createRuntime({ ...settings, consumer, instanceId, logger, marker,\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/src/consumer.js",
+      "sourceSHA256": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7",
+      "startLine": 3,
+      "endLine": 10,
+      "selectedBytes": 470,
+      "selectedSHA256": "fcac7e1ac1366713fa8a94abe0190accc18345843412c98139307f2deecf7233",
+      "text": "export const ROLE_CONFIG = Object.freeze({\n  inventory: Object.freeze({ service: 'inventory-consumer', groupId: 'inventory-service-group',\n    action: 'simulate-stock-reservation' }),\n  billing: Object.freeze({ service: 'billing-consumer', groupId: 'billing-service-group',\n    action: 'simulate-invoice-charge' }),\n  notification: Object.freeze({ service: 'notification-consumer', groupId: 'notification-service-group',\n    action: 'simulate-notification-send' }),\n});\n",
+      "mode": "verbatim line selection; XML escaping only; numbered lines added by renderer"
+    }
+  ],
+  "traceSummary": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+      "sourceSHA256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:30.950Z",
+        "hostname": "3664fcf5dc8c",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "3664fcf5dc8c",
+        "phase": "received",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "3664fcf5dc8c",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "event": {
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-10-31T23:20:30.787Z",
+          "source": "orders-api",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "data": {
+            "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+            "customerName": "Pedro",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+      "sourceSHA256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:33.952Z",
+        "hostname": "3664fcf5dc8c",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "3664fcf5dc8c",
+        "phase": "processed",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "3664fcf5dc8c",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "result": {
+          "action": "simulate-stock-reservation",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt",
+      "sourceSHA256": "f2d01670a93c07b8ac884de33b5874deb5a3b25295a3817962029b0bd2b5dc63",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:33.962Z",
+        "hostname": "3664fcf5dc8c",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "3664fcf5dc8c",
+        "phase": "offset-committed",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "3664fcf5dc8c",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-billing-consumer-logs.txt",
+      "sourceSHA256": "45fd8f2e13a8b039e963391986ae6042afad1d893916f687610f359f1cdb4d87",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:30.999Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "received",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "event": {
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-10-31T23:20:30.787Z",
+          "source": "orders-api",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "data": {
+            "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+            "customerName": "Pedro",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-billing-consumer-logs.txt",
+      "sourceSHA256": "45fd8f2e13a8b039e963391986ae6042afad1d893916f687610f359f1cdb4d87",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:31.018Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "processed",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "result": {
+          "action": "simulate-invoice-charge",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-billing-consumer-logs.txt",
+      "sourceSHA256": "45fd8f2e13a8b039e963391986ae6042afad1d893916f687610f359f1cdb4d87",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:31.089Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "offset-committed",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-notification-consumer-logs.txt",
+      "sourceSHA256": "67a9ad4a593a0e5b7730f61bfb606a3021f143c92e563be1202a98817f90d4d4",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:30.996Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "received",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "event": {
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-10-31T23:20:30.787Z",
+          "source": "orders-api",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "data": {
+            "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+            "customerName": "Pedro",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-notification-consumer-logs.txt",
+      "sourceSHA256": "67a9ad4a593a0e5b7730f61bfb606a3021f143c92e563be1202a98817f90d4d4",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:31.014Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "processed",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "result": {
+          "action": "simulate-notification-send",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+        }
+      }
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp07/corrida-01/collected-notification-consumer-logs.txt",
+      "sourceSHA256": "67a9ad4a593a0e5b7730f61bfb606a3021f143c92e563be1202a98817f90d4d4",
+      "fields": [
+        "date",
+        "trace.service",
+        "phase",
+        "trace.groupId",
+        "trace.instanceId",
+        "trace.partition",
+        "trace.offset"
+      ],
+      "row": {
+        "date": "2026-10-31T23:20:31.084Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "offset-committed",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        }
+      }
+    }
+  ],
+  "transform": "renderer.cjs render(): literal source lines XML-escaped; parsed CP07 JSON rows summarized; common IDs factored into header; diagram is explanatory synthesis, not GUI",
+  "rendererSHA256": "27e7eff22971f4142b73d0b93a484dd9f4b701d22881995323522c624e77b957",
+  "readOnlyHelper": {
+    "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp07-responsive-01/verify.cjs",
+    "sha256": "bee75fb6c2db8788c1ee119ead883a80ff50be20c42e9f805f677389cd52d929",
+    "exportsUsed": [
+      "rows"
+    ],
+    "runnerImported": false
+  },
+  "guide": {
+    "source": "/tmp/kafka-guia-lectura/guia-completa.txt",
+    "sha256": "e9ee6f40bd5be1fb7521e2f7e5231fce57f6f5405586152ab6f4bd8fc8ba1ae0",
+    "cp08Lines": [
+      169,
+      171
+    ],
+    "formatLines": [
+      188,
+      211
+    ]
+  },
+  "integration": {
+    "caseDestination": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/casos/CP08",
+    "evidenceDestination": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/reactivas/cp08/auditoria-01",
+    "copyWholeEvidenceDirectory": true,
+    "internalMetadataUnchanged": true
+  },
+  "baseline": {
+    "originals": 501,
+    "plans": 4
+  },
+  "historicalJobs": [
+    {
+      "job": 9,
+      "status": "FAILED",
+      "exitCode": 1
+    },
+    {
+      "job": 10,
+      "status": "FAILED",
+      "exitCode": 1
+    },
+    {
+      "job": 11,
+      "status": "PASS",
+      "exitCode": 0
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "healthyBaselineSHA256": "4be6ea77abca72212e71996a28d4669af3dff36a7428cf3af11814be6b7212c6",
+  "rawFinalSHA256": "0aba55eddb72044e8f185e6880f2fa5d3b546515ee357a9567f99a21bdd56259",
+  "starts": 3,
+  "maxStarts": 3,
+  "stop": 0,
+  "post": 0,
+  "otherConsumerManualActions": 0,
+  "originalsBefore": {
+    "originals": 566,
+    "plans": 4
+  },
+  "originalsAfter": {
+    "originals": 566,
+    "plans": 4
+  },
+  "startedAtChanges": [
+    {
+      "service": "inventory-consumer",
+      "reason": "observed change; no manual start by this helper; restart policy unchanged"
+    },
+    {
+      "service": "notification-consumer",
+      "reason": "observed change; no manual start by this helper; restart policy unchanged"
+    },
+    {
+      "service": "billing-consumer",
+      "reason": "observed change; no manual start by this helper; restart policy unchanged"
+    },
+    {
+      "service": "orders-api",
+      "reason": "authorized start or preexisting running"
+    },
+    {
+      "service": "kafka-ui",
+      "reason": "authorized start or preexisting running"
+    },
+    {
+      "service": "kafka",
+      "reason": "authorized start or preexisting running"
+    }
+  ]
+}

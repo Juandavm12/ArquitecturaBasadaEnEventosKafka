@@ -1,0 +1,76 @@
+inspect-infra-before 0                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-kafka-ui-1",
+                        "kafka-ui",
+                        "5a51c1295022"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:4346a0af1450f52286e671a6b49f701d069d7306a802f7cf6743bd27ac4dbcd1",
+            "size": 1680,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
+ 
+build 0 12c8abc8306afaab8bea27bb2e6bb779eed 0.0s done
+#11 exporting attestation manifest sha256:4def17e9a36910cfbe5018ee8212ae851000102b94edf7e98035f09fc2cb4200 0.0s done
+#11 exporting manifest list sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9
+#11 exporting manifest list sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9 0.0s done
+#11 naming to docker.io/library/qa-taller-integracion-kafka-orders-api:latest done
+#11 unpacking to docker.io/library/qa-taller-integracion-kafka-orders-api:latest
+#11 unpacking to docker.io/library/qa-taller-integracion-kafka-orders-api:latest 0.9s done
+#11 DONE 1.8s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+  Image qa-taller-integracion-kafka-orders-api Building 
+ Image qa-taller-integracion-kafka-orders-api Built 
+
+start 0   Container qa-taller-integracion-kafka-orders-api-1 Creating 
+ Container qa-taller-integracion-kafka-orders-api-1 Created 
+ Container qa-taller-integracion-kafka-orders-api-1 Starting 
+ Container qa-taller-integracion-kafka-orders-api-1 Started 
+ Container qa-taller-integracion-kafka-orders-api-1 Waiting 
+ Container qa-taller-integracion-kafka-orders-api-1 Healthy 
+
+health 0 {"status":"ok"} 
+estado 0 036e056f978cac4e96e9c4d1cd6374c1b37469e65dfc1d3b22f4aa5ebdf278b,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9","LocalVolumes":"0","Mounts":"","Name":"qa-taller-integracion-kafka-orders-api-1","Names":"qa-taller-integracion-kafka-orders-api-1","Networks":"qa-taller-integracion-kafka_default","Ports":"127.0.0.1:3000-\u003e3000/tcp","Project":"qa-taller-integracion-kafka","Publishers":[{"URL":"127.0.0.1","TargetPort":3000,"PublishedPort":3000,"Protocol":"tcp"}],"RunningFor":"7 seconds ago","Service":"orders-api","Size":"0B","State":"running","Status":"Up 6 seconds (healthy)"}
+ 
+api-logs 0 orders-api-1  | 2026-10-27T12:15:05.931666268Z (node:1) TimeoutNegativeWarning: -1793103305931 is a negative number.
+orders-api-1  | 2026-10-27T12:15:05.931743980Z Timeout duration was set to 1.
+orders-api-1  | 2026-10-27T12:15:05.931748694Z (Use `node --trace-warnings ...` to show where the warning was created)
+orders-api-1  | 2026-10-27T12:15:05.970550681Z {"level":"ERROR","timestamp":"2026-10-27T12:15:05.968Z","logger":"kafkajs","message":"[Connection] Response CreateTopics(key: 19, version: 3)","broker":"kafka:9092","clientId":"orders-api","error":"Topic creation errors","correlationId":2,"size":68}
+ 
+inspect-infra-after 0                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-kafka-ui-1",
+                        "kafka-ui",
+                        "5a51c1295022"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:4346a0af1450f52286e671a6b49f701d069d7306a802f7cf6743bd27ac4dbcd1",
+            "size": 1680,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
+ 
+Traceback (most recent call last):
+  File "<stdin>", line 19, in <module>
+AssertionError

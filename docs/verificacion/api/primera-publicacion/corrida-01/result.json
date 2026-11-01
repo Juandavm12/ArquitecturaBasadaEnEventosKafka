@@ -1,0 +1,37 @@
+{
+  "status": "TECHNICALLY_VERIFIED_VISUAL_PENDING",
+  "timestamp": "2026-10-27T12:19:43.970361+00:00",
+  "http": {
+    "http_code": 202,
+    "time_total": 0.381403
+  },
+  "response": {
+    "status": "accepted",
+    "message": "Pedido recibido y evento OrderCreated publicado en Kafka",
+    "orderId": "ORD-f2035454-c380-4e9f-b682-b48ef72ca568"
+  },
+  "published": {
+    "date": "2026-10-27T12:19:38.456Z",
+    "service": "orders-api",
+    "hostname": "eff545def17b",
+    "orderId": "ORD-f2035454-c380-4e9f-b682-b48ef72ca568",
+    "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+    "correlationId": "cdb824fe-f331-4a6d-8c84-2dbb89ba6566",
+    "topic": "orders.events",
+    "partition": 1,
+    "baseOffset": "0"
+  },
+  "partition": 1,
+  "offset": "0",
+  "offsetsBefore": {
+    "0": 0,
+    "1": 0
+  },
+  "offsetsAfter": {
+    "0": 0,
+    "1": 1
+  },
+  "postedOrders": 1,
+  "consumersImplemented": 0,
+  "scope": "Publicación API y almacenamiento real en log nativo. No consumo ni CP formal cerrado; captura del evento pendiente."
+}

@@ -1,0 +1,29 @@
+{
+  "command": "node 'Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-documentacion-01/checker.cjs' --integrated",
+  "cwd": "/home/juandav12/projects/8thSemester",
+  "startUTC": "2026-11-01T00:08:42Z",
+  "endUTC": "2026-11-01T00:08:42Z",
+  "exitCode": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"mode\": \"integrated\",\n  \"verifiedUTC\": \"2026-11-01T00:08:42.987Z\",\n  \"oldHashesPreserved\": 497,\n  \"plansExact\": 4,\n  \"matrixRows\": 12,\n  \"matrixChangedRows\": 1,\n  \"runtimeComparisons\": 12,\n  \"snapshots\": 6,\n  \"consumerTraceRows\": 9,\n  \"copies\": 60,\n  \"virtualLinksChecked\": true,\n  \"newPOSTs\": 0,\n  \"elapsedMs\": 75\n}\n",
+  "stderr": "",
+  "checks": {
+    "status": "PASS",
+    "mode": "integrated",
+    "verifiedUTC": "2026-11-01T00:08:42.987Z",
+    "oldHashesPreserved": 497,
+    "plansExact": 4,
+    "matrixRows": 12,
+    "matrixChangedRows": 1,
+    "runtimeComparisons": 12,
+    "snapshots": 6,
+    "consumerTraceRows": 9,
+    "copies": 60,
+    "virtualLinksChecked": true,
+    "newPOSTs": 0,
+    "elapsedMs": 75
+  },
+  "nativeApproval": false,
+  "source": "Actual parent integrated-check run; not the unexecuted staging placeholder",
+  "reportSHA256": "0466a7db6cce388c6974c564a9b90e9c439459c06d1e7f166dc16608c06c08b4",
+  "finalLinks": 14
+}

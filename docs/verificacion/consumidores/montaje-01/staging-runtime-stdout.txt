@@ -1,0 +1,19 @@
+✔ settings validate role and bounded integer delay (3.156005ms)
+✔ listeners precede run; only group join marks ready; disconnect clears (3.837029ms)
+✔ crash even when run resolves clears marker and exits via cleanup (1.155652ms)
+✔ bootstrap errors propagate after fatal cleanup (1.526065ms)
+✔ shutdown is idempotent and waits for stop then disconnect (0.813162ms)
+✔ shutdown during connect waits, then disconnects without starting run (0.700717ms)
+✔ stop failure still disconnects, rejects and takes fatal exit path (0.468274ms)
+✔ deadline forces fatal exit while cleanup is pending, without real timers (0.942355ms)
+✔ subscribe bootstrap failure cleans up and rejects (1.202153ms)
+✔ run bootstrap failure cleans up and rejects (2.938125ms)
+✔ disconnect failure rejects and takes fatal exit path (3.479369ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 193.319793

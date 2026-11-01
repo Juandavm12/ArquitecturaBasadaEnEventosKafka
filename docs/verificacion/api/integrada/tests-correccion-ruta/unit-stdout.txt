@@ -1,0 +1,41 @@
+
+> taller-integracion-kafka@0.1.0 test
+> node --test test/*.test.js
+
+✔ 202 confirma publicación y conserva contrato, headers y metadata (108.711119ms)
+✔ inválido: no publica (20.025846ms)
+✔ JSON roto: no publica (8.287929ms)
+✔ grande: no publica (11.555927ms)
+✔ fallo broker: 503 sin accepted ni stack; conserva IDs internos (8.279197ms)
+✔ health true sin publicar (5.394559ms)
+✔ health false sin publicar (6.834686ms)
+✔ espera send iniciado antes de responder (52.471191ms)
+✔ construye el contrato OrderCreated del anexo 2 sin modificar la entrada (6.386529ms)
+✔ genera identificadores diferentes en pedidos consecutivos (2.061903ms)
+✔ calcula total y conserva únicamente campos del contrato (0.354252ms)
+✔ rechaza datos inválidos: null (0.912471ms)
+✔ rechaza datos inválidos: [] (0.251505ms)
+✔ rechaza datos inválidos: "texto" (0.225622ms)
+✔ rechaza datos inválidos: {} (0.260753ms)
+✔ rechaza datos inválidos: {"customerName":"","product":"Libro de arquitectura","quantity":1,"unitPrice":85000} (0.130106ms)
+✔ rechaza datos inválidos: {"customerName":"   ","product":"Libro de arquitectura","quantity":1,"unitPrice":85000} (0.242664ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":12,"quantity":1,"unitPrice":85000} (0.281925ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":0,"unitPrice":85000} (0.260112ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":-1,"unitPrice":85000} (0.341334ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1.5,"unitPrice":85000} (0.163676ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":"1","unitPrice":85000} (0.442242ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":9007199254740992,"unitPrice":85000} (0.434743ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":-1} (0.298009ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":"85000"} (0.154013ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":null} (0.192791ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":1,"unitPrice":null} (0.140205ms)
+✔ rechaza datos inválidos: {"customerName":"Pedro","product":"Libro de arquitectura","quantity":2,"unitPrice":1.7976931348623157e+308} (0.16116ms)
+✔ admite precio cero: no se impone una regla comercial ausente en la guía (0.302034ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 515.516878

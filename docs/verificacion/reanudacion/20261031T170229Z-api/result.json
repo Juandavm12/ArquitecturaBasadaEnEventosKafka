@@ -1,0 +1,11 @@
+{
+  "status": "VERIFIED_API_RESTART",
+  "sameApiContainerId": "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+  "sixServicesRunning": true,
+  "fiveHealthchecksHealthy": true,
+  "uiHealthcheckConfigured": false,
+  "apiHealthHTTP": 200,
+  "newOrdersPosted": 0,
+  "formalCasesClosed": 0,
+  "note": "Reanudaci\u00f3n de entorno, no prueba CP12. Capturas pendientes. UI running no prueba HTTP de interfaz."
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "Extractos de logs originales para trazabilidad de API, broker y consumidor",
+  "extraction": "JSON por línea; API orderId coincidente; dump completo 1–4; inventario trace coincidente, tres fases; envoltura visual 140 caracteres sin reescribir texto",
+  "images": [
+    {
+      "file": "docs/verificacion/api/primera-publicacion/corrida-01/capturas/01-order-created-kafka-ui.png",
+      "sha256": "ff4f33a3bb0a3114a0c0cd39b80df11f59518fce5c49873590b29b7a93cfadb8",
+      "bytes": 114273,
+      "registeredAtUTC": "2026-10-27T12:33:30.881692+00:00"
+    },
+    {
+      "file": "docs/verificacion/reanudacion/20261031T170229Z-api/capturas/03-inventory-consumer-procesamiento.png",
+      "sha256": "8d121166a16b057b5ace086a98594c07edef86892fbcb243c7c74fb0e086bf8e",
+      "bytes": 139607,
+      "registeredAtUTC": "2026-10-31T17:15:50.704078+00:00"
+    },
+    {
+      "file": "docs/verificacion/reanudacion/20261031T170229Z-api/capturas/04-billing-consumer-procesamiento.png",
+      "sha256": "e7c0576ff1ff643b481affbd0d57c8122a6818239d17083f5a914c41f0720fd7",
+      "bytes": 128179,
+      "registeredAtUTC": "2026-10-31T17:18:44.938136+00:00"
+    },
+    {
+      "file": "docs/verificacion/reanudacion/20261031T170229Z-api/capturas/05-notification-consumer-procesamiento.png",
+      "sha256": "d413d3debe9afd6228706d1f9fa76d85a897417ba0b0d9a97d3acd229350bb56",
+      "bytes": 132845,
+      "registeredAtUTC": "2026-10-31T17:21:39.983376+00:00"
+    }
+  ],
+  "selections": [
+    {
+      "file": "docs/verificacion/api/primera-publicacion/corrida-01/api-logs-stdout.txt",
+      "lines": [
+        5
+      ],
+      "role": "API: publicación",
+      "sourceSha256": "f01776bf4244171cfa71e672a6003363eef6c0afeab98686c42538aad1fd514c",
+      "selectedUtf8": "orders-api-1  | 2026-10-27T12:19:38.460064643Z {\"date\":\"2026-10-27T12:19:38.456Z\",\"service\":\"orders-api\",\"hostname\":\"eff545def17b\",\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\",\"eventId\":\"657b734d-55ed-4d10-ba08-5277b9eba6b2\",\"correlationId\":\"cdb824fe-f331-4a6d-8c84-2dbb89ba6566\",\"topic\":\"orders.events\",\"partition\":1,\"baseOffset\":\"0\"}\n",
+      "selectedSha256": "8ef3e8227c6de44155059535f3d1ceebcdad7ab1275c2cbd9aeab535b20e17cb"
+    },
+    {
+      "file": "docs/verificacion/api/primera-publicacion/corrida-01/broker-native-log-stdout.txt",
+      "lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "Broker: log persistente / dump nativo",
+      "sourceSha256": "78c05711ed9c2f8c2dc009b3e936308a6fb636fa6206ddbfdcb6e20ebabadf02",
+      "selectedUtf8": "Dumping /var/lib/kafka/data/orders.events-1/00000000000000000000.log\nLog starting offset: 0\nbaseOffset: 0 lastOffset: 0 count: 1 baseSequence: 0 lastSequence: 0 producerId: -1 producerEpoch: 0 partitionLeaderEpoch: 0 isTransactional: false isControl: false deleteHorizonMs: OptionalLong.empty position: 0 CreateTime: 1793103578167 size: 585 magic: 2 compresscodec: none crc: 2470201459 isvalid: true\n| offset: 0 CreateTime: 1793103578167 keySize: 40 valueSize: 379 sequence: 0 headerKeys: [correlationId,eventId] key: ORD-f2035454-c380-4e9f-b682-b48ef72ca568 payload: {\"eventId\":\"657b734d-55ed-4d10-ba08-5277b9eba6b2\",\"eventType\":\"OrderCreated\",\"eventVersion\":\"1.0\",\"occurredAt\":\"2026-10-27T12:19:38.136Z\",\"source\":\"orders-api\",\"correlationId\":\"cdb824fe-f331-4a6d-8c84-2dbb89ba6566\",\"data\":{\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\",\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1,\"unitPrice\":85000,\"total\":85000}}\n",
+      "selectedSha256": "78c05711ed9c2f8c2dc009b3e936308a6fb636fa6206ddbfdcb6e20ebabadf02"
+    },
+    {
+      "file": "docs/verificacion/consumidores/runtime-01/inventory-consumer-logs-stdout.txt",
+      "lines": [
+        9,
+        10,
+        11
+      ],
+      "role": "Consumidor: inventario; received → processed → offset-committed",
+      "sourceSha256": "2c96cbf4a416324cb870b62b733e4f8c9b9cdddda2bf58a6833046386cf31cf0",
+      "selectedUtf8": "inventory-consumer-1  | 2026-10-27T13:34:57.080859879Z {\"date\":\"2026-10-27T13:34:57.080Z\",\"hostname\":\"b8d3a808fc2c\",\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"b8d3a808fc2c\",\"phase\":\"received\",\"action\":\"simulate-stock-reservation\",\"trace\":{\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"b8d3a808fc2c\",\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\",\"eventId\":\"657b734d-55ed-4d10-ba08-5277b9eba6b2\",\"correlationId\":\"cdb824fe-f331-4a6d-8c84-2dbb89ba6566\",\"topic\":\"orders.events\",\"partition\":1,\"offset\":\"0\"},\"event\":{\"eventId\":\"657b734d-55ed-4d10-ba08-5277b9eba6b2\",\"eventType\":\"OrderCreated\",\"eventVersion\":\"1.0\",\"occurredAt\":\"2026-10-27T12:19:38.136Z\",\"source\":\"orders-api\",\"correlationId\":\"cdb824fe-f331-4a6d-8c84-2dbb89ba6566\",\"data\":{\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\",\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1,\"unitPrice\":85000,\"total\":85000}}}\ninventory-consumer-1  | 2026-10-27T13:34:57.081595236Z {\"date\":\"2026-10-27T13:34:57.080Z\",\"hostname\":\"b8d3a808fc2c\",\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"b8d3a808fc2c\",\"phase\":\"processed\",\"action\":\"simulate-stock-reservation\",\"trace\":{\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"b8d3a808fc2c\",\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\",\"eventId\":\"657b734d-55ed-4d10-ba08-5277b9eba6b2\",\"correlationId\":\"cdb824fe-f331-4a6d-8c84-2dbb89ba6566\",\"topic\":\"orders.events\",\"partition\":1,\"offset\":\"0\"},\"result\":{\"action\":\"simulate-stock-reservation\",\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\"}}\ninventory-consumer-1  | 2026-10-27T13:34:57.091603863Z {\"date\":\"2026-10-27T13:34:57.091Z\",\"hostname\":\"b8d3a808fc2c\",\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"b8d3a808fc2c\",\"phase\":\"offset-committed\",\"action\":\"simulate-stock-reservation\",\"trace\":{\"service\":\"inventory-consumer\",\"groupId\":\"inventory-service-group\",\"instanceId\":\"b8d3a808fc2c\",\"orderId\":\"ORD-f2035454-c380-4e9f-b682-b48ef72ca568\",\"eventId\":\"657b734d-55ed-4d10-ba08-5277b9eba6b2\",\"correlationId\":\"cdb824fe-f331-4a6d-8c84-2dbb89ba6566\",\"topic\":\"orders.events\",\"partition\":1,\"offset\":\"0\"}}\n",
+      "selectedSha256": "a207c2e3a8944da1414b7184d73de1ec24c3bd570a8b816fa52f93ebb290d1c2"
+    }
+  ],
+  "svgSha256": "41ae2073228ba22e8189b2eb753669764157c5de88d77cb796708b38d645cd7a"
+}

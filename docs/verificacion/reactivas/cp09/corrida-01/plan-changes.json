@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/PLAN_DE_TRABAJO.md",
+    "before": "965b1d1446d93b729bdbe8cbcebe9e6003f1422c61d4c1c1bd5b49af5af22366",
+    "after": "cf4dec97a6fee136a47c7c66e60c529adde3488222bbd995ceb8114e729d6d37",
+    "inOriginals": true
+  },
+  {
+    "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/README.md",
+    "before": "80ecb42a1dfc37a26ed4542c970da0f9a10c99f1a582c9c61f132c9a4b80a4f3",
+    "after": "5318bbedc4f449b094c0fd3d80115ccd45aa34cc713da600eb196ae95ef95a73",
+    "inOriginals": true
+  },
+  {
+    "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/PLAN_KAFKA.md",
+    "before": "acf64c176f1ec0f018de3888f0e1aaf7412d8a28e5b3aae8692e8f36285c1e87",
+    "after": "eab3cdfefe37c96062afadc5486dc4fb8191536341ea388bedc11ae590cc0530",
+    "inOriginals": true
+  },
+  {
+    "path": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/consumidores/RESUMEN.md",
+    "before": "a7c21e25e52684744de60f0fb4ef3d8d9ca0e1042bec7e8f00f49547bd16b274",
+    "after": "0edf1674ff4c27e3e25d125e0048223c050e182328bc04c9099da5c7e5bcc51a",
+    "inOriginals": true
+  }
+]

@@ -1,0 +1,62 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 812B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 279B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 101B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 36.31kB done
+#5 DONE 0.1s
+
+#6 [1/5] FROM docker.io/library/node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205
+#6 resolve docker.io/library/node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205 0.0s done
+#6 DONE 0.2s
+
+#7 [2/5] WORKDIR /app
+#7 DONE 0.0s
+
+#8 [3/5] COPY package.json package-lock.json ./
+#8 DONE 0.2s
+
+#9 [4/5] RUN npm ci --omit=dev
+#9 4.309 
+#9 4.309 added 66 packages, and audited 67 packages in 3s
+#9 4.309 
+#9 4.309 29 packages are looking for funding
+#9 4.310   run `npm fund` for details
+#9 4.314 
+#9 4.314 found 0 vulnerabilities
+#9 4.317 npm notice
+#9 4.317 npm notice New major version of npm available! 11.19.1 -> 12.2.1
+#9 4.317 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#9 4.317 npm notice To update run: npm install -g npm@12.2.1
+#9 4.317 npm notice
+#9 DONE 4.5s
+
+#10 [5/5] COPY src ./src
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.7s done
+#11 exporting manifest sha256:f6cf5f799fc86d2ed64b67d09a1eff4f57c99761d9dbfbde02583a028892a910 0.0s done
+#11 exporting config sha256:7cf34562600afa53bc8f7de08266312c8abc8306afaab8bea27bb2e6bb779eed 0.0s done
+#11 exporting attestation manifest sha256:4def17e9a36910cfbe5018ee8212ae851000102b94edf7e98035f09fc2cb4200 0.0s done
+#11 exporting manifest list sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9
+#11 exporting manifest list sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9 0.0s done
+#11 naming to docker.io/library/qa-taller-integracion-kafka-orders-api:latest done
+#11 unpacking to docker.io/library/qa-taller-integracion-kafka-orders-api:latest
+#11 unpacking to docker.io/library/qa-taller-integracion-kafka-orders-api:latest 0.9s done
+#11 DONE 1.8s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s

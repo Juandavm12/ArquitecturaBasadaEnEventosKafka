@@ -1,0 +1,1329 @@
+{
+  "createdUTC": "2026-11-01T04:01:29.546Z",
+  "scope": "CP09 documentary integration only; no new runtime",
+  "archiveRoot": "../../verificacion/reactivas/cp09/corrida-01",
+  "copies": [
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/after-explicit-start.json",
+      "destination": "runtime/after-explicit-start.json",
+      "bytes": 7370,
+      "sha256": "711508f0bfffd9d6f78945e31aa34df65f641681b638eb90f21b815d1f346272"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/before-restore.json",
+      "destination": "runtime/before-restore.json",
+      "bytes": 2884170,
+      "sha256": "a02016900cc47ef4849885949ac5ee1f6f9999ec556878657570439fc22855af"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/collected.json",
+      "destination": "runtime/collected.json",
+      "bytes": 2895911,
+      "sha256": "b1a4d2c11a949cdacbe788ace3fe0cc57477e24dbc42650640c026680dfff2f9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/collection-executed.json",
+      "destination": "runtime/collection-executed.json",
+      "bytes": 2225,
+      "sha256": "cd537e483e56416e8cd3406cbbbef0702786a59a182493dc33e02e4e2a7e2a3e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/groups-source-0005.cjs",
+      "destination": "runtime/groups-source-0005.cjs",
+      "bytes": 6625,
+      "sha256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/groups-source-0006.cjs",
+      "destination": "runtime/groups-source-0006.cjs",
+      "bytes": 6625,
+      "sha256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/groups-source-0016.cjs",
+      "destination": "runtime/groups-source-0016.cjs",
+      "bytes": 6625,
+      "sha256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/groups-source-0038.cjs",
+      "destination": "runtime/groups-source-0038.cjs",
+      "bytes": 6625,
+      "sha256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/post-attempt-once.json",
+      "destination": "runtime/post-attempt-once.json",
+      "bytes": 224,
+      "sha256": "d794bf3a87b3f744139ba0479a07e04f73bf806e5a4093aed83c4a76482577b7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0001-command.json",
+      "destination": "runtime/preflight-0001-command.json",
+      "bytes": 402,
+      "sha256": "e87319bc78147eca2fc5229650ae46375aec50421224ea569933b8e71d6c5442"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0001-stderr.txt",
+      "destination": "runtime/preflight-0001-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0001-stdout.txt",
+      "destination": "runtime/preflight-0001-stdout.txt",
+      "bytes": 7,
+      "sha256": "4871e93398a3049bd6d4db8e6f6e7d554bb4bcf7ee774b0a0630c24a9bad8a36"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0002-command.json",
+      "destination": "runtime/preflight-0002-command.json",
+      "bytes": 428,
+      "sha256": "d45bf943a7925298a9f058b07b9fa82695f0faca3fe74d165083745c0a0d1209"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0002-stderr.txt",
+      "destination": "runtime/preflight-0002-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0002-stdout.txt",
+      "destination": "runtime/preflight-0002-stdout.txt",
+      "bytes": 12417,
+      "sha256": "34d75c928214730f69aef0d309321e14817d24717c9a292ddf384249e0b2fbf0"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0003-command.json",
+      "destination": "runtime/preflight-0003-command.json",
+      "bytes": 488,
+      "sha256": "6144d8f3b7ab2a9005e9ce783e459d07c352909b91365695d0e94520247796d6"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0003-stderr.txt",
+      "destination": "runtime/preflight-0003-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0003-stdout.txt",
+      "destination": "runtime/preflight-0003-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0004-command.json",
+      "destination": "runtime/preflight-0004-command.json",
+      "bytes": 518,
+      "sha256": "939f95fec3d6fccefb47a5ec0625a16267ec1a9026d93744be3f3df1b766f471"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0004-stderr.txt",
+      "destination": "runtime/preflight-0004-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0004-stdout.txt",
+      "destination": "runtime/preflight-0004-stdout.txt",
+      "bytes": 65744,
+      "sha256": "aa2117ec07e124b237048b66b2b39151ddcb28b1ceb5eeec9852e49bc177e195"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0005-command.json",
+      "destination": "runtime/preflight-0005-command.json",
+      "bytes": 607,
+      "sha256": "f3a3fbcdae29ec101657fe2f550ab041ac45eb04c9eb8d7ef411f52e249a2ba5"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0005-stderr.txt",
+      "destination": "runtime/preflight-0005-stderr.txt",
+      "bytes": 176,
+      "sha256": "df68f74abef4f14b46ca90afd787515f1d66eddba8f9a2538a79f3e24ae67e30"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-0005-stdout.txt",
+      "destination": "runtime/preflight-0005-stdout.txt",
+      "bytes": 3427,
+      "sha256": "d77170201ad00d51ccb1d6d04cb72dec5f3d695356ec9e45a7d07ac5d204a057"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-complete.json",
+      "destination": "runtime/preflight-complete.json",
+      "bytes": 11957,
+      "sha256": "9a45e1a54b3d496bc62b1e78a2861735491745e9a234d479377ec2d47f8b4c10"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight.lock.json",
+      "destination": "runtime/preflight.lock.json",
+      "bytes": 42,
+      "sha256": "763345f43aa9f3cb67a4b55492ef447a5cd116de420e8ef28a67f30c966846e1"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/restore-attempt-once.json",
+      "destination": "runtime/restore-attempt-once.json",
+      "bytes": 142,
+      "sha256": "dd4abb1d94b49bc220a36444fa134654fc8e0446644b125b1d9593757211f603"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/restored-complete.json",
+      "destination": "runtime/restored-complete.json",
+      "bytes": 2896866,
+      "sha256": "6236c58b0f59b7d62c0bb7e97274075798ac3ef2e2ec649662b89e71bc919b82"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/result.json",
+      "destination": "runtime/result.json",
+      "bytes": 227,
+      "sha256": "8a65a1821c342943f10d11cbff97f3920685d11ee7afca86c8e7e3a9eee906d7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0001-command.json",
+      "destination": "runtime/run-0001-command.json",
+      "bytes": 487,
+      "sha256": "1e14fae4691c9f3822d7e56388a1a8af7f0befebb4fde1750284ca18212ba55d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0001-stderr.txt",
+      "destination": "runtime/run-0001-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0001-stdout.txt",
+      "destination": "runtime/run-0001-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0002-command.json",
+      "destination": "runtime/run-0002-command.json",
+      "bytes": 518,
+      "sha256": "d76f88c2faca51a29c336a9387a0be714159635e5a11a4822aaff9e6604514c7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0002-stderr.txt",
+      "destination": "runtime/run-0002-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0002-stdout.txt",
+      "destination": "runtime/run-0002-stdout.txt",
+      "bytes": 65741,
+      "sha256": "f1fa352a3362ae78ac37dcf15983dcea5433577a0c86df9955ea3e6b28a06569"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0003-command.json",
+      "destination": "runtime/run-0003-command.json",
+      "bytes": 492,
+      "sha256": "10b842395afaf84a8a42baa7cec452483f9d0cab23264a8c91024680eedfba02"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0003-stderr.txt",
+      "destination": "runtime/run-0003-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0003-stdout.txt",
+      "destination": "runtime/run-0003-stdout.txt",
+      "bytes": 120,
+      "sha256": "5a34c59942d6122060c67f961686503c5da6faa762d0f253b4b584d59af83a9d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0004-command.json",
+      "destination": "runtime/run-0004-command.json",
+      "bytes": 487,
+      "sha256": "a91c4bdfa893cb9a96b2d109426682392b6af381de178b1fe04eb6bd5f464a36"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0004-stderr.txt",
+      "destination": "runtime/run-0004-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0004-stdout.txt",
+      "destination": "runtime/run-0004-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0005-command.json",
+      "destination": "runtime/run-0005-command.json",
+      "bytes": 518,
+      "sha256": "1f70f991bbb4d4494c3c153b3880e6ff6fe14f9a7510199025eefcea8449703c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0005-stderr.txt",
+      "destination": "runtime/run-0005-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0005-stdout.txt",
+      "destination": "runtime/run-0005-stdout.txt",
+      "bytes": 65493,
+      "sha256": "9823fd89ee32db0bc26702d2d109d3b0f2bd970c2044bcfa4f34f17462d14640"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0006-command.json",
+      "destination": "runtime/run-0006-command.json",
+      "bytes": 607,
+      "sha256": "86b3b3fbbcacfc0fc51b7348d72d2b21b5966e2a90fda9148d500e3c56fe7bb9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0006-stderr.txt",
+      "destination": "runtime/run-0006-stderr.txt",
+      "bytes": 176,
+      "sha256": "35f4f341e6696200cde60199a453b8cdf236c4d8d302ae5f5f4308e2ca6b67f4"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0006-stdout.txt",
+      "destination": "runtime/run-0006-stdout.txt",
+      "bytes": 2866,
+      "sha256": "5bb108ec36c6953ecf2852d4096dfcb0bb44eae59bb43dd255b812a0c7ce001a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0007-command.json",
+      "destination": "runtime/run-0007-command.json",
+      "bytes": 790,
+      "sha256": "a85659c8fff70bfb934656eadc94e70e560ffd37699db867728423493c3f5a70"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0007-stderr.txt",
+      "destination": "runtime/run-0007-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0007-stdout.txt",
+      "destination": "runtime/run-0007-stdout.txt",
+      "bytes": 2577,
+      "sha256": "b7c32e0bb87c34558e29ab21e75da5527e39f0205c17d5496ef8f2e599b2b75c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0008-command.json",
+      "destination": "runtime/run-0008-command.json",
+      "bytes": 487,
+      "sha256": "04e44210048de3f55c68c2450aed259cfbd62587fc021256bde06f6c0ad6905d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0008-stderr.txt",
+      "destination": "runtime/run-0008-stderr.txt",
+      "bytes": 5179,
+      "sha256": "082c621fb938970119763d5c1a2f919f3ab016b462094f2aeb83f74ac7e9bd56"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0008-stdout.txt",
+      "destination": "runtime/run-0008-stdout.txt",
+      "bytes": 1778,
+      "sha256": "5086a1e3e433ba6bb11fe320f7a660e7095de17d061aff78a1c7179ce5a96ce9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0009-command.json",
+      "destination": "runtime/run-0009-command.json",
+      "bytes": 487,
+      "sha256": "cf5b5262d4b745d006c89b070c1a372a020cf0935679583f86390b82973b6da9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0009-stderr.txt",
+      "destination": "runtime/run-0009-stderr.txt",
+      "bytes": 712718,
+      "sha256": "f5b8c4912858163a5f81833d78f5f18be9ca3c14e30249ff1c520086b20a81d8"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0009-stdout.txt",
+      "destination": "runtime/run-0009-stdout.txt",
+      "bytes": 126170,
+      "sha256": "6b6334e7ae89ce726296e1c4f608490ec84ca393900ca34452a621cbf6c583e4"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0010-command.json",
+      "destination": "runtime/run-0010-command.json",
+      "bytes": 486,
+      "sha256": "1f086bed55d17f0158d55c129f2042f9b4d5abf1fced7c3c27212d97173dc0db"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0010-stderr.txt",
+      "destination": "runtime/run-0010-stderr.txt",
+      "bytes": 742563,
+      "sha256": "95a36a7def3f7aa13f92f55bba4a46d708cd6d94b67a8909cc944a7c86c65119"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0010-stdout.txt",
+      "destination": "runtime/run-0010-stdout.txt",
+      "bytes": 138633,
+      "sha256": "39927da19e1c4b2254abba3caf2f4cae561c70d4f66e8fa2889ad9a87d43eedf"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0011-command.json",
+      "destination": "runtime/run-0011-command.json",
+      "bytes": 486,
+      "sha256": "48279b9475c91e3a19ade30d2bfa7b8d1bceafcb296af032e33e73114f0e9ab7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0011-stderr.txt",
+      "destination": "runtime/run-0011-stderr.txt",
+      "bytes": 754574,
+      "sha256": "82455a2b80b64502cf497a5f84e36fc036d71263b4e9e74f0711144bccafd44b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0011-stdout.txt",
+      "destination": "runtime/run-0011-stdout.txt",
+      "bytes": 142436,
+      "sha256": "cccd27cdae484cf4e7e760f102e246fdb8e884d2eeb40f43aa32a9fee93e1398"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0012-command.json",
+      "destination": "runtime/run-0012-command.json",
+      "bytes": 487,
+      "sha256": "aadb4e3e72f96213e6fbd5332baedc29296c7290d4c102758557f08e86e8a853"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0012-stderr.txt",
+      "destination": "runtime/run-0012-stderr.txt",
+      "bytes": 5179,
+      "sha256": "082c621fb938970119763d5c1a2f919f3ab016b462094f2aeb83f74ac7e9bd56"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0012-stdout.txt",
+      "destination": "runtime/run-0012-stdout.txt",
+      "bytes": 1778,
+      "sha256": "5086a1e3e433ba6bb11fe320f7a660e7095de17d061aff78a1c7179ce5a96ce9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0013-command.json",
+      "destination": "runtime/run-0013-command.json",
+      "bytes": 487,
+      "sha256": "628b2ff0ff11d40f413af8992cb5de8a91004ca5600d00957bf580b7d76d6b88"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0013-stderr.txt",
+      "destination": "runtime/run-0013-stderr.txt",
+      "bytes": 712718,
+      "sha256": "f5b8c4912858163a5f81833d78f5f18be9ca3c14e30249ff1c520086b20a81d8"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0013-stdout.txt",
+      "destination": "runtime/run-0013-stdout.txt",
+      "bytes": 126170,
+      "sha256": "6b6334e7ae89ce726296e1c4f608490ec84ca393900ca34452a621cbf6c583e4"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0014-command.json",
+      "destination": "runtime/run-0014-command.json",
+      "bytes": 487,
+      "sha256": "9b7f0f3fd590492296e767b7460ffcf06372e208985ecc0e3c2d68956ef1107f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0014-stderr.txt",
+      "destination": "runtime/run-0014-stderr.txt",
+      "bytes": 742563,
+      "sha256": "95a36a7def3f7aa13f92f55bba4a46d708cd6d94b67a8909cc944a7c86c65119"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0014-stdout.txt",
+      "destination": "runtime/run-0014-stdout.txt",
+      "bytes": 139188,
+      "sha256": "df0bdebfb6b7cd9b22257ed29fa0d04a26ce74972ea8a94986737bf9f3a0826a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0015-command.json",
+      "destination": "runtime/run-0015-command.json",
+      "bytes": 487,
+      "sha256": "ac6d73e5cec9c7a9930f13ee7b7f986ad84d0ae8a493bf16f68702104e19d187"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0015-stderr.txt",
+      "destination": "runtime/run-0015-stderr.txt",
+      "bytes": 754574,
+      "sha256": "82455a2b80b64502cf497a5f84e36fc036d71263b4e9e74f0711144bccafd44b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0015-stdout.txt",
+      "destination": "runtime/run-0015-stdout.txt",
+      "bytes": 143014,
+      "sha256": "7145f1662a2a3307c1cfb133c41d24141d7f195af9071e8783984adc1fbd8349"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0016-command.json",
+      "destination": "runtime/run-0016-command.json",
+      "bytes": 607,
+      "sha256": "2ed42b83739f3bcc1d6947aa171d86962edcaa21215240c8cf73eab8049ffdef"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0016-stderr.txt",
+      "destination": "runtime/run-0016-stderr.txt",
+      "bytes": 176,
+      "sha256": "295331c6260bed5949826caba199a16abb0907340a0db4e5eab7a6fca4c02dad"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0016-stdout.txt",
+      "destination": "runtime/run-0016-stdout.txt",
+      "bytes": 2866,
+      "sha256": "9e0d469b46e62795899365498295855a2903382e4a32e613e073553eedb7be22"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0017-command.json",
+      "destination": "runtime/run-0017-command.json",
+      "bytes": 488,
+      "sha256": "daa84eb4a259e410fb70c65e1f506101842edd1f0e455aaf8b473ae94bdb3045"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0017-stderr.txt",
+      "destination": "runtime/run-0017-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0017-stdout.txt",
+      "destination": "runtime/run-0017-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0018-command.json",
+      "destination": "runtime/run-0018-command.json",
+      "bytes": 518,
+      "sha256": "b671017781e5bf51fe06319e544d5831556d525364e424047b86a0aafb3453ca"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0018-stderr.txt",
+      "destination": "runtime/run-0018-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0018-stdout.txt",
+      "destination": "runtime/run-0018-stdout.txt",
+      "bytes": 65580,
+      "sha256": "ff3fb2191a912871afd54e45688a4a990e0280c664985e0e951a44bceb244134"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0019-command.json",
+      "destination": "runtime/run-0019-command.json",
+      "bytes": 488,
+      "sha256": "9bedd13af811d1fcbe154ae8b05fef46a3a2eb5334745737bb6aab307ceab4f3"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0019-stderr.txt",
+      "destination": "runtime/run-0019-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0019-stdout.txt",
+      "destination": "runtime/run-0019-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0020-command.json",
+      "destination": "runtime/run-0020-command.json",
+      "bytes": 518,
+      "sha256": "3fb98131fc8233c3f9e126b6f690e07d7792b153aa663c7bb37e4fe69b1b8df4"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0020-stderr.txt",
+      "destination": "runtime/run-0020-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0020-stdout.txt",
+      "destination": "runtime/run-0020-stdout.txt",
+      "bytes": 65580,
+      "sha256": "b63d9ae36007ce5a867beaac9db45052f5bba868b2a163c6d7e5cecbea29ce52"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0021-command.json",
+      "destination": "runtime/run-0021-command.json",
+      "bytes": 486,
+      "sha256": "c2049c1c97a2e74024835f81c4304fcd6f5d989d31c6f8f71467d23d677d4317"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0021-stderr.txt",
+      "destination": "runtime/run-0021-stderr.txt",
+      "bytes": 5179,
+      "sha256": "082c621fb938970119763d5c1a2f919f3ab016b462094f2aeb83f74ac7e9bd56"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0021-stdout.txt",
+      "destination": "runtime/run-0021-stdout.txt",
+      "bytes": 1778,
+      "sha256": "5086a1e3e433ba6bb11fe320f7a660e7095de17d061aff78a1c7179ce5a96ce9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0022-command.json",
+      "destination": "runtime/run-0022-command.json",
+      "bytes": 487,
+      "sha256": "6011b919a016a9f3346c6ac98e0875b6dcc5780a72b0042da5829023b9c39c78"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0022-stderr.txt",
+      "destination": "runtime/run-0022-stderr.txt",
+      "bytes": 712718,
+      "sha256": "f5b8c4912858163a5f81833d78f5f18be9ca3c14e30249ff1c520086b20a81d8"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0022-stdout.txt",
+      "destination": "runtime/run-0022-stdout.txt",
+      "bytes": 126170,
+      "sha256": "6b6334e7ae89ce726296e1c4f608490ec84ca393900ca34452a621cbf6c583e4"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0023-command.json",
+      "destination": "runtime/run-0023-command.json",
+      "bytes": 487,
+      "sha256": "251bd279736bfd6fc4365ab1d1829e9674dcbff065e56c622dd28621d983669f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0023-stderr.txt",
+      "destination": "runtime/run-0023-stderr.txt",
+      "bytes": 742563,
+      "sha256": "95a36a7def3f7aa13f92f55bba4a46d708cd6d94b67a8909cc944a7c86c65119"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0023-stdout.txt",
+      "destination": "runtime/run-0023-stdout.txt",
+      "bytes": 139188,
+      "sha256": "df0bdebfb6b7cd9b22257ed29fa0d04a26ce74972ea8a94986737bf9f3a0826a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0024-command.json",
+      "destination": "runtime/run-0024-command.json",
+      "bytes": 487,
+      "sha256": "d4a3fcc9e4e9f4fd723804e18622e224d25ee4d52929cadf1bfcf1e310c98e40"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0024-stderr.txt",
+      "destination": "runtime/run-0024-stderr.txt",
+      "bytes": 754574,
+      "sha256": "82455a2b80b64502cf497a5f84e36fc036d71263b4e9e74f0711144bccafd44b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0024-stdout.txt",
+      "destination": "runtime/run-0024-stdout.txt",
+      "bytes": 143014,
+      "sha256": "7145f1662a2a3307c1cfb133c41d24141d7f195af9071e8783984adc1fbd8349"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0025-command.json",
+      "destination": "runtime/run-0025-command.json",
+      "bytes": 468,
+      "sha256": "887cb3204796f2df08c0bc229e8b102a5179765471507040dba96d2b532c5f4e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0025-stderr.txt",
+      "destination": "runtime/run-0025-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0025-stdout.txt",
+      "destination": "runtime/run-0025-stdout.txt",
+      "bytes": 65,
+      "sha256": "2b2e770de3a4a539c009509d0d2eaeb6eb836ddef7b1a76c9f5d089223732721"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0026-command.json",
+      "destination": "runtime/run-0026-command.json",
+      "bytes": 488,
+      "sha256": "8dedf00717c86f313bba6fc4c43ad9726fb70ecd3c06a3cfaa001d3a93336bb7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0026-stderr.txt",
+      "destination": "runtime/run-0026-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0026-stdout.txt",
+      "destination": "runtime/run-0026-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0027-command.json",
+      "destination": "runtime/run-0027-command.json",
+      "bytes": 518,
+      "sha256": "33dea951603b702a866c4e751248413fd67e8dbe086a84b23f6fa4eb025d76d3"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0027-stderr.txt",
+      "destination": "runtime/run-0027-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0027-stdout.txt",
+      "destination": "runtime/run-0027-stdout.txt",
+      "bytes": 65743,
+      "sha256": "1e6ec8e6946efd207f0cd4ad81f99912e61cab31dc601d3ed42696640ef22c32"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0028-command.json",
+      "destination": "runtime/run-0028-command.json",
+      "bytes": 488,
+      "sha256": "48ef6d93894e4b883c6370e92ab8687fbb967bc482f7d0159579cde6a983e66e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0028-stderr.txt",
+      "destination": "runtime/run-0028-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0028-stdout.txt",
+      "destination": "runtime/run-0028-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0029-command.json",
+      "destination": "runtime/run-0029-command.json",
+      "bytes": 518,
+      "sha256": "7b2e515a8e75c52f404fcce6ec9bac631621a41d85d69cc3c20fc5b1fc8bba43"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0029-stderr.txt",
+      "destination": "runtime/run-0029-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0029-stdout.txt",
+      "destination": "runtime/run-0029-stdout.txt",
+      "bytes": 65743,
+      "sha256": "ebd93a7d10c0542823d2ac85f6ed1f2db32d258e08e05245b8b603565321cbf9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0030-command.json",
+      "destination": "runtime/run-0030-command.json",
+      "bytes": 487,
+      "sha256": "58e5973e8605101c0d306bc6e0f518f442ba51d754dfb1241becf0245ceabbde"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0030-stderr.txt",
+      "destination": "runtime/run-0030-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0030-stdout.txt",
+      "destination": "runtime/run-0030-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0031-command.json",
+      "destination": "runtime/run-0031-command.json",
+      "bytes": 518,
+      "sha256": "b0785939f1a7212bc43e64c66373a386006d18e356591c412acc58d49b536f37"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0031-stderr.txt",
+      "destination": "runtime/run-0031-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0031-stdout.txt",
+      "destination": "runtime/run-0031-stdout.txt",
+      "bytes": 65743,
+      "sha256": "ebd93a7d10c0542823d2ac85f6ed1f2db32d258e08e05245b8b603565321cbf9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0032-command.json",
+      "destination": "runtime/run-0032-command.json",
+      "bytes": 487,
+      "sha256": "f76a0b627ff7978228bf2993501fc13d2d7ab4b9fbd4f43e3432e08cc24f10c2"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0032-stderr.txt",
+      "destination": "runtime/run-0032-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0032-stdout.txt",
+      "destination": "runtime/run-0032-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0033-command.json",
+      "destination": "runtime/run-0033-command.json",
+      "bytes": 518,
+      "sha256": "710ba06ad621ca5f11cd72005b298cb15965ebe503f4314c1a97b28a2cd671db"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0033-stderr.txt",
+      "destination": "runtime/run-0033-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0033-stdout.txt",
+      "destination": "runtime/run-0033-stdout.txt",
+      "bytes": 65743,
+      "sha256": "035353032719145c119c3f35028d4211f98eda5a1c8c1154d8b693a0ef5512d1"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0034-command.json",
+      "destination": "runtime/run-0034-command.json",
+      "bytes": 487,
+      "sha256": "8d9736a1f7782f4df4174652aa26c131951b0d430240f93880f2b242e5290ebb"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0034-stderr.txt",
+      "destination": "runtime/run-0034-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0034-stdout.txt",
+      "destination": "runtime/run-0034-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0035-command.json",
+      "destination": "runtime/run-0035-command.json",
+      "bytes": 518,
+      "sha256": "45e94cac864a25933dc5a81232b32dbbc9c8bc387e91a67d634579e05e69713c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0035-stderr.txt",
+      "destination": "runtime/run-0035-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0035-stdout.txt",
+      "destination": "runtime/run-0035-stdout.txt",
+      "bytes": 65742,
+      "sha256": "c425595e467384ebc6929e4fcc37f0f36829b322cadafa9b17557641256220c3"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0036-command.json",
+      "destination": "runtime/run-0036-command.json",
+      "bytes": 488,
+      "sha256": "05b23ce735b9b9e5ca80eeb63a4e6b694d45623ccbfc50df0ca53be702297731"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0036-stderr.txt",
+      "destination": "runtime/run-0036-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0036-stdout.txt",
+      "destination": "runtime/run-0036-stdout.txt",
+      "bytes": 78,
+      "sha256": "186eadba1425f135b794240ee044a7116abce2775fc8a9c8ded1bd1c00a1c748"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0037-command.json",
+      "destination": "runtime/run-0037-command.json",
+      "bytes": 518,
+      "sha256": "7765aa7f024b73ca9d3917c5a74a7478548a36f4e4b7436cd8a7a24fb590decf"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0037-stderr.txt",
+      "destination": "runtime/run-0037-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0037-stdout.txt",
+      "destination": "runtime/run-0037-stdout.txt",
+      "bytes": 65740,
+      "sha256": "a0e929356f1a040b4ec586c685210046c6664288a89f70b8a4b8b3097d4a2c5f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0038-command.json",
+      "destination": "runtime/run-0038-command.json",
+      "bytes": 607,
+      "sha256": "8fd3dc9a14febc62fb10968941b6aa25affe86d9b4fac9bffcc0424ebd5a407d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0038-stderr.txt",
+      "destination": "runtime/run-0038-stderr.txt",
+      "bytes": 176,
+      "sha256": "f2226eeda535f8b7cef3a51e2488fbb98007285f523846434090fa759e11843f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0038-stdout.txt",
+      "destination": "runtime/run-0038-stdout.txt",
+      "bytes": 3427,
+      "sha256": "446a634c58f1d0b8d3055334d6414af7cc97ae00fa1bba80b605212f191ad718"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0039-command.json",
+      "destination": "runtime/run-0039-command.json",
+      "bytes": 486,
+      "sha256": "f607953cf68882f5209b2774def12da1db815a8bba359ee30d222ef1a07cad69"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0039-stderr.txt",
+      "destination": "runtime/run-0039-stderr.txt",
+      "bytes": 5179,
+      "sha256": "082c621fb938970119763d5c1a2f919f3ab016b462094f2aeb83f74ac7e9bd56"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0039-stdout.txt",
+      "destination": "runtime/run-0039-stdout.txt",
+      "bytes": 1778,
+      "sha256": "5086a1e3e433ba6bb11fe320f7a660e7095de17d061aff78a1c7179ce5a96ce9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0040-command.json",
+      "destination": "runtime/run-0040-command.json",
+      "bytes": 487,
+      "sha256": "58aff0c8229da15971c921a76707f1d8671f5e3b40162f792d0fd0860b93a832"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0040-stderr.txt",
+      "destination": "runtime/run-0040-stderr.txt",
+      "bytes": 712984,
+      "sha256": "94135ca8237ac0e058ece93e20ab8c7605e0a2529734808608e82d41c011ab5d"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0040-stdout.txt",
+      "destination": "runtime/run-0040-stdout.txt",
+      "bytes": 129244,
+      "sha256": "006600d2593b7117152f3500525be16aeb13f0243ed756d26ee83decb348538e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0041-command.json",
+      "destination": "runtime/run-0041-command.json",
+      "bytes": 487,
+      "sha256": "7e88d26fc6532e6e67a29b44e122fdb9f725eec7e11b3ba4d4a62de4b6ac79e9"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0041-stderr.txt",
+      "destination": "runtime/run-0041-stderr.txt",
+      "bytes": 742563,
+      "sha256": "95a36a7def3f7aa13f92f55bba4a46d708cd6d94b67a8909cc944a7c86c65119"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0041-stdout.txt",
+      "destination": "runtime/run-0041-stdout.txt",
+      "bytes": 139188,
+      "sha256": "df0bdebfb6b7cd9b22257ed29fa0d04a26ce74972ea8a94986737bf9f3a0826a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0042-command.json",
+      "destination": "runtime/run-0042-command.json",
+      "bytes": 487,
+      "sha256": "4d60132360a3e6a2e24f1ff761581833f2c1fff58a652c7aec8258699ef7c0df"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0042-stderr.txt",
+      "destination": "runtime/run-0042-stderr.txt",
+      "bytes": 754574,
+      "sha256": "82455a2b80b64502cf497a5f84e36fc036d71263b4e9e74f0711144bccafd44b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0042-stdout.txt",
+      "destination": "runtime/run-0042-stdout.txt",
+      "bytes": 143014,
+      "sha256": "7145f1662a2a3307c1cfb133c41d24141d7f195af9071e8783984adc1fbd8349"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run.lock",
+      "destination": "runtime/run.lock",
+      "bytes": 37,
+      "sha256": "11b9514fb2e0a3d4f80dc3f90ad3d526f57d03a3530d95e0ce1950877605ef69"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/sources-before.json",
+      "destination": "runtime/sources-before.json",
+      "bytes": 232260,
+      "sha256": "37f84cfb9ac517896a9e769ebc504a7aa097e5156a5686977155991cd219051f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/stop-attempt-once.json",
+      "destination": "runtime/stop-attempt-once.json",
+      "bytes": 118,
+      "sha256": "e8f5a54620e16b1047b19600eb12de9f7698daaea1713c4f0903ab14ec24278a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/window-before-http.json",
+      "destination": "runtime/window-before-http.json",
+      "bytes": 7990,
+      "sha256": "f9fc2fbced84cd47135f8bfc9c0b853ce14d2bbc0d94aae60f895d4c700aac32"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-preflight-real-01/command.json",
+      "destination": "control/cp09-preflight-real-01/command.json",
+      "bytes": 585,
+      "sha256": "d698196c26c5ef409d17236ad79a0273fb1caf2a58a4c292345afeae262e71fa"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-preflight-real-01/stderr.txt",
+      "destination": "control/cp09-preflight-real-01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-preflight-real-01/stdout.txt",
+      "destination": "control/cp09-preflight-real-01/stdout.txt",
+      "bytes": 28,
+      "sha256": "4bdc47833c12fbc770d635e1edc8779e6f47bb235eb2e8ffb67df14e9f1a09a7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-preflight-real-01/validation-parent.json",
+      "destination": "control/cp09-preflight-real-01/validation-parent.json",
+      "bytes": 1735,
+      "sha256": "3ef0dd16ac1e5a124d39e35bfee89ad28714c33c013f076fd02c912271b22b86"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/command.json",
+      "destination": "control/cp09-run-real-01/command.json",
+      "bytes": 528,
+      "sha256": "ddeb260648fd228da8b117b6a97464362cdce19199f08fdc13cd2750c02c3c3c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/stderr.txt",
+      "destination": "control/cp09-run-real-01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/stdout.txt",
+      "destination": "control/cp09-run-real-01/stdout.txt",
+      "bytes": 206,
+      "sha256": "eab5fa0bf2bc1390a4aa3deca6b71f8342d63ad75db04e77a342cc2270f121d0"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+      "destination": "control/cp09-run-real-01/validation-parent.json",
+      "bytes": 25593,
+      "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runner.cjs",
+      "destination": "sources/cp09-resilient-01/runner.cjs",
+      "bytes": 13479,
+      "sha256": "a17a6f95ecdab32c51d3ac750a5bc779b3b6927a0275d0f8cf618111480a4039"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/flow.cjs",
+      "destination": "sources/cp09-resilient-01/flow.cjs",
+      "bytes": 751,
+      "sha256": "51ab3f1909c75a728ba5a7ec7ec6c199c704b1eed9d7d0c0dc8a1f3ab4a329f3"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/verify.cjs",
+      "destination": "sources/cp09-resilient-01/verify.cjs",
+      "bytes": 10835,
+      "sha256": "e862187887301c8d0a187f63d5a841c0a44b420127ed09f8a4c17003274903d1"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/preflight-adapter.cjs",
+      "destination": "sources/cp09-resilient-01/preflight-adapter.cjs",
+      "bytes": 12927,
+      "sha256": "b56abd7a80de32fe8cb311680fd5ce14fd744c782a0ca1e77f41a29b8088a21b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/CP09.postman_collection.json",
+      "destination": "sources/cp09-resilient-01/CP09.postman_collection.json",
+      "bytes": 2225,
+      "sha256": "cd537e483e56416e8cd3406cbbbef0702786a59a182493dc33e02e4e2a7e2a3e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/summary.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/summary.json",
+      "bytes": 11291,
+      "sha256": "b0b323dbb2cc5a119d601b2c094e245d39217592c139b87550c430501f2a44b7"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/admission.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/admission.json",
+      "bytes": 828,
+      "sha256": "f834cc5266c700d05a836f3e5c7e022f6510693dd9703aed21e6cf5967981503"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/validation-parent.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/validation-parent.json",
+      "bytes": 1788,
+      "sha256": "2c85bbaea9f033d567b67a42a731df1b8b87fd275c6a2cd1bfe59d325dc6cc0a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/response.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/response.json",
+      "bytes": 9906,
+      "sha256": "a7842b10c02612010765e1f2a98792a09df758f20013ce16f561cc9ef92dd09e"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/probe-executed.cjs",
+      "destination": "control/grupos-kafkajs-01/observacion-04/probe-executed.cjs",
+      "bytes": 6625,
+      "sha256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/01-command.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/01-command.json",
+      "bytes": 72123,
+      "sha256": "dae3f8e745c4294bb49e8b9d32d231189e23189291462be3453ef88e2742429b"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/01-stdout.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-04/01-stdout.txt",
+      "bytes": 65744,
+      "sha256": "6c0a56deb12641282dccb7e0ae03d861d84573e0217a0bfef52ad279e838dd1a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/01-stderr.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-04/01-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/02-command.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/02-command.json",
+      "bytes": 4651,
+      "sha256": "265e1c838b0d855fd39257923fce1caa558d852f25122498af2a0b8dd8973e1a"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/02-stdout.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-04/02-stdout.txt",
+      "bytes": 3427,
+      "sha256": "d77170201ad00d51ccb1d6d04cb72dec5f3d695356ec9e45a7d07ac5d204a057"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/02-stderr.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-04/02-stderr.txt",
+      "bytes": 176,
+      "sha256": "3e94330c70f8646d3a18b9240e617919e0b28198212739a3217a29cc482196aa"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/03-command.json",
+      "destination": "control/grupos-kafkajs-01/observacion-04/03-command.json",
+      "bytes": 72213,
+      "sha256": "5747fbd70fe5e84b9fb07a668fedf0d19e8701eedf3a892fe81fa39ddd7f93c8"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/03-stdout.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-04/03-stdout.txt",
+      "bytes": 65830,
+      "sha256": "42c34ee49c983a661edf4708b8efb28f7341e986807229348b6b709d7ca22aef"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-04/03-stderr.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-04/03-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/observacion-01/01-stdout.txt",
+      "destination": "control/grupos-kafkajs-01/observacion-01/01-stdout.txt",
+      "bytes": 65739,
+      "sha256": "82f5ce9bc2620a9dd48feba429bea2479ccf70f33d064e43d862796743cf35d5"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/probe03.cjs",
+      "destination": "control/grupos-kafkajs-01/probe03.cjs",
+      "bytes": 6625,
+      "sha256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/reanudacion-03/runtime/result.json",
+      "destination": "control/reanudacion-03/runtime/result.json",
+      "bytes": 1189,
+      "sha256": "856fc5b8349c7bc42d0bf34b53a1e1eb2af31db17bae0b4cbd396f845848687f"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/reanudacion-03/runtime/after-inspect.json",
+      "destination": "control/reanudacion-03/runtime/after-inspect.json",
+      "bytes": 66710,
+      "sha256": "0aba55eddb72044e8f185e6880f2fa5d3b546515ee357a9567f99a21bdd56259"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/reanudacion-03/runtime/healthy-baseline.json",
+      "destination": "control/reanudacion-03/runtime/healthy-baseline.json",
+      "bytes": 7369,
+      "sha256": "4be6ea77abca72212e71996a28d4669af3dff36a7428cf3af11814be6b7212c6"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/baseline-inicial.json",
+      "destination": "control/baseline-inicial.json",
+      "bytes": 232405,
+      "sha256": "284ec95f77cd98038273483746c77824f028f2d7536306f383fc01c6e106e7f5"
+    },
+    {
+      "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/grupos-kafkajs-01/probe03.test.cjs",
+      "destination": "sources/control/grupos-kafkajs-01/probe03.test.cjs",
+      "bytes": 7161,
+      "sha256": "897f75b2e5fc5332347081cdca8dc1f241a6500796c80b069776cdf3684ac65d"
+    }
+  ],
+  "captures": [
+    {
+      "file": "01-evidencia-cli-json.svg",
+      "sha256": "81d95eaa89df14fd06bd34e5977171c7483cb15c546c5b9fa49241dff38024a9",
+      "kind": "static documentary CLI/JSON representation; not GUI",
+      "provenance": [
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/result.json",
+          "copy": "runtime/result.json",
+          "sha256": "8a65a1821c342943f10d11cbff97f3920685d11ee7afca86c8e7e3a9eee906d7",
+          "pointer": "/orderId",
+          "label": "orderId",
+          "value": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/publication/eventId",
+          "label": "eventId",
+          "value": "ea235a82-c146-4b67-a30c-e2264dd257a9"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/publication/correlationId",
+          "label": "correlationId",
+          "value": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/publication/date",
+          "label": "Publicación UTC",
+          "value": "2026-11-01T03:54:42.023Z"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/window-before-http.json",
+          "copy": "runtime/window-before-http.json",
+          "sha256": "f9fc2fbced84cd47135f8bfc9c0b853ce14d2bbc0d94aae60f895d4c700aac32",
+          "pointer": "/snapshot/inventory-consumer/state",
+          "label": "Inventario antes de HTTP",
+          "value": "exited"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/collected.json",
+          "copy": "runtime/collected.json",
+          "sha256": "b1a4d2c11a949cdacbe788ace3fe0cc57477e24dbc42650640c026680dfff2f9",
+          "pointer": "/after/inventory-consumer/state",
+          "label": "Inventario tras trazas pares",
+          "value": "exited"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/collected.json",
+          "copy": "runtime/collected.json",
+          "sha256": "b1a4d2c11a949cdacbe788ace3fe0cc57477e24dbc42650640c026680dfff2f9",
+          "pointer": "/groups/inventory/1",
+          "label": "Inventario partición 1 detenido",
+          "value": {
+            "partition": 1,
+            "current": 2,
+            "end": 3,
+            "lag": 1,
+            "member": "-"
+          }
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/restored-complete.json",
+          "copy": "runtime/restored-complete.json",
+          "sha256": "6236c58b0f59b7d62c0bb7e97274075798ac3ef2e2ec649662b89e71bc919b82",
+          "pointer": "/snapshot/inventory-consumer/health",
+          "label": "Inventario restaurado",
+          "value": "healthy"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/preflight-complete.json",
+          "copy": "runtime/preflight-complete.json",
+          "sha256": "9a45e1a54b3d496bc62b1e78a2861735491745e9a234d479377ec2d47f8b4c10",
+          "pointer": "/snapshot/inventory-consumer/restartCount",
+          "label": "RestartCount inicial",
+          "value": 67
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/after-explicit-start.json",
+          "copy": "runtime/after-explicit-start.json",
+          "sha256": "711508f0bfffd9d6f78945e31aa34df65f641681b638eb90f21b815d1f346272",
+          "pointer": "/inventory-consumer/restartCount",
+          "label": "RestartCount tras start explícito",
+          "value": 0
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/restored-complete.json",
+          "copy": "runtime/restored-complete.json",
+          "sha256": "6236c58b0f59b7d62c0bb7e97274075798ac3ef2e2ec649662b89e71bc919b82",
+          "pointer": "/snapshot/inventory-consumer/restartCount",
+          "label": "RestartCount final",
+          "value": 0
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/run-0007-stdout.txt",
+          "copy": "runtime/run-0007-stdout.txt",
+          "sha256": "b7c32e0bb87c34558e29ab21e75da5527e39f0205c17d5496ef8f2e599b2b75c",
+          "startLine": 14,
+          "endLine": 14,
+          "label": "HTTP CLI",
+          "value": "  POST http://localhost:3000/orders [202 Accepted, 362 B, 788 ms]"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/traces/billing/0/phase",
+          "label": "billing fase 1",
+          "value": "received"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/traces/billing/1/phase",
+          "label": "billing fase 2",
+          "value": "processed"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/traces/billing/2/phase",
+          "label": "billing fase 3",
+          "value": "offset-committed"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/traces/notification/0/phase",
+          "label": "notification fase 1",
+          "value": "received"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/traces/notification/1/phase",
+          "label": "notification fase 2",
+          "value": "processed"
+        },
+        {
+          "source": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01/cp09-run-real-01/validation-parent.json",
+          "copy": "control/cp09-run-real-01/validation-parent.json",
+          "sha256": "39b13d0b0119cd8930027856a32a05d47da20938369ef10399eb5c54884c1639",
+          "pointer": "/traces/notification/2/phase",
+          "label": "notification fase 3",
+          "value": "offset-committed"
+        }
+      ]
+    }
+  ],
+  "reportSHA256": "fd1e507876481c2bede5fe2d2762c0af12173eb75aeef3c555d63ca835c4aabd",
+  "planChanges": "../../verificacion/reactivas/cp09/corrida-01/plan-changes.json",
+  "empiricalParentValidation": "../../verificacion/reactivas/cp09/corrida-01/control/cp09-run-real-01/validation-parent.json",
+  "visualRasterChecked": false
+}

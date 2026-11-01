@@ -1,0 +1,487 @@
+kafka-1  | 2026-10-27T11:23:22.107426719Z ===> User
+kafka-1  | 2026-10-27T11:23:22.136225244Z uid=1000(appuser) gid=1000(appuser) groups=1000(appuser)
+kafka-1  | 2026-10-27T11:23:22.136933840Z ===> Setting default values of environment variables if not already set.
+kafka-1  | 2026-10-27T11:23:22.137333884Z ===> Configuring ...
+kafka-1  | 2026-10-27T11:23:22.137496738Z Running in KRaft mode...
+kafka-1  | 2026-10-27T11:23:22.138383820Z ===> Launching ... 
+kafka-1  | 2026-10-27T11:23:22.142330156Z ===> Using provided cluster id MkU3OEVBNTcwNTJENDM2Qk ...
+kafka-1  | 2026-10-27T11:23:25.611865219Z [0.002s][warning][cds] Unable to read generic CDS file map header from shared archive
+kafka-1  | 2026-10-27T11:23:27.121497250Z [2026-10-27 11:23:27,120] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+kafka-1  | 2026-10-27T11:23:27.855652188Z [2026-10-27 11:23:27,854] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+kafka-1  | 2026-10-27T11:23:28.602819409Z [2026-10-27 11:23:28,602] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+kafka-1  | 2026-10-27T11:23:28.625483507Z [2026-10-27 11:23:28,619] INFO [ControllerServer id=1] Starting controller (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:30.305707669Z [2026-10-27 11:23:30,302] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+kafka-1  | 2026-10-27T11:23:30.477746834Z [2026-10-27 11:23:30,467] INFO [SocketServer listenerType=CONTROLLER, nodeId=1] Created data-plane acceptor and processors for endpoint : ListenerName(CONTROLLER) (kafka.network.SocketServer)
+kafka-1  | 2026-10-27T11:23:30.485322737Z [2026-10-27 11:23:30,485] INFO CONTROLLER: resolved wildcard host to 8719d42973a5 (org.apache.kafka.metadata.ListenerInfo)
+kafka-1  | 2026-10-27T11:23:30.510886162Z [2026-10-27 11:23:30,509] INFO authorizerStart completed for endpoint CONTROLLER. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+kafka-1  | 2026-10-27T11:23:30.524544361Z [2026-10-27 11:23:30,520] INFO [SharedServer id=1] Starting SharedServer (kafka.server.SharedServer)
+kafka-1  | 2026-10-27T11:23:30.813039533Z [2026-10-27 11:23:30,812] INFO [LogLoader partition=__cluster_metadata-0, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-1  | 2026-10-27T11:23:30.814327569Z [2026-10-27 11:23:30,813] INFO [LogLoader partition=__cluster_metadata-0, dir=/var/lib/kafka/data] Reloading from producer snapshot and rebuilding producer state from offset 0 (kafka.log.UnifiedLog$)
+kafka-1  | 2026-10-27T11:23:30.814503447Z [2026-10-27 11:23:30,814] INFO [LogLoader partition=__cluster_metadata-0, dir=/var/lib/kafka/data] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 0 (kafka.log.UnifiedLog$)
+kafka-1  | 2026-10-27T11:23:30.888268270Z [2026-10-27 11:23:30,887] INFO Initialized snapshots with IDs SortedSet() from /var/lib/kafka/data/__cluster_metadata-0 (kafka.raft.KafkaMetadataLog$)
+kafka-1  | 2026-10-27T11:23:30.929789664Z [2026-10-27 11:23:30,929] INFO [raft-expiration-reaper]: Starting (kafka.raft.TimingWheelExpirationService$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:30.971358218Z [2026-10-27 11:23:30,970] INFO [RaftManager id=1] Reading KRaft snapshot and log as part of the initialization (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:30.980208727Z [2026-10-27 11:23:30,979] INFO [RaftManager id=1] Starting voters are VoterSet(voters={1=VoterNode(voterKey=ReplicaKey(id=1, directoryId=Optional.empty), listeners=Endpoints(endpoints={ListenerName(CONTROLLER)=kafka/172.24.0.2:9093}), supportedKRaftVersion=SupportedVersionRange[min_version:0, max_version:0])}) (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:30.984745993Z [2026-10-27 11:23:30,984] INFO [RaftManager id=1] Starting request manager with static voters: [kafka:9093 (id: 1 rack: null)] (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:31.001860329Z [2026-10-27 11:23:31,001] INFO [RaftManager id=1] Attempting durable transition to Unattached(epoch=0, votedKey=null, voters=[1], electionTimeoutMs=1734, highWatermark=Optional.empty) from null (org.apache.kafka.raft.QuorumState)
+kafka-1  | 2026-10-27T11:23:31.428787601Z [2026-10-27 11:23:31,428] INFO [RaftManager id=1] Completed transition to Unattached(epoch=0, votedKey=null, voters=[1], electionTimeoutMs=1734, highWatermark=Optional.empty) from null (org.apache.kafka.raft.QuorumState)
+kafka-1  | 2026-10-27T11:23:31.444379623Z [2026-10-27 11:23:31,444] INFO [RaftManager id=1] Attempting durable transition to CandidateState(localId=1, localDirectoryId=kiqD4lS4s9B-AhbUja94Qg,epoch=1, retries=1, voteStates={1=org.apache.kafka.raft.CandidateState$VoterState@60859f5a}, highWatermark=Optional.empty, electionTimeoutMs=1967) from Unattached(epoch=0, votedKey=null, voters=[1], electionTimeoutMs=1734, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+kafka-1  | 2026-10-27T11:23:31.454588301Z [2026-10-27 11:23:31,454] INFO [RaftManager id=1] Completed transition to CandidateState(localId=1, localDirectoryId=kiqD4lS4s9B-AhbUja94Qg,epoch=1, retries=1, voteStates={1=org.apache.kafka.raft.CandidateState$VoterState@60859f5a}, highWatermark=Optional.empty, electionTimeoutMs=1967) from Unattached(epoch=0, votedKey=null, voters=[1], electionTimeoutMs=1734, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+kafka-1  | 2026-10-27T11:23:31.461753082Z [2026-10-27 11:23:31,461] INFO [RaftManager id=1] Attempting durable transition to Leader(localReplicaKey=ReplicaKey(id=1, directoryId=Optional[kiqD4lS4s9B-AhbUja94Qg]), epoch=1, epochStartOffset=0, highWatermark=Optional.empty, voterStates={1=ReplicaState(replicaKey=ReplicaKey(id=1, directoryId=Optional.empty), endOffset=Optional.empty, lastFetchTimestamp=-1, lastCaughtUpTimestamp=-1, hasAcknowledgedLeader=true)}) from CandidateState(localId=1, localDirectoryId=kiqD4lS4s9B-AhbUja94Qg,epoch=1, retries=1, voteStates={1=org.apache.kafka.raft.CandidateState$VoterState@60859f5a}, highWatermark=Optional.empty, electionTimeoutMs=1967) (org.apache.kafka.raft.QuorumState)
+kafka-1  | 2026-10-27T11:23:31.480275221Z [2026-10-27 11:23:31,479] INFO [RaftManager id=1] Completed transition to Leader(localReplicaKey=ReplicaKey(id=1, directoryId=Optional[kiqD4lS4s9B-AhbUja94Qg]), epoch=1, epochStartOffset=0, highWatermark=Optional.empty, voterStates={1=ReplicaState(replicaKey=ReplicaKey(id=1, directoryId=Optional.empty), endOffset=Optional.empty, lastFetchTimestamp=-1, lastCaughtUpTimestamp=-1, hasAcknowledgedLeader=true)}) from CandidateState(localId=1, localDirectoryId=kiqD4lS4s9B-AhbUja94Qg,epoch=1, retries=1, voteStates={1=org.apache.kafka.raft.CandidateState$VoterState@60859f5a}, highWatermark=Optional.empty, electionTimeoutMs=1967) (org.apache.kafka.raft.QuorumState)
+kafka-1  | 2026-10-27T11:23:31.630512844Z [2026-10-27 11:23:31,630] INFO [kafka-1-raft-outbound-request-thread]: Starting (org.apache.kafka.raft.KafkaNetworkChannel$SendThread)
+kafka-1  | 2026-10-27T11:23:31.633291891Z [2026-10-27 11:23:31,632] INFO [kafka-1-raft-io-thread]: Starting (org.apache.kafka.raft.KafkaRaftClientDriver)
+kafka-1  | 2026-10-27T11:23:31.718709593Z [2026-10-27 11:23:31,718] INFO [MetadataLoader id=1] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:31.725567732Z [2026-10-27 11:23:31,724] INFO [ControllerServer id=1] Waiting for controller quorum voters future (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:31.725602988Z [2026-10-27 11:23:31,725] INFO [ControllerServer id=1] Finished waiting for controller quorum voters future (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:31.741700983Z [2026-10-27 11:23:31,739] INFO [RaftManager id=1] High watermark set to LogOffsetMetadata(offset=1, metadata=Optional[(segmentBaseOffset=0,relativePositionInSegment=91)]) for the first time for epoch 1 based on indexOfHw 0 and voters [ReplicaState(replicaKey=ReplicaKey(id=1, directoryId=Optional.empty), endOffset=Optional[LogOffsetMetadata(offset=1, metadata=Optional[(segmentBaseOffset=0,relativePositionInSegment=91)])], lastFetchTimestamp=-1, lastCaughtUpTimestamp=-1, hasAcknowledgedLeader=true)] (org.apache.kafka.raft.LeaderState)
+kafka-1  | 2026-10-27T11:23:31.792718999Z [2026-10-27 11:23:31,786] INFO [RaftManager id=1] Registered the listener org.apache.kafka.image.loader.MetadataLoader@646285075 (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:31.796227833Z [2026-10-27 11:23:31,795] INFO [RaftManager id=1] Setting the next offset of org.apache.kafka.image.loader.MetadataLoader@646285075 to 0 since there are no snapshots (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:31.801214906Z [2026-10-27 11:23:31,800] INFO [MetadataLoader id=1] maybePublishMetadata(LOG_DELTA): The loader is still catching up because we have not loaded a controller record as of offset 0 and high water mark is 1 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:31.819724450Z [2026-10-27 11:23:31,819] INFO [MetadataLoader id=1] initializeNewPublishers: The loader finished catching up to the current high water mark of 1 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:31.834246575Z [2026-10-27 11:23:31,833] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing SnapshotGenerator with a snapshot at offset 0 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:31.862981467Z [2026-10-27 11:23:31,860] INFO [RaftManager id=1] Registered the listener org.apache.kafka.controller.QuorumController$QuorumMetaLogListener@74046644 (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:31.863039647Z [2026-10-27 11:23:31,860] INFO [RaftManager id=1] Setting the next offset of org.apache.kafka.controller.QuorumController$QuorumMetaLogListener@74046644 to 0 since there are no snapshots (org.apache.kafka.raft.KafkaRaftClient)
+kafka-1  | 2026-10-27T11:23:31.888315712Z [2026-10-27 11:23:31,885] INFO [controller-1-ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:31.892846692Z [2026-10-27 11:23:31,890] INFO [controller-1-ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:31.895544706Z [2026-10-27 11:23:31,895] INFO [controller-1-ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:31.911180739Z [2026-10-27 11:23:31,910] INFO [controller-1-ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:31.978697356Z [2026-10-27 11:23:31,977] INFO [ExpirationReaper-1-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.025224552Z [2026-10-27 11:23:32,024] INFO [ControllerServer id=1] Waiting for the controller metadata publishers to be installed (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:32.026232086Z [2026-10-27 11:23:32,025] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing KRaftMetadataCachePublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.026571495Z [2026-10-27 11:23:32,026] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing FeaturesPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.027352050Z [2026-10-27 11:23:32,027] INFO [ControllerServer id=1] Loaded new metadata Features(metadataVersion=3.9-IV0, finalizedFeatures={metadata.version=21}, finalizedFeaturesEpoch=4). (org.apache.kafka.metadata.publisher.FeaturesPublisher)
+kafka-1  | 2026-10-27T11:23:32.027772463Z [2026-10-27 11:23:32,027] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing ControllerRegistrationsPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.027922860Z [2026-10-27 11:23:32,027] INFO [ControllerServer id=1] Finished waiting for the controller metadata publishers to be installed (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:32.028119413Z [2026-10-27 11:23:32,027] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing ControllerRegistrationManager with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.028981777Z [2026-10-27 11:23:32,028] INFO [SocketServer listenerType=CONTROLLER, nodeId=1] Enabling request processing. (kafka.network.SocketServer)
+kafka-1  | 2026-10-27T11:23:32.029320344Z [2026-10-27 11:23:32,029] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing DynamicConfigPublisher controller id=1 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.030866222Z [2026-10-27 11:23:32,030] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing DynamicClientQuotaPublisher controller id=1 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.033192810Z [2026-10-27 11:23:32,032] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing ScramPublisher controller id=1 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.036092337Z [2026-10-27 11:23:32,035] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing DelegationTokenPublisher controller id=1 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.042787633Z [2026-10-27 11:23:32,041] INFO Awaiting socket connections on 0.0.0.0:9093. (kafka.network.DataPlaneAcceptor)
+kafka-1  | 2026-10-27T11:23:32.049183401Z [2026-10-27 11:23:32,047] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing ControllerMetadataMetricsPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.051209754Z [2026-10-27 11:23:32,049] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing AclPublisher controller id=1 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:32.099338121Z [2026-10-27 11:23:32,097] INFO [controller-1-to-controller-registration-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.099374484Z [2026-10-27 11:23:32,097] INFO [ControllerServer id=1] Waiting for all of the authorizer futures to be completed (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:32.099377604Z [2026-10-27 11:23:32,098] INFO [ControllerServer id=1] Finished waiting for all of the authorizer futures to be completed (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:32.099380088Z [2026-10-27 11:23:32,098] INFO [ControllerServer id=1] Waiting for all of the SocketServer Acceptors to be started (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:32.099382463Z [2026-10-27 11:23:32,098] INFO [ControllerServer id=1] Finished waiting for all of the SocketServer Acceptors to be started (kafka.server.ControllerServer)
+kafka-1  | 2026-10-27T11:23:32.099385118Z [2026-10-27 11:23:32,098] INFO [ControllerRegistrationManager id=1 incarnation=xu701i2fRsKqJOYlEPKn6A] initialized channel manager. (kafka.server.ControllerRegistrationManager)
+kafka-1  | 2026-10-27T11:23:32.099387580Z [2026-10-27 11:23:32,098] INFO [controller-1-to-controller-registration-channel-manager]: Recorded new KRaft controller, from now on will use node kafka:9093 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.101031880Z [2026-10-27 11:23:32,099] INFO [BrokerServer id=1] Transition from SHUTDOWN to STARTING (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:32.103978113Z [2026-10-27 11:23:32,103] INFO [BrokerServer id=1] Starting broker (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:32.104694366Z [2026-10-27 11:23:32,104] INFO [ControllerRegistrationManager id=1 incarnation=xu701i2fRsKqJOYlEPKn6A] sendControllerRegistration: attempting to send ControllerRegistrationRequestData(controllerId=1, incarnationId=xu701i2fRsKqJOYlEPKn6A, zkMigrationReady=false, listeners=[Listener(name='CONTROLLER', host='8719d42973a5', port=9093, securityProtocol=0)], features=[Feature(name='kraft.version', minSupportedVersion=0, maxSupportedVersion=1), Feature(name='metadata.version', minSupportedVersion=1, maxSupportedVersion=21)]) (kafka.server.ControllerRegistrationManager)
+kafka-1  | 2026-10-27T11:23:32.118605240Z [2026-10-27 11:23:32,118] INFO [broker-1-ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:32.121846483Z [2026-10-27 11:23:32,121] INFO [broker-1-ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:32.123780176Z [2026-10-27 11:23:32,123] INFO [broker-1-ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:32.124332505Z [2026-10-27 11:23:32,124] INFO [broker-1-ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-1  | 2026-10-27T11:23:32.235240290Z [2026-10-27 11:23:32,234] INFO [BrokerServer id=1] Waiting for controller quorum voters future (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:32.235486746Z [2026-10-27 11:23:32,235] INFO [BrokerServer id=1] Finished waiting for controller quorum voters future (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:32.244111937Z [2026-10-27 11:23:32,243] INFO [broker-1-to-controller-forwarding-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.245612646Z [2026-10-27 11:23:32,245] INFO [broker-1-to-controller-forwarding-channel-manager]: Recorded new KRaft controller, from now on will use node kafka:9093 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.294185407Z [2026-10-27 11:23:32,292] INFO [client-metrics-reaper]: Starting (org.apache.kafka.server.util.timer.SystemTimerReaper$Reaper)
+kafka-1  | 2026-10-27T11:23:32.467616016Z [2026-10-27 11:23:32,465] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+kafka-1  | 2026-10-27T11:23:32.491980090Z [2026-10-27 11:23:32,488] INFO [SocketServer listenerType=BROKER, nodeId=1] Created data-plane acceptor and processors for endpoint : ListenerName(INTERNAL) (kafka.network.SocketServer)
+kafka-1  | 2026-10-27T11:23:32.492024749Z [2026-10-27 11:23:32,489] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+kafka-1  | 2026-10-27T11:23:32.520708744Z [2026-10-27 11:23:32,520] INFO [SocketServer listenerType=BROKER, nodeId=1] Created data-plane acceptor and processors for endpoint : ListenerName(EXTERNAL) (kafka.network.SocketServer)
+kafka-1  | 2026-10-27T11:23:32.546403724Z [2026-10-27 11:23:32,545] INFO [broker-1-to-controller-alter-partition-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.546559149Z [2026-10-27 11:23:32,545] INFO [broker-1-to-controller-alter-partition-channel-manager]: Recorded new KRaft controller, from now on will use node kafka:9093 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.586189715Z [2026-10-27 11:23:32,585] INFO [broker-1-to-controller-directory-assignments-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.593106158Z [2026-10-27 11:23:32,587] INFO [broker-1-to-controller-directory-assignments-channel-manager]: Recorded new KRaft controller, from now on will use node kafka:9093 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:32.667926117Z [2026-10-27 11:23:32,667] INFO [ControllerRegistrationManager id=1 incarnation=xu701i2fRsKqJOYlEPKn6A] Our registration has been persisted to the metadata log. (kafka.server.ControllerRegistrationManager)
+kafka-1  | 2026-10-27T11:23:32.680049504Z [2026-10-27 11:23:32,679] INFO [ControllerRegistrationManager id=1 incarnation=xu701i2fRsKqJOYlEPKn6A] RegistrationResponseHandler: controller acknowledged ControllerRegistrationRequest. (kafka.server.ControllerRegistrationManager)
+kafka-1  | 2026-10-27T11:23:32.716571359Z [2026-10-27 11:23:32,712] INFO [ExpirationReaper-1-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.726363566Z [2026-10-27 11:23:32,725] INFO [ExpirationReaper-1-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.734394536Z [2026-10-27 11:23:32,734] INFO [ExpirationReaper-1-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.742639815Z [2026-10-27 11:23:32,740] INFO [ExpirationReaper-1-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.747499374Z [2026-10-27 11:23:32,747] INFO [ExpirationReaper-1-RemoteFetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.846025925Z [2026-10-27 11:23:32,845] INFO [ExpirationReaper-1-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:32.853739927Z [2026-10-27 11:23:32,851] INFO [ExpirationReaper-1-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:33.004371004Z [2026-10-27 11:23:33,003] INFO Unable to read the broker epoch in /var/lib/kafka/data. (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:33.008292394Z [2026-10-27 11:23:33,006] INFO [broker-1-to-controller-heartbeat-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:33.008333579Z [2026-10-27 11:23:33,007] INFO [broker-1-to-controller-heartbeat-channel-manager]: Recorded new KRaft controller, from now on will use node kafka:9093 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-1  | 2026-10-27T11:23:33.013537475Z [2026-10-27 11:23:33,013] INFO [BrokerLifecycleManager id=1] Incarnation htFRflvXT12fiXQ9i1b1wQ of broker 1 in cluster MkU3OEVBNTcwNTJENDM2Qk is now STARTING. (kafka.server.BrokerLifecycleManager)
+kafka-1  | 2026-10-27T11:23:33.152478412Z [2026-10-27 11:23:33,150] INFO [ExpirationReaper-1-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-1  | 2026-10-27T11:23:33.170224279Z [2026-10-27 11:23:33,169] INFO [BrokerLifecycleManager id=1] Successfully registered broker 1 with broker epoch 8 (kafka.server.BrokerLifecycleManager)
+kafka-1  | 2026-10-27T11:23:33.232530933Z [2026-10-27 11:23:33,232] INFO [BrokerLifecycleManager id=1] The broker has caught up. Transitioning from STARTING to RECOVERY. (kafka.server.BrokerLifecycleManager)
+kafka-1  | 2026-10-27T11:23:33.284086100Z [2026-10-27 11:23:33,282] INFO [BrokerLifecycleManager id=1] The broker is in RECOVERY. (kafka.server.BrokerLifecycleManager)
+kafka-1  | 2026-10-27T11:23:33.304707499Z [2026-10-27 11:23:33,304] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing MetadataVersionPublisher(id=1) with a snapshot at offset 8 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:33.315162215Z [2026-10-27 11:23:33,309] INFO [BrokerServer id=1] Waiting for the broker metadata publishers to be installed (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:33.315505685Z [2026-10-27 11:23:33,310] INFO [BrokerServer id=1] Finished waiting for the broker metadata publishers to be installed (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:33.315754106Z [2026-10-27 11:23:33,315] INFO [BrokerServer id=1] Waiting for the controller to acknowledge that we are caught up (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:33.316522359Z [2026-10-27 11:23:33,316] INFO [BrokerServer id=1] Finished waiting for the controller to acknowledge that we are caught up (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:33.316952506Z [2026-10-27 11:23:33,316] INFO [BrokerServer id=1] Waiting for the initial broker metadata update to be published (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:33.317227421Z [2026-10-27 11:23:33,317] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing BrokerMetadataPublisher with a snapshot at offset 8 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:33.318351708Z [2026-10-27 11:23:33,318] INFO [BrokerMetadataPublisher id=1] Publishing initial metadata at offset OffsetAndEpoch(offset=8, epoch=1) with metadata.version 3.9-IV0. (kafka.server.metadata.BrokerMetadataPublisher)
+kafka-1  | 2026-10-27T11:23:33.326182057Z [2026-10-27 11:23:33,322] INFO Loading logs from log dirs ArrayBuffer(/var/lib/kafka/data) (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:33.347178196Z [2026-10-27 11:23:33,346] INFO No logs found to be loaded in /var/lib/kafka/data (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:33.385264901Z [2026-10-27 11:23:33,384] INFO Loaded 0 logs in 61ms (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:33.387353957Z [2026-10-27 11:23:33,386] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:33.402579532Z [2026-10-27 11:23:33,402] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:34.275882329Z [2026-10-27 11:23:34,275] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner$CleanerThread)
+kafka-1  | 2026-10-27T11:23:34.286484214Z [2026-10-27 11:23:34,285] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+kafka-1  | 2026-10-27T11:23:34.287059361Z [2026-10-27 11:23:34,286] INFO [AddPartitionsToTxnSenderThread-1]: Starting (kafka.server.AddPartitionsToTxnManager)
+kafka-1  | 2026-10-27T11:23:34.290612904Z [2026-10-27 11:23:34,289] INFO [GroupCoordinator 1]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+kafka-1  | 2026-10-27T11:23:34.293952206Z [2026-10-27 11:23:34,293] INFO [GroupCoordinator 1]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+kafka-1  | 2026-10-27T11:23:34.295851895Z [2026-10-27 11:23:34,295] INFO [TransactionCoordinator id=1] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+kafka-1  | 2026-10-27T11:23:34.297947040Z [2026-10-27 11:23:34,297] INFO [TxnMarkerSenderThread-1]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+kafka-1  | 2026-10-27T11:23:34.298147529Z [2026-10-27 11:23:34,297] INFO [TransactionCoordinator id=1] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+kafka-1  | 2026-10-27T11:23:34.327597489Z [2026-10-27 11:23:34,326] INFO [BrokerServer id=1] Finished waiting for the initial broker metadata update to be published (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.327641023Z [2026-10-27 11:23:34,326] INFO [MetadataLoader id=1] InitializeNewPublishers: initializing BrokerRegistrationTracker(id=1) with a snapshot at offset 8 (org.apache.kafka.image.loader.MetadataLoader)
+kafka-1  | 2026-10-27T11:23:34.331953624Z [2026-10-27 11:23:34,331] INFO KafkaConfig values: 
+kafka-1  | 2026-10-27T11:23:34.331999944Z 	advertised.listeners = INTERNAL://kafka:9092,EXTERNAL://localhost:29092
+kafka-1  | 2026-10-27T11:23:34.332004057Z 	alter.config.policy.class.name = null
+kafka-1  | 2026-10-27T11:23:34.332006851Z 	alter.log.dirs.replication.quota.window.num = 11
+kafka-1  | 2026-10-27T11:23:34.332009524Z 	alter.log.dirs.replication.quota.window.size.seconds = 1
+kafka-1  | 2026-10-27T11:23:34.332012275Z 	authorizer.class.name = 
+kafka-1  | 2026-10-27T11:23:34.332014805Z 	auto.create.topics.enable = false
+kafka-1  | 2026-10-27T11:23:34.332017481Z 	auto.include.jmx.reporter = true
+kafka-1  | 2026-10-27T11:23:34.332020152Z 	auto.leader.rebalance.enable = true
+kafka-1  | 2026-10-27T11:23:34.332022775Z 	background.threads = 10
+kafka-1  | 2026-10-27T11:23:34.332025388Z 	broker.heartbeat.interval.ms = 2000
+kafka-1  | 2026-10-27T11:23:34.332048955Z 	broker.id = 1
+kafka-1  | 2026-10-27T11:23:34.332051887Z 	broker.id.generation.enable = true
+kafka-1  | 2026-10-27T11:23:34.332054431Z 	broker.rack = null
+kafka-1  | 2026-10-27T11:23:34.332056997Z 	broker.session.timeout.ms = 9000
+kafka-1  | 2026-10-27T11:23:34.332059523Z 	client.quota.callback.class = null
+kafka-1  | 2026-10-27T11:23:34.332061965Z 	compression.gzip.level = -1
+kafka-1  | 2026-10-27T11:23:34.332064682Z 	compression.lz4.level = 9
+kafka-1  | 2026-10-27T11:23:34.332066936Z 	compression.type = producer
+kafka-1  | 2026-10-27T11:23:34.332069212Z 	compression.zstd.level = 3
+kafka-1  | 2026-10-27T11:23:34.332071734Z 	connection.failed.authentication.delay.ms = 100
+kafka-1  | 2026-10-27T11:23:34.332074478Z 	connections.max.idle.ms = 600000
+kafka-1  | 2026-10-27T11:23:34.332077108Z 	connections.max.reauth.ms = 0
+kafka-1  | 2026-10-27T11:23:34.332079816Z 	control.plane.listener.name = null
+kafka-1  | 2026-10-27T11:23:34.332082350Z 	controlled.shutdown.enable = true
+kafka-1  | 2026-10-27T11:23:34.332085139Z 	controlled.shutdown.max.retries = 3
+kafka-1  | 2026-10-27T11:23:34.332087766Z 	controlled.shutdown.retry.backoff.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332090414Z 	controller.listener.names = CONTROLLER
+kafka-1  | 2026-10-27T11:23:34.332093258Z 	controller.quorum.append.linger.ms = 25
+kafka-1  | 2026-10-27T11:23:34.332095588Z 	controller.quorum.bootstrap.servers = []
+kafka-1  | 2026-10-27T11:23:34.332098285Z 	controller.quorum.election.backoff.max.ms = 1000
+kafka-1  | 2026-10-27T11:23:34.332101078Z 	controller.quorum.election.timeout.ms = 1000
+kafka-1  | 2026-10-27T11:23:34.332103883Z 	controller.quorum.fetch.timeout.ms = 2000
+kafka-1  | 2026-10-27T11:23:34.332106555Z 	controller.quorum.request.timeout.ms = 2000
+kafka-1  | 2026-10-27T11:23:34.332109269Z 	controller.quorum.retry.backoff.ms = 20
+kafka-1  | 2026-10-27T11:23:34.332111877Z 	controller.quorum.voters = [1@kafka:9093]
+kafka-1  | 2026-10-27T11:23:34.332114422Z 	controller.quota.window.num = 11
+kafka-1  | 2026-10-27T11:23:34.332116871Z 	controller.quota.window.size.seconds = 1
+kafka-1  | 2026-10-27T11:23:34.332119286Z 	controller.socket.timeout.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332121814Z 	create.topic.policy.class.name = null
+kafka-1  | 2026-10-27T11:23:34.332124633Z 	default.replication.factor = 1
+kafka-1  | 2026-10-27T11:23:34.332127234Z 	delegation.token.expiry.check.interval.ms = 3600000
+kafka-1  | 2026-10-27T11:23:34.332129855Z 	delegation.token.expiry.time.ms = 86400000
+kafka-1  | 2026-10-27T11:23:34.332132631Z 	delegation.token.master.key = null
+kafka-1  | 2026-10-27T11:23:34.332135211Z 	delegation.token.max.lifetime.ms = 604800000
+kafka-1  | 2026-10-27T11:23:34.332137904Z 	delegation.token.secret.key = null
+kafka-1  | 2026-10-27T11:23:34.332140653Z 	delete.records.purgatory.purge.interval.requests = 1
+kafka-1  | 2026-10-27T11:23:34.332148271Z 	delete.topic.enable = true
+kafka-1  | 2026-10-27T11:23:34.332150947Z 	early.start.listeners = null
+kafka-1  | 2026-10-27T11:23:34.332153581Z 	eligible.leader.replicas.enable = false
+kafka-1  | 2026-10-27T11:23:34.332156313Z 	fetch.max.bytes = 57671680
+kafka-1  | 2026-10-27T11:23:34.332158924Z 	fetch.purgatory.purge.interval.requests = 1000
+kafka-1  | 2026-10-27T11:23:34.332163248Z 	group.consumer.assignors = [org.apache.kafka.coordinator.group.assignor.UniformAssignor, org.apache.kafka.coordinator.group.assignor.RangeAssignor]
+kafka-1  | 2026-10-27T11:23:34.332165993Z 	group.consumer.heartbeat.interval.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332168609Z 	group.consumer.max.heartbeat.interval.ms = 15000
+kafka-1  | 2026-10-27T11:23:34.332171395Z 	group.consumer.max.session.timeout.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332173998Z 	group.consumer.max.size = 2147483647
+kafka-1  | 2026-10-27T11:23:34.332176714Z 	group.consumer.migration.policy = disabled
+kafka-1  | 2026-10-27T11:23:34.332179235Z 	group.consumer.min.heartbeat.interval.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332181899Z 	group.consumer.min.session.timeout.ms = 45000
+kafka-1  | 2026-10-27T11:23:34.332184605Z 	group.consumer.session.timeout.ms = 45000
+kafka-1  | 2026-10-27T11:23:34.332187375Z 	group.coordinator.append.linger.ms = 10
+kafka-1  | 2026-10-27T11:23:34.332190114Z 	group.coordinator.new.enable = false
+kafka-1  | 2026-10-27T11:23:34.332192674Z 	group.coordinator.rebalance.protocols = [classic]
+kafka-1  | 2026-10-27T11:23:34.332195259Z 	group.coordinator.threads = 1
+kafka-1  | 2026-10-27T11:23:34.332198116Z 	group.initial.rebalance.delay.ms = 3000
+kafka-1  | 2026-10-27T11:23:34.332200868Z 	group.max.session.timeout.ms = 1800000
+kafka-1  | 2026-10-27T11:23:34.332203613Z 	group.max.size = 2147483647
+kafka-1  | 2026-10-27T11:23:34.332206357Z 	group.min.session.timeout.ms = 6000
+kafka-1  | 2026-10-27T11:23:34.332209096Z 	group.share.delivery.count.limit = 5
+kafka-1  | 2026-10-27T11:23:34.332211846Z 	group.share.enable = false
+kafka-1  | 2026-10-27T11:23:34.332214650Z 	group.share.heartbeat.interval.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332217476Z 	group.share.max.groups = 10
+kafka-1  | 2026-10-27T11:23:34.332220280Z 	group.share.max.heartbeat.interval.ms = 15000
+kafka-1  | 2026-10-27T11:23:34.332222782Z 	group.share.max.record.lock.duration.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332225340Z 	group.share.max.session.timeout.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332228071Z 	group.share.max.size = 200
+kafka-1  | 2026-10-27T11:23:34.332230844Z 	group.share.min.heartbeat.interval.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332233581Z 	group.share.min.record.lock.duration.ms = 15000
+kafka-1  | 2026-10-27T11:23:34.332236280Z 	group.share.min.session.timeout.ms = 45000
+kafka-1  | 2026-10-27T11:23:34.332238977Z 	group.share.partition.max.record.locks = 200
+kafka-1  | 2026-10-27T11:23:34.332241862Z 	group.share.record.lock.duration.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332249376Z 	group.share.session.timeout.ms = 45000
+kafka-1  | 2026-10-27T11:23:34.332252103Z 	initial.broker.registration.timeout.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332254942Z 	inter.broker.listener.name = INTERNAL
+kafka-1  | 2026-10-27T11:23:34.332257726Z 	inter.broker.protocol.version = 3.9-IV0
+kafka-1  | 2026-10-27T11:23:34.332260537Z 	kafka.metrics.polling.interval.secs = 10
+kafka-1  | 2026-10-27T11:23:34.332263314Z 	kafka.metrics.reporters = []
+kafka-1  | 2026-10-27T11:23:34.332266042Z 	leader.imbalance.check.interval.seconds = 300
+kafka-1  | 2026-10-27T11:23:34.332268882Z 	leader.imbalance.per.broker.percentage = 10
+kafka-1  | 2026-10-27T11:23:34.332271710Z 	listener.security.protocol.map = INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT
+kafka-1  | 2026-10-27T11:23:34.332274644Z 	listeners = INTERNAL://:9092,EXTERNAL://:29092,CONTROLLER://:9093
+kafka-1  | 2026-10-27T11:23:34.332277286Z 	log.cleaner.backoff.ms = 15000
+kafka-1  | 2026-10-27T11:23:34.332279933Z 	log.cleaner.dedupe.buffer.size = 134217728
+kafka-1  | 2026-10-27T11:23:34.332282617Z 	log.cleaner.delete.retention.ms = 86400000
+kafka-1  | 2026-10-27T11:23:34.332285375Z 	log.cleaner.enable = true
+kafka-1  | 2026-10-27T11:23:34.332288035Z 	log.cleaner.io.buffer.load.factor = 0.9
+kafka-1  | 2026-10-27T11:23:34.332290684Z 	log.cleaner.io.buffer.size = 524288
+kafka-1  | 2026-10-27T11:23:34.332293903Z 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+kafka-1  | 2026-10-27T11:23:34.332296925Z 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332299648Z 	log.cleaner.min.cleanable.ratio = 0.5
+kafka-1  | 2026-10-27T11:23:34.332302463Z 	log.cleaner.min.compaction.lag.ms = 0
+kafka-1  | 2026-10-27T11:23:34.332305261Z 	log.cleaner.threads = 1
+kafka-1  | 2026-10-27T11:23:34.332307994Z 	log.cleanup.policy = [delete]
+kafka-1  | 2026-10-27T11:23:34.332310712Z 	log.dir = /tmp/kafka-logs
+kafka-1  | 2026-10-27T11:23:34.332313389Z 	log.dir.failure.timeout.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332316087Z 	log.dirs = /var/lib/kafka/data
+kafka-1  | 2026-10-27T11:23:34.332318887Z 	log.flush.interval.messages = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332321757Z 	log.flush.interval.ms = null
+kafka-1  | 2026-10-27T11:23:34.332324483Z 	log.flush.offset.checkpoint.interval.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332327337Z 	log.flush.scheduler.interval.ms = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332330239Z 	log.flush.start.offset.checkpoint.interval.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332333090Z 	log.index.interval.bytes = 4096
+kafka-1  | 2026-10-27T11:23:34.332335859Z 	log.index.size.max.bytes = 10485760
+kafka-1  | 2026-10-27T11:23:34.332338465Z 	log.initial.task.delay.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332341234Z 	log.local.retention.bytes = -2
+kafka-1  | 2026-10-27T11:23:34.332348055Z 	log.local.retention.ms = -2
+kafka-1  | 2026-10-27T11:23:34.332350584Z 	log.message.downconversion.enable = true
+kafka-1  | 2026-10-27T11:23:34.332353145Z 	log.message.format.version = 3.0-IV1
+kafka-1  | 2026-10-27T11:23:34.332355800Z 	log.message.timestamp.after.max.ms = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332358515Z 	log.message.timestamp.before.max.ms = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332360992Z 	log.message.timestamp.difference.max.ms = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332363511Z 	log.message.timestamp.type = CreateTime
+kafka-1  | 2026-10-27T11:23:34.332366143Z 	log.preallocate = false
+kafka-1  | 2026-10-27T11:23:34.332368622Z 	log.retention.bytes = -1
+kafka-1  | 2026-10-27T11:23:34.332371065Z 	log.retention.check.interval.ms = 300000
+kafka-1  | 2026-10-27T11:23:34.332373701Z 	log.retention.hours = 168
+kafka-1  | 2026-10-27T11:23:34.332376208Z 	log.retention.minutes = null
+kafka-1  | 2026-10-27T11:23:34.332378673Z 	log.retention.ms = null
+kafka-1  | 2026-10-27T11:23:34.332381076Z 	log.roll.hours = 168
+kafka-1  | 2026-10-27T11:23:34.332383655Z 	log.roll.jitter.hours = 0
+kafka-1  | 2026-10-27T11:23:34.332385999Z 	log.roll.jitter.ms = null
+kafka-1  | 2026-10-27T11:23:34.332388437Z 	log.roll.ms = null
+kafka-1  | 2026-10-27T11:23:34.332390818Z 	log.segment.bytes = 1073741824
+kafka-1  | 2026-10-27T11:23:34.332393367Z 	log.segment.delete.delay.ms = 60000
+kafka-1  | 2026-10-27T11:23:34.332395942Z 	max.connection.creation.rate = 2147483647
+kafka-1  | 2026-10-27T11:23:34.332398543Z 	max.connections = 2147483647
+kafka-1  | 2026-10-27T11:23:34.332401064Z 	max.connections.per.ip = 2147483647
+kafka-1  | 2026-10-27T11:23:34.332403788Z 	max.connections.per.ip.overrides = 
+kafka-1  | 2026-10-27T11:23:34.332406289Z 	max.incremental.fetch.session.cache.slots = 1000
+kafka-1  | 2026-10-27T11:23:34.332408730Z 	max.request.partition.size.limit = 2000
+kafka-1  | 2026-10-27T11:23:34.332412273Z 	message.max.bytes = 1048588
+kafka-1  | 2026-10-27T11:23:34.332415803Z 	metadata.log.dir = null
+kafka-1  | 2026-10-27T11:23:34.332418134Z 	metadata.log.max.record.bytes.between.snapshots = 20971520
+kafka-1  | 2026-10-27T11:23:34.332420490Z 	metadata.log.max.snapshot.interval.ms = 3600000
+kafka-1  | 2026-10-27T11:23:34.332422861Z 	metadata.log.segment.bytes = 1073741824
+kafka-1  | 2026-10-27T11:23:34.332425234Z 	metadata.log.segment.min.bytes = 8388608
+kafka-1  | 2026-10-27T11:23:34.332427666Z 	metadata.log.segment.ms = 604800000
+kafka-1  | 2026-10-27T11:23:34.332430725Z 	metadata.max.idle.interval.ms = 500
+kafka-1  | 2026-10-27T11:23:34.332433335Z 	metadata.max.retention.bytes = 104857600
+kafka-1  | 2026-10-27T11:23:34.332435788Z 	metadata.max.retention.ms = 604800000
+kafka-1  | 2026-10-27T11:23:34.332438122Z 	metric.reporters = []
+kafka-1  | 2026-10-27T11:23:34.332441098Z 	metrics.num.samples = 2
+kafka-1  | 2026-10-27T11:23:34.332447580Z 	metrics.recording.level = INFO
+kafka-1  | 2026-10-27T11:23:34.332449990Z 	metrics.sample.window.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332452469Z 	min.insync.replicas = 1
+kafka-1  | 2026-10-27T11:23:34.332455056Z 	node.id = 1
+kafka-1  | 2026-10-27T11:23:34.332457799Z 	num.io.threads = 8
+kafka-1  | 2026-10-27T11:23:34.332460465Z 	num.network.threads = 3
+kafka-1  | 2026-10-27T11:23:34.332462784Z 	num.partitions = 2
+kafka-1  | 2026-10-27T11:23:34.332465450Z 	num.recovery.threads.per.data.dir = 1
+kafka-1  | 2026-10-27T11:23:34.332468269Z 	num.replica.alter.log.dirs.threads = null
+kafka-1  | 2026-10-27T11:23:34.332470951Z 	num.replica.fetchers = 1
+kafka-1  | 2026-10-27T11:23:34.332473621Z 	offset.metadata.max.bytes = 4096
+kafka-1  | 2026-10-27T11:23:34.332476139Z 	offsets.commit.required.acks = -1
+kafka-1  | 2026-10-27T11:23:34.332478661Z 	offsets.commit.timeout.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332481255Z 	offsets.load.buffer.size = 5242880
+kafka-1  | 2026-10-27T11:23:34.332483640Z 	offsets.retention.check.interval.ms = 600000
+kafka-1  | 2026-10-27T11:23:34.332486115Z 	offsets.retention.minutes = 10080
+kafka-1  | 2026-10-27T11:23:34.332488808Z 	offsets.topic.compression.codec = 0
+kafka-1  | 2026-10-27T11:23:34.332491401Z 	offsets.topic.num.partitions = 50
+kafka-1  | 2026-10-27T11:23:34.332494265Z 	offsets.topic.replication.factor = 1
+kafka-1  | 2026-10-27T11:23:34.332497010Z 	offsets.topic.segment.bytes = 104857600
+kafka-1  | 2026-10-27T11:23:34.332499762Z 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+kafka-1  | 2026-10-27T11:23:34.332502223Z 	password.encoder.iterations = 4096
+kafka-1  | 2026-10-27T11:23:34.332505000Z 	password.encoder.key.length = 128
+kafka-1  | 2026-10-27T11:23:34.332507917Z 	password.encoder.keyfactory.algorithm = null
+kafka-1  | 2026-10-27T11:23:34.332510716Z 	password.encoder.old.secret = null
+kafka-1  | 2026-10-27T11:23:34.332513238Z 	password.encoder.secret = null
+kafka-1  | 2026-10-27T11:23:34.332515694Z 	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+kafka-1  | 2026-10-27T11:23:34.332518257Z 	process.roles = [broker, controller]
+kafka-1  | 2026-10-27T11:23:34.332520662Z 	producer.id.expiration.check.interval.ms = 600000
+kafka-1  | 2026-10-27T11:23:34.332522996Z 	producer.id.expiration.ms = 86400000
+kafka-1  | 2026-10-27T11:23:34.332525388Z 	producer.purgatory.purge.interval.requests = 1000
+kafka-1  | 2026-10-27T11:23:34.332528127Z 	queued.max.request.bytes = -1
+kafka-1  | 2026-10-27T11:23:34.332530644Z 	queued.max.requests = 500
+kafka-1  | 2026-10-27T11:23:34.332533325Z 	quota.window.num = 11
+kafka-1  | 2026-10-27T11:23:34.332535811Z 	quota.window.size.seconds = 1
+kafka-1  | 2026-10-27T11:23:34.332538248Z 	remote.fetch.max.wait.ms = 500
+kafka-1  | 2026-10-27T11:23:34.332540599Z 	remote.log.index.file.cache.total.size.bytes = 1073741824
+kafka-1  | 2026-10-27T11:23:34.332546989Z 	remote.log.manager.copier.thread.pool.size = -1
+kafka-1  | 2026-10-27T11:23:34.332549704Z 	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332552317Z 	remote.log.manager.copy.quota.window.num = 11
+kafka-1  | 2026-10-27T11:23:34.332554838Z 	remote.log.manager.copy.quota.window.size.seconds = 1
+kafka-1  | 2026-10-27T11:23:34.332557599Z 	remote.log.manager.expiration.thread.pool.size = -1
+kafka-1  | 2026-10-27T11:23:34.332560297Z 	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332562952Z 	remote.log.manager.fetch.quota.window.num = 11
+kafka-1  | 2026-10-27T11:23:34.332565620Z 	remote.log.manager.fetch.quota.window.size.seconds = 1
+kafka-1  | 2026-10-27T11:23:34.332568466Z 	remote.log.manager.task.interval.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332571144Z 	remote.log.manager.task.retry.backoff.max.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332573735Z 	remote.log.manager.task.retry.backoff.ms = 500
+kafka-1  | 2026-10-27T11:23:34.332576383Z 	remote.log.manager.task.retry.jitter = 0.2
+kafka-1  | 2026-10-27T11:23:34.332579897Z 	remote.log.manager.thread.pool.size = 10
+kafka-1  | 2026-10-27T11:23:34.332582460Z 	remote.log.metadata.custom.metadata.max.bytes = 128
+kafka-1  | 2026-10-27T11:23:34.332585224Z 	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+kafka-1  | 2026-10-27T11:23:34.332588173Z 	remote.log.metadata.manager.class.path = null
+kafka-1  | 2026-10-27T11:23:34.332590782Z 	remote.log.metadata.manager.impl.prefix = rlmm.config.
+kafka-1  | 2026-10-27T11:23:34.332593517Z 	remote.log.metadata.manager.listener.name = null
+kafka-1  | 2026-10-27T11:23:34.332595922Z 	remote.log.reader.max.pending.tasks = 100
+kafka-1  | 2026-10-27T11:23:34.332598316Z 	remote.log.reader.threads = 10
+kafka-1  | 2026-10-27T11:23:34.332600825Z 	remote.log.storage.manager.class.name = null
+kafka-1  | 2026-10-27T11:23:34.332603546Z 	remote.log.storage.manager.class.path = null
+kafka-1  | 2026-10-27T11:23:34.332609094Z 	remote.log.storage.manager.impl.prefix = rsm.config.
+kafka-1  | 2026-10-27T11:23:34.332611734Z 	remote.log.storage.system.enable = false
+kafka-1  | 2026-10-27T11:23:34.332614229Z 	replica.fetch.backoff.ms = 1000
+kafka-1  | 2026-10-27T11:23:34.332616662Z 	replica.fetch.max.bytes = 1048576
+kafka-1  | 2026-10-27T11:23:34.332619183Z 	replica.fetch.min.bytes = 1
+kafka-1  | 2026-10-27T11:23:34.332621746Z 	replica.fetch.response.max.bytes = 10485760
+kafka-1  | 2026-10-27T11:23:34.332624530Z 	replica.fetch.wait.max.ms = 500
+kafka-1  | 2026-10-27T11:23:34.332626889Z 	replica.high.watermark.checkpoint.interval.ms = 5000
+kafka-1  | 2026-10-27T11:23:34.332629324Z 	replica.lag.time.max.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332631979Z 	replica.selector.class = null
+kafka-1  | 2026-10-27T11:23:34.332634467Z 	replica.socket.receive.buffer.bytes = 65536
+kafka-1  | 2026-10-27T11:23:34.332641627Z 	replica.socket.timeout.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332643932Z 	replication.quota.window.num = 11
+kafka-1  | 2026-10-27T11:23:34.332646337Z 	replication.quota.window.size.seconds = 1
+kafka-1  | 2026-10-27T11:23:34.332648962Z 	request.timeout.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332651642Z 	reserved.broker.max.id = 1000
+kafka-1  | 2026-10-27T11:23:34.332654093Z 	sasl.client.callback.handler.class = null
+kafka-1  | 2026-10-27T11:23:34.332656637Z 	sasl.enabled.mechanisms = [GSSAPI]
+kafka-1  | 2026-10-27T11:23:34.332659363Z 	sasl.jaas.config = null
+kafka-1  | 2026-10-27T11:23:34.332661753Z 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+kafka-1  | 2026-10-27T11:23:34.332664353Z 	sasl.kerberos.min.time.before.relogin = 60000
+kafka-1  | 2026-10-27T11:23:34.332666850Z 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+kafka-1  | 2026-10-27T11:23:34.332669439Z 	sasl.kerberos.service.name = null
+kafka-1  | 2026-10-27T11:23:34.332672166Z 	sasl.kerberos.ticket.renew.jitter = 0.05
+kafka-1  | 2026-10-27T11:23:34.332675005Z 	sasl.kerberos.ticket.renew.window.factor = 0.8
+kafka-1  | 2026-10-27T11:23:34.332677655Z 	sasl.login.callback.handler.class = null
+kafka-1  | 2026-10-27T11:23:34.332680220Z 	sasl.login.class = null
+kafka-1  | 2026-10-27T11:23:34.332682864Z 	sasl.login.connect.timeout.ms = null
+kafka-1  | 2026-10-27T11:23:34.332685417Z 	sasl.login.read.timeout.ms = null
+kafka-1  | 2026-10-27T11:23:34.332688109Z 	sasl.login.refresh.buffer.seconds = 300
+kafka-1  | 2026-10-27T11:23:34.332690566Z 	sasl.login.refresh.min.period.seconds = 60
+kafka-1  | 2026-10-27T11:23:34.332693243Z 	sasl.login.refresh.window.factor = 0.8
+kafka-1  | 2026-10-27T11:23:34.332713041Z 	sasl.login.refresh.window.jitter = 0.05
+kafka-1  | 2026-10-27T11:23:34.332715757Z 	sasl.login.retry.backoff.max.ms = 10000
+kafka-1  | 2026-10-27T11:23:34.332718335Z 	sasl.login.retry.backoff.ms = 100
+kafka-1  | 2026-10-27T11:23:34.332721125Z 	sasl.mechanism.controller.protocol = GSSAPI
+kafka-1  | 2026-10-27T11:23:34.332723680Z 	sasl.mechanism.inter.broker.protocol = GSSAPI
+kafka-1  | 2026-10-27T11:23:34.332726231Z 	sasl.oauthbearer.clock.skew.seconds = 30
+kafka-1  | 2026-10-27T11:23:34.332730060Z 	sasl.oauthbearer.expected.audience = null
+kafka-1  | 2026-10-27T11:23:34.332732691Z 	sasl.oauthbearer.expected.issuer = null
+kafka-1  | 2026-10-27T11:23:34.332735353Z 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+kafka-1  | 2026-10-27T11:23:34.332737966Z 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+kafka-1  | 2026-10-27T11:23:34.332740672Z 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+kafka-1  | 2026-10-27T11:23:34.332743410Z 	sasl.oauthbearer.jwks.endpoint.url = null
+kafka-1  | 2026-10-27T11:23:34.332745940Z 	sasl.oauthbearer.scope.claim.name = scope
+kafka-1  | 2026-10-27T11:23:34.332748809Z 	sasl.oauthbearer.sub.claim.name = sub
+kafka-1  | 2026-10-27T11:23:34.332761320Z 	sasl.oauthbearer.token.endpoint.url = null
+kafka-1  | 2026-10-27T11:23:34.332764168Z 	sasl.server.callback.handler.class = null
+kafka-1  | 2026-10-27T11:23:34.332766788Z 	sasl.server.max.receive.size = 524288
+kafka-1  | 2026-10-27T11:23:34.332769373Z 	security.inter.broker.protocol = PLAINTEXT
+kafka-1  | 2026-10-27T11:23:34.332772051Z 	security.providers = null
+kafka-1  | 2026-10-27T11:23:34.332774581Z 	server.max.startup.time.ms = 9223372036854775807
+kafka-1  | 2026-10-27T11:23:34.332777129Z 	socket.connection.setup.timeout.max.ms = 30000
+kafka-1  | 2026-10-27T11:23:34.332779506Z 	socket.connection.setup.timeout.ms = 10000
+kafka-1  | 2026-10-27T11:23:34.332781998Z 	socket.listen.backlog.size = 50
+kafka-1  | 2026-10-27T11:23:34.332784518Z 	socket.receive.buffer.bytes = 102400
+kafka-1  | 2026-10-27T11:23:34.332787190Z 	socket.request.max.bytes = 104857600
+kafka-1  | 2026-10-27T11:23:34.332789843Z 	socket.send.buffer.bytes = 102400
+kafka-1  | 2026-10-27T11:23:34.332792275Z 	ssl.allow.dn.changes = false
+kafka-1  | 2026-10-27T11:23:34.332794741Z 	ssl.allow.san.changes = false
+kafka-1  | 2026-10-27T11:23:34.332797183Z 	ssl.cipher.suites = []
+kafka-1  | 2026-10-27T11:23:34.332799649Z 	ssl.client.auth = none
+kafka-1  | 2026-10-27T11:23:34.332802072Z 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+kafka-1  | 2026-10-27T11:23:34.332804543Z 	ssl.endpoint.identification.algorithm = https
+kafka-1  | 2026-10-27T11:23:34.332806893Z 	ssl.engine.factory.class = null
+kafka-1  | 2026-10-27T11:23:34.332809387Z 	ssl.key.password = null
+kafka-1  | 2026-10-27T11:23:34.332811877Z 	ssl.keymanager.algorithm = SunX509
+kafka-1  | 2026-10-27T11:23:34.332814341Z 	ssl.keystore.certificate.chain = null
+kafka-1  | 2026-10-27T11:23:34.332816703Z 	ssl.keystore.key = null
+kafka-1  | 2026-10-27T11:23:34.332819314Z 	ssl.keystore.location = null
+kafka-1  | 2026-10-27T11:23:34.332822008Z 	ssl.keystore.password = null
+kafka-1  | 2026-10-27T11:23:34.332824508Z 	ssl.keystore.type = JKS
+kafka-1  | 2026-10-27T11:23:34.332827237Z 	ssl.principal.mapping.rules = DEFAULT
+kafka-1  | 2026-10-27T11:23:34.332829818Z 	ssl.protocol = TLSv1.3
+kafka-1  | 2026-10-27T11:23:34.332832323Z 	ssl.provider = null
+kafka-1  | 2026-10-27T11:23:34.332834957Z 	ssl.secure.random.implementation = null
+kafka-1  | 2026-10-27T11:23:34.332837541Z 	ssl.trustmanager.algorithm = PKIX
+kafka-1  | 2026-10-27T11:23:34.332840335Z 	ssl.truststore.certificates = null
+kafka-1  | 2026-10-27T11:23:34.332842902Z 	ssl.truststore.location = null
+kafka-1  | 2026-10-27T11:23:34.332845336Z 	ssl.truststore.password = null
+kafka-1  | 2026-10-27T11:23:34.332847899Z 	ssl.truststore.type = JKS
+kafka-1  | 2026-10-27T11:23:34.332850334Z 	telemetry.max.bytes = 1048576
+kafka-1  | 2026-10-27T11:23:34.332852796Z 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+kafka-1  | 2026-10-27T11:23:34.332860346Z 	transaction.max.timeout.ms = 900000
+kafka-1  | 2026-10-27T11:23:34.332862885Z 	transaction.partition.verification.enable = true
+kafka-1  | 2026-10-27T11:23:34.332865710Z 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+kafka-1  | 2026-10-27T11:23:34.332868087Z 	transaction.state.log.load.buffer.size = 5242880
+kafka-1  | 2026-10-27T11:23:34.332870556Z 	transaction.state.log.min.isr = 1
+kafka-1  | 2026-10-27T11:23:34.332873190Z 	transaction.state.log.num.partitions = 50
+kafka-1  | 2026-10-27T11:23:34.332875822Z 	transaction.state.log.replication.factor = 1
+kafka-1  | 2026-10-27T11:23:34.332878410Z 	transaction.state.log.segment.bytes = 104857600
+kafka-1  | 2026-10-27T11:23:34.332882069Z 	transactional.id.expiration.ms = 604800000
+kafka-1  | 2026-10-27T11:23:34.332885028Z 	unclean.leader.election.enable = false
+kafka-1  | 2026-10-27T11:23:34.332887926Z 	unclean.leader.election.interval.ms = 300000
+kafka-1  | 2026-10-27T11:23:34.332890802Z 	unstable.api.versions.enable = false
+kafka-1  | 2026-10-27T11:23:34.332893497Z 	unstable.feature.versions.enable = false
+kafka-1  | 2026-10-27T11:23:34.332896181Z 	zookeeper.clientCnxnSocket = null
+kafka-1  | 2026-10-27T11:23:34.332898586Z 	zookeeper.connect = null
+kafka-1  | 2026-10-27T11:23:34.332901042Z 	zookeeper.connection.timeout.ms = null
+kafka-1  | 2026-10-27T11:23:34.332903492Z 	zookeeper.max.in.flight.requests = 10
+kafka-1  | 2026-10-27T11:23:34.332906004Z 	zookeeper.metadata.migration.enable = false
+kafka-1  | 2026-10-27T11:23:34.332908405Z 	zookeeper.metadata.migration.min.batch.size = 200
+kafka-1  | 2026-10-27T11:23:34.332911097Z 	zookeeper.session.timeout.ms = 18000
+kafka-1  | 2026-10-27T11:23:34.332913802Z 	zookeeper.set.acl = false
+kafka-1  | 2026-10-27T11:23:34.332916215Z 	zookeeper.ssl.cipher.suites = null
+kafka-1  | 2026-10-27T11:23:34.332919004Z 	zookeeper.ssl.client.enable = false
+kafka-1  | 2026-10-27T11:23:34.332921629Z 	zookeeper.ssl.crl.enable = false
+kafka-1  | 2026-10-27T11:23:34.332924510Z 	zookeeper.ssl.enabled.protocols = null
+kafka-1  | 2026-10-27T11:23:34.332927624Z 	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+kafka-1  | 2026-10-27T11:23:34.332930549Z 	zookeeper.ssl.keystore.location = null
+kafka-1  | 2026-10-27T11:23:34.332933255Z 	zookeeper.ssl.keystore.password = null
+kafka-1  | 2026-10-27T11:23:34.332935977Z 	zookeeper.ssl.keystore.type = null
+kafka-1  | 2026-10-27T11:23:34.332938537Z 	zookeeper.ssl.ocsp.enable = false
+kafka-1  | 2026-10-27T11:23:34.332941000Z 	zookeeper.ssl.protocol = TLSv1.2
+kafka-1  | 2026-10-27T11:23:34.332943420Z 	zookeeper.ssl.truststore.location = null
+kafka-1  | 2026-10-27T11:23:34.332946185Z 	zookeeper.ssl.truststore.password = null
+kafka-1  | 2026-10-27T11:23:34.332948962Z 	zookeeper.ssl.truststore.type = null
+kafka-1  | 2026-10-27T11:23:34.332951827Z  (kafka.server.KafkaConfig)
+kafka-1  | 2026-10-27T11:23:34.349971861Z [2026-10-27 11:23:34,349] INFO [BrokerServer id=1] Waiting for the broker to be unfenced (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.402550783Z [2026-10-27 11:23:34,401] INFO [BrokerLifecycleManager id=1] The broker has been unfenced. Transitioning from RECOVERY to RUNNING. (kafka.server.BrokerLifecycleManager)
+kafka-1  | 2026-10-27T11:23:34.403454469Z [2026-10-27 11:23:34,402] INFO [BrokerServer id=1] Finished waiting for the broker to be unfenced (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.415939698Z [2026-10-27 11:23:34,413] INFO authorizerStart completed for endpoint EXTERNAL. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+kafka-1  | 2026-10-27T11:23:34.415974070Z [2026-10-27 11:23:34,413] INFO authorizerStart completed for endpoint INTERNAL. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+kafka-1  | 2026-10-27T11:23:34.415977508Z [2026-10-27 11:23:34,414] INFO [SocketServer listenerType=BROKER, nodeId=1] Enabling request processing. (kafka.network.SocketServer)
+kafka-1  | 2026-10-27T11:23:34.415980408Z [2026-10-27 11:23:34,415] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+kafka-1  | 2026-10-27T11:23:34.419157736Z [2026-10-27 11:23:34,418] INFO Awaiting socket connections on 0.0.0.0:29092. (kafka.network.DataPlaneAcceptor)
+kafka-1  | 2026-10-27T11:23:34.422275328Z [2026-10-27 11:23:34,421] INFO [BrokerServer id=1] Waiting for all of the authorizer futures to be completed (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.422310458Z [2026-10-27 11:23:34,422] INFO [BrokerServer id=1] Finished waiting for all of the authorizer futures to be completed (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.422523915Z [2026-10-27 11:23:34,422] INFO [BrokerServer id=1] Waiting for all of the SocketServer Acceptors to be started (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.422764565Z [2026-10-27 11:23:34,422] INFO [BrokerServer id=1] Finished waiting for all of the SocketServer Acceptors to be started (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.423140833Z [2026-10-27 11:23:34,422] INFO [BrokerServer id=1] Transition from STARTING to STARTED (kafka.server.BrokerServer)
+kafka-1  | 2026-10-27T11:23:34.425330301Z [2026-10-27 11:23:34,424] INFO Kafka version: 3.9.1 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-1  | 2026-10-27T11:23:34.425351547Z [2026-10-27 11:23:34,425] INFO Kafka commitId: f745dfdcee2b9851 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-1  | 2026-10-27T11:23:34.425523830Z [2026-10-27 11:23:34,425] INFO Kafka startTimeMs: 1793100214423 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-1  | 2026-10-27T11:23:34.428023819Z [2026-10-27 11:23:34,427] INFO [KafkaRaftServer nodeId=1] Kafka Server started (kafka.server.KafkaRaftServer)
+kafka-1  | 2026-10-27T11:23:40.648441482Z [2026-10-27 11:23:40,648] INFO [ReplicaFetcherManager on broker 1] Removed fetcher for partitions Set(orders.events-1, orders.events-0) (kafka.server.ReplicaFetcherManager)
+kafka-1  | 2026-10-27T11:23:40.706136402Z [2026-10-27 11:23:40,705] INFO [LogLoader partition=orders.events-1, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-1  | 2026-10-27T11:23:40.709261425Z [2026-10-27 11:23:40,708] INFO Created log for partition orders.events-1 in /var/lib/kafka/data/orders.events-1 with properties {} (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:40.712299213Z [2026-10-27 11:23:40,711] INFO [Partition orders.events-1 broker=1] No checkpointed highwatermark is found for partition orders.events-1 (kafka.cluster.Partition)
+kafka-1  | 2026-10-27T11:23:40.714816852Z [2026-10-27 11:23:40,714] INFO [Partition orders.events-1 broker=1] Log loaded for partition orders.events-1 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-1  | 2026-10-27T11:23:40.775879279Z [2026-10-27 11:23:40,775] INFO [LogLoader partition=orders.events-0, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-1  | 2026-10-27T11:23:40.778854813Z [2026-10-27 11:23:40,778] INFO Created log for partition orders.events-0 in /var/lib/kafka/data/orders.events-0 with properties {} (kafka.log.LogManager)
+kafka-1  | 2026-10-27T11:23:40.778886765Z [2026-10-27 11:23:40,778] INFO [Partition orders.events-0 broker=1] No checkpointed highwatermark is found for partition orders.events-0 (kafka.cluster.Partition)
+kafka-1  | 2026-10-27T11:23:40.779291534Z [2026-10-27 11:23:40,778] INFO [Partition orders.events-0 broker=1] Log loaded for partition orders.events-0 with initial high watermark 0 (kafka.cluster.Partition)

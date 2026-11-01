@@ -1,0 +1,22 @@
+node:fs:621
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open '/app/src/consumer-runtime.js'
+    at Object.openSync (node:fs:621:18)
+    at Object.readFileSync (node:fs:487:35)
+    at [eval]:1:338
+    at Array.map (<anonymous>)
+    at [eval]:1:290
+    at [eval]:1:385
+    at runScriptInThisContext (node:internal/vm:219:10)
+    at node:internal/process/execution:451:12
+    at [eval]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:449:60) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/src/consumer-runtime.js'
+}
+
+Node.js v24.22.1

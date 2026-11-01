@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "docker",
+    "compose",
+    "-p",
+    "qa-taller-integracion-kafka",
+    "-f",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+    "-f",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp07-responsive-01/override.delay.yml",
+    "up",
+    "-d",
+    "--no-deps",
+    "--no-build",
+    "--pull",
+    "never",
+    "--force-recreate",
+    "--wait",
+    "--wait-timeout",
+    "90",
+    "inventory-consumer"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+  "startUTC": "2026-10-31T23:19:42.291Z",
+  "endUTC": "2026-10-31T23:19:54.687Z",
+  "durationMs": 12399.873646,
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

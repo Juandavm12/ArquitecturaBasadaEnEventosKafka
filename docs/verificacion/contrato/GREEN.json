@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm",
+    "test"
+  ],
+  "exitcode": 0,
+  "timestamp": "2026-10-27T11:03:05.785590+00:00",
+  "scope": "Contrato offline; no integraci\u00f3n, Docker ni CP formal",
+  "node": "v26.8.1"
+}

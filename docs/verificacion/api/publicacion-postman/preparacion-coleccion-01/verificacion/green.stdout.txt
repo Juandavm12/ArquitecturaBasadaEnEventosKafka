@@ -1,0 +1,1 @@
+PASS: estructura de un POST; VM 202/503/JSON inválido/mensaje/ID/status; evidencia explícita. Sin HTTP.

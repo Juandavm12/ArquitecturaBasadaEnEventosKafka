@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "docker",
+    "compose",
+    "-p",
+    "qa-taller-integracion-kafka",
+    "-f",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+    "exec",
+    "-T",
+    "kafka",
+    "/opt/kafka/bin/kafka-consumer-groups.sh",
+    "--bootstrap-server",
+    "kafka:9092",
+    "--describe",
+    "--group",
+    "inventory-service-group"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+  "startUTC": "2026-10-31T23:20:35.284Z",
+  "endUTC": "2026-10-31T23:20:38.682Z",
+  "durationMs": 3398.771518,
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

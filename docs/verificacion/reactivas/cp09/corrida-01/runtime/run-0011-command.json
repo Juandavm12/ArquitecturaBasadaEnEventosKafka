@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "docker",
+    "logs",
+    "--timestamps",
+    "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+  "startUTC": "2026-11-01T03:54:43.296Z",
+  "endUTC": "2026-11-01T03:54:43.584Z",
+  "durationMs": 288.13035,
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "stdinSHA256": null
+}

@@ -1,0 +1,55 @@
+No authorization data found. Please use the `postman login` command.
+Refer:https://learning.postman.com/docs/postman-cli/postman-cli-options/#postman-login
+
+Running your collection...
+postman
+
+CP09 — parada controlada de inventario
+
+Root CP09 — exactamente un pedido
+
+  -
+  | 'CP09_REQUEST_STARTED_UTC 2026-11-01T03:54:41.236Z'
+  -
+  POST http://localhost:3000/orders [202 Accepted, 362 B, 788 ms]
+  -
+  | 'CP09_RESPONSE_OBSERVED_UTC 2026-11-01T03:54:42.057Z'
+  | 'REQUEST_METHOD POST'
+  | 'REQUEST_URL http://localhost:3000/orders'
+  | 'REQUEST_BODY {"customerName":"Pedro CP09","product":"
+  | Libro de arquitectura","quantity":1,"unitPrice":85000}
+  | '
+  | 'RESPONSE_CODE 202'
+  | 'RESPONSE_BODY {"status":"accepted","message":"Pedido 
+  | recibido y evento OrderCreated publicado en Kafka","or
+  | derId":"ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06"}'
+  | 'RESPONSE_TIME_MS 788'
+  | 'ORDER_ID ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06'
+  -
+  Pass  HTTP 202
+  Pass  JSON válido
+  Pass  Status accepted
+  Pass  Mensaje exacto
+  Pass  orderId ORD-UUID
+
+------------------------------------------------------------------------
+|                         |             executed |              failed |
+--------------------------+----------------------+----------------------
+|              iterations |                    1 |                   0 |
+--------------------------+----------------------+----------------------
+|                requests |                    1 |                   0 |
+--------------------------+----------------------+----------------------
+|            test-scripts |                    1 |                   0 |
+--------------------------+----------------------+----------------------
+|      prerequest-scripts |                    1 |                   0 |
+--------------------------+----------------------+----------------------
+|              assertions |                    5 |                   0 |
+------------------------------------------------------------------------
+| total run duration: 868 ms                                           |
+------------------------------------------------------------------------
+| total data received: 143 B (approx)                                  |
+------------------------------------------------------------------------
+| average response time: 788 ms [min: 788 ms, max: 788 ms, s.d.: 0 us] |
+------------------------------------------------------------------------
+Postman credentials are required for publishing run details to Postman cloud.
+Please specify it by using the `postman login` command

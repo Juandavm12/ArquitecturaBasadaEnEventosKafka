@@ -1,0 +1,23 @@
+[
+  {
+    "command": [
+      "docker",
+      "pull",
+      "node:24-bookworm-slim"
+    ],
+    "start": "2026-10-27T12:05:31.338681+00:00",
+    "end": "2026-10-27T12:06:43.145721+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "image",
+      "inspect",
+      "node:24-bookworm-slim"
+    ],
+    "start": "2026-10-27T12:06:43.157161+00:00",
+    "end": "2026-10-27T12:06:43.533703+00:00",
+    "exitcode": 0
+  }
+]

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1342" viewBox="0 0 1400 1342">
+<title>CP-07 — Respuesta y procesamiento</title>
+<rect width="1400" height="100%" fill="#101827"/>
+<text x="28" y="40" fill="#7dd3fc" font-family="sans-serif" font-size="25">CP-07 — Respuesta y procesamiento</text>
+<g fill="#f1f5f9" font-family="monospace" font-size="18" xml:space="preserve">
+<text x="28" y="80">2026-10-31 · UTC · campos date internos / observación HTTP en sandbox</text>
+<text x="28" y="103">orders.events · partición 1 · offset 1</text>
+<text x="28" y="126">orderId ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c</text>
+<text x="28" y="149">eventId f435ba0a-d045-412b-a3b9-45c875f21faf</text>
+<text x="28" y="172">correlationId f3b52280-d60f-418b-97e9-a2109589f72e</text>
+<text x="28" y="195"></text>
+<text x="28" y="218">23:20:30.686  Pre-script solicitud</text>
+<text x="28" y="241">23:20:30.913  API publica</text>
+<text x="28" y="264">23:20:30.950  Inventario received</text>
+<text x="28" y="287">23:20:30.961  HTTP observado (cota superior del fin HTTP)</text>
+<text x="28" y="310">                 | 2991 ms hasta processed &gt; cota conjunta 762 ms</text>
+<text x="28" y="333">23:20:33.952  Inventario processed</text>
+<text x="28" y="356">23:20:33.962  Inventario offset-committed</text>
+<text x="28" y="379"></text>
+<text x="28" y="402">HTTP Postman: 239 ms · pre-script a observado: 275 ms · acción: 3002 ms</text>
+<text x="28" y="425">11 ms received a HTTP observado &lt; 762 ms: orden relativo no robusto.</text>
+<text x="28" y="448">Demora 3000 ms experimental; no SLA.</text>
+<text x="28" y="471"></text>
+<text x="28" y="494">Selección literal de logs (fuentes completas enlazadas en reporte/manifest):</text>
+<text x="28" y="517"></text>
+<text x="28" y="540">docs/verificacion/reactivas/cp07/corrida-01/collected-orders-api-logs.txt · línea 18</text>
+<text x="28" y="563">orders-api-1  | 2026-10-31T23:20:30.920506048Z {&quot;date&quot;:&quot;2026-10-31T23:20:30.913Z&quot;,&quot;service&quot;:&quot;orders-api&quot;,&quot;hostna</text>
+<text x="28" y="586">me&quot;:&quot;eff545def17b&quot;,&quot;orderId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c&quot;,&quot;eventId&quot;:&quot;f435ba0a-d045-412b-a3b9-45c87</text>
+<text x="28" y="609">5f21faf&quot;,&quot;correlationId&quot;:&quot;f3b52280-d60f-418b-97e9-a2109589f72e&quot;,&quot;topic&quot;:&quot;orders.events&quot;,&quot;partition&quot;:1,&quot;baseOffse</text>
+<text x="28" y="632">t&quot;:&quot;1&quot;}</text>
+<text x="28" y="655"></text>
+<text x="28" y="678">docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt · línea 7</text>
+<text x="28" y="701">inventory-consumer-1  | 2026-10-31T23:20:30.950650533Z {&quot;date&quot;:&quot;2026-10-31T23:20:30.950Z&quot;,&quot;hostname&quot;:&quot;3664fcf5dc</text>
+<text x="28" y="724">8c&quot;,&quot;service&quot;:&quot;inventory-consumer&quot;,&quot;groupId&quot;:&quot;inventory-service-group&quot;,&quot;instanceId&quot;:&quot;3664fcf5dc8c&quot;,&quot;phase&quot;:&quot;rece</text>
+<text x="28" y="747">ived&quot;,&quot;action&quot;:&quot;simulate-stock-reservation&quot;,&quot;trace&quot;:{&quot;service&quot;:&quot;inventory-consumer&quot;,&quot;groupId&quot;:&quot;inventory-service</text>
+<text x="28" y="770">-group&quot;,&quot;instanceId&quot;:&quot;3664fcf5dc8c&quot;,&quot;orderId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c&quot;,&quot;eventId&quot;:&quot;f435ba0a-d04</text>
+<text x="28" y="793">5-412b-a3b9-45c875f21faf&quot;,&quot;correlationId&quot;:&quot;f3b52280-d60f-418b-97e9-a2109589f72e&quot;,&quot;topic&quot;:&quot;orders.events&quot;,&quot;partit</text>
+<text x="28" y="816">ion&quot;:1,&quot;offset&quot;:&quot;1&quot;},&quot;event&quot;:{&quot;eventId&quot;:&quot;f435ba0a-d045-412b-a3b9-45c875f21faf&quot;,&quot;eventType&quot;:&quot;OrderCreated&quot;,&quot;event</text>
+<text x="28" y="839">Version&quot;:&quot;1.0&quot;,&quot;occurredAt&quot;:&quot;2026-10-31T23:20:30.787Z&quot;,&quot;source&quot;:&quot;orders-api&quot;,&quot;correlationId&quot;:&quot;f3b52280-d60f-418b</text>
+<text x="28" y="862">-97e9-a2109589f72e&quot;,&quot;data&quot;:{&quot;orderId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c&quot;,&quot;customerName&quot;:&quot;Pedro&quot;,&quot;product</text>
+<text x="28" y="885">&quot;:&quot;Libro de arquitectura&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:85000,&quot;total&quot;:85000}}}</text>
+<text x="28" y="908"></text>
+<text x="28" y="931">docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt · línea 8</text>
+<text x="28" y="954">inventory-consumer-1  | 2026-10-31T23:20:33.953029758Z {&quot;date&quot;:&quot;2026-10-31T23:20:33.952Z&quot;,&quot;hostname&quot;:&quot;3664fcf5dc</text>
+<text x="28" y="977">8c&quot;,&quot;service&quot;:&quot;inventory-consumer&quot;,&quot;groupId&quot;:&quot;inventory-service-group&quot;,&quot;instanceId&quot;:&quot;3664fcf5dc8c&quot;,&quot;phase&quot;:&quot;proc</text>
+<text x="28" y="1000">essed&quot;,&quot;action&quot;:&quot;simulate-stock-reservation&quot;,&quot;trace&quot;:{&quot;service&quot;:&quot;inventory-consumer&quot;,&quot;groupId&quot;:&quot;inventory-servic</text>
+<text x="28" y="1023">e-group&quot;,&quot;instanceId&quot;:&quot;3664fcf5dc8c&quot;,&quot;orderId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c&quot;,&quot;eventId&quot;:&quot;f435ba0a-d0</text>
+<text x="28" y="1046">45-412b-a3b9-45c875f21faf&quot;,&quot;correlationId&quot;:&quot;f3b52280-d60f-418b-97e9-a2109589f72e&quot;,&quot;topic&quot;:&quot;orders.events&quot;,&quot;parti</text>
+<text x="28" y="1069">tion&quot;:1,&quot;offset&quot;:&quot;1&quot;},&quot;result&quot;:{&quot;action&quot;:&quot;simulate-stock-reservation&quot;,&quot;orderId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c3</text>
+<text x="28" y="1092">59b6c121c&quot;}}</text>
+<text x="28" y="1115"></text>
+<text x="28" y="1138">docs/verificacion/reactivas/cp07/corrida-01/collected-inventory-consumer-logs.txt · línea 9</text>
+<text x="28" y="1161">inventory-consumer-1  | 2026-10-31T23:20:33.962688383Z {&quot;date&quot;:&quot;2026-10-31T23:20:33.962Z&quot;,&quot;hostname&quot;:&quot;3664fcf5dc</text>
+<text x="28" y="1184">8c&quot;,&quot;service&quot;:&quot;inventory-consumer&quot;,&quot;groupId&quot;:&quot;inventory-service-group&quot;,&quot;instanceId&quot;:&quot;3664fcf5dc8c&quot;,&quot;phase&quot;:&quot;offs</text>
+<text x="28" y="1207">et-committed&quot;,&quot;action&quot;:&quot;simulate-stock-reservation&quot;,&quot;trace&quot;:{&quot;service&quot;:&quot;inventory-consumer&quot;,&quot;groupId&quot;:&quot;inventory</text>
+<text x="28" y="1230">-service-group&quot;,&quot;instanceId&quot;:&quot;3664fcf5dc8c&quot;,&quot;orderId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c&quot;,&quot;eventId&quot;:&quot;f435</text>
+<text x="28" y="1253">ba0a-d045-412b-a3b9-45c875f21faf&quot;,&quot;correlationId&quot;:&quot;f3b52280-d60f-418b-97e9-a2109589f72e&quot;,&quot;topic&quot;:&quot;orders.events&quot;</text>
+<text x="28" y="1276">,&quot;partition&quot;:1,&quot;offset&quot;:&quot;1&quot;}}</text>
+<text x="28" y="1299"></text>
+</g>
+</svg>

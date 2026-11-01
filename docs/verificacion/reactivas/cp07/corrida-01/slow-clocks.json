@@ -1,0 +1,14 @@
+{
+  "orders-api": {
+    "hostBefore": 1793488794912,
+    "containerEpochMs": 1793488795093,
+    "hostAfter": 1793488795127,
+    "marginMs": 100
+  },
+  "inventory-consumer": {
+    "hostBefore": 1793488795127,
+    "containerEpochMs": 1793488795330,
+    "hostAfter": 1793488795365,
+    "marginMs": 100
+  }
+}

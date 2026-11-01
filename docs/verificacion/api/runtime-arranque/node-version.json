@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "qa-taller-integracion-kafka",
+    "exec",
+    "-T",
+    "orders-api",
+    "node",
+    "--version"
+  ],
+  "stdout": "v24.22.1\n",
+  "stderr": "",
+  "exitcode": 0,
+  "timestamp": "2026-10-27T12:17:07.026951+00:00"
+}

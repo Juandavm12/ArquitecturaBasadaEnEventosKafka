@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "scope": "administrative diagnostic only; CP09 not executed",
+  "utc": "2026-11-01T03:31:03.467468+00:00",
+  "queryStartUTC": "2026-11-01T03:30:24.071Z",
+  "queryEndUTC": "2026-11-01T03:30:25.232Z",
+  "queryDurationMs": 1161,
+  "post": 0,
+  "start": 0,
+  "stop": 0,
+  "protected": {
+    "originals": 566,
+    "plans": 4
+  },
+  "sourceSHA256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c",
+  "groups": [
+    {
+      "groupId": "inventory-service-group",
+      "state": "Stable",
+      "members": 1,
+      "clientId": "inventory-consumer-24326effb3e1",
+      "partitions": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "low": 0,
+          "lag": 0
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 2,
+          "low": 0,
+          "lag": 0
+        }
+      ]
+    },
+    {
+      "groupId": "billing-service-group",
+      "state": "Stable",
+      "members": 1,
+      "clientId": "billing-consumer-5caff4b88c36",
+      "partitions": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "low": 0,
+          "lag": 0
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 2,
+          "low": 0,
+          "lag": 0
+        }
+      ]
+    },
+    {
+      "groupId": "notification-service-group",
+      "state": "Stable",
+      "members": 1,
+      "clientId": "notification-consumer-3ce4bcc7867e",
+      "partitions": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "low": 0,
+          "lag": 0
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 2,
+          "low": 0,
+          "lag": 0
+        }
+      ]
+    }
+  ]
+}

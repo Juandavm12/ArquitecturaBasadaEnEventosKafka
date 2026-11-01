@@ -1,0 +1,4 @@
+
+GROUP                 TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                        HOST            CLIENT-ID
+billing-service-group orders.events   1          1               1               0               billing-consumer-5caff4b88c36-eac8b4d5-80eb-4294-84d4-a5db6e2ca5bf /172.24.0.5     billing-consumer-5caff4b88c36
+billing-service-group orders.events   0          -               0               -               billing-consumer-5caff4b88c36-eac8b4d5-80eb-4294-84d4-a5db6e2ca5bf /172.24.0.5     billing-consumer-5caff4b88c36

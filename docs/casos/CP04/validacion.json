@@ -1,0 +1,26 @@
+{
+  "validatedAtUTC": "2026-10-31T19:00:05.694631+00:00",
+  "allPassed": true,
+  "case": "CP-04",
+  "state": "Cumple",
+  "reportFields": 11,
+  "resolvedFinalLinks": 18,
+  "preservedHistoricalAndCP05Hashes": 21,
+  "preservedNewRunSourceHashes": 32,
+  "matrixRows": 12,
+  "onlyChangedMatrixCase": [
+    "CP-04"
+  ],
+  "updatedCurrentPlans": 4,
+  "kafkaClosedCases": [
+    "CP-04",
+    "CP-05"
+  ],
+  "kafkaClosedCount": "2/10",
+  "pendingCases": 8,
+  "additionalHTTPRequests": 0,
+  "reportSHA256": "74223e99837e4dcddf0b0137b2c8a897a51bf9a701fa164d984dc71fbc04925d",
+  "detailImageSHA256": "b2e736b8258af35ae6945c73a12f832ac1a139c00dc100e5530fcbcbc8a9ffe9",
+  "checks": "Final report equals reviewed staging with only integrated-state wording; all links resolve without fallback; PNG/JSON byte-identical; IDs match; historical and new runtime hashes unchanged; only CP04 matrix changed.",
+  "limits": "Offline documentation verification; no new runtime, SLA, recovery or consumption checks. Native review unavailable; Markdown diagnostic coverage incomplete."
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "command": [
+      "docker",
+      "inspect",
+      "qa-taller-integracion-kafka-kafka-1",
+      "qa-taller-integracion-kafka-kafka-ui-1"
+    ],
+    "start": "2026-10-27T12:08:11.760760+00:00",
+    "end": "2026-10-27T12:08:11.857298+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "start",
+      "--wait",
+      "--wait-timeout",
+      "180",
+      "kafka",
+      "kafka-ui"
+    ],
+    "start": "2026-10-27T12:08:11.857877+00:00",
+    "end": "2026-10-27T12:08:37.743311+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-topics.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--describe",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T12:08:37.744437+00:00",
+    "end": "2026-10-27T12:08:42.630785+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T12:08:42.631144+00:00",
+    "end": "2026-10-27T12:08:48.042227+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "inspect",
+      "qa-taller-integracion-kafka-kafka-1",
+      "qa-taller-integracion-kafka-kafka-ui-1"
+    ],
+    "start": "2026-10-27T12:09:09.338450+00:00",
+    "end": "2026-10-27T12:09:09.431941+00:00",
+    "exitcode": 0
+  }
+]

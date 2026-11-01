@@ -1,0 +1,23 @@
+{
+  "file": "01-orders-events-listado.png",
+  "sourceFile": "/tmp/gpyFWc3j/pi-clipboard-9364bd16-5032-45db-987a-ebf5ccd4e0da.png",
+  "receivedAtUTC": "2026-10-31T18:48:05.801681+00:00",
+  "sha256": "9740654d24595943877bb09dba28b95e2df3110b2338739f104aab1c9427fb26",
+  "width": 1917,
+  "height": 606,
+  "case": "CP-04",
+  "observed": {
+    "topic": "orders.events",
+    "newRecord": {
+      "partition": 0,
+      "offset": 0,
+      "key": "ORD-d8484470-cb78-48c9-befa-0c88fe1429f9",
+      "displayedTimestamp": "10/31/2026, 13:06:41"
+    },
+    "olderRecordAlsoVisible": true,
+    "viewerMessageCount": 2,
+    "messageExpanded": false
+  },
+  "interpretation": "La key nueva coincide con el pedido de Postman CLI y el registro nativo. El conteo del visor no demuestra consumo funcional. No se infiere zona horaria ni contenido completo desde el preview.",
+  "pendingEvidence": "Desplegar segunda fila para ver JSON completo con eventType y data.orderId."
+}

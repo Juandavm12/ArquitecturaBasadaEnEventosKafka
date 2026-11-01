@@ -1,0 +1,61 @@
+diff --git a/../api-reanudacion-01/test/infra.test.mjs b/test/infra.test.mjs
+index c11b436..7e41857 100644
+--- a/../api-reanudacion-01/test/infra.test.mjs
++++ b/test/infra.test.mjs
+@@ -2,6 +2,8 @@ import test from 'node:test';
+ import assert from 'node:assert/strict';
+ import { spawnSync } from 'node:child_process';
+ import { fileURLToPath } from 'node:url';
++import { resolve } from 'node:path';
++import { getConfig } from '../src/consumer.js';
+ 
+ const cwd = fileURLToPath(new URL('../', import.meta.url));
+ function config(overrides = {}) {
+@@ -15,12 +17,35 @@ function config(overrides = {}) {
+   return JSON.parse(result.stdout).services;
+ }
+ 
+-test('contrato estático broker + UI; no requiere daemon', () => {
++test('contrato estático broker + UI + API; no requiere daemon', () => {
+   const services = config({ KAFKA_EXTERNAL_PORT: '29092', KAFKA_UI_PORT: '8080', ORDERS_API_PORT: '3000' });
+-  assert.deepEqual(Object.keys(services).sort(), ['kafka', 'kafka-ui', 'orders-api']);
++  assert.deepEqual(Object.keys(services).sort(), ['billing-consumer', 'inventory-consumer',
++    'kafka', 'kafka-ui', 'notification-consumer', 'orders-api']);
++  const groups = new Set();
++  for (const role of ['inventory', 'billing', 'notification']) {
++    const service = services[`${role}-consumer`];
++    groups.add(getConfig(role).groupId);
++    assert.equal(service.build.context, resolve(cwd));
++    assert.deepEqual(service.command, ['node', 'src/consumer-server.js']);
++    assert.equal(service.environment.CONSUMER_ROLE, role);
++    assert.equal(service.environment.KAFKA_BROKER, 'kafka:9092');
++    assert.equal(service.environment.KAFKA_TOPIC, 'orders.events');
++    assert.equal(service.environment.PROCESSING_DELAY_MS, '0');
++    assert.equal(service.depends_on.kafka.condition, 'service_healthy');
++    assert.equal(service.restart, 'on-failure');
++    assert.equal(service.stop_grace_period, '15s');
++    assert.equal(service.container_name, undefined);
++    assert.equal(service.ports, undefined);
++    assert.deepEqual(service.healthcheck.test, ['CMD', 'test', '-f', '/tmp/consumer-ready']);
++    assert.equal(service.healthcheck.interval, '10s');
++    assert.equal(service.healthcheck.timeout, '5s');
++    assert.equal(service.healthcheck.retries, 6);
++    assert.equal(service.healthcheck.start_period, '20s');
++  }
++  assert.equal(groups.size, 3);
+   const api = services['orders-api'];
+   assert.equal(api.container_name, undefined);
+-  assert.ok(api.build.context.endsWith('api-reanudacion-01'));
++  assert.equal(api.build.context, resolve(cwd));
+   assert.equal(api.environment.KAFKA_BROKER, 'kafka:9092');
+   assert.equal(api.environment.KAFKA_TOPIC, 'orders.events');
+   assert.equal(api.depends_on.kafka.condition, 'service_healthy');
+@@ -83,5 +108,7 @@ test('puertos alternativos conservan listener interno y anuncio externo coherent
+   assert.equal(services.kafka.environment.KAFKA_ADVERTISED_LISTENERS,
+     'INTERNAL://kafka:9092,EXTERNAL://localhost:39092');
+   assert.equal(services['kafka-ui'].ports[0].published, '18080');
+-  for (const service of Object.values(services)) assert.equal(service.ports[0].host_ip, '127.0.0.1');
++  for (const name of ['kafka', 'kafka-ui', 'orders-api']) {
++    assert.equal(services[name].ports[0].host_ip, '127.0.0.1');
++  }
+ });

@@ -1,0 +1,1689 @@
+[
+    {
+        "Id": "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+        "Created": "2026-10-31T23:20:42.685499257Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "node",
+            "src/consumer-server.js"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1116742,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-31T23:20:44.483492929Z",
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-31T23:45:57.701940939Z",
+                        "End": "2026-10-31T23:45:57.812674435Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:07.814315084Z",
+                        "End": "2026-10-31T23:46:07.897667681Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:17.899103694Z",
+                        "End": "2026-10-31T23:46:17.980371312Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:27.978369639Z",
+                        "End": "2026-10-31T23:46:28.08831895Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:38.09054448Z",
+                        "End": "2026-10-31T23:46:38.176836448Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+        "ResolvConfPath": "/var/lib/docker/containers/24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978/hostname",
+        "HostsPath": "/var/lib/docker/containers/24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978/hosts",
+        "LogPath": "/var/lib/docker/containers/24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978/24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978-json.log",
+        "Name": "/qa-taller-integracion-kafka-inventory-consumer-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "qa-taller-integracion-kafka_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "on-failure",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "24326effb3e1",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "KAFKA_BROKER=kafka:9092",
+                "KAFKA_TOPIC=orders.events",
+                "PROCESSING_DELAY_MS=0",
+                "CONSUMER_ROLE=inventory",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.22.1",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "node",
+                "src/consumer-server.js"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "test",
+                    "-f",
+                    "/tmp/consumer-ready"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 20000000000,
+                "Retries": 6
+            },
+            "Image": "qa-taller-integracion-kafka-inventory-consumer",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "395067f1ed1fb3bf6924d531485a580a052085f8c290fa4a79bd9258db93e535",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "qa-taller-integracion-kafka",
+                "com.docker.compose.project.config_files": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+                "com.docker.compose.replace": "inventory-consumer-1",
+                "com.docker.compose.service": "inventory-consumer",
+                "com.docker.compose.version": "5.3.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu"
+            },
+            "StopTimeout": 15
+        },
+        "NetworkSettings": {
+            "SandboxID": "9c38a0ae5056a808367935a23cb09da258f3d4bc15d73dd52c6325bef5ef5da2",
+            "SandboxKey": "/var/run/docker/netns/9c38a0ae5056",
+            "Ports": {
+                "3000/tcp": null
+            },
+            "Networks": {
+                "qa-taller-integracion-kafka_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "qa-taller-integracion-kafka-inventory-consumer-1",
+                        "inventory-consumer"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c478973eac986e0398794f5997d2796cf10214909f488444ac4abd728fae1828",
+                    "EndpointID": "08e5ce8512177d132cb71ae3d9cdb6096eb122626ade60f115b1aa12659db5a2",
+                    "Gateway": "172.24.0.1",
+                    "IPAddress": "172.24.0.3",
+                    "MacAddress": "f6:40:63:8a:39:f0",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-inventory-consumer-1",
+                        "inventory-consumer",
+                        "24326effb3e1"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:af0a2f74717431c68a17407cf1408ae41f399291c774864c348b55ce31db8327",
+            "size": 2001,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696",
+        "Created": "2026-10-27T13:34:48.669100756Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "node",
+            "src/consumer-server.js"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 8552,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-31T16:58:54.387578585Z",
+            "FinishedAt": "2026-10-31T16:58:54.120447674Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-31T23:45:57.699453325Z",
+                        "End": "2026-10-31T23:45:57.806953635Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:07.808429625Z",
+                        "End": "2026-10-31T23:46:07.890073843Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:17.890621583Z",
+                        "End": "2026-10-31T23:46:17.979206542Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:27.978400971Z",
+                        "End": "2026-10-31T23:46:28.092628017Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:38.093353045Z",
+                        "End": "2026-10-31T23:46:38.177281068Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:3bcc3ae6c6c56e94fff78caa7b72ad9376f9cfba59401570b42c19180a9e8924",
+        "ResolvConfPath": "/var/lib/docker/containers/3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696/hostname",
+        "HostsPath": "/var/lib/docker/containers/3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696/hosts",
+        "LogPath": "/var/lib/docker/containers/3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696/3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696-json.log",
+        "Name": "/qa-taller-integracion-kafka-notification-consumer-1",
+        "RestartCount": 8,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "qa-taller-integracion-kafka_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "on-failure",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "3ce4bcc7867e",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "KAFKA_TOPIC=orders.events",
+                "PROCESSING_DELAY_MS=0",
+                "CONSUMER_ROLE=notification",
+                "KAFKA_BROKER=kafka:9092",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.22.1",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "node",
+                "src/consumer-server.js"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "test",
+                    "-f",
+                    "/tmp/consumer-ready"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 20000000000,
+                "Retries": 6
+            },
+            "Image": "qa-taller-integracion-kafka-notification-consumer",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "035589c1cfb19fa3654b0e8ab3b52037f65b594e317accc4daced875697aad43",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:3bcc3ae6c6c56e94fff78caa7b72ad9376f9cfba59401570b42c19180a9e8924",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "qa-taller-integracion-kafka",
+                "com.docker.compose.project.config_files": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+                "com.docker.compose.service": "notification-consumer",
+                "com.docker.compose.version": "5.3.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu"
+            },
+            "StopTimeout": 15
+        },
+        "NetworkSettings": {
+            "SandboxID": "a8fe5be5076c82596c1d14a74835350828853b5e74fcef268d747b41bd771dac",
+            "SandboxKey": "/var/run/docker/netns/a8fe5be5076c",
+            "Ports": {
+                "3000/tcp": null
+            },
+            "Networks": {
+                "qa-taller-integracion-kafka_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "qa-taller-integracion-kafka-notification-consumer-1",
+                        "notification-consumer"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c478973eac986e0398794f5997d2796cf10214909f488444ac4abd728fae1828",
+                    "EndpointID": "5f9b9a9dce7461bf4cd249f6df0280ec737e6758fad52c734f4965cd983e3631",
+                    "Gateway": "172.24.0.1",
+                    "IPAddress": "172.24.0.2",
+                    "MacAddress": "0e:f2:81:4c:9c:f8",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-notification-consumer-1",
+                        "notification-consumer",
+                        "3ce4bcc7867e"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:36bab901a5664cbe8b1242eed64cd138a94799c28362ee9f0a0f87d926e94283",
+            "size": 2001,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b",
+        "Created": "2026-10-27T13:34:48.668066157Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "node",
+            "src/consumer-server.js"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 8183,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-31T16:58:44.449411867Z",
+            "FinishedAt": "2026-10-31T16:58:43.978503226Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-31T23:45:57.68485042Z",
+                        "End": "2026-10-31T23:45:57.793345671Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:07.800437624Z",
+                        "End": "2026-10-31T23:46:07.886609169Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:17.888288813Z",
+                        "End": "2026-10-31T23:46:17.981929825Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:27.98047537Z",
+                        "End": "2026-10-31T23:46:28.084558817Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:38.085691997Z",
+                        "End": "2026-10-31T23:46:38.176837683Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:afdac9be4249c3c4f6bdd9ae79a43112ec38f9a81f7cb63d41cac694f160b2f6",
+        "ResolvConfPath": "/var/lib/docker/containers/5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b/hostname",
+        "HostsPath": "/var/lib/docker/containers/5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b/hosts",
+        "LogPath": "/var/lib/docker/containers/5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b/5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b-json.log",
+        "Name": "/qa-taller-integracion-kafka-billing-consumer-1",
+        "RestartCount": 7,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "qa-taller-integracion-kafka_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "on-failure",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "5caff4b88c36",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "CONSUMER_ROLE=billing",
+                "KAFKA_BROKER=kafka:9092",
+                "KAFKA_TOPIC=orders.events",
+                "PROCESSING_DELAY_MS=0",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.22.1",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "node",
+                "src/consumer-server.js"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "test",
+                    "-f",
+                    "/tmp/consumer-ready"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 20000000000,
+                "Retries": 6
+            },
+            "Image": "qa-taller-integracion-kafka-billing-consumer",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "131f3fa8a9f76a4448a59e3ad954e076804197f0ff745fd54a21475f3dd4da34",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:afdac9be4249c3c4f6bdd9ae79a43112ec38f9a81f7cb63d41cac694f160b2f6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "qa-taller-integracion-kafka",
+                "com.docker.compose.project.config_files": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+                "com.docker.compose.service": "billing-consumer",
+                "com.docker.compose.version": "5.3.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu"
+            },
+            "StopTimeout": 15
+        },
+        "NetworkSettings": {
+            "SandboxID": "d2f8880b4b9cf4f2f16af85ca62905f37e7bd658541f9c16116759781966db0a",
+            "SandboxKey": "/var/run/docker/netns/d2f8880b4b9c",
+            "Ports": {
+                "3000/tcp": null
+            },
+            "Networks": {
+                "qa-taller-integracion-kafka_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "qa-taller-integracion-kafka-billing-consumer-1",
+                        "billing-consumer"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c478973eac986e0398794f5997d2796cf10214909f488444ac4abd728fae1828",
+                    "EndpointID": "707b91b88e4c0c4180e40bc1b5c849ac873586a16946a8d7b5e12998fe42c859",
+                    "Gateway": "172.24.0.1",
+                    "IPAddress": "172.24.0.4",
+                    "MacAddress": "0e:34:a7:ba:14:91",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-billing-consumer-1",
+                        "billing-consumer",
+                        "5caff4b88c36"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:7f9a12927b5c78fa982be7ec51c9eafe0ca37d91f2a92fbe24fa31e0760f61a9",
+            "size": 2001,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+        "Created": "2026-10-27T12:15:04.961545561Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "node",
+            "src/server.js"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 18297,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-31T17:02:30.348532835Z",
+            "FinishedAt": "2026-10-31T16:58:38.812037964Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-31T23:45:54.72050059Z",
+                        "End": "2026-10-31T23:45:54.971706602Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:04.974243568Z",
+                        "End": "2026-10-31T23:46:05.152361415Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:15.153726345Z",
+                        "End": "2026-10-31T23:46:15.392122216Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:25.391141943Z",
+                        "End": "2026-10-31T23:46:25.615433907Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:35.617253926Z",
+                        "End": "2026-10-31T23:46:35.79073393Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9",
+        "ResolvConfPath": "/var/lib/docker/containers/eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9/hostname",
+        "HostsPath": "/var/lib/docker/containers/eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9/hosts",
+        "LogPath": "/var/lib/docker/containers/eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9/eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9-json.log",
+        "Name": "/qa-taller-integracion-kafka-orders-api-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "qa-taller-integracion-kafka_default",
+            "PortBindings": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "eff545def17b",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "KAFKA_TOPIC=orders.events",
+                "KAFKA_BROKER=kafka:9092",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.22.1",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "node",
+                "src/server.js"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "node",
+                    "-e",
+                    "fetch('http://127.0.0.1:3000/health') .then(r =\u003e process.exit(r.ok ? 0 : 1)) .catch(() =\u003e process.exit(1))"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 12000000000,
+                "StartPeriod": 20000000000,
+                "Retries": 3
+            },
+            "Image": "qa-taller-integracion-kafka-orders-api",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "c036e056f978cac4e96e9c4d1cd6374c1b37469e65dfc1d3b22f4aa5ebdf278b",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "qa-taller-integracion-kafka",
+                "com.docker.compose.project.config_files": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+                "com.docker.compose.service": "orders-api",
+                "com.docker.compose.version": "5.3.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu"
+            },
+            "StopTimeout": 15
+        },
+        "NetworkSettings": {
+            "SandboxID": "aefe4cfd0df65378aee28d8153b821de026b560427cde867bf37cfa8db3b38f7",
+            "SandboxKey": "/var/run/docker/netns/aefe4cfd0df6",
+            "Ports": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "Networks": {
+                "qa-taller-integracion-kafka_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "qa-taller-integracion-kafka-orders-api-1",
+                        "orders-api"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c478973eac986e0398794f5997d2796cf10214909f488444ac4abd728fae1828",
+                    "EndpointID": "7ac7efa145b13d8bcbb7a8db206cc667ac5cd89c8275c0c2c1a99d79c8bbdfa6",
+                    "Gateway": "172.24.0.1",
+                    "IPAddress": "172.24.0.7",
+                    "MacAddress": "1a:14:cc:e0:c9:be",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-orders-api-1",
+                        "orders-api",
+                        "eff545def17b"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:f6cf5f799fc86d2ed64b67d09a1eff4f57c99761d9dbfbde02583a028892a910",
+            "size": 2001,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958",
+        "Created": "2026-10-27T11:25:38.942341603Z",
+        "Path": "/bin/sh",
+        "Args": [
+            "-c",
+            "java --add-opens java.rmi/javax.rmi.ssl=ALL-UNNAMED  $JAVA_OPTS -jar kafka-ui-api.jar"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 9247,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-31T16:59:02.705820504Z",
+            "FinishedAt": "2026-10-31T16:56:21.72274281Z"
+        },
+        "Image": "sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818",
+        "ResolvConfPath": "/var/lib/docker/containers/5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958/hostname",
+        "HostsPath": "/var/lib/docker/containers/5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958/hosts",
+        "LogPath": "/var/lib/docker/containers/5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958/5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958-json.log",
+        "Name": "/qa-taller-integracion-kafka-kafka-ui-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "qa-taller-integracion-kafka_default",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "5a51c1295022",
+            "Domainname": "",
+            "User": "kafkaui",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "JAVA_OPTS=-Xms256m -Xmx256m",
+                "KAFKA_CLUSTERS_0_NAME=laboratorio",
+                "KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092",
+                "KAFKA_CLUSTERS_0_READONLY=true",
+                "DYNAMIC_CONFIG_ENABLED=false",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "TZ=Etc/UTC",
+                "JAVA_HOME=/usr/lib/jvm/zulu17"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "java --add-opens java.rmi/javax.rmi.ssl=ALL-UNNAMED  $JAVA_OPTS -jar kafka-ui-api.jar"
+            ],
+            "Image": "provectuslabs/kafka-ui:v0.7.2",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "564a1447b4fc77815f08c3729d16835e548ad761c4c0f617c345a0259ee473fa",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "kafka:service_healthy:false",
+                "com.docker.compose.image": "sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "qa-taller-integracion-kafka",
+                "com.docker.compose.project.config_files": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+                "com.docker.compose.service": "kafka-ui",
+                "com.docker.compose.version": "5.3.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "f4957061611d6d952efc2c1df2129ef29fa05abcf00b58fda2e69cfb1136d91b",
+            "SandboxKey": "/var/run/docker/netns/f4957061611d",
+            "Ports": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "Networks": {
+                "qa-taller-integracion-kafka_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "qa-taller-integracion-kafka-kafka-ui-1",
+                        "kafka-ui"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c478973eac986e0398794f5997d2796cf10214909f488444ac4abd728fae1828",
+                    "EndpointID": "c17e3e1c7a60a3bedf1d5e1731d75b4f85034c0a1cd6f661194e0c02b1b0d427",
+                    "Gateway": "172.24.0.1",
+                    "IPAddress": "172.24.0.5",
+                    "MacAddress": "7a:0d:e8:64:c4:21",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-kafka-ui-1",
+                        "kafka-ui",
+                        "5a51c1295022"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:4346a0af1450f52286e671a6b49f701d069d7306a802f7cf6743bd27ac4dbcd1",
+            "size": 1680,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b",
+        "Created": "2026-10-27T11:23:20.92101328Z",
+        "Path": "/__cacert_entrypoint.sh",
+        "Args": [
+            "/etc/kafka/docker/run"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 6643,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-31T16:58:37.260389724Z",
+            "FinishedAt": "2026-10-31T16:56:21.721349774Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-31T23:45:35.237526009Z",
+                        "End": "2026-10-31T23:45:37.480401823Z",
+                        "ExitCode": 0,
+                        "Output": "__consumer_offsets\norders.events\n"
+                    },
+                    {
+                        "Start": "2026-10-31T23:45:47.481347702Z",
+                        "End": "2026-10-31T23:45:50.149150719Z",
+                        "ExitCode": 0,
+                        "Output": "__consumer_offsets\norders.events\n"
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:00.147738693Z",
+                        "End": "2026-10-31T23:46:02.810151923Z",
+                        "ExitCode": 0,
+                        "Output": "__consumer_offsets\norders.events\n"
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:12.811820497Z",
+                        "End": "2026-10-31T23:46:15.59536076Z",
+                        "ExitCode": 0,
+                        "Output": "__consumer_offsets\norders.events\n"
+                    },
+                    {
+                        "Start": "2026-10-31T23:46:25.595220492Z",
+                        "End": "2026-10-31T23:46:28.256364713Z",
+                        "ExitCode": 0,
+                        "Output": "__consumer_offsets\norders.events\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed",
+        "ResolvConfPath": "/var/lib/docker/containers/8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b/hostname",
+        "HostsPath": "/var/lib/docker/containers/8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b/hosts",
+        "LogPath": "/var/lib/docker/containers/8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b/8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b-json.log",
+        "Name": "/qa-taller-integracion-kafka-kafka-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "64ec6fee2c4bb5ba1dcd114717a108987098c96c98d205904d48c875432acfee"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "qa-taller-integracion-kafka_kafka-data:/var/lib/kafka/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "qa-taller-integracion-kafka_default",
+            "PortBindings": {
+                "29092/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "29092"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "aafd2699ae1b9869bb80282edb8c36f85c41421bfdd9a3cf35e94899eef4ad6d",
+                "Source": "/var/lib/docker/volumes/aafd2699ae1b9869bb80282edb8c36f85c41421bfdd9a3cf35e94899eef4ad6d/_data",
+                "Destination": "/etc/kafka/secrets",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "eab0f692593bc219e506f0e2907dfa930710da79a666b689d3c8b71cafb885e9",
+                "Source": "/var/lib/docker/volumes/eab0f692593bc219e506f0e2907dfa930710da79a666b689d3c8b71cafb885e9/_data",
+                "Destination": "/mnt/shared/config",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "qa-taller-integracion-kafka_kafka-data",
+                "Source": "/var/lib/docker/volumes/qa-taller-integracion-kafka_kafka-data/_data",
+                "Destination": "/var/lib/kafka/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "8719d42973a5",
+            "Domainname": "",
+            "User": "appuser",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "29092/tcp": {},
+                "9092/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "KAFKA_LOG_RETENTION_HOURS=168",
+                "KAFKA_LISTENERS=INTERNAL://:9092,EXTERNAL://:29092,CONTROLLER://:9093",
+                "KAFKA_PROCESS_ROLES=broker,controller",
+                "CLUSTER_ID=MkU3OEVBNTcwNTJENDM2Qk",
+                "KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1",
+                "KAFKA_MIN_INSYNC_REPLICAS=1",
+                "KAFKA_HEAP_OPTS=-Xms512m -Xmx512m",
+                "KAFKA_LOG_DIRS=/var/lib/kafka/data",
+                "KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1",
+                "KAFKA_NUM_PARTITIONS=2",
+                "KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT",
+                "KAFKA_CONTROLLER_LISTENER_NAMES=CONTROLLER",
+                "KAFKA_ADVERTISED_LISTENERS=INTERNAL://kafka:9092,EXTERNAL://localhost:29092",
+                "KAFKA_NODE_ID=1",
+                "KAFKA_CONTROLLER_QUORUM_VOTERS=1@kafka:9093",
+                "KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1",
+                "KAFKA_AUTO_CREATE_TOPICS_ENABLE=false",
+                "KAFKA_INTER_BROKER_LISTENER_NAME=INTERNAL",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-21.0.7+6"
+            ],
+            "Cmd": [
+                "/etc/kafka/docker/run"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "/opt/kafka/bin/kafka-topics.sh",
+                    "--bootstrap-server",
+                    "kafka:9092",
+                    "--list"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 10000000000,
+                "StartPeriod": 20000000000,
+                "Retries": 12
+            },
+            "Image": "apache/kafka:3.9.1",
+            "Volumes": {
+                "/etc/kafka/secrets": {},
+                "/mnt/shared/config": {},
+                "/var/lib/kafka/data": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/__cacert_entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "26b117b18c357ba46267ac65b90989aa8e7d9dfa78d850ee2fd1ce94a48b1cda",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "qa-taller-integracion-kafka",
+                "com.docker.compose.project.config_files": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+                "com.docker.compose.service": "kafka",
+                "com.docker.compose.version": "5.3.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu",
+                "maintainer": "Apache Kafka",
+                "org.label-schema.build-date": "2025-05-12",
+                "org.label-schema.description": "Apache Kafka",
+                "org.label-schema.name": "kafka",
+                "org.label-schema.vcs-url": "https://github.com/apache/kafka"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "e95e2ceca9a7e2f1b9d3e4595522b3b1abcc50b98117f7e6bb4a4520d231e488",
+            "SandboxKey": "/var/run/docker/netns/e95e2ceca9a7",
+            "Ports": {
+                "29092/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "29092"
+                    }
+                ]
+            },
+            "Networks": {
+                "qa-taller-integracion-kafka_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "qa-taller-integracion-kafka-kafka-1",
+                        "kafka"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c478973eac986e0398794f5997d2796cf10214909f488444ac4abd728fae1828",
+                    "EndpointID": "8af39a931da0df4be86f20204935c901c85f01f82c59453509c9a2b29512e4dd",
+                    "Gateway": "172.24.0.1",
+                    "IPAddress": "172.24.0.6",
+                    "MacAddress": "52:46:7b:4a:29:27",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "qa-taller-integracion-kafka-kafka-1",
+                        "kafka",
+                        "8719d42973a5"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:5862db4a63a6dd7d46fd14771b10a1b39e069c2c47f17d8e4640f960720a0ead",
+            "size": 2196,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

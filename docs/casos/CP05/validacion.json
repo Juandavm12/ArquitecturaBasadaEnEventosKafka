@@ -1,0 +1,447 @@
+{
+  "timestampUTC": "2026-10-31T17:34:16.499692+00:00",
+  "mode": "offline; documentación pasiva, sin RED/GREEN aplicable",
+  "checks": [
+    {
+      "name": "Once campos exactos",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/commands.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/02-kafka-ui-tres-grupos.png",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/02-kafka-ui-tres-grupos.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/03-inventory-consumer-procesamiento.png",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/03-inventory-consumer-procesamiento.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/04-billing-consumer-procesamiento.png",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/04-billing-consumer-procesamiento.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/05-notification-consumer-procesamiento.png",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/reanudacion/20261031T170229Z-api/capturas/05-notification-consumer-procesamiento.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/inventory-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/inventory-service-group-describe-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/billing-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/billing-service-group-describe-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/notification-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/notification-service-group-describe-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../verificacion/consumidores/runtime-01/result.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace reporteCP05.md: ../../../kafka/src/consumer.js",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: PLAN_KAFKA.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: kafka/INFRAESTRUCTURA.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: docs/verificacion/infraestructura/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: docs/verificacion/api/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: docs/verificacion/consumidores/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: docs/casos/CP05/reporteCP05.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace README.md: docs/FUENTES_TECNICAS.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace PLAN_KAFKA.md: docs/casos/CP05/reporteCP05.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace PLAN_KAFKA.md: docs/verificacion/contrato",
+      "ok": true
+    },
+    {
+      "name": "Enlace PLAN_KAFKA.md: docs/verificacion/infraestructura/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace PLAN_KAFKA.md: docs/verificacion/api/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace PLAN_KAFKA.md: docs/verificacion/consumidores/RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace PLAN_KAFKA.md: docs/casos/CP05/reporteCP05.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: ../../casos/CP05/reporteCP05.md",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: ../reanudacion/20261031T170229Z-api/capturas/",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: runtime-01/commands.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: runtime-01/result.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: runtime-01/inventory-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: runtime-01/billing-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: runtime-01/notification-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: nucleo-01/unidad-3a.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: montaje-01/integrada-commands.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: montaje-01/node24/command.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: montaje-01/integracion.json",
+      "ok": true
+    },
+    {
+      "name": "Enlace RESUMEN.md: ../../../kafka/CONSUMIDORES_RUNTIME.md",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: baseline-command.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: billing-consumer-logs-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: billing-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: billing-service-group-describe-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: billing-service-group-describe-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: build-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: build-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: commands.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: estado-final-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: estado-final-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: groups-before-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: groups-before-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inspect-before-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inspect-before-stdout.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inspect-original-after-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inspect-original-after-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inventory-consumer-logs-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inventory-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inventory-service-group-describe-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: inventory-service-group-describe-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: notification-consumer-logs-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: notification-consumer-logs-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: notification-service-group-describe-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: notification-service-group-describe-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: offsets-after-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: offsets-after-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: offsets-before-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: offsets-before-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: result.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: start-stderr.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: start-stdout.txt",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 01-docker-desktop-seis-servicios.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 01-docker-desktop-seis-servicios.png",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 02-kafka-ui-tres-grupos.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 02-kafka-ui-tres-grupos.png",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 03-inventory-consumer-procesamiento.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 03-inventory-consumer-procesamiento.png",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 04-billing-consumer-procesamiento.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 04-billing-consumer-procesamiento.png",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 05-notification-consumer-procesamiento.json",
+      "ok": true
+    },
+    {
+      "name": "Original intacto: 05-notification-consumer-procesamiento.png",
+      "ok": true
+    },
+    {
+      "name": "Matriz: solo CP05 Kafka cambia; RabbitMQ intacto",
+      "ok": true
+    },
+    {
+      "name": "Estado vigente1/10: README.md",
+      "ok": true
+    },
+    {
+      "name": "Estado vigente1/10: PLAN_KAFKA.md",
+      "ok": true
+    },
+    {
+      "name": "Estado vigente1/10: PLAN_DE_TRABAJO.md",
+      "ok": true
+    },
+    {
+      "name": "Estado vigente1/10: RESUMEN.md",
+      "ok": true
+    },
+    {
+      "name": "PNG SHA y tamaño 02-kafka-ui-tres-grupos",
+      "ok": true
+    },
+    {
+      "name": "Captura registrada31oct 02-kafka-ui-tres-grupos",
+      "ok": true
+    },
+    {
+      "name": "PNG SHA y tamaño 03-inventory-consumer-procesamiento",
+      "ok": true
+    },
+    {
+      "name": "Captura registrada31oct 03-inventory-consumer-procesamiento",
+      "ok": true
+    },
+    {
+      "name": "Fases ordenadas inventory-consumer",
+      "ok": true
+    },
+    {
+      "name": "IDs posición fechas acción inventory-consumer",
+      "ok": true
+    },
+    {
+      "name": "Offset siguiente1 lag0 nativo inventory-consumer",
+      "ok": true
+    },
+    {
+      "name": "PNG SHA y tamaño 04-billing-consumer-procesamiento",
+      "ok": true
+    },
+    {
+      "name": "Captura registrada31oct 04-billing-consumer-procesamiento",
+      "ok": true
+    },
+    {
+      "name": "Fases ordenadas billing-consumer",
+      "ok": true
+    },
+    {
+      "name": "IDs posición fechas acción billing-consumer",
+      "ok": true
+    },
+    {
+      "name": "Offset siguiente1 lag0 nativo billing-consumer",
+      "ok": true
+    },
+    {
+      "name": "PNG SHA y tamaño 05-notification-consumer-procesamiento",
+      "ok": true
+    },
+    {
+      "name": "Captura registrada31oct 05-notification-consumer-procesamiento",
+      "ok": true
+    },
+    {
+      "name": "Fases ordenadas notification-consumer",
+      "ok": true
+    },
+    {
+      "name": "IDs posición fechas acción notification-consumer",
+      "ok": true
+    },
+    {
+      "name": "Offset siguiente1 lag0 nativo notification-consumer",
+      "ok": true
+    },
+    {
+      "name": "Límites y fechas explícitos",
+      "ok": true
+    }
+  ],
+  "passed": 108,
+  "total": 108,
+  "exitCode": 0,
+  "runtimeExecuted": false,
+  "newOrdersPosted": 0,
+  "formalCasesClosed": [
+    "CP-05"
+  ],
+  "nativeReviewApproved": false
+}

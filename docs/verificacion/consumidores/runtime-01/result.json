@@ -1,0 +1,55 @@
+{
+  "status": "VERIFIED_RUNTIME_VISUAL_GROUPS_PENDING",
+  "timestamp": "2026-10-27T13:35:13.832737+00:00",
+  "servicesRunning": 6,
+  "originalContainerIdsAndMountsPreserved": true,
+  "postedNewOrders": 0,
+  "totalTopicMessages": 1,
+  "expectedOrderId": "ORD-f2035454-c380-4e9f-b682-b48ef72ca568",
+  "consumers": {
+    "inventory-consumer": {
+      "groupId": "inventory-service-group",
+      "instanceId": "b8d3a808fc2c",
+      "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+      "partition": 1,
+      "processedOffset": "0",
+      "committedNextOffset": "1",
+      "lag": 0,
+      "phases": [
+        "received",
+        "processed",
+        "offset-committed"
+      ]
+    },
+    "billing-consumer": {
+      "groupId": "billing-service-group",
+      "instanceId": "5caff4b88c36",
+      "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+      "partition": 1,
+      "processedOffset": "0",
+      "committedNextOffset": "1",
+      "lag": 0,
+      "phases": [
+        "received",
+        "processed",
+        "offset-committed"
+      ]
+    },
+    "notification-consumer": {
+      "groupId": "notification-service-group",
+      "instanceId": "3ce4bcc7867e",
+      "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+      "partition": 1,
+      "processedOffset": "0",
+      "committedNextOffset": "1",
+      "lag": 0,
+      "phases": [
+        "received",
+        "processed",
+        "offset-committed"
+      ]
+    }
+  },
+  "formalCasesClosed": 0,
+  "scope": "Fanout real de evento histórico en tres grupos y commits posteriores; no CP12 ni diez reportes formales. Capturas grupos/logs pendientes."
+}

@@ -1,0 +1,40 @@
+{
+  "file": "02-kafka-ui-tres-grupos.png",
+  "sha256": "01bfeb5bd9b7982e02eecb0c7af81c5a507df9163fb8e275b829dd23d5e89138",
+  "bytes": 47258,
+  "registeredAtUTC": "2026-10-31T17:11:03.345130+00:00",
+  "source": "/tmp/gpyFWc3j/pi-clipboard-6e5a7aea-9d88-4b8c-b820-6629bae9bdf9.png",
+  "cluster": "laboratorio",
+  "groups": [
+    {
+      "groupId": "billing-service-group",
+      "members": 1,
+      "topics": 1,
+      "state": "STABLE",
+      "coordinator": 1,
+      "consumerLagDisplayed": "N/A"
+    },
+    {
+      "groupId": "inventory-service-group",
+      "members": 1,
+      "topics": 1,
+      "state": "STABLE",
+      "coordinator": 1,
+      "consumerLagDisplayed": "N/A"
+    },
+    {
+      "groupId": "notification-service-group",
+      "members": 1,
+      "topics": 1,
+      "state": "STABLE",
+      "coordinator": 1,
+      "consumerLagDisplayed": "N/A"
+    }
+  ],
+  "limits": [
+    "N/A no significa lag cero; esta captura no permite determinar el retraso",
+    "No se ven mensajes, IDs de pedido ni offsets: no demuestra por sí sola procesamiento",
+    "Fecha del encabezado de la aplicación no se considera fecha de ejecución",
+    "Sin cierre de CP formales por esta captura"
+  ]
+}

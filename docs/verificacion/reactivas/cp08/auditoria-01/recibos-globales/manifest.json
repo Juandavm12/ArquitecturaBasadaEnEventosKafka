@@ -1,0 +1,27 @@
+{
+  "archivedAtUTC": "2026-10-31T23:48:07.182Z",
+  "records": [
+    {
+      "job": 9,
+      "exitCode": 1,
+      "source": "/tmp/gpyFWc3j/gentle-jobs-JBco1K/job-9.log",
+      "destination": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/job-9-output.log",
+      "sha256": "641c58c4c33fbee8aaaac4abbb62b4b161f59c6d89695252cf5d713e3c46faec"
+    },
+    {
+      "job": 10,
+      "exitCode": 1,
+      "source": "/tmp/gpyFWc3j/gentle-jobs-JBco1K/job-10.log",
+      "destination": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/job-10-output.log",
+      "sha256": "25db12310854d1d535dac145d29540ac3bcb0785e5bf85d5cef219cda6e1488e"
+    },
+    {
+      "job": 11,
+      "exitCode": 0,
+      "source": "/tmp/gpyFWc3j/gentle-jobs-JBco1K/job-11.log",
+      "destination": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/recibos-globales/job-11-output.log",
+      "sha256": "6849c0de1cd755d74c642f1f0dd26a0758c2f1e2b73294e4974620803413cc1f"
+    }
+  ],
+  "note": "Exit codes from completed background-job notices; outputs copied verbatim. Earlier failures remain failures; only role-scoped collection job11 passed."
+}

@@ -1,0 +1,7 @@
+{
+  "collection": "pruebas/CP04.postman_collection.json",
+  "sha256": "7ef34902b3019c160d7e9a6bfa35f8210f5ef7152915248e810a6ee9492002c8",
+  "sourceStage": "Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/trabajos/entrega-kafka/cp04-postman-cli-01",
+  "newRequestsExecuted": 0,
+  "offlineChecker": "verificacion/check.cjs"
+}

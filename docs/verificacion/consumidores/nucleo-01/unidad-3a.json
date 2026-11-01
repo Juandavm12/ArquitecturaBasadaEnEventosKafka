@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-27T13:20:58.765441+00:00",
+  "stage": "Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/trabajos/entrega-kafka/consumidores-nucleo-01",
+  "authoredFiles": {
+    "src/consumer.js": {
+      "lines": 79,
+      "sha256": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7"
+    },
+    "test/consumer.test.js": {
+      "lines": 146,
+      "sha256": "3013a9e3488c7481db1638fcb7e25d52301c83b8376bdfb287ea59bc3257bbff"
+    },
+    "CONSUMO.md": {
+      "lines": 42,
+      "sha256": "c1426e38414c978867fe94283df54f41e730dc86f9396fa8724632960a5375a3"
+    }
+  },
+  "authoredLines": 267,
+  "runtime": "N/A: n\u00facleo aislado sin conexi\u00f3n Kafka; runner/Compose pendientes",
+  "baselinePreserved": true
+}

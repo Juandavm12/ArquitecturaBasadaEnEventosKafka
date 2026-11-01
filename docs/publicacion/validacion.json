@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-01T05:06:05.532Z",
+  "modo": "offline; sin runtime, red ni mutaciones Git",
+  "transformaciones_exactas": 3,
+  "reemplazos": 3,
+  "ocurrencias_valor_retirado": 0,
+  "archivos_efectivos_escaneados": 765,
+  "hashes_publicos_verificados": true,
+  "originales_privados_byte_identicos": true,
+  "backup_ignorado_git": true,
+  "permisos": {
+    "directorios": "0700",
+    "archivos": "0600",
+    "directorios_verificados": 8,
+    "archivos_verificados": 5
+  },
+  "integridad_fuera_superficies": {
+    "archivos": 759,
+    "antes_despues_identicos": true,
+    "sha256_lista_antes": "e1a5a1617ece12e3827dc18b526cb2ef07b8835a7fd1bab1fd0ff5fff2addaa7",
+    "sha256_lista_despues": "e1a5a1617ece12e3827dc18b526cb2ef07b8835a7fd1bab1fd0ff5fff2addaa7"
+  },
+  "enlaces_locales": [
+    [
+      "README.md",
+      "PUBLICACION.md"
+    ],
+    [
+      "PUBLICACION.md",
+      "docs/publicacion/manifest.json"
+    ],
+    [
+      "PUBLICACION.md",
+      "docs/publicacion/validacion.json"
+    ],
+    [
+      "docs/publicacion/manifest.json",
+      "../../PUBLICACION.md"
+    ]
+  ],
+  "estado": "Entrega parcial 7/10; no nueva evidencia de ejecución"
+}

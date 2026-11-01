@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-27T13:23:24.360512+00:00",
+  "source": "Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+  "files": {
+    "package.json": "32f36d92451a6db2133d05e42d448d634c9c8723e5019459cc0510316cd97abb",
+    "package-lock.json": "90fbbe702473483fb7588d5b6dc0989eed9e8527cfc9cfa43289b41ef883edee",
+    "Dockerfile": "ad0c3714df82818bbaa7f544bee6929aa6a85f8891a565c35dbe3d1e40211919",
+    ".dockerignore": "c38ade619385ceb10c44d07fcbadb1d61210d7d859ca93cf633885f6bcd1dafa",
+    "docker-compose.yml": "5d600d7908d787e69aca8adeb2363d0437d5156713c0fa9f681352484e3e87b2",
+    "test/infra.test.mjs": "9104d261df6ad76ef38e3d56b0ea8e2f3635f39014fd20e89d46780c34081d48",
+    "src/consumer.js": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7",
+    "src/order-event.js": "f447c58cebb8f84f24b89132528be11fdf69e6808688ae65b4318e8e1f13cdac"
+  },
+  "dependency": "Copia local KafkaJS2.2.4; sin instalaci\u00f3n ni symlinks al repo entregable."
+}

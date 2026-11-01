@@ -1,0 +1,7 @@
+# Fuentes reproducibles con finales de línea LF.
+* text=auto eol=lf
+
+# Las evidencias y sus manifests deben conservar sus bytes y hashes originales,
+# también al clonar desde Windows con core.autocrlf habilitado.
+docs/verificacion/** -text
+docs/casos/** -text

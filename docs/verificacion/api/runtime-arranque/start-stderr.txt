@@ -1,0 +1,6 @@
+ Container qa-taller-integracion-kafka-orders-api-1 Creating 
+ Container qa-taller-integracion-kafka-orders-api-1 Created 
+ Container qa-taller-integracion-kafka-orders-api-1 Starting 
+ Container qa-taller-integracion-kafka-orders-api-1 Started 
+ Container qa-taller-integracion-kafka-orders-api-1 Waiting 
+ Container qa-taller-integracion-kafka-orders-api-1 Healthy 

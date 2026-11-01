@@ -1,0 +1,16 @@
+[
+  {
+    "source": "/tmp/gpa4aITo/pi-clipboard-eabbf8d5-e04b-49d8-8ed3-a84d251b978e.png",
+    "saved": "cluster-online.png",
+    "sha256": "a3dd21a3c76e14ec1025547abbd8ba52a0d6187e2c85088066e6ffca0708d6f9",
+    "byteIdentical": true,
+    "origin": "Captura GUI aportada por el usuario y revisada visualmente; fecha de captura no inferida."
+  },
+  {
+    "source": "/tmp/gpa4aITo/pi-clipboard-35db43fc-e8ad-46d2-8bc1-5cf76fcf3584.png",
+    "saved": "orders-events-dos-particiones.png",
+    "sha256": "44bdf63047837a5a162f6b0aa68d520fbfcb3ed6e849ddbe916e6ab435809030",
+    "byteIdentical": true,
+    "origin": "Captura GUI aportada por el usuario y revisada visualmente; fecha de captura no inferida."
+  }
+]

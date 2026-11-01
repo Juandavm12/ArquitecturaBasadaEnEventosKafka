@@ -1,0 +1,19 @@
+✔ tres roles tienen grupos, servicios y acciones semánticas distintos (8.280098ms)
+✔ registra evento y trazas; heartbeat rodea acción y commit es último (1.35302ms)
+✔ no resuelve ni confirma mientras acción está pendiente (0.736991ms)
+✔ error de acción se propaga sin commit (0.686872ms)
+✔ JSON, tipo, versión, IDs y metadata inválidos no actúan ni confirman (2.334645ms)
+✔ offset grande no pierde precisión (0.647564ms)
+✔ offset inválido se rechaza antes de acción (1.673955ms)
+✔ error de commit se propaga sin registrar offset-committed (4.231308ms)
+✔ fallo de heartbeat pre/post impide commit y propaga error (3.330075ms)
+✔ no modifica bytes ni evento recibido (0.995437ms)
+✔ delay opt-in usa sleep inyectado; rechaza valores inválidos (3.116575ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.864952

@@ -1,0 +1,22 @@
+UTC 2026-10-27T13:28:33Z
+COMMAND node --test test/consumer-runtime.test.js
+✔ settings validate role and bounded integer delay (2.970559ms)
+✔ listeners precede run; only group join marks ready; disconnect clears (5.572798ms)
+✔ crash even when run resolves clears marker and exits via cleanup (0.601882ms)
+✔ bootstrap errors propagate after fatal cleanup (0.662551ms)
+✔ shutdown is idempotent and waits for stop then disconnect (0.421347ms)
+✔ shutdown during connect waits, then disconnects without starting run (0.397018ms)
+✔ stop failure still disconnects, rejects and takes fatal exit path (0.398347ms)
+✔ deadline forces fatal exit while cleanup is pending, without real timers (0.43014ms)
+✔ subscribe bootstrap failure cleans up and rejects (0.436311ms)
+✔ run bootstrap failure cleans up and rejects (0.582427ms)
+✔ disconnect failure rejects and takes fatal exit path (0.498343ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 133.709991
+EXIT 0

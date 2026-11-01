@@ -1,0 +1,19 @@
+[
+  {
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitcode": 0,
+    "timestamp": "2026-10-27T11:22:37.542374+00:00"
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "test/infra.test.mjs"
+    ],
+    "exitcode": 0,
+    "timestamp": "2026-10-27T11:22:38.314589+00:00"
+  }
+]

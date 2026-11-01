@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1365" viewBox="0 0 1400 1365">
+<title>Salida de Postman CLI — CP-07</title>
+<rect width="1400" height="100%" fill="#101827"/>
+<text x="28" y="40" fill="#7dd3fc" font-family="sans-serif" font-size="25">Salida de Postman CLI — CP-07</text>
+<g fill="#f1f5f9" font-family="monospace" font-size="18" xml:space="preserve">
+<text x="28" y="80">No authorization data found. Please use the `postman login` command.</text>
+<text x="28" y="103">Refer:https://learning.postman.com/docs/postman-cli/postman-cli-options/#postman-login</text>
+<text x="28" y="126"></text>
+<text x="28" y="149">Running your collection...</text>
+<text x="28" y="172">postman</text>
+<text x="28" y="195"></text>
+<text x="28" y="218">CP07 Kafka — respuesta sin esperar a inventario</text>
+<text x="28" y="241"></text>
+<text x="28" y="264">Root CP07 — único pedido con inventario demorado</text>
+<text x="28" y="287"></text>
+<text x="28" y="310">  -</text>
+<text x="28" y="333">  | 'CP07_REQUEST_STARTED_UTC 2026-10-31T23:20:30.686Z'</text>
+<text x="28" y="356">  -</text>
+<text x="28" y="379">  POST http://localhost:3000/orders [202 Accepted, 362 B, 239 ms]</text>
+<text x="28" y="402">  -</text>
+<text x="28" y="425">  | 'CP07_RESPONSE_OBSERVED_UTC 2026-10-31T23:20:30.961Z'</text>
+<text x="28" y="448">  | 'REQUEST_METHOD POST'</text>
+<text x="28" y="471">  | 'REQUEST_URL http://localhost:3000/orders'</text>
+<text x="28" y="494">  | 'REQUEST_BODY {&quot;customerName&quot;:&quot;Pedro&quot;,&quot;product&quot;:&quot;Libro</text>
+<text x="28" y="517">  |  de arquitectura&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:85000}'</text>
+<text x="28" y="540">  | 'RESPONSE_CODE 202'</text>
+<text x="28" y="563">  | 'RESPONSE_BODY {&quot;status&quot;:&quot;accepted&quot;,&quot;message&quot;:&quot;Pedido </text>
+<text x="28" y="586">  | recibido y evento OrderCreated publicado en Kafka&quot;,&quot;or</text>
+<text x="28" y="609">  | derId&quot;:&quot;ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c&quot;}'</text>
+<text x="28" y="632">  | 'RESPONSE_TIME_MS 239'</text>
+<text x="28" y="655">  | 'ORDER_ID ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c'</text>
+<text x="28" y="678">  -</text>
+<text x="28" y="701">  Pass  HTTP 202</text>
+<text x="28" y="724">  Pass  JSON válido</text>
+<text x="28" y="747">  Pass  Status accepted</text>
+<text x="28" y="770">  Pass  Mensaje exacto</text>
+<text x="28" y="793">  Pass  orderId ORD-UUID</text>
+<text x="28" y="816"></text>
+<text x="28" y="839">------------------------------------------------------------------------</text>
+<text x="28" y="862">|                         |             executed |              failed |</text>
+<text x="28" y="885">--------------------------+----------------------+----------------------</text>
+<text x="28" y="908">|              iterations |                    1 |                   0 |</text>
+<text x="28" y="931">--------------------------+----------------------+----------------------</text>
+<text x="28" y="954">|                requests |                    1 |                   0 |</text>
+<text x="28" y="977">--------------------------+----------------------+----------------------</text>
+<text x="28" y="1000">|            test-scripts |                    1 |                   0 |</text>
+<text x="28" y="1023">--------------------------+----------------------+----------------------</text>
+<text x="28" y="1046">|      prerequest-scripts |                    1 |                   0 |</text>
+<text x="28" y="1069">--------------------------+----------------------+----------------------</text>
+<text x="28" y="1092">|              assertions |                    5 |                   0 |</text>
+<text x="28" y="1115">------------------------------------------------------------------------</text>
+<text x="28" y="1138">| total run duration: 324 ms                                           |</text>
+<text x="28" y="1161">------------------------------------------------------------------------</text>
+<text x="28" y="1184">| total data received: 143 B (approx)                                  |</text>
+<text x="28" y="1207">------------------------------------------------------------------------</text>
+<text x="28" y="1230">| average response time: 239 ms [min: 239 ms, max: 239 ms, s.d.: 0 us] |</text>
+<text x="28" y="1253">------------------------------------------------------------------------</text>
+<text x="28" y="1276">Postman credentials are required for publishing run details to Postman cloud.</text>
+<text x="28" y="1299">Please specify it by using the `postman login` command</text>
+<text x="28" y="1322"></text>
+</g>
+</svg>

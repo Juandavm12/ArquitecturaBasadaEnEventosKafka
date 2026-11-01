@@ -1,0 +1,110 @@
+[
+  {
+    "command": [
+      "curl",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--max-time",
+      "10",
+      "http://127.0.0.1:3000/health"
+    ],
+    "start": "2026-10-27T12:19:35.270329+00:00",
+    "end": "2026-10-27T12:19:35.332051+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T12:19:35.332263+00:00",
+    "end": "2026-10-27T12:19:38.069026+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "curl",
+      "--silent",
+      "--show-error",
+      "--max-time",
+      "15",
+      "--dump-header",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/api/primera-publicacion/corrida-01/response-headers.txt",
+      "--output",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/api/primera-publicacion/corrida-01/response.json",
+      "--write-out",
+      "{\"http_code\":%{http_code},\"time_total\":%{time_total}}",
+      "-H",
+      "Content-Type: application/json",
+      "--data-binary",
+      "@/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/api/primera-publicacion/corrida-01/request.json",
+      "http://127.0.0.1:3000/orders"
+    ],
+    "start": "2026-10-27T12:19:38.069786+00:00",
+    "end": "2026-10-27T12:19:38.463747+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T12:19:38.464302+00:00",
+    "end": "2026-10-27T12:19:41.705595+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--timestamps",
+      "orders-api"
+    ],
+    "start": "2026-10-27T12:19:41.706021+00:00",
+    "end": "2026-10-27T12:19:41.837318+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-dump-log.sh",
+      "--files",
+      "/var/lib/kafka/data/orders.events-1/00000000000000000000.log",
+      "--print-data-log"
+    ],
+    "start": "2026-10-27T12:19:41.837634+00:00",
+    "end": "2026-10-27T12:19:43.969861+00:00",
+    "exitcode": 0
+  }
+]

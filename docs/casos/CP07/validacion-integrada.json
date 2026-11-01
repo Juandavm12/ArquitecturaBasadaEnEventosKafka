@@ -1,0 +1,12 @@
+{
+  "command": "timeout 30s node \"/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp07-documentacion-01/checker.cjs\" --integrated",
+  "cwd": "/home/juandav12/projects/8thSemester",
+  "startUTC": "2026-10-31T23:31:18.448Z",
+  "endUTC": "2026-10-31T23:31:18.594Z",
+  "mode": "integrated",
+  "stdout": "PASS 333 original hashes unchanged (integrated: only four exact proposed plan mutations excluded); eight closed report/validation files intact\nPASS four full-text plans match before/proposed state exactly; twelve-row matrix changes Kafka CP07 only; history preserved\nPASS all archived runtime originals and collection byte-identical at source and destination; supporting/control hashes intact\nPASS reused read-only verifier: 3 IDs, 9 traces, position, UTC, clock bound; request/payload/source checked; negative clock and missing-commit checks reject\nPASS archived commands exit 0 with UTC/stdout/stderr; one publication, five assertions; suite 51/51 and helpers 9/9\nPASS five other services identical; only authorized inventory recreations, same image/mounts/other env, restored healthy delay 0; base Compose intact\nPASS eleven headings, virtual/integrated links, report/output hashes, complete CLI rendering and literal selected byte ranges verified\n",
+  "stderr": "",
+  "exitCode": 0,
+  "nativeApproval": false,
+  "tdd": "Not active; post-authoring offline structural/functional validation."
+}

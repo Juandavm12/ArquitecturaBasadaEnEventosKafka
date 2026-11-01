@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "verifiedAtUTC": "2026-10-31T23:20:51.468Z",
+  "response": {
+    "status": "accepted",
+    "message": "Pedido recibido y evento OrderCreated publicado en Kafka",
+    "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+  },
+  "publication": {
+    "date": "2026-10-31T23:20:30.913Z",
+    "service": "orders-api",
+    "hostname": "eff545def17b",
+    "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+    "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+    "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+    "topic": "orders.events",
+    "partition": 1,
+    "baseOffset": "1"
+  },
+  "requestStartedUTC": "2026-10-31T23:20:30.686Z",
+  "responseObservedUTC": "2026-10-31T23:20:30.961Z",
+  "responseTimeMs": 239,
+  "clockUncertaintyMs": 762,
+  "actualInventoryProcessingMs": 3002,
+  "responseBeforeProcessedMs": 2991,
+  "traces": {
+    "inventory-consumer": [
+      {
+        "date": "2026-10-31T23:20:30.950Z",
+        "hostname": "3664fcf5dc8c",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "3664fcf5dc8c",
+        "phase": "received",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "3664fcf5dc8c",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "event": {
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-10-31T23:20:30.787Z",
+          "source": "orders-api",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "data": {
+            "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+            "customerName": "Pedro",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      },
+      {
+        "date": "2026-10-31T23:20:33.952Z",
+        "hostname": "3664fcf5dc8c",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "3664fcf5dc8c",
+        "phase": "processed",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "3664fcf5dc8c",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "result": {
+          "action": "simulate-stock-reservation",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+        }
+      },
+      {
+        "date": "2026-10-31T23:20:33.962Z",
+        "hostname": "3664fcf5dc8c",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "3664fcf5dc8c",
+        "phase": "offset-committed",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "3664fcf5dc8c",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        }
+      }
+    ],
+    "billing-consumer": [
+      {
+        "date": "2026-10-31T23:20:30.999Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "received",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "event": {
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-10-31T23:20:30.787Z",
+          "source": "orders-api",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "data": {
+            "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+            "customerName": "Pedro",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      },
+      {
+        "date": "2026-10-31T23:20:31.018Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "processed",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "result": {
+          "action": "simulate-invoice-charge",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+        }
+      },
+      {
+        "date": "2026-10-31T23:20:31.089Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "offset-committed",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        }
+      }
+    ],
+    "notification-consumer": [
+      {
+        "date": "2026-10-31T23:20:30.996Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "received",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "event": {
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-10-31T23:20:30.787Z",
+          "source": "orders-api",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "data": {
+            "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+            "customerName": "Pedro",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      },
+      {
+        "date": "2026-10-31T23:20:31.014Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "processed",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        },
+        "result": {
+          "action": "simulate-notification-send",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c"
+        }
+      },
+      {
+        "date": "2026-10-31T23:20:31.084Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "offset-committed",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c",
+          "eventId": "f435ba0a-d045-412b-a3b9-45c875f21faf",
+          "correlationId": "f3b52280-d60f-418b-97e9-a2109589f72e",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "1"
+        }
+      }
+    ]
+  },
+  "preservedSourceFiles": 333,
+  "unchangedServiceIDs": 5,
+  "restoredDelayMs": 0,
+  "basis": "HTTP response observation precedes inventory processed; bounded clocks checked before/after; delay experimental, not an SLA."
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/api/publicacion-postman/corrida-01/cli-01/visualizaciones/renderizar_stdout.py"
+  ],
+  "startedAtUTC": "2026-10-31T18:34:51.643877+00:00",
+  "finishedAtUTC": "2026-10-31T18:34:51.697776+00:00",
+  "exitCode": 0,
+  "additionalHTTPRequests": 0
+}

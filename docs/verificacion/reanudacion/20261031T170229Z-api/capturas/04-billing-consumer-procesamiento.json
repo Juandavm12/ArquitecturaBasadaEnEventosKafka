@@ -1,0 +1,33 @@
+{
+  "file": "04-billing-consumer-procesamiento.png",
+  "sha256": "e7c0576ff1ff643b481affbd0d57c8122a6818239d17083f5a914c41f0720fd7",
+  "bytes": 128179,
+  "registeredAtUTC": "2026-10-31T17:18:44.938136+00:00",
+  "source": "/tmp/gpyFWc3j/pi-clipboard-de463aaf-8de5-44da-9501-3c64715a633b.png",
+  "observed": {
+    "service": "billing-consumer",
+    "instanceId": "5caff4b88c36",
+    "groupId": "billing-service-group",
+    "phases": [
+      "received",
+      "processed",
+      "offset-committed"
+    ],
+    "action": "simulate-invoice-charge",
+    "orderId": "ORD-f2035454-c380-4e9f-b682-b48ef72ca568",
+    "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+    "correlationId": "cdb824fe-f331-4a6d-8c84-2dbb89ba6566",
+    "topic": "orders.events",
+    "partition": 1,
+    "processedRecordOffset": "0",
+    "receivedAt": "2026-10-27T13:34:56.687Z",
+    "processedAt": "2026-10-27T13:34:56.688Z",
+    "offsetCommittedLogAt": "2026-10-27T13:34:56.820Z"
+  },
+  "limits": [
+    "Logs históricos del 27 de octubre, no un nuevo procesamiento del 31",
+    "Acción simulada: no factura ni cobro real",
+    "El offset de trace es del registro; no es el siguiente offset confirmado del grupo",
+    "No cierra por sí sola CP-05/06 ni demuestra recuperación CP-12"
+  ]
+}

@@ -1,0 +1,2 @@
+ Image qa-taller-integracion-kafka-orders-api Building 
+ Image qa-taller-integracion-kafka-orders-api Built 

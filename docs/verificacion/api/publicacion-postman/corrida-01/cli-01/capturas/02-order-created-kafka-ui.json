@@ -1,0 +1,20 @@
+{
+  "file": "02-order-created-kafka-ui.png",
+  "sourceFile": "/tmp/gpyFWc3j/pi-clipboard-11531411-3fce-469d-9556-e33d4bd4de32.png",
+  "sha256": "b2e736b8258af35ae6945c73a12f832ac1a139c00dc100e5530fcbcbc8a9ffe9",
+  "width": 1557,
+  "height": 557,
+  "archivedAtUTC": "2026-10-31T18:52:52.067257+00:00",
+  "classification": "user-provided-kafka-ui-screenshot",
+  "observed": {
+    "partition": 0,
+    "offset": 0,
+    "key": "ORD-d8484470-cb78-48c9-befa-0c88fe1429f9",
+    "eventId": "4f5ee1ac-1c2d-41e7-826b-37a13d3767a2",
+    "correlationId": "310a36c4-8214-4406-a8b2-fce3c8c6ca55",
+    "displayedTimestamp": "10/31/2026, 13:06:41",
+    "keyBytes": 40,
+    "valueBytes": 379
+  },
+  "provenance": "Copia byte-idéntica de la imagen recibida. archivedAtUTC es el instante de archivo, no de captura. Tópico identificado mediante listado complementario 01-orders-events-listado.png; zona horaria del visor no confirmada."
+}

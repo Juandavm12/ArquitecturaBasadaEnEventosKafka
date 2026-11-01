@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "docker",
+    "exec",
+    "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+    "node",
+    "-e",
+    "const fs=require('node:fs'),crypto=require('node:crypto');const files=[\"src/app.js\",\"src/consumer-runtime.js\",\"src/consumer-server.js\",\"src/consumer.js\",\"src/order-event.js\",\"src/server.js\",\"package.json\",\"package-lock.json\"];console.log(JSON.stringify(Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync('/app/'+f)).digest('hex')]))));"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester",
+  "startUTC": "2026-10-31T23:39:59.758Z",
+  "endUTC": "2026-10-31T23:40:00.068Z",
+  "exitCode": 1,
+  "signal": null,
+  "error": null
+}

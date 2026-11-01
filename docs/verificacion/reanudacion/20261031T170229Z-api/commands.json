@@ -1,0 +1,120 @@
+[
+  {
+    "command": [
+      "docker",
+      "inspect",
+      "qa-taller-integracion-kafka-orders-api-1"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:29.798326+00:00",
+    "finishedAt": "2026-10-31T17:02:29.852554+00:00",
+    "exitCode": 0,
+    "stdout": "01-stdout.txt",
+    "stderr": "01-stderr.txt"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:29.852821+00:00",
+    "finishedAt": "2026-10-31T17:02:30.055776+00:00",
+    "exitCode": 0,
+    "stdout": "02-stdout.txt",
+    "stderr": "02-stderr.txt"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "start",
+      "--wait",
+      "--wait-timeout",
+      "120",
+      "orders-api"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:30.056390+00:00",
+    "finishedAt": "2026-10-31T17:02:36.215544+00:00",
+    "exitCode": 0,
+    "stdout": "03-stdout.txt",
+    "stderr": "03-stderr.txt"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:36.216675+00:00",
+    "finishedAt": "2026-10-31T17:02:36.588086+00:00",
+    "exitCode": 0,
+    "stdout": "04-stdout.txt",
+    "stderr": "04-stderr.txt"
+  },
+  {
+    "command": [
+      "curl",
+      "--silent",
+      "--show-error",
+      "--fail-with-body",
+      "--max-time",
+      "15",
+      "--include",
+      "http://127.0.0.1:3000/health"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:36.588885+00:00",
+    "finishedAt": "2026-10-31T17:02:36.688088+00:00",
+    "exitCode": 0,
+    "stdout": "05-stdout.txt",
+    "stderr": "05-stderr.txt"
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--tail",
+      "60",
+      "orders-api"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:36.688694+00:00",
+    "finishedAt": "2026-10-31T17:02:36.959013+00:00",
+    "exitCode": 0,
+    "stdout": "06-stdout.txt",
+    "stderr": "06-stderr.txt"
+  },
+  {
+    "command": [
+      "docker",
+      "inspect",
+      "qa-taller-integracion-kafka-orders-api-1"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+    "startedAt": "2026-10-31T17:02:36.961482+00:00",
+    "finishedAt": "2026-10-31T17:02:37.057841+00:00",
+    "exitCode": 0,
+    "stdout": "07-stdout.txt",
+    "stderr": "07-stderr.txt"
+  }
+]

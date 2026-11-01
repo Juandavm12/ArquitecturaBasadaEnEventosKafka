@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "validatedAtUTC": "2026-10-31T19:15:24.904Z",
+  "case": "CP-01",
+  "state": "Cumple",
+  "checks": [
+    "34 fuentes y cuatro archivos CP04/CP05 intactos",
+    "Cuatro planes con sólo las sustituciones declaradas",
+    "Reporte integrado igual al revisado con sólo dos ajustes declarados",
+    "Once campos exactos",
+    "Enlaces del reporte resuelven en destino real",
+    "Respuesta real coincide con JSON del reporte",
+    "Doce filas; única casilla modificada Kafka CP01"
+  ],
+  "reportFields": 11,
+  "resolvedFinalLinks": 13,
+  "preservedRunSourceFiles": 34,
+  "preservedCP04CP05Files": 4,
+  "updatedPlans": 4,
+  "matrixRows": 12,
+  "onlyChangedMatrixCase": "CP-01",
+  "closedCases": [
+    "CP-01",
+    "CP-04",
+    "CP-05"
+  ],
+  "kafkaClosedCount": "3/10",
+  "pendingCases": 7,
+  "additionalHTTPRequests": 0,
+  "sharedExecutionWith": "CP-04",
+  "executionDateUTC": "2026-10-31",
+  "reportSHA256": "6010b2d6896ff7a817b463d7f2332e413d14d21a3638008e9a0b855126ac6a2c",
+  "baselineSHA256": "7643d348f9b9dc3981e9694f8159c5e3b121e9b0c99d84e3a8c103ed8f805100",
+  "limits": "Offline evidence validation; no new runtime, consumption, SLA or recovery test. Native review unavailable."
+}

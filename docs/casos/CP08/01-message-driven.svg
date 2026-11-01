@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="2054" viewBox="0 0 1280 2054" role="img" aria-label="CP-08 — Comunicación mediante Kafka"><rect width="100%" height="100%" fill="#f8fafc"/><g font-family="DejaVu Sans, sans-serif" xml:space="preserve"><text x="30" y="48" font-size="28" fill="#172b4d">CP-08 — Comunicación mediante Kafka</text>
+<text x="30" y="88" font-size="18" fill="#172b4d">Flujo PoC auditado · evidencia real CP07 reutilizada · lectura por rol posterior</text>
+<text x="30" y="130" font-size="20" fill="#172b4d">Entrada HTTP → orders-api → Kafka / orders.events → tres grupos independientes</text>
+<text x="30" y="162" font-size="18" fill="#172b4d">inventory-service-group | billing-service-group | notification-service-group</text>
+<text x="30" y="192" font-size="18" fill="#172b4d">Acciones locales simuladas; sin llamada HTTP/RPC de la API a los consumidores.</text>
+<text x="30" y="234" font-size="18" fill="#005a70">kafka/src/app.js · líneas 25–30</text>
+<text x="30" y="264" font-size="15" fill="#172b4d">25        correlationId: event.correlationId, topic };</text>
+<text x="30" y="291" font-size="15" fill="#172b4d">26      try {</text>
+<text x="30" y="318" font-size="15" fill="#172b4d">27        const metadata = await producer.send({ topic, acks: -1, timeout: 10000,</text>
+<text x="30" y="345" font-size="15" fill="#172b4d">28          messages: [{ key: ids.orderId, value: JSON.stringify(event),</text>
+<text x="30" y="372" font-size="15" fill="#172b4d">29            headers: { correlationId: ids.correlationId, eventId: ids.eventId } }] });</text>
+<text x="30" y="399" font-size="15" fill="#172b4d">30        for (const { partition, baseOffset } of metadata) record({ ...ids, partition, baseOffset });</text>
+<text x="30" y="434" font-size="18" fill="#005a70">kafka/src/consumer-runtime.js · líneas 70–78</text>
+<text x="30" y="464" font-size="15" fill="#172b4d">70        connecting = consumer.connect();</text>
+<text x="30" y="491" font-size="15" fill="#172b4d">71        await connecting;</text>
+<text x="30" y="518" font-size="15" fill="#172b4d">72        if (stopping) return;</text>
+<text x="30" y="545" font-size="15" fill="#172b4d">73        await consumer.subscribe({ topic, fromBeginning: true });</text>
+<text x="30" y="572" font-size="15" fill="#172b4d">74        if (stopping) return;</text>
+<text x="30" y="599" font-size="15" fill="#172b4d">75        await consumer.run({ autoCommit: false,</text>
+<text x="30" y="626" font-size="15" fill="#172b4d">76          eachMessage: createMessageHandler({ role, instanceId,</text>
+<text x="30" y="653" font-size="15" fill="#172b4d">77            action: createSimulatedAction({ role, delayMs }), logger: log,</text>
+<text x="30" y="680" font-size="15" fill="#172b4d">78            commitOffsets: offsets =&gt; consumer.commitOffsets(offsets) }) });</text>
+<text x="30" y="715" font-size="18" fill="#005a70">kafka/src/consumer-server.js · líneas 14–19</text>
+<text x="30" y="745" font-size="15" fill="#172b4d">14    marker(false);</text>
+<text x="30" y="772" font-size="15" fill="#172b4d">15    const settings = readSettings(process.env);</text>
+<text x="30" y="799" font-size="15" fill="#172b4d">16    const kafka = new Kafka({ clientId: `${settings.service}-${instanceId}`,</text>
+<text x="30" y="826" font-size="15" fill="#172b4d">17      brokers: [settings.broker], retry: { restartOnFailure: async () =&gt; false } });</text>
+<text x="30" y="853" font-size="15" fill="#172b4d">18    const consumer = kafka.consumer({ groupId: settings.groupId });</text>
+<text x="30" y="880" font-size="15" fill="#172b4d">19    const runtime = createRuntime({ ...settings, consumer, instanceId, logger, marker,</text>
+<text x="30" y="915" font-size="18" fill="#005a70">kafka/src/consumer.js · líneas 3–10</text>
+<text x="30" y="945" font-size="15" fill="#172b4d">3  export const ROLE_CONFIG = Object.freeze({</text>
+<text x="30" y="972" font-size="15" fill="#172b4d">4    inventory: Object.freeze({ service: &apos;inventory-consumer&apos;, groupId: &apos;inventory-service-group&apos;,</text>
+<text x="30" y="999" font-size="15" fill="#172b4d">5      action: &apos;simulate-stock-reservation&apos; }),</text>
+<text x="30" y="1026" font-size="15" fill="#172b4d">6    billing: Object.freeze({ service: &apos;billing-consumer&apos;, groupId: &apos;billing-service-group&apos;,</text>
+<text x="30" y="1053" font-size="15" fill="#172b4d">7      action: &apos;simulate-invoice-charge&apos; }),</text>
+<text x="30" y="1080" font-size="15" fill="#172b4d">8    notification: Object.freeze({ service: &apos;notification-consumer&apos;, groupId: &apos;notification-service-group&apos;,</text>
+<text x="30" y="1107" font-size="15" fill="#172b4d">9      action: &apos;simulate-notification-send&apos; }),</text>
+<text x="30" y="1134" font-size="15" fill="#172b4d">10  });</text>
+<text x="30" y="1169" font-size="20" fill="#172b4d">Evento compartido (campos JSON resumidos; no es una nueva ejecución)</text>
+<text x="30" y="1201" font-size="16" fill="#172b4d">orderId: ORD-ce5e9b5a-e3c9-444c-b39c-1c359b6c121c</text>
+<text x="30" y="1229" font-size="16" fill="#172b4d">eventId: f435ba0a-d045-412b-a3b9-45c875f21faf</text>
+<text x="30" y="1257" font-size="16" fill="#172b4d">correlationId: f3b52280-d60f-418b-97e9-a2109589f72e</text>
+<text x="30" y="1285" font-size="16" fill="#172b4d">topic: orders.events</text>
+<text x="30" y="1313" font-size="16" fill="#172b4d">partition: 1</text>
+<text x="30" y="1341" font-size="16" fill="#172b4d">offset: 1</text>
+<text x="30" y="1369" font-size="16" fill="#172b4d">Publicación API: 2026-10-31T23:20:30.913Z · partición 1 · baseOffset 1</text>
+<text x="30" y="1407" font-size="18" fill="#005a70">Nueve trazas de consumidores: date | service | phase | groupId</text>
+<text x="30" y="1437" font-size="16" fill="#172b4d">2026-10-31T23:20:30.950Z | inventory-consumer | received</text>
+<text x="30" y="1465" font-size="15" fill="#172b4d">  inventory-service-group · instanceId=3664fcf5dc8c · p=1 offset=1</text>
+<text x="30" y="1492" font-size="16" fill="#172b4d">2026-10-31T23:20:33.952Z | inventory-consumer | processed</text>
+<text x="30" y="1520" font-size="15" fill="#172b4d">  inventory-service-group · instanceId=3664fcf5dc8c · p=1 offset=1</text>
+<text x="30" y="1547" font-size="16" fill="#172b4d">2026-10-31T23:20:33.962Z | inventory-consumer | offset-committed</text>
+<text x="30" y="1575" font-size="15" fill="#172b4d">  inventory-service-group · instanceId=3664fcf5dc8c · p=1 offset=1</text>
+<text x="30" y="1602" font-size="16" fill="#172b4d">2026-10-31T23:20:30.999Z | billing-consumer | received</text>
+<text x="30" y="1630" font-size="15" fill="#172b4d">  billing-service-group · instanceId=5caff4b88c36 · p=1 offset=1</text>
+<text x="30" y="1657" font-size="16" fill="#172b4d">2026-10-31T23:20:31.018Z | billing-consumer | processed</text>
+<text x="30" y="1685" font-size="15" fill="#172b4d">  billing-service-group · instanceId=5caff4b88c36 · p=1 offset=1</text>
+<text x="30" y="1712" font-size="16" fill="#172b4d">2026-10-31T23:20:31.089Z | billing-consumer | offset-committed</text>
+<text x="30" y="1740" font-size="15" fill="#172b4d">  billing-service-group · instanceId=5caff4b88c36 · p=1 offset=1</text>
+<text x="30" y="1767" font-size="16" fill="#172b4d">2026-10-31T23:20:30.996Z | notification-consumer | received</text>
+<text x="30" y="1795" font-size="15" fill="#172b4d">  notification-service-group · instanceId=3ce4bcc7867e · p=1 offset=1</text>
+<text x="30" y="1822" font-size="16" fill="#172b4d">2026-10-31T23:20:31.014Z | notification-consumer | processed</text>
+<text x="30" y="1850" font-size="15" fill="#172b4d">  notification-service-group · instanceId=3ce4bcc7867e · p=1 offset=1</text>
+<text x="30" y="1877" font-size="16" fill="#172b4d">2026-10-31T23:20:31.084Z | notification-consumer | offset-committed</text>
+<text x="30" y="1905" font-size="15" fill="#172b4d">  notification-service-group · instanceId=3ce4bcc7867e · p=1 offset=1</text>
+<text x="30" y="1940" font-size="16" fill="#172b4d">Todas las filas comparten los IDs y el tópico indicados arriba.</text>
+<text x="30" y="1968" font-size="16" fill="#172b4d">Fechas de logs: contexto ambiental, no criterio temporal ni SLA de CP08.</text>
+<text x="30" y="1996" font-size="16" fill="#172b4d">Auditoría de hashes posterior: 2026-10-31T23:46:39.217Z; no es hash retroactivo.</text></g></svg>

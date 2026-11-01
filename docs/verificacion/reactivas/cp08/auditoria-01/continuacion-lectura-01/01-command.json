@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "docker",
+    "ps",
+    "-aq",
+    "--filter",
+    "label=com.docker.compose.project=qa-taller-integracion-kafka"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester",
+  "startedUTC": "2026-10-31T23:44:43.796Z",
+  "finishedUTC": "2026-10-31T23:44:44.191Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

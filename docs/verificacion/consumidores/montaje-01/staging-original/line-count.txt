@@ -1,0 +1,8 @@
+UTC 2026-10-27T13:28:49Z
+   85 src/consumer-runtime.js
+   28 src/consumer-server.js
+  135 test/consumer-runtime.test.js
+   46 CONSUMIDORES_RUNTIME.md
+  294 total
+34	1	../api-reanudacion-01/docker-compose.yml => docker-compose.yml
+31	4	{../api-reanudacion-01/test => test}/infra.test.mjs

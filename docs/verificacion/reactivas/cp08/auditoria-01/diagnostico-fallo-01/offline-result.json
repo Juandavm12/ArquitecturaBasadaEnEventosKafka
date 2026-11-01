@@ -1,0 +1,77 @@
+{
+  "node": "v26.8.1",
+  "fixture": {
+    "bytes": 692,
+    "sha256": "81fac52c137c42e4fe27c5f5f5886c98702807a5990ee02564bb8721cd48361b",
+    "firstBytes": "7b227372632f6170",
+    "lastBytes": "3365646565227d0a",
+    "keys": [
+      "src/app.js",
+      "src/consumer-runtime.js",
+      "src/consumer-server.js",
+      "src/consumer.js",
+      "src/order-event.js",
+      "src/server.js",
+      "package.json",
+      "package-lock.json"
+    ],
+    "matchesLocal": true
+  },
+  "command": {
+    "argv": [
+      "docker",
+      "exec",
+      "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+      "node",
+      "-e",
+      "const fs=require('node:fs'),crypto=require('node:crypto');const files=[\"src/app.js\",\"src/consumer-runtime.js\",\"src/consumer-server.js\",\"src/consumer.js\",\"src/order-event.js\",\"src/server.js\",\"package.json\",\"package-lock.json\"];console.log(JSON.stringify(Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync('/app/'+f)).digest('hex')]))));"
+    ],
+    "cwd": "/home/juandav12/projects/8thSemester",
+    "startUTC": "2026-10-31T23:39:58.900Z",
+    "endUTC": "2026-10-31T23:39:59.173Z",
+    "exitCode": 0,
+    "signal": null,
+    "error": null
+  },
+  "originalWrapperReplay": "PASS with in-memory archive and fixture spawn result; not original collector PASS",
+  "captures": [
+    {
+      "name": "01-stdout.txt",
+      "bytes": 692
+    },
+    {
+      "name": "01-stderr.txt",
+      "bytes": 0
+    },
+    {
+      "name": "01-command.json",
+      "bytes": 688
+    }
+  ],
+  "baseline": {
+    "keys": [
+      "createdUTC",
+      "originals",
+      "plans"
+    ],
+    "originalCount": 501
+  },
+  "inputDigests": {
+    "baseline.json": "ea464a9bef183be19bc1550fb4444823bb3f7302a476bba79267ae0d92cf93b5",
+    "local-source-hashes.json": "ebf72768250d97f6765bfe9aa5a2b42ee4071cf5d38f47271ba53a27b4fef751",
+    "01-command.json": "8b09e9e7cad22806d1f3c49b81f16975d86fb3d745a3a503f68c7fa9a8608abe",
+    "02-command.json": "935045bb777d42500ec83b16e48d8b45a43ab781beea8cee502dc36f57bac3fc",
+    "03-command.json": "637d7604a336321cb3cf6305408a684c2fa58b8b82e231679d42302faa5c96b6",
+    "03-stdout.txt": "81fac52c137c42e4fe27c5f5f5886c98702807a5990ee02564bb8721cd48361b",
+    "03-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "historicalCause": "unknown",
+  "syntheticCauseReceipt": {
+    "stack": "Error: Invalid remote hash JSON\n    at Object.<anonymous> (/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/diagnostico-fallo-01/repro.cjs:31:17)\n    at Module._compile (node:internal/modules/cjs/loader:1934:14)\n    at Object..js (node:internal/modules/cjs/loader:2074:10)\n    at Module.load (node:internal/modules/cjs/loader:1656:32)\n    at Module._load (node:internal/modules/cjs/loader:1448:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47",
+    "message": "Invalid remote hash JSON",
+    "cause": {
+      "stack": "SyntaxError: synthetic, not historical\n    at Object.<anonymous> (/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp08-auditoria-01/diagnostico-fallo-01/repro.cjs:31:61)\n    at Module._compile (node:internal/modules/cjs/loader:1934:14)\n    at Object..js (node:internal/modules/cjs/loader:2074:10)\n    at Module.load (node:internal/modules/cjs/loader:1656:32)\n    at Module._load (node:internal/modules/cjs/loader:1448:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47",
+      "message": "synthetic, not historical"
+    }
+  }
+}

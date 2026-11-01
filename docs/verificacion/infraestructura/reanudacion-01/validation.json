@@ -1,0 +1,12 @@
+{
+  "sameContainerIds": true,
+  "sameBrokerMounts": true,
+  "brokerHealthy": true,
+  "uiClusterOnline": true,
+  "ordersEventsOffsets": [
+    0,
+    0
+  ],
+  "timestamp": "2026-10-27T12:09:09.433868+00:00",
+  "scope": "Restauraci\u00f3n de entorno vac\u00edo, NO recuperaci\u00f3n de eventos pendientes CP12"
+}

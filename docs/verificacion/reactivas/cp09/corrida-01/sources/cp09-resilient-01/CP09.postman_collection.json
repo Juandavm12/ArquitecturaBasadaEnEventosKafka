@@ -1,0 +1,33 @@
+{
+  "info": {"name": "CP09 — parada controlada de inventario", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "auth": {"type": "noauth"},
+  "item": [{
+    "name": "CP09 — exactamente un pedido",
+    "request": {
+      "method": "POST", "auth": {"type": "noauth"},
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "url": "http://localhost:3000/orders",
+      "body": {"mode": "raw", "raw": "{\"customerName\":\"Pedro CP09\",\"product\":\"Libro de arquitectura\",\"quantity\":1,\"unitPrice\":85000}"}
+    },
+    "event": [
+      {"listen": "prerequest", "script": {"type": "text/javascript", "exec": ["console.log('CP09_REQUEST_STARTED_UTC ' + new Date().toISOString());"]}},
+      {"listen": "test", "script": {"type": "text/javascript", "exec": [
+        "console.log('CP09_RESPONSE_OBSERVED_UTC ' + new Date().toISOString());",
+        "console.log('REQUEST_METHOD ' + pm.request.method);",
+        "console.log('REQUEST_URL ' + pm.request.url.toString());",
+        "console.log('REQUEST_BODY ' + pm.request.body.raw);",
+        "console.log('RESPONSE_CODE ' + pm.response.code);",
+        "console.log('RESPONSE_BODY ' + pm.response.text());",
+        "console.log('RESPONSE_TIME_MS ' + pm.response.responseTime);",
+        "let data = {}; let validJSON = false;",
+        "try { data = pm.response.json(); validJSON = data !== null && typeof data === 'object'; } catch (error) { console.log('JSON_ERROR ' + error.message); }",
+        "console.log('ORDER_ID ' + (data && data.orderId ? data.orderId : '<ausente>'));",
+        "pm.test('HTTP 202', function () { pm.expect(pm.response.code).to.eql(202); });",
+        "pm.test('JSON válido', function () { pm.expect(validJSON).to.eql(true); });",
+        "pm.test('Status accepted', function () { pm.expect(data && data.status).to.eql('accepted'); });",
+        "pm.test('Mensaje exacto', function () { pm.expect(data && data.message).to.eql('Pedido recibido y evento OrderCreated publicado en Kafka'); });",
+        "pm.test('orderId ORD-UUID', function () { pm.expect(data && data.orderId).to.match(/^ORD-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i); });"
+      ]}}
+    ]
+  }]
+}

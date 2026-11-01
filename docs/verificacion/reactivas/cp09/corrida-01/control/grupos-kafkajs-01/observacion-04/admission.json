@@ -1,0 +1,24 @@
+{
+  "reference": "observacion-01/01-stdout.txt",
+  "referenceSHA256": "82f5ce9bc2620a9dd48feba429bea2479ccf70f33d064e43d862796743cf35d5",
+  "version": "observation04",
+  "originalProbeSHA256": "ea6cf1bd7eb2455cdf817a627dee088b39a2f587f08a359cdc26c5ae36bd9d01",
+  "previousStdinProbeSHA256": "2b4560981b84566740243a5b176a916f3957063b477e706ffc6a1d4aed28da31",
+  "executedProbeSHA256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c",
+  "reason": "bootstrap metadata; diagnostic only",
+  "counts": {
+    "inventory-consumer": [
+      67,
+      "2026-11-01T02:56:10.259148177Z"
+    ],
+    "notification-consumer": [
+      68,
+      "2026-11-01T02:56:10.260786421Z"
+    ],
+    "billing-consumer": [
+      69,
+      "2026-11-01T02:56:10.168638649Z"
+    ]
+  },
+  "baselineSource": "Control/baseline-inicial.json"
+}

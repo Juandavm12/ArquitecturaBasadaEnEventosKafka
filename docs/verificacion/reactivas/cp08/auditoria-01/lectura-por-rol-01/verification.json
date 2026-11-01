@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "verifiedUTC": "2026-10-31T23:46:39.217Z",
+  "baselineOriginalsPreserved": 501,
+  "businessContainers": 4,
+  "relevantModulesPerRole": 3,
+  "inventoryInitialExtraHashes": 5,
+  "allSixServiceSnapshotsMatchCP07Restored": true,
+  "newSuccessfulHashQueries": 3,
+  "reusedInventoryProbe": true,
+  "initialCollector": "FAILED; original cause unknown; successful inventory bytes reused after independent offline verification",
+  "continuation01": "FAILED: API consumer-module ENOENT due to overly broad file-list assumption; no service failure or mutation",
+  "scope": "Code hashes by actual entrypoint/import graph, not identical complete source trees across differently built roles",
+  "additionalHTTPRequests": 0,
+  "restarts": 0,
+  "configurationChanges": 0,
+  "probes": {
+    "inventory-consumer": {
+      "source": "../lectura-runtime/03-stdout.txt",
+      "containerId": "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+      "imageId": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+      "hashes": {
+        "src/app.js": "9f7c91d9aa446c4bfdc00d45fa59e28b252b0a001c6f14ad51c043c79d87a833",
+        "src/consumer-runtime.js": "51885d54c1e351e2277cc0e8ed37d553b4438d22b9877c7b411d9c2a0d17098d",
+        "src/consumer-server.js": "529997cd044c48a4a155a98ecd5b1a74185cc4900ae6dfc95b1cb8d588d442a6",
+        "src/consumer.js": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7",
+        "src/order-event.js": "f447c58cebb8f84f24b89132528be11fdf69e6808688ae65b4318e8e1f13cdac",
+        "src/server.js": "9fe8781551dccf3ce5b455937af46ddfec713e2af3915650f1e2456acf7bf0a7",
+        "package.json": "32f36d92451a6db2133d05e42d448d634c9c8723e5019459cc0510316cd97abb",
+        "package-lock.json": "90fbbe702473483fb7588d5b6dc0989eed9e8527cfc9cfa43289b41ef883edee"
+      },
+      "reusedInitialSuccessfulProbe": true
+    },
+    "orders-api": {
+      "source": "02-stdout.txt",
+      "containerId": "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+      "imageId": "sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9",
+      "entrypoint": [
+        "docker-entrypoint.sh"
+      ],
+      "command": [
+        "node",
+        "src/server.js"
+      ],
+      "expectedRoleFiles": [
+        "src/server.js",
+        "src/app.js",
+        "src/order-event.js"
+      ],
+      "hashes": {
+        "src/server.js": "9fe8781551dccf3ce5b455937af46ddfec713e2af3915650f1e2456acf7bf0a7",
+        "src/app.js": "9f7c91d9aa446c4bfdc00d45fa59e28b252b0a001c6f14ad51c043c79d87a833",
+        "src/order-event.js": "f447c58cebb8f84f24b89132528be11fdf69e6808688ae65b4318e8e1f13cdac"
+      }
+    },
+    "billing-consumer": {
+      "source": "03-stdout.txt",
+      "containerId": "5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b",
+      "imageId": "sha256:afdac9be4249c3c4f6bdd9ae79a43112ec38f9a81f7cb63d41cac694f160b2f6",
+      "entrypoint": [
+        "docker-entrypoint.sh"
+      ],
+      "command": [
+        "node",
+        "src/consumer-server.js"
+      ],
+      "expectedRoleFiles": [
+        "src/consumer-server.js",
+        "src/consumer-runtime.js",
+        "src/consumer.js"
+      ],
+      "hashes": {
+        "src/consumer-server.js": "529997cd044c48a4a155a98ecd5b1a74185cc4900ae6dfc95b1cb8d588d442a6",
+        "src/consumer-runtime.js": "51885d54c1e351e2277cc0e8ed37d553b4438d22b9877c7b411d9c2a0d17098d",
+        "src/consumer.js": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7"
+      }
+    },
+    "notification-consumer": {
+      "source": "04-stdout.txt",
+      "containerId": "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696",
+      "imageId": "sha256:3bcc3ae6c6c56e94fff78caa7b72ad9376f9cfba59401570b42c19180a9e8924",
+      "entrypoint": [
+        "docker-entrypoint.sh"
+      ],
+      "command": [
+        "node",
+        "src/consumer-server.js"
+      ],
+      "expectedRoleFiles": [
+        "src/consumer-server.js",
+        "src/consumer-runtime.js",
+        "src/consumer.js"
+      ],
+      "hashes": {
+        "src/consumer-server.js": "529997cd044c48a4a155a98ecd5b1a74185cc4900ae6dfc95b1cb8d588d442a6",
+        "src/consumer-runtime.js": "51885d54c1e351e2277cc0e8ed37d553b4438d22b9877c7b411d9c2a0d17098d",
+        "src/consumer.js": "5cc79f4a5d87a33716a4f03eaaa9a6a07dd652893f91c9e482a357919569e6e7"
+      }
+    }
+  }
+}

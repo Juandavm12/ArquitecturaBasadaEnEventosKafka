@@ -1,0 +1,30 @@
+{
+  "registeredAtUTC": "2026-10-27T12:33:30.881692+00:00",
+  "origin": "Captura GUI aportada por el usuario; revisada visualmente",
+  "file": "01-order-created-kafka-ui.png",
+  "sha256": "ff4f33a3bb0a3114a0c0cd39b80df11f59518fce5c49873590b29b7a93cfadb8",
+  "bytes": 114273,
+  "byteIdenticalToSource": true,
+  "modifications": "Ninguna: sin recorte, reescalado ni anotaciones",
+  "linkedRun": "../result.json",
+  "visualChecks": {
+    "cluster": "laboratorio",
+    "partition": 1,
+    "offset": 0,
+    "orderId": "ORD-f2035454-c380-4e9f-b682-b48ef72ca568",
+    "eventId": "657b734d-55ed-4d10-ba08-5277b9eba6b2",
+    "correlationId": "cdb824fe-f331-4a6d-8c84-2dbb89ba6566",
+    "eventType": "OrderCreated",
+    "completeJSONVisible": true,
+    "quantity": 1,
+    "unitPrice": 85000,
+    "total": 85000
+  },
+  "limits": [
+    "El nombre del tópico no está visible en el recorte; se correlaciona con orders.events mediante los mismos IDs y partición/offset del log nativo de esta corrida.",
+    "La etiqueta 1 messages consumed corresponde al visor Kafka UI; no demuestra procesamiento de los tres consumidores funcionales.",
+    "La hora 07:19:38 mostrada es compatible con UTC-5 respecto de 12:19:38Z; no se atribuye una zona horaria no visible.",
+    "El texto fechado 2024 del encabezado UI no se utiliza como fecha de la prueba.",
+    "El result.json previo se conserva como registro histórico; este archivo incorpora la verificación visual posterior. No se envió otro POST."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "docker",
+    "compose",
+    "-p",
+    "qa-taller-integracion-kafka",
+    "-f",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka/docker-compose.yml",
+    "logs",
+    "--no-color",
+    "--timestamps",
+    "kafka-ui"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/kafka",
+  "startUTC": "2026-10-31T23:19:33.124Z",
+  "endUTC": "2026-10-31T23:19:33.478Z",
+  "durationMs": 354.707435,
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

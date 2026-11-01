@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "validatedAtUTC": "2026-10-31T22:57:39.808Z",
+  "case": "CP-06",
+  "state": "Cumple",
+  "reportFields": 11,
+  "resolvedFinalLinks": 18,
+  "preservedFiles": 67,
+  "preservedClosedCaseFiles": 6,
+  "selectedSourceSections": 3,
+  "sourceSelectionBytesVerified": true,
+  "svgSHA256": "41ae2073228ba22e8189b2eb753669764157c5de88d77cb796708b38d645cd7a",
+  "reportSHA256": "233995d2542109f2237302cddc4e883c3ac2d5a8e99eca567ce734a235bf5f75",
+  "updatedPlans": 4,
+  "matrixRows": 12,
+  "onlyChangedMatrixCase": "CP-06",
+  "kafkaClosedCount": "4/10",
+  "closedCases": [
+    "CP-01",
+    "CP-04",
+    "CP-05",
+    "CP-06"
+  ],
+  "pendingCases": 6,
+  "additionalHTTPRequests": 0,
+  "historicalExecutionDate": "2026-10-27",
+  "scope": "API publication -> persistent broker log payload -> received/processed/offset-committed traces in three consumers.",
+  "limits": "Offline documentary verification; no new runtime, SLA, recovery, elasticity or operational Kafka server stdout checks. Native review unavailable."
+}

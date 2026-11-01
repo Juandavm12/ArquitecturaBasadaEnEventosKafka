@@ -1,0 +1,7 @@
+{
+  "svg": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/api/publicacion-postman/corrida-01/cli-01/visualizaciones/01-postman-cli-salida-renderizada.svg",
+  "manifest": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/api/publicacion-postman/corrida-01/cli-01/visualizaciones/01-postman-cli-salida-renderizada.json",
+  "textRoundTripVerified": true,
+  "sourceFilesUnchanged": 24,
+  "additionalHTTPRequests": 0
+}

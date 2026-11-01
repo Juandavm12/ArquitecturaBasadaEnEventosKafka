@@ -1,0 +1,61 @@
+{"command":["docker","compose","-f","docker-compose.yml","config","--format","json"],"overrides":{"KAFKA_EXTERNAL_PORT":"29092","KAFKA_UI_PORT":"8080"},"code":1,"stdout":"","stderr":"open /home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/infraestructura/docker-compose.yml: no such file or directory\n"}
+{"command":["docker","compose","-f","docker-compose.yml","config","--format","json"],"overrides":{"KAFKA_EXTERNAL_PORT":"39092","KAFKA_UI_PORT":"18080"},"code":1,"stdout":"","stderr":"open /home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/infraestructura/docker-compose.yml: no such file or directory\n"}
+✖ contrato estático broker + UI; no requiere daemon (436.395065ms)
+✖ puertos alternativos conservan listener interno y anuncio externo coherentes (141.471522ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 910.485761
+
+✖ failing tests:
+
+test at Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/infraestructura/test/infra.test.mjs:18:1
+✖ contrato estático broker + UI; no requiere daemon (436.395065ms)
+  AssertionError [ERR_ASSERTION]: open /home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/infraestructura/docker-compose.yml: no such file or directory
+  
+  
+  1 !== 0
+  
+      at config (file:///home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller%20de%20Pruebas%20de%20Integraci%C3%B3n/trabajos/entrega-kafka/infraestructura/test/infra.test.mjs:14:10)
+      at TestContext.<anonymous> (file:///home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller%20de%20Pruebas%20de%20Integraci%C3%B3n/trabajos/entrega-kafka/infraestructura/test/infra.test.mjs:19:20)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/infraestructura/test/infra.test.mjs:64:1
+✖ puertos alternativos conservan listener interno y anuncio externo coherentes (141.471522ms)
+  AssertionError [ERR_ASSERTION]: open /home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/infraestructura/docker-compose.yml: no such file or directory
+  
+  
+  1 !== 0
+  
+      at config (file:///home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller%20de%20Pruebas%20de%20Integraci%C3%B3n/trabajos/entrega-kafka/infraestructura/test/infra.test.mjs:14:10)
+      at TestContext.<anonymous> (file:///home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller%20de%20Pruebas%20de%20Integraci%C3%B3n/trabajos/entrega-kafka/infraestructura/test/infra.test.mjs:65:20)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+command: node --test test/infra.test.mjs
+exit_code: 1

@@ -1,0 +1,203 @@
+[
+  {
+    "name": "01-before-ps",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:32.725916+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:33.232994+00:00",
+    "exitCode": 0,
+    "stdout": "01-before-ps-stdout.txt",
+    "stderr": "01-before-ps-stderr.txt"
+  },
+  {
+    "name": "02-before-health",
+    "command": [
+      "curl",
+      "--silent",
+      "--show-error",
+      "--fail-with-body",
+      "--max-time",
+      "15",
+      "http://127.0.0.1:3000/health"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:33.234061+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:33.291888+00:00",
+    "exitCode": 0,
+    "stdout": "02-before-health-stdout.txt",
+    "stderr": "02-before-health-stderr.txt"
+  },
+  {
+    "name": "03-before-offsets",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:33.292293+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:36.334073+00:00",
+    "exitCode": 0,
+    "stdout": "03-before-offsets-stdout.txt",
+    "stderr": "03-before-offsets-stderr.txt"
+  },
+  {
+    "name": "00-postman-version",
+    "command": [
+      "postman",
+      "--version"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:36.335464+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:38.449255+00:00",
+    "exitCode": 0,
+    "stdout": "00-postman-version-stdout.txt",
+    "stderr": "00-postman-version-stderr.txt"
+  },
+  {
+    "name": "04-postman",
+    "command": [
+      "postman",
+      "collection",
+      "run",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/pruebas/CP04.postman_collection.json",
+      "--iteration-count",
+      "1",
+      "--ignore-redirects",
+      "--timeout",
+      "30000",
+      "--timeout-request",
+      "10000",
+      "--timeout-script",
+      "5000",
+      "--no-report-events",
+      "--disable-unicode",
+      "--verbose"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:38.449708+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:43.398942+00:00",
+    "exitCode": 0,
+    "stdout": "04-postman-stdout.txt",
+    "stderr": "04-postman-stderr.txt"
+  },
+  {
+    "name": "05-after-offsets",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-get-offsets.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--topic",
+      "orders.events"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:43.400331+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:47.355172+00:00",
+    "exitCode": 0,
+    "stdout": "05-after-offsets-stdout.txt",
+    "stderr": "05-after-offsets-stderr.txt"
+  },
+  {
+    "name": "06-api-logs",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--timestamps",
+      "--since",
+      "2026-10-31T18:06:38.449687+00:00",
+      "orders-api"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:47.355650+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:47.531398+00:00",
+    "exitCode": 0,
+    "stdout": "06-api-logs-stdout.txt",
+    "stderr": "06-api-logs-stderr.txt"
+  },
+  {
+    "name": "07-after-ps",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:47.531714+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:47.746202+00:00",
+    "exitCode": 0,
+    "stdout": "07-after-ps-stdout.txt",
+    "stderr": "07-after-ps-stderr.txt"
+  },
+  {
+    "name": "08-broker-segments",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "find",
+      "/var/lib/kafka/data/orders.events-0",
+      "-maxdepth",
+      "1",
+      "-type",
+      "f",
+      "-name",
+      "*.log"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:47.747113+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:48.070072+00:00",
+    "exitCode": 0,
+    "stdout": "08-broker-segments-stdout.txt",
+    "stderr": "08-broker-segments-stderr.txt"
+  },
+  {
+    "name": "09-broker-native",
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-dump-log.sh",
+      "--files",
+      "/var/lib/kafka/data/orders.events-0/00000000000000000000.log",
+      "--print-data-log"
+    ],
+    "startedAtUTC": "2026-10-31T18:06:48.070798+00:00",
+    "finishedAtUTC": "2026-10-31T18:06:50.552516+00:00",
+    "exitCode": 0,
+    "stdout": "09-broker-native-stdout.txt",
+    "stderr": "09-broker-native-stderr.txt"
+  }
+]

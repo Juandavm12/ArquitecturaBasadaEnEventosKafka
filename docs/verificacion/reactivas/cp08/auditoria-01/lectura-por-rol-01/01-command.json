@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "docker",
+    "inspect",
+    "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+    "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696",
+    "5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b",
+    "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+    "5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958",
+    "8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b"
+  ],
+  "startUTC": "2026-10-31T23:46:38.211Z",
+  "endUTC": "2026-10-31T23:46:38.388Z",
+  "cwd": "/home/juandav12/projects/8thSemester",
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

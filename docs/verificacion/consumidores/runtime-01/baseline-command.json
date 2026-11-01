@@ -1,0 +1,11 @@
+{
+  "command": [
+    "docker",
+    "inspect",
+    "qa-taller-integracion-kafka-kafka-1",
+    "qa-taller-integracion-kafka-kafka-ui-1",
+    "qa-taller-integracion-kafka-orders-api-1"
+  ],
+  "exitcode": 0,
+  "timestamp": "2026-10-27T13:18:52.257145+00:00"
+}

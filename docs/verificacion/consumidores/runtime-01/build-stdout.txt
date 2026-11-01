@@ -1,0 +1,82 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 2.36kB done
+#1 DONE 0.0s
+
+#2 [notification-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 279B 0.0s done
+#2 DONE 0.0s
+
+#3 [inventory-consumer internal] load metadata for docker.io/library/node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205
+#3 DONE 0.1s
+
+#4 [billing-consumer internal] load .dockerignore
+#4 transferring context: 101B done
+#4 DONE 0.0s
+
+#5 [inventory-consumer internal] load build context
+#5 transferring context: 7.92kB done
+#5 DONE 0.0s
+
+#6 [notification-consumer 1/5] FROM docker.io/library/node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205
+#6 resolve docker.io/library/node:24-bookworm-slim@sha256:55fb5f5a527ea2c5c4a95f963e48ef90aa38c7b346054fdc8ee9957a2b55d205 0.1s done
+#6 DONE 0.1s
+
+#7 [inventory-consumer 2/5] WORKDIR /app
+#7 CACHED
+
+#8 [inventory-consumer 3/5] COPY package.json package-lock.json ./
+#8 CACHED
+
+#9 [inventory-consumer 4/5] RUN npm ci --omit=dev
+#9 CACHED
+
+#7 [billing-consumer 2/5] WORKDIR /app
+#7 CACHED
+
+#8 [billing-consumer 3/5] COPY package.json package-lock.json ./
+#8 CACHED
+
+#10 [billing-consumer 5/5] COPY src ./src
+#10 DONE 0.1s
+
+#11 [inventory-consumer] exporting to image
+#11 exporting layers 0.1s done
+#11 exporting manifest sha256:af0a2f74717431c68a17407cf1408ae41f399291c774864c348b55ce31db8327 0.1s done
+#11 exporting config sha256:4b8ad44dbdbf18d941f2798c9ff0f717eb8cfef5642a3ea5c3780d54ac03d65e
+#11 exporting config sha256:4b8ad44dbdbf18d941f2798c9ff0f717eb8cfef5642a3ea5c3780d54ac03d65e 0.0s done
+#11 exporting attestation manifest sha256:9ff19a25b47b082a2fa38bb08e7d50943fab6f516fe670ec42e7ea65f3ce910a
+#11 exporting attestation manifest sha256:9ff19a25b47b082a2fa38bb08e7d50943fab6f516fe670ec42e7ea65f3ce910a 0.1s done
+#11 exporting manifest list sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6 0.0s done
+#11 naming to docker.io/library/qa-taller-integracion-kafka-inventory-consumer:latest done
+#11 unpacking to docker.io/library/qa-taller-integracion-kafka-inventory-consumer:latest
+#11 unpacking to docker.io/library/qa-taller-integracion-kafka-inventory-consumer:latest 0.1s done
+#11 DONE 0.6s
+
+#12 [notification-consumer] exporting to image
+#12 exporting layers 0.1s done
+#12 exporting manifest sha256:36bab901a5664cbe8b1242eed64cd138a94799c28362ee9f0a0f87d926e94283 0.0s done
+#12 exporting config sha256:229e830afb81820b46df0723647876c091a297f89423ce4002b68adb3abf2e12 0.1s done
+#12 exporting attestation manifest sha256:7d6490cc6e6c6081d2ac4094971fb5081c49e175fbcee78623d502c6ed50fcbe 0.1s done
+#12 exporting manifest list sha256:3bcc3ae6c6c56e94fff78caa7b72ad9376f9cfba59401570b42c19180a9e8924 0.0s done
+#12 naming to docker.io/library/qa-taller-integracion-kafka-notification-consumer:latest 0.0s done
+#12 unpacking to docker.io/library/qa-taller-integracion-kafka-notification-consumer:latest 0.1s done
+#12 DONE 0.6s
+
+#13 [billing-consumer] exporting to image
+#13 exporting layers 0.1s done
+#13 exporting manifest sha256:7f9a12927b5c78fa982be7ec51c9eafe0ca37d91f2a92fbe24fa31e0760f61a9 0.1s done
+#13 exporting config sha256:8a6af02266842eeb7bec870e1fd135cc60eb2ff5efb344104b1a8bda9653ea65 0.1s done
+#13 exporting attestation manifest sha256:d2e3c69493f9e31a7f51f1b2423b96e0ea6ba48fa4465059931229cb85ecd674 0.1s done
+#13 exporting manifest list sha256:afdac9be4249c3c4f6bdd9ae79a43112ec38f9a81f7cb63d41cac694f160b2f6 0.0s done
+#13 naming to docker.io/library/qa-taller-integracion-kafka-billing-consumer:latest 0.0s done
+#13 unpacking to docker.io/library/qa-taller-integracion-kafka-billing-consumer:latest 0.1s done
+#13 DONE 0.7s
+
+#14 [inventory-consumer] resolving provenance for metadata file
+#14 DONE 0.2s
+
+#15 [notification-consumer] resolving provenance for metadata file
+#15 DONE 0.2s
+
+#16 [billing-consumer] resolving provenance for metadata file
+#16 DONE 0.0s

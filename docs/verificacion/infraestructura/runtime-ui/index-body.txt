@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>UI for Apache Kafka</title>
+    <script type="text/javascript">
+      window.basePath = '';
+
+      window.__assetsPathBuilder = function (importer) {
+        return window.basePath+ "/" + importer;
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('/fonts/Inter-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Inter';
+        src: url('/fonts/Inter-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Roboto Mono';
+        src: url('/fonts/RobotoMono-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Roboto Mono';
+        src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-display: swap;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-77be7e32.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/ace-fff8bc0c.js">
+    <link rel="stylesheet" href="/assets/index-d9d582cd.css">
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>

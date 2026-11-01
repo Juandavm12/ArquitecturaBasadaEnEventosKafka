@@ -1,0 +1,49 @@
+diff --git a/../api-reanudacion-01/docker-compose.yml b/docker-compose.yml
+index a093ceb..23a4dab 100644
+--- a/../api-reanudacion-01/docker-compose.yml
++++ b/docker-compose.yml
+@@ -1,4 +1,4 @@
+-# Fase parcial: tres de los seis servicios finales.
++# Seis servicios: broker, UI, API y tres consumidores independientes.
+ services:
+   kafka:
+     image: apache/kafka:3.9.1
+@@ -79,5 +79,38 @@ services:
+       start_period: 20s
+     stop_grace_period: 15s
+ 
++  inventory-consumer: &consumer
++    build:
++      context: .
++    command: [node, src/consumer-server.js]
++    environment: &consumer-env
++      CONSUMER_ROLE: inventory
++      KAFKA_BROKER: kafka:9092
++      KAFKA_TOPIC: orders.events
++      PROCESSING_DELAY_MS: "0"
++    depends_on:
++      kafka:
++        condition: service_healthy
++    restart: on-failure
++    healthcheck:
++      test: [CMD, test, -f, /tmp/consumer-ready]
++      interval: 10s
++      timeout: 5s
++      retries: 6
++      start_period: 20s
++    stop_grace_period: 15s
++
++  billing-consumer:
++    <<: *consumer
++    environment:
++      <<: *consumer-env
++      CONSUMER_ROLE: billing
++
++  notification-consumer:
++    <<: *consumer
++    environment:
++      <<: *consumer-env
++      CONSUMER_ROLE: notification
++
+ volumes:
+   kafka-data:

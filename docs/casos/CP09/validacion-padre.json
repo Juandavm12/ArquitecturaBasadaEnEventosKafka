@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "role": "parent-final-offline-readback",
+  "utc": "2026-11-01T04:03:39.575083+00:00",
+  "case": "CP09",
+  "caseState": "Cumple",
+  "kafkaDocumented": "7/10",
+  "pendingCases": [
+    "CP10",
+    "CP11",
+    "CP12"
+  ],
+  "globalPDFPending": true,
+  "empiricalParentValidationUTC": "2026-11-01T03:55:52.704Z",
+  "documentaryCheckerExitCode": 0,
+  "reportFields": 11,
+  "reportLinksResolved": 15,
+  "archiveCopies": 193,
+  "archiveBytes": 21015457,
+  "oldOriginalsUnchanged": 562,
+  "oldModifiedPaths": [
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/PLAN_DE_TRABAJO.md",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/PLAN_KAFKA.md",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/README.md",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/entregas/ArquitecturaBasadaEnEventosKafka/docs/verificacion/consumidores/RESUMEN.md"
+  ],
+  "matrixRows": 12,
+  "matrixChangedRows": [
+    {
+      "before": "| CP-09 \u2014 Resilient | Provocar ca\u00edda del consumidor y comprobar continuidad de aceptaci\u00f3n/publicaci\u00f3n de la API; registrar ca\u00edda y recuperaci\u00f3n. | [x] | [ ] |",
+      "after": "| CP-09 \u2014 Resilient | Provocar ca\u00edda del consumidor y comprobar continuidad de aceptaci\u00f3n/publicaci\u00f3n de la API; registrar ca\u00edda y recuperaci\u00f3n. | [x] | [x] |"
+    }
+  ],
+  "svgXML": "PASS",
+  "svgRasterChecked": false,
+  "newRuntimeCommands": 0,
+  "reportSHA256": "fd1e507876481c2bede5fe2d2762c0af12173eb75aeef3c555d63ca835c4aabd",
+  "checkerReceipt": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/trabajos/entrega-kafka/cp09-resilient-01/documentacion-evidence/parent-readback-01/command.json"
+}

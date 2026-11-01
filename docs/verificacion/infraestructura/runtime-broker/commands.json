@@ -1,0 +1,96 @@
+[
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "up",
+      "-d",
+      "--pull",
+      "never",
+      "--wait",
+      "--wait-timeout",
+      "180",
+      "kafka"
+    ],
+    "start": "2026-10-27T11:23:20.010858+00:00",
+    "end": "2026-10-27T11:23:37.237381+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-topics.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--create",
+      "--if-not-exists",
+      "--topic",
+      "orders.events",
+      "--partitions",
+      "2",
+      "--replication-factor",
+      "1"
+    ],
+    "start": "2026-10-27T11:23:37.237717+00:00",
+    "end": "2026-10-27T11:23:41.060407+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "exec",
+      "-T",
+      "kafka",
+      "/opt/kafka/bin/kafka-topics.sh",
+      "--bootstrap-server",
+      "kafka:9092",
+      "--describe",
+      "--topic",
+      "orders.events"
+    ],
+    "start": "2026-10-27T11:23:41.060865+00:00",
+    "end": "2026-10-27T11:23:44.276008+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "ps",
+      "-a",
+      "--format",
+      "json"
+    ],
+    "start": "2026-10-27T11:23:44.276357+00:00",
+    "end": "2026-10-27T11:23:44.430035+00:00",
+    "exitcode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "-p",
+      "qa-taller-integracion-kafka",
+      "logs",
+      "--no-color",
+      "--timestamps",
+      "kafka"
+    ],
+    "start": "2026-10-27T11:23:44.430469+00:00",
+    "end": "2026-10-27T11:23:44.606341+00:00",
+    "exitcode": 0
+  }
+]

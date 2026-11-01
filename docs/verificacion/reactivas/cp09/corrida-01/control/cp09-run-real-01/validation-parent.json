@@ -1,0 +1,728 @@
+{
+  "status": "PASS",
+  "scope": "empirical CP09 controlled stop and restoration; documentary integration pending",
+  "utc": "2026-11-01T03:55:52.704Z",
+  "result": {
+    "status": "PASS",
+    "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+    "preservedSourceFiles": 566,
+    "preservedPlans": 4,
+    "basis": "Controlled stop; host sequence, not clock ordering or SLA. CP11/12 not closed."
+  },
+  "commandCount": 42,
+  "actions": [
+    {
+      "file": "run-0003-command.json",
+      "argv": [
+        "docker",
+        "stop",
+        "--time",
+        "15",
+        "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978"
+      ],
+      "startUTC": "2026-11-01T03:54:35.495Z",
+      "endUTC": "2026-11-01T03:54:37.609Z"
+    },
+    {
+      "file": "run-0025-command.json",
+      "argv": [
+        "docker",
+        "start",
+        "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978"
+      ],
+      "startUTC": "2026-11-01T03:54:47.400Z",
+      "endUTC": "2026-11-01T03:54:47.895Z"
+    }
+  ],
+  "post": {
+    "file": "run-0007-command.json",
+    "argv": [
+      "postman",
+      "collection",
+      "run",
+      "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-resilient-01/runtime/collection-executed.json",
+      "--iteration-count",
+      "1",
+      "--ignore-redirects",
+      "--no-report-events",
+      "--timeout-request",
+      "10000",
+      "--timeout-script",
+      "5000",
+      "--timeout",
+      "20000"
+    ],
+    "startUTC": "2026-11-01T03:54:38.391Z",
+    "endUTC": "2026-11-01T03:54:42.730Z"
+  },
+  "response": {
+    "status": "accepted",
+    "message": "Pedido recibido y evento OrderCreated publicado en Kafka",
+    "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06"
+  },
+  "publication": {
+    "date": "2026-11-01T03:54:42.023Z",
+    "service": "orders-api",
+    "hostname": "eff545def17b",
+    "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+    "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+    "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+    "topic": "orders.events",
+    "partition": 1,
+    "baseOffset": "2"
+  },
+  "traces": {
+    "billing": [
+      {
+        "date": "2026-11-01T03:54:42.868Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "received",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        },
+        "event": {
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-11-01T03:54:41.530Z",
+          "source": "orders-api",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "data": {
+            "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+            "customerName": "Pedro CP09",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      },
+      {
+        "date": "2026-11-01T03:54:42.878Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "processed",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        },
+        "result": {
+          "action": "simulate-invoice-charge",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06"
+        }
+      },
+      {
+        "date": "2026-11-01T03:54:43.609Z",
+        "hostname": "5caff4b88c36",
+        "service": "billing-consumer",
+        "groupId": "billing-service-group",
+        "instanceId": "5caff4b88c36",
+        "phase": "offset-committed",
+        "action": "simulate-invoice-charge",
+        "trace": {
+          "service": "billing-consumer",
+          "groupId": "billing-service-group",
+          "instanceId": "5caff4b88c36",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        }
+      }
+    ],
+    "notification": [
+      {
+        "date": "2026-11-01T03:54:42.880Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "received",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        },
+        "event": {
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-11-01T03:54:41.530Z",
+          "source": "orders-api",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "data": {
+            "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+            "customerName": "Pedro CP09",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      },
+      {
+        "date": "2026-11-01T03:54:42.895Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "processed",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        },
+        "result": {
+          "action": "simulate-notification-send",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06"
+        }
+      },
+      {
+        "date": "2026-11-01T03:54:43.618Z",
+        "hostname": "3ce4bcc7867e",
+        "service": "notification-consumer",
+        "groupId": "notification-service-group",
+        "instanceId": "3ce4bcc7867e",
+        "phase": "offset-committed",
+        "action": "simulate-notification-send",
+        "trace": {
+          "service": "notification-consumer",
+          "groupId": "notification-service-group",
+          "instanceId": "3ce4bcc7867e",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        }
+      }
+    ],
+    "inventoryAfterRestore": [
+      {
+        "date": "2026-11-01T03:54:51.334Z",
+        "hostname": "24326effb3e1",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "24326effb3e1",
+        "phase": "received",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "24326effb3e1",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        },
+        "event": {
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "eventType": "OrderCreated",
+          "eventVersion": "1.0",
+          "occurredAt": "2026-11-01T03:54:41.530Z",
+          "source": "orders-api",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "data": {
+            "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+            "customerName": "Pedro CP09",
+            "product": "Libro de arquitectura",
+            "quantity": 1,
+            "unitPrice": 85000,
+            "total": 85000
+          }
+        }
+      },
+      {
+        "date": "2026-11-01T03:54:51.334Z",
+        "hostname": "24326effb3e1",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "24326effb3e1",
+        "phase": "processed",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "24326effb3e1",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        },
+        "result": {
+          "action": "simulate-stock-reservation",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06"
+        }
+      },
+      {
+        "date": "2026-11-01T03:54:51.341Z",
+        "hostname": "24326effb3e1",
+        "service": "inventory-consumer",
+        "groupId": "inventory-service-group",
+        "instanceId": "24326effb3e1",
+        "phase": "offset-committed",
+        "action": "simulate-stock-reservation",
+        "trace": {
+          "service": "inventory-consumer",
+          "groupId": "inventory-service-group",
+          "instanceId": "24326effb3e1",
+          "orderId": "ORD-e73e7eca-3987-4029-92d3-0b9c9903cc06",
+          "eventId": "ea235a82-c146-4b67-a30c-e2264dd257a9",
+          "correlationId": "1fc1b4c8-45c6-4624-8cb8-01466e36c7bb",
+          "topic": "orders.events",
+          "partition": 1,
+          "offset": "2"
+        }
+      }
+    ]
+  },
+  "inventoryWindow": {
+    "before": {
+      "id": "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+      "image": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+      "env": [
+        "KAFKA_BROKER=kafka:9092",
+        "KAFKA_TOPIC=orders.events",
+        "PROCESSING_DELAY_MS=0",
+        "CONSUMER_ROLE=inventory",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "NODE_VERSION=24.22.1",
+        "YARN_VERSION=1.22.22"
+      ],
+      "mounts": [],
+      "hostname": "24326effb3e1",
+      "configSHA": "54301904b8f6d8921c2293a6b0ba409a178e2c9ea3873095f2a12815e3974ed3",
+      "hostConfigSHA": "226b79694a5b0420c3585e46cc18c3b08dddf672aa1f763f72a29077ba427a95",
+      "restartCount": 67,
+      "startedAt": "2026-11-01T02:56:10.259148177Z",
+      "finishedAt": "2026-11-01T03:54:37.235196137Z",
+      "state": "exited",
+      "health": "unhealthy"
+    },
+    "after": {
+      "id": "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+      "image": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+      "env": [
+        "KAFKA_BROKER=kafka:9092",
+        "KAFKA_TOPIC=orders.events",
+        "PROCESSING_DELAY_MS=0",
+        "CONSUMER_ROLE=inventory",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "NODE_VERSION=24.22.1",
+        "YARN_VERSION=1.22.22"
+      ],
+      "mounts": [],
+      "hostname": "24326effb3e1",
+      "configSHA": "54301904b8f6d8921c2293a6b0ba409a178e2c9ea3873095f2a12815e3974ed3",
+      "hostConfigSHA": "226b79694a5b0420c3585e46cc18c3b08dddf672aa1f763f72a29077ba427a95",
+      "restartCount": 67,
+      "startedAt": "2026-11-01T02:56:10.259148177Z",
+      "finishedAt": "2026-11-01T03:54:37.235196137Z",
+      "state": "exited",
+      "health": "unhealthy"
+    }
+  },
+  "inventoryAfterExplicitStart": {
+    "id": "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+    "image": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+    "env": [
+      "KAFKA_BROKER=kafka:9092",
+      "KAFKA_TOPIC=orders.events",
+      "PROCESSING_DELAY_MS=0",
+      "CONSUMER_ROLE=inventory",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=24.22.1",
+      "YARN_VERSION=1.22.22"
+    ],
+    "mounts": [],
+    "hostname": "24326effb3e1",
+    "configSHA": "54301904b8f6d8921c2293a6b0ba409a178e2c9ea3873095f2a12815e3974ed3",
+    "hostConfigSHA": "226b79694a5b0420c3585e46cc18c3b08dddf672aa1f763f72a29077ba427a95",
+    "restartCount": 0,
+    "startedAt": "2026-11-01T03:54:47.541949099Z",
+    "finishedAt": "2026-11-01T03:54:37.235196137Z",
+    "state": "running",
+    "health": "starting"
+  },
+  "restoredSnapshot": {
+    "inventory-consumer": {
+      "id": "24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978",
+      "image": "sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6",
+      "env": [
+        "KAFKA_BROKER=kafka:9092",
+        "KAFKA_TOPIC=orders.events",
+        "PROCESSING_DELAY_MS=0",
+        "CONSUMER_ROLE=inventory",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "NODE_VERSION=24.22.1",
+        "YARN_VERSION=1.22.22"
+      ],
+      "mounts": [],
+      "hostname": "24326effb3e1",
+      "configSHA": "54301904b8f6d8921c2293a6b0ba409a178e2c9ea3873095f2a12815e3974ed3",
+      "hostConfigSHA": "226b79694a5b0420c3585e46cc18c3b08dddf672aa1f763f72a29077ba427a95",
+      "restartCount": 0,
+      "startedAt": "2026-11-01T03:54:47.541949099Z",
+      "finishedAt": "2026-11-01T03:54:37.235196137Z",
+      "state": "running",
+      "health": "healthy"
+    },
+    "notification-consumer": {
+      "id": "3ce4bcc7867e527270b811093f1c97ccff74f1ee7b08166ab3c5f92204d09696",
+      "image": "sha256:3bcc3ae6c6c56e94fff78caa7b72ad9376f9cfba59401570b42c19180a9e8924",
+      "env": [
+        "KAFKA_TOPIC=orders.events",
+        "PROCESSING_DELAY_MS=0",
+        "CONSUMER_ROLE=notification",
+        "KAFKA_BROKER=kafka:9092",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "NODE_VERSION=24.22.1",
+        "YARN_VERSION=1.22.22"
+      ],
+      "mounts": [],
+      "hostname": "3ce4bcc7867e",
+      "configSHA": "818c9b93986a15ae99b0601fdd023477173b384147ca1d87b11f4ab4b35f2b7c",
+      "hostConfigSHA": "226b79694a5b0420c3585e46cc18c3b08dddf672aa1f763f72a29077ba427a95",
+      "restartCount": 68,
+      "startedAt": "2026-11-01T02:56:10.260786421Z",
+      "finishedAt": "2026-11-01T02:56:08.163234472Z",
+      "state": "running",
+      "health": "healthy"
+    },
+    "billing-consumer": {
+      "id": "5caff4b88c36b97495102c059e1bbdbeb766a881bfe47e0c14ae094a0dadda9b",
+      "image": "sha256:afdac9be4249c3c4f6bdd9ae79a43112ec38f9a81f7cb63d41cac694f160b2f6",
+      "env": [
+        "CONSUMER_ROLE=billing",
+        "KAFKA_BROKER=kafka:9092",
+        "KAFKA_TOPIC=orders.events",
+        "PROCESSING_DELAY_MS=0",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "NODE_VERSION=24.22.1",
+        "YARN_VERSION=1.22.22"
+      ],
+      "mounts": [],
+      "hostname": "5caff4b88c36",
+      "configSHA": "84d1ebf6c629bd758c6efc13b2c1410be8ac33f77222d41445d5393a72998152",
+      "hostConfigSHA": "226b79694a5b0420c3585e46cc18c3b08dddf672aa1f763f72a29077ba427a95",
+      "restartCount": 69,
+      "startedAt": "2026-11-01T02:56:10.168638649Z",
+      "finishedAt": "2026-11-01T02:56:08.16716394Z",
+      "state": "running",
+      "health": "healthy"
+    },
+    "orders-api": {
+      "id": "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+      "image": "sha256:c60a2fb741b9486a0c180d3f0460a4f3b743430badc481d358ed637733c120b9",
+      "env": [
+        "KAFKA_TOPIC=orders.events",
+        "KAFKA_BROKER=kafka:9092",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "NODE_VERSION=24.22.1",
+        "YARN_VERSION=1.22.22"
+      ],
+      "mounts": [],
+      "hostname": "eff545def17b",
+      "configSHA": "48ed1a9d86bac3e4ab9815637aa1f68026999ba62f7eb985ddc44b03a07a4a01",
+      "hostConfigSHA": "df9e36edac5c899b13b21179e81322b411e6598908fbbb22727d360f980c3db4",
+      "restartCount": 0,
+      "startedAt": "2026-11-01T02:22:05.702346699Z",
+      "finishedAt": "2026-11-01T02:00:58.98264634Z",
+      "state": "running",
+      "health": "healthy"
+    },
+    "kafka-ui": {
+      "id": "5a51c12950227313bf64bb22cb959a12cb9fffb676864d4841b0105a93e5b958",
+      "image": "sha256:8f2ff02d64b0a7a2b71b6b3b3148b85f66d00ec20ad40c30bdcd415d46d31818",
+      "env": [
+        "JAVA_OPTS=-Xms256m -Xmx256m",
+        "KAFKA_CLUSTERS_0_NAME=laboratorio",
+        "KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092",
+        "KAFKA_CLUSTERS_0_READONLY=true",
+        "DYNAMIC_CONFIG_ENABLED=false",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=en_US.UTF-8",
+        "LANGUAGE=en_US:en",
+        "LC_ALL=en_US.UTF-8",
+        "TZ=Etc/UTC",
+        "JAVA_HOME=/usr/lib/jvm/zulu17"
+      ],
+      "mounts": [],
+      "hostname": "5a51c1295022",
+      "configSHA": "b416edb9219648d955bd735d150c7249e28a8afe2792b4f6a6260f686fa9f787",
+      "hostConfigSHA": "9dba4d2e3fba39348d17ca480981173bd5377eda0bb1f5d45377e25a19da23d8",
+      "restartCount": 0,
+      "startedAt": "2026-11-01T02:22:06.503214822Z",
+      "finishedAt": "2026-11-01T02:00:58.982664307Z",
+      "state": "running",
+      "health": null
+    },
+    "kafka": {
+      "id": "8719d42973a5838e0b1fa5dd94281561bec83fcf070cbda502b3b863ee2b373b",
+      "image": "sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed",
+      "env": [
+        "KAFKA_LOG_RETENTION_HOURS=168",
+        "KAFKA_LISTENERS=INTERNAL://:9092,EXTERNAL://:29092,CONTROLLER://:9093",
+        "KAFKA_PROCESS_ROLES=broker,controller",
+        "CLUSTER_ID=MkU3OEVBNTcwNTJENDM2Qk",
+        "KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1",
+        "KAFKA_MIN_INSYNC_REPLICAS=1",
+        "KAFKA_HEAP_OPTS=-Xms512m -Xmx512m",
+        "KAFKA_LOG_DIRS=/var/lib/kafka/data",
+        "KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1",
+        "KAFKA_NUM_PARTITIONS=2",
+        "KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT",
+        "KAFKA_CONTROLLER_LISTENER_NAMES=CONTROLLER",
+        "KAFKA_ADVERTISED_LISTENERS=INTERNAL://kafka:9092,EXTERNAL://localhost:29092",
+        "KAFKA_NODE_ID=1",
+        "KAFKA_CONTROLLER_QUORUM_VOTERS=1@kafka:9093",
+        "KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1",
+        "KAFKA_AUTO_CREATE_TOPICS_ENABLE=false",
+        "KAFKA_INTER_BROKER_LISTENER_NAME=INTERNAL",
+        "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "JAVA_HOME=/opt/java/openjdk",
+        "LANG=en_US.UTF-8",
+        "LANGUAGE=en_US:en",
+        "LC_ALL=en_US.UTF-8",
+        "JAVA_VERSION=jdk-21.0.7+6"
+      ],
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "aafd2699ae1b9869bb80282edb8c36f85c41421bfdd9a3cf35e94899eef4ad6d",
+          "Source": "/var/lib/docker/volumes/aafd2699ae1b9869bb80282edb8c36f85c41421bfdd9a3cf35e94899eef4ad6d/_data",
+          "Destination": "/etc/kafka/secrets",
+          "Driver": "local",
+          "Mode": "",
+          "RW": true,
+          "Propagation": ""
+        },
+        {
+          "Type": "volume",
+          "Name": "eab0f692593bc219e506f0e2907dfa930710da79a666b689d3c8b71cafb885e9",
+          "Source": "/var/lib/docker/volumes/eab0f692593bc219e506f0e2907dfa930710da79a666b689d3c8b71cafb885e9/_data",
+          "Destination": "/mnt/shared/config",
+          "Driver": "local",
+          "Mode": "",
+          "RW": true,
+          "Propagation": ""
+        },
+        {
+          "Type": "volume",
+          "Name": "qa-taller-integracion-kafka_kafka-data",
+          "Source": "/var/lib/docker/volumes/qa-taller-integracion-kafka_kafka-data/_data",
+          "Destination": "/var/lib/kafka/data",
+          "Driver": "local",
+          "Mode": "rw",
+          "RW": true,
+          "Propagation": ""
+        }
+      ],
+      "hostname": "8719d42973a5",
+      "configSHA": "ad0020c22c510e6f3731cf8c1a3b6dcc596e63a3a6dbb83df2250d49d2d0677f",
+      "hostConfigSHA": "4f2b497d48463b6a669bf4b49cdcbfe60bdaba9d7121df35cfbb33b3eca629da",
+      "restartCount": 0,
+      "startedAt": "2026-11-01T02:21:41.729487385Z",
+      "finishedAt": "2026-11-01T02:00:58.982111023Z",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "groups": {
+    "before": {
+      "inventory": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "inventory-consumer-24326effb3e1-4ef82c7a-da96-46f5-9bd3-0883421a6a7e"
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 2,
+          "lag": 0,
+          "member": "inventory-consumer-24326effb3e1-4ef82c7a-da96-46f5-9bd3-0883421a6a7e"
+        }
+      ],
+      "billing": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 2,
+          "lag": 0,
+          "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+        }
+      ],
+      "notification": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 2,
+          "lag": 0,
+          "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+        }
+      ]
+    },
+    "whileStopped": {
+      "inventory": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "-"
+        },
+        {
+          "partition": 1,
+          "current": 2,
+          "end": 3,
+          "lag": 1,
+          "member": "-"
+        }
+      ],
+      "billing": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+        },
+        {
+          "partition": 1,
+          "current": 3,
+          "end": 3,
+          "lag": 0,
+          "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+        }
+      ],
+      "notification": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+        },
+        {
+          "partition": 1,
+          "current": 3,
+          "end": 3,
+          "lag": 0,
+          "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+        }
+      ]
+    },
+    "restored": {
+      "inventory": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "inventory-consumer-24326effb3e1-6b8691a0-85db-4f06-896f-713f59c4ca96"
+        },
+        {
+          "partition": 1,
+          "current": 3,
+          "end": 3,
+          "lag": 0,
+          "member": "inventory-consumer-24326effb3e1-6b8691a0-85db-4f06-896f-713f59c4ca96"
+        }
+      ],
+      "billing": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+        },
+        {
+          "partition": 1,
+          "current": 3,
+          "end": 3,
+          "lag": 0,
+          "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+        }
+      ],
+      "notification": [
+        {
+          "partition": 0,
+          "current": 1,
+          "end": 1,
+          "lag": 0,
+          "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+        },
+        {
+          "partition": 1,
+          "current": 3,
+          "end": 3,
+          "lag": 0,
+          "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+        }
+      ]
+    }
+  },
+  "preservedOriginals": 566,
+  "preservedPlans": 4
+}

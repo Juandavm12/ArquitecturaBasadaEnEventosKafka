@@ -1,0 +1,116 @@
+# Seis servicios: broker, UI, API y tres consumidores independientes.
+services:
+  kafka:
+    image: apache/kafka:3.9.1
+    ports:
+      - "127.0.0.1:${KAFKA_EXTERNAL_PORT:-29092}:29092"
+    environment:
+      CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
+      KAFKA_NODE_ID: "1"
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_LISTENERS: INTERNAL://:9092,EXTERNAL://:29092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: >-
+        INTERNAL://kafka:9092,EXTERNAL://localhost:${KAFKA_EXTERNAL_PORT:-29092}
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: >-
+        INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: "1"
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: "1"
+      KAFKA_MIN_INSYNC_REPLICAS: "1"
+      KAFKA_NUM_PARTITIONS: "2"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_LOG_RETENTION_HOURS: "168"
+      KAFKA_HEAP_OPTS: -Xms512m -Xmx512m
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    healthcheck:
+      test:
+        - CMD
+        - /opt/kafka/bin/kafka-topics.sh
+        - --bootstrap-server
+        - kafka:9092
+        - --list
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 20s
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:v0.7.2
+    ports:
+      - "127.0.0.1:${KAFKA_UI_PORT:-8080}:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: laboratorio
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_READONLY: "true"
+      DYNAMIC_CONFIG_ENABLED: "false"
+      JAVA_OPTS: -Xms256m -Xmx256m
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  orders-api:
+    build:
+      context: .
+    ports:
+      - "127.0.0.1:${ORDERS_API_PORT:-3000}:3000"
+    environment:
+      KAFKA_BROKER: kafka:9092
+      KAFKA_TOPIC: orders.events
+    depends_on:
+      kafka:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - >-
+          fetch('http://127.0.0.1:3000/health')
+          .then(r => process.exit(r.ok ? 0 : 1))
+          .catch(() => process.exit(1))
+      interval: 10s
+      timeout: 12s
+      retries: 3
+      start_period: 20s
+    stop_grace_period: 15s
+
+  inventory-consumer: &consumer
+    build:
+      context: .
+    command: [node, src/consumer-server.js]
+    environment: &consumer-env
+      CONSUMER_ROLE: inventory
+      KAFKA_BROKER: kafka:9092
+      KAFKA_TOPIC: orders.events
+      PROCESSING_DELAY_MS: "0"
+    depends_on:
+      kafka:
+        condition: service_healthy
+    restart: on-failure
+    healthcheck:
+      test: [CMD, test, -f, /tmp/consumer-ready]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s
+    stop_grace_period: 15s
+
+  billing-consumer:
+    <<: *consumer
+    environment:
+      <<: *consumer-env
+      CONSUMER_ROLE: billing
+
+  notification-consumer:
+    <<: *consumer
+    environment:
+      <<: *consumer-env
+      CONSUMER_ROLE: notification
+
+volumes:
+  kafka-data:

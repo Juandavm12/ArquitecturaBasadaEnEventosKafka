@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-10-27T12:08:48.094933+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:08:50.100021+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:08:52.103150+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:08:54.105318+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:08:56.107444+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:08:58.124219+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:09:00.126444+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:09:02.136923+00:00",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "timestamp": "2026-10-27T12:09:07.299901+00:00",
+    "error": "[{'name': 'laboratorio', 'defaultCluster': None, 'status': 'initializing', 'lastError': None, 'brokerCount': 0, 'onlinePartitionCount': 0, 'topicCount': 0, 'bytesInPerSec': None, 'bytesOutPerSec': None, 'readOnly': True, 'version': 'Unknown', 'features': []}]"
+  }
+]

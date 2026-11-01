@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "docker",
+    "exec",
+    "-i",
+    "--workdir",
+    "/app",
+    "eff545def17bba6ecf196eaec341b8cf0214649ffee6ec4b7fe6408be39dd7a9",
+    "node",
+    "-",
+    "kafka:9092"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integración/trabajos/entrega-kafka/cp09-control-padre-01",
+  "startUTC": "2026-11-01T03:30:24.071Z",
+  "endUTC": "2026-11-01T03:30:25.232Z",
+  "durationMs": 1161,
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "{\"diagnosticOnly\":true,\"status\":\"ok\",\"phase\":\"fetchTopicOffsets\",\"raw\":{\"bootstrap\":[{\"partition\":0,\"offset\":\"1\",\"high\":\"1\",\"low\":\"0\"},{\"partition\":1,\"offset\":\"2\",\"high\":\"2\",\"low\":\"0\"}],\"describeGroups\":{\"groups\":[{\"errorCode\":0,\"groupId\":\"inventory-service-group\",\"state\":\"Stable\",\"protocolType\":\"consumer\",\"protocol\":\"RoundRobinAssigner\",\"members\":[{\"memberId\":\"inventory-consumer-24326effb3e1-4ef82c7a-da96-46f5-9bd3-0883421a6a7e\",\"clientId\":\"inventory-consumer-24326effb3e1\",\"clientHost\":\"/172.24.0.2\",\"memberMetadata\":{\"type\":\"Buffer\",\"data\":[0,0,0,0,0,1,0,13,111,114,100,101,114,115,46,101,118,101,110,116,115,0,0,0,0]},\"memberAssignment\":{\"type\":\"Buffer\",\"data\":[0,0,0,0,0,1,0,13,111,114,100,101,114,115,46,101,118,101,110,116,115,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0]}}]},{\"errorCode\":0,\"groupId\":\"billing-service-group\",\"state\":\"Stable\",\"protocolType\":\"consumer\",\"protocol\":\"RoundRobinAssigner\",\"members\":[{\"memberId\":\"billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace\",\"clientId\":\"billing-consumer-5caff4b88c36\",\"clientHost\":\"/172.24.0.4\",\"memberMetadata\":{\"type\":\"Buffer\",\"data\":[0,0,0,0,0,1,0,13,111,114,100,101,114,115,46,101,118,101,110,116,115,0,0,0,0]},\"memberAssignment\":{\"type\":\"Buffer\",\"data\":[0,0,0,0,0,1,0,13,111,114,100,101,114,115,46,101,118,101,110,116,115,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0]}}]},{\"errorCode\":0,\"groupId\":\"notification-service-group\",\"state\":\"Stable\",\"protocolType\":\"consumer\",\"protocol\":\"RoundRobinAssigner\",\"members\":[{\"memberId\":\"notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9\",\"clientId\":\"notification-consumer-3ce4bcc7867e\",\"clientHost\":\"/172.24.0.3\",\"memberMetadata\":{\"type\":\"Buffer\",\"data\":[0,0,0,0,0,1,0,13,111,114,100,101,114,115,46,101,118,101,110,116,115,0,0,0,0]},\"memberAssignment\":{\"type\":\"Buffer\",\"data\":[0,0,0,0,0,1,0,13,111,114,100,101,114,115,46,101,118,101,110,116,115,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0]}}]}]},\"offsets\":{\"inventory-service-group\":[{\"topic\":\"orders.events\",\"partitions\":[{\"partition\":0,\"offset\":\"1\",\"metadata\":null},{\"partition\":1,\"offset\":\"2\",\"metadata\":null}]}],\"billing-service-group\":[{\"topic\":\"orders.events\",\"partitions\":[{\"partition\":0,\"offset\":\"1\",\"metadata\":null},{\"partition\":1,\"offset\":\"2\",\"metadata\":null}]}],\"notification-service-group\":[{\"topic\":\"orders.events\",\"partitions\":[{\"partition\":0,\"offset\":\"1\",\"metadata\":null},{\"partition\":1,\"offset\":\"2\",\"metadata\":null}]}]},\"end\":[{\"partition\":0,\"offset\":\"1\",\"high\":\"1\",\"low\":\"0\"},{\"partition\":1,\"offset\":\"2\",\"high\":\"2\",\"low\":\"0\"}]},\"groups\":[{\"groupId\":\"inventory-service-group\",\"state\":\"Stable\",\"members\":[{\"memberId\":\"inventory-consumer-24326effb3e1-4ef82c7a-da96-46f5-9bd3-0883421a6a7e\",\"assignment\":{\"orders.events\":[0,1]}}],\"offsets\":[{\"partition\":0,\"current\":1,\"end\":1,\"low\":0,\"lag\":0},{\"partition\":1,\"current\":2,\"end\":2,\"low\":0,\"lag\":0}]},{\"groupId\":\"billing-service-group\",\"state\":\"Stable\",\"members\":[{\"memberId\":\"billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace\",\"assignment\":{\"orders.events\":[0,1]}}],\"offsets\":[{\"partition\":0,\"current\":1,\"end\":1,\"low\":0,\"lag\":0},{\"partition\":1,\"current\":2,\"end\":2,\"low\":0,\"lag\":0}]},{\"groupId\":\"notification-service-group\",\"state\":\"Stable\",\"members\":[{\"memberId\":\"notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9\",\"assignment\":{\"orders.events\":[0,1]}}],\"offsets\":[{\"partition\":0,\"current\":1,\"end\":1,\"low\":0,\"lag\":0},{\"partition\":1,\"current\":2,\"end\":2,\"low\":0,\"lag\":0}]}]}\n",
+  "stderr": "(node:4276) TimeoutNegativeWarning: -1793503824602 is a negative number.\nTimeout duration was set to 1.\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "stdinSHA256": "779ece5f726f4492b53f1f537be7da0c96fea0be37fba9d27fafece28700896c"
+}

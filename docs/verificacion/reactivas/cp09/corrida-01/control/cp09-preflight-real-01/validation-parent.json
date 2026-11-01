@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "scope": "preflight only; no CP09 POST or stop yet",
+  "utc": "2026-11-01T03:53:57.759220+00:00",
+  "preflightUTC": "2026-11-01T03:51:31.990Z",
+  "commands": 5,
+  "groups": {
+    "inventory": [
+      {
+        "partition": 0,
+        "current": 1,
+        "end": 1,
+        "lag": 0,
+        "member": "inventory-consumer-24326effb3e1-4ef82c7a-da96-46f5-9bd3-0883421a6a7e"
+      },
+      {
+        "partition": 1,
+        "current": 2,
+        "end": 2,
+        "lag": 0,
+        "member": "inventory-consumer-24326effb3e1-4ef82c7a-da96-46f5-9bd3-0883421a6a7e"
+      }
+    ],
+    "billing": [
+      {
+        "partition": 0,
+        "current": 1,
+        "end": 1,
+        "lag": 0,
+        "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+      },
+      {
+        "partition": 1,
+        "current": 2,
+        "end": 2,
+        "lag": 0,
+        "member": "billing-consumer-5caff4b88c36-25e13d4a-d57b-4098-9952-c97ccbcd1ace"
+      }
+    ],
+    "notification": [
+      {
+        "partition": 0,
+        "current": 1,
+        "end": 1,
+        "lag": 0,
+        "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+      },
+      {
+        "partition": 1,
+        "current": 2,
+        "end": 2,
+        "lag": 0,
+        "member": "notification-consumer-3ce4bcc7867e-95993ffd-365c-454b-ba74-9c8d0f7fc4e9"
+      }
+    ]
+  },
+  "collectionSHA256": "cd537e483e56416e8cd3406cbbbef0702786a59a182493dc33e02e4e2a7e2a3e",
+  "singleRequest": {
+    "method": "POST",
+    "url": "http://localhost:3000/orders",
+    "body": {
+      "customerName": "Pedro CP09",
+      "product": "Libro de arquitectura",
+      "quantity": 1,
+      "unitPrice": 85000
+    }
+  }
+}

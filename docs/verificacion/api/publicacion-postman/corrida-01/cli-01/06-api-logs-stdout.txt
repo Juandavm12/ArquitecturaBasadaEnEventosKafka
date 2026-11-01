@@ -1,0 +1,1 @@
+orders-api-1  | 2026-10-31T18:06:41.851235843Z {"date":"2026-10-31T18:06:41.842Z","service":"orders-api","hostname":"eff545def17b","orderId":"ORD-d8484470-cb78-48c9-befa-0c88fe1429f9","eventId":"4f5ee1ac-1c2d-41e7-826b-37a13d3767a2","correlationId":"310a36c4-8214-4406-a8b2-fce3c8c6ca55","topic":"orders.events","partition":0,"baseOffset":"0"}

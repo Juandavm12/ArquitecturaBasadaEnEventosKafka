@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-27T12:17:36.919938+00:00",
+  "originalHarnessExitcode": 1,
+  "originalCommandsAllExitcode0": true,
+  "rawMountListEqual": false,
+  "mountsEqualByDestination": true,
+  "sameInfraIds": true,
+  "syntheticChangedVolumeRejected": true,
+  "offlineValidationExitcode": 0,
+  "scope": "Verificación offline corregida sobre fuentes originales, sin repetir build/up/POST; no sustituye ni borra el exit1 original."
+}

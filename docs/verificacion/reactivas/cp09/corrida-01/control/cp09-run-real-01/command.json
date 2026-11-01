@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "node",
+    "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/trabajos/entrega-kafka/cp09-resilient-01/runner.cjs",
+    "run"
+  ],
+  "cwd": "/home/juandav12/projects/8thSemester/Aseguramiento_de_Calidad/Talleres/Taller de Pruebas de Integraci\u00f3n/trabajos/entrega-kafka/cp09-resilient-01",
+  "startUTC": "2026-11-01T03:54:35.137168+00:00",
+  "endUTC": "2026-11-01T03:54:54.765315+00:00",
+  "durationSeconds": 19.633567268999286,
+  "exitCode": 0
+}
