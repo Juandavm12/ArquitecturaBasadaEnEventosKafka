@@ -62,7 +62,7 @@ Estos tres PNG fueron registrados el **31 de octubre**, pero muestran logs del *
 
 ## Estado
 **Cumple**, conclusión técnica propia para CP-06, no calificación del profesor.
-Kafka queda en **4/10** reportes cerrados: CP-01, CP-04, CP-05 y CP-06; seis pendientes (CP-07 a CP-12).
+La entrega reúne **10/10 casos verificados y documentados**. Este reporte correlaciona API, broker y tres consumidores por IDs y partición 1/offset 0.
 
 ## Análisis técnico
 La concordancia por campo y posición permite seguir el mismo registro; no se infiere identidad por proximidad de líneas ni por contadores.

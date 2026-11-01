@@ -11,7 +11,7 @@ Comprobar que la API **responde sin esperar al consumidor**, conforme a CP-07 de
 
 ## Precondiciones
 - Seis servicios activos; broker, API y consumidores saludables; UI activa. Inventario inicialmente con `PROCESSING_DELAY_MS=0`.
-- Autorización previa para una **nueva publicación única** y dos recreaciones exclusivas de inventario (activar demora y restaurar), sin tocar los otros cinco servicios ni el broker/volumen.
+- Diseño experimental: una **publicación única** y dos recreaciones exclusivas de inventario (activar demora y restaurar), sin tocar los otros cinco servicios ni el broker/volumen.
 - Demora opt-in ya existente de **3000 ms**, elegida como condición experimental para hacer observable el procesamiento; no es SLA ni exigencia numérica del profesor.
 - Colección con un POST, una iteración, sin redirecciones ni reporte cloud; marcas UTC en pre-script y en la primera línea del script de respuesta. Se archivaron relojes antes, durante y después de la demora.
 
@@ -56,7 +56,7 @@ Acción observada: **3002 ms**. HTTP observado → processed: **2991 ms**, mayor
 
 Los 11 ms nominales entre received y HTTP observado son menores que la cota: **no permiten afirmar robustamente que inventario ya procesaba cuando respondió**. Sí se observa respuesta anterior al fin de su acción con separación superior a esa cota.
 
-Restauración documentada: inventario healthy, `PROCESSING_DELAY_MS=0`, nuevo ID autorizado `24326effb3e1…` (original `b8d3a808fc2c…`, experimental `3664fcf5dc8c…`). Los cinco IDs restantes se conservaron: API `eff545def17b…`, Kafka `8719d42973a5…`, UI `5a51c1295022…`, facturación `5caff4b88c36…`, notificaciones `3ce4bcc7867e…`; también entorno, imágenes, mounts y StartedAt idénticos. Código/Compose base y volumen del broker intactos. [Antes](../../verificacion/reactivas/cp07/corrida-01/before.json) · [demorado](../../verificacion/reactivas/cp07/corrida-01/delayed.json) · [restaurado](../../verificacion/reactivas/cp07/corrida-01/restored.json).
+Restauración documentada: inventario healthy, `PROCESSING_DELAY_MS=0`, nuevo ID registrado `24326effb3e1…` (original `b8d3a808fc2c…`, experimental `3664fcf5dc8c…`). Los cinco IDs restantes se conservaron: API `eff545def17b…`, Kafka `8719d42973a5…`, UI `5a51c1295022…`, facturación `5caff4b88c36…`, notificaciones `3ce4bcc7867e…`; también entorno, imágenes, mounts y StartedAt idénticos. Código/Compose base y volumen del broker intactos. [Antes](../../verificacion/reactivas/cp07/corrida-01/before.json) · [demorado](../../verificacion/reactivas/cp07/corrida-01/delayed.json) · [restaurado](../../verificacion/reactivas/cp07/corrida-01/restored.json).
 
 ## Evidencia (capturas)
 ![Salida de Postman CLI — CP-07](01-postman-cli.svg)
@@ -74,4 +74,4 @@ La demora controlada permite distinguir aceptación/publicación de finalizació
 
 Los tres consumidores registran received, processed y offset-committed para la misma terna y posición; no se exige exactly-once. La comparación temporal decisiva es con inventario demorado, no con el fin de todos los consumidores. Los avisos CLI de credenciales/cloud permanecen en la imagen: no hubo login ni reporte cloud (`--no-report-events`). Los logs completos conservan warnings y errores históricos; no se afirma causa raíz ni ejecución libre de incidentes.
 
-La evidencia respalda esta corrida, no una promesa de latencia, SLA, failover, CP-09, recuperación ni reparto intragrupo. Las acciones son simuladas. Las pruebas auxiliares y unitarias no sustituyen esta integración ni se atribuye TDD a toda la unidad. La revisión nativa no estuvo disponible por un repositorio ajeno en la raíz; no hay aprobación nativa.
+La evidencia respalda esta corrida, no una promesa de latencia, SLA, failover, CP-09, recuperación ni reparto intragrupo. Las acciones son simuladas. Las pruebas auxiliares y unitarias no sustituyen esta integración.

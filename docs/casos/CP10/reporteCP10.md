@@ -13,7 +13,7 @@ Verificar la distribución de carga con múltiples consumidores, según CP-10 de
 - Broker y API existentes en ejecución; inventario recuperado mediante la corrida CP-11/12 inmediatamente anterior.
 - Una única réplica temporal creada desde la misma imagen local `sha256:8678df89f52018880ad6fa71a5ce8932743d3998c3a68243f1dbf0e4c10d8ab6`, sin build ni descarga.
 - Consulta nativa previa al lote acredita dos miembros: original `24326effb3e1` asignado a partición 1 y réplica `29d790ddf683` a partición 0.
-- Autorización acotada: una réplica, hasta ocho pedidos entre todos los casos y limpieza únicamente de la réplica. Se utilizaron cinco pedidos en total, cuatro en este caso.
+- Alcance experimental: una réplica, hasta ocho pedidos entre todos los casos y limpieza únicamente de la réplica. Se utilizaron cinco pedidos en total, cuatro en este caso.
 
 ## Datos de entrada
 Cuatro `POST /orders` mediante curl: `customerName=Prueba CP10 1..4`, `product=Reparto minimo Kafka`, `quantity=1`, `unitPrice=100`. Se conservan los cuatro cuerpos y respuestas sin modificar.
@@ -47,7 +47,7 @@ Reparto observado: **dos pedidos por instancia**. Offsets finales con dos miembr
 **Vista derivada de CLI/JSON, no captura GUI ni imagen de Postman.** [Evidencia completa y comandos](../../verificacion/cierre-minimo-20261101/RESUMEN.md) · [miembros y asignaciones](../../verificacion/cierre-minimo-20261101/cp10-miembros.stdout.txt) · [imagen y entorno](../../verificacion/cierre-minimo-20261101/cp10-imagen-env.txt) · [logs original](../../verificacion/cierre-minimo-20261101/cp10-original.stdout.jsonl) · [logs réplica](../../verificacion/cierre-minimo-20261101/cp10-replica.stdout.jsonl) · [trazas correlacionadas](../../verificacion/cierre-minimo-20261101/resumen-trazas.json) · [validación](../../verificacion/cierre-minimo-20261101/validacion.json).
 
 ## Estado
-**Cumple**, conclusión técnica propia para la distribución demostrada en esta prueba de concepto. No equivale a calificación del profesor; si exige capturas GUI, deben adjuntarse por separado.
+**Cumple**, conclusión técnica propia para la distribución demostrada en esta prueba de concepto. No equivale a calificación del profesor. La evidencia presentada es CLI/JSON, no GUI.
 
 ## Análisis técnico
 Kafka asigna cada partición a un único miembro del grupo. Dos particiones permiten dos consumidores con trabajo; añadir más no aumenta el paralelismo de este tópico. El reparto 2+2 es el resultado de este lote, no una garantía de equilibrio exacto en cualquier carga. Se demuestra escalado manual y distribución, no autoescalado, mejora de throughput ni exactly-once. No se cambiaron código, broker, volúmenes ni configuración persistente. Los intentos previos fallidos no se borran ni se presentan como exitosos.

@@ -12,8 +12,8 @@ Verificar «El sistema soporta caída del consumidor» (guía, CP-09): continuid
 ## Precondiciones
 - Preflight real PASS, 2026-11-01T03:51:31.990Z; seis contenedores running, API/broker/consumidores healthy y UI running. Delay de procesamiento 0; un consumidor por grupo, dos particiones, pipeline existente.
 - Grupos inventory-service-group, billing-service-group y notification-service-group con lag 0; partición 1 current/end=2/2 y partición 0=1/1.
-- Única autorización ya consumida: un stop con --time 15, un POST de una iteración sin redirecciones y un start sobre el mismo ID. Guardas originales conservadas.
-- [Preflight y recibos](../../verificacion/reactivas/cp09/corrida-01/control/cp09-preflight-real-01/validation-parent.json); [fuentes previas al runtime](../../verificacion/reactivas/cp09/corrida-01/runtime/sources-before.json). La verificación empírica del padre es anterior a integrar los planes; no se reejecuta el verificador runtime contra planes deliberadamente actualizados.
+- Secuencia experimental: un stop con --time 15, un POST de una iteración sin redirecciones y un start sobre el mismo ID. Registros originales conservados.
+- [Verificación inicial y registros](../../verificacion/reactivas/cp09/corrida-01/control/cp09-preflight-real-01/validation-parent.json); [fuentes previas al runtime](../../verificacion/reactivas/cp09/corrida-01/runtime/sources-before.json). La verificación independiente documenta el estado de las fuentes y del entorno en el momento de la ejecución; no se repitió durante la revisión documental.
 
 ## Datos de entrada
 customerName=Pedro CP09; product=Libro de arquitectura; quantity=1; unitPrice=85000. [Colección realmente ejecutada](../../verificacion/reactivas/cp09/corrida-01/runtime/collection-executed.json).
@@ -27,12 +27,12 @@ customerName=Pedro CP09; product=Libro de arquitectura; quantity=1; unitPrice=85
 | Publicación UTC | 2026-11-01T03:54:42.023Z |
 
 ## Pasos ejecutados
-1. Se ejecutó el preflight real original, exit 0; cinco comandos internos. Esta autoría solo lee sus recibos.
+1. Se ejecutó el preflight real original, exit 0; cinco comandos internos. La revisión documental consultó sus registros sin repetir la ejecución.
 2. El host completó stop --time 15 del ID 24326effb3e116ec43a53b3353bdf8a00c86186902832b7bcb865cdfe3311978: 2026-11-01T03:54:35.495Z → 2026-11-01T03:54:37.609Z. Se verificó inventario exited y grupo vacío antes de HTTP.
 3. Se ejecutó exactamente una iteración POST con Postman CLI y --ignore-redirects: 2026-11-01T03:54:38.391Z → 2026-11-01T03:54:42.730Z. El stdout real acredita HTTP 202 Accepted; se correlacionó la publicación API con los IDs y posición indicados.
 4. Con inventario aún exited, se recogieron las seis trazas de los pares, los offsets y el segundo snapshot. StartedAt/FinishedAt de inventario coinciden entre ambos snapshots; los otros cinco servicios mantienen IDs, configuración, StartedAt y RestartCount.
 5. Como limpieza se ejecutó un start explícito del mismo ID: 2026-11-01T03:54:47.400Z → 2026-11-01T03:54:47.895Z; inventario volvió a healthy, registró sus tres fases y los grupos quedaron en lag 0. No hubo otro POST.
-6. El padre verificó offline el runtime a 2026-11-01T03:55:52.704Z: PASS, 42 comandos internos exit 0 sin signal/error. Ejecución global original: 03:54:35.137168 → 03:54:54.765315 UTC, exit 0. Esta unidad archiva copias byte-idénticas y valida documentos offline, sin repetir ninguna operación de infraestructura.
+6. La verificación independiente offline de la ejecución se registró a 2026-11-01T03:55:52.704Z: PASS, 42 comandos internos exit 0 sin signal/error. Ejecución global original: 03:54:35.137168 → 03:54:54.765315 UTC, exit 0. Las copias archivadas son byte-idénticas; la revisión documental fue offline, sin repetir operaciones de infraestructura.
 
 ## Resultado esperado
 La indisponibilidad de inventario no impide aceptar/publicar el pedido ni procesarlo en facturación y notificaciones. Se registra la ventana de parada y se restaura el entorno.
@@ -58,7 +58,7 @@ Restauración: mismo ID, imagen, entorno, mounts y configuración; healthy. Inve
 
 **Representación documental de evidencia CLI/JSON, no captura GUI.** SVG estático con escape XML; sin revisión raster/GUI afirmada. [Manifest de copias, SHA-256 y procedencia](manifest.json).
 
-[HTTP stdout original](../../verificacion/reactivas/cp09/corrida-01/runtime/run-0007-stdout.txt) · [comando HTTP](../../verificacion/reactivas/cp09/corrida-01/runtime/run-0007-command.json) · [dataset recopilado: logs separados por servicio](../../verificacion/reactivas/cp09/corrida-01/runtime/collected.json) · [restauración y logs](../../verificacion/reactivas/cp09/corrida-01/runtime/restored-complete.json) · [validación empírica original del padre](../../verificacion/reactivas/cp09/corrida-01/control/cp09-run-real-01/validation-parent.json) · [resultado runtime original](../../verificacion/reactivas/cp09/corrida-01/runtime/result.json) · [validación documental](validacion.json) · [integración documental del writer](validacion-integrada.json).
+[HTTP stdout original](../../verificacion/reactivas/cp09/corrida-01/runtime/run-0007-stdout.txt) · [comando HTTP](../../verificacion/reactivas/cp09/corrida-01/runtime/run-0007-command.json) · [dataset recopilado: logs separados por servicio](../../verificacion/reactivas/cp09/corrida-01/runtime/collected.json) · [restauración y logs](../../verificacion/reactivas/cp09/corrida-01/runtime/restored-complete.json) · [verificación independiente de la ejecución](../../verificacion/reactivas/cp09/corrida-01/control/cp09-run-real-01/validation-parent.json) · [resultado runtime original](../../verificacion/reactivas/cp09/corrida-01/runtime/result.json) · [validación documental](validacion.json) · [verificación de consistencia documental](validacion-integrada.json).
 
 ## Estado
 **Cumple**, conclusión técnica propia para CP-09 mediante parada controlada de un consumidor; no calificación del profesor ni certificación universal de resiliencia.
@@ -66,4 +66,4 @@ Restauración: mismo ID, imagen, entorno, mounts y configuración; healthy. Inve
 ## Análisis técnico
 La API publica y los otros grupos procesan sin depender de la disponibilidad de inventario. HTTP 202 se acompaña de publicación, delta de offsets y seis trazas correlacionadas, no de contadores aislados. Las acciones de negocio son simuladas. Los snapshots enmarcan una secuencia del host: no son medición atómica del clúster ni prueba basada en un supuesto orden entre relojes de servicio. No se infiere un fin HTTP absoluto, una ventaja de 11 ms ni un SLA a partir de las fechas.
 
-La restauración y sus tres trazas son limpieza documentada de CP-09; no cierran CP-11/12, ni demuestran ausencia universal de pérdida, exactly-once o recuperación tras crash/broker caído. CP-10/11/12 siguen pendientes, al igual que el PDF global. Observación administrativa 04 y referencias legacy 03 se conservan como procedencia, no se convierten retroactivamente en una ejecución CP-09. Fuentes y fallos históricos no se reescriben. Documentación pasiva: RED/GREEN no aplican; no se inventan pruebas funcionales nuevas.
+La restauración y sus tres trazas son limpieza documentada de CP-09; no cierran CP-11/12, ni demuestran ausencia universal de pérdida, exactly-once o recuperación tras crash/broker caído. CP-10/11/12 cuentan con una ejecución independiente posterior, descrita en sus reportes; no se atribuyen a esta corrida. Observación administrativa 04 y referencias legacy 03 se conservan como procedencia, no se convierten retroactivamente en una ejecución CP-09. Fuentes y fallos históricos no se reescriben. La revisión documental no añade pruebas funcionales nuevas.

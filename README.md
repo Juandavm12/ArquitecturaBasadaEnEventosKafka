@@ -1,15 +1,15 @@
 # Arquitectura basada en eventos con Kafka
 
-Prueba de concepto del taller de Pruebas de Integración de Aseguramiento de la Calidad. **Kafka: 10/10 casos técnicamente verificados y documentados (CP-01 y CP-04 a CP-12).** CP-10/11/12 se cerraron con cinco pedidos en una prueba mínima real. El informe PDF global, la reproducción Windows nativa y las capturas GUI adicionales de estos tres casos siguen pendientes; sus vistas CLI/JSON están identificadas como derivadas.
+Prueba de concepto del taller de Pruebas de Integración de Aseguramiento de la Calidad. **Kafka: 10/10 casos técnicamente verificados y documentados (CP-01 y CP-04 a CP-12).** CP-10/11/12 se cerraron con cinco pedidos en una prueba mínima real. Las vistas de CP-10/11/12 son derivadas de CLI/JSON, no capturas GUI. No se realizó reproducción Windows nativa.
 
 ## Estado
 
 - [Publicación saneada y manifiestos históricos](PUBLICACION.md): tres redacciones identificadas; originales privados conservados.
 
-- Guía completa y anexo 2 revisados; requisitos en [PLAN_KAFKA.md](PLAN_KAFKA.md).
+- Requisitos de la guía y anexo 2: creación, publicación, consumo, trazabilidad y propiedades reactivas; cada reporte enlazado detalla objetivo, resultados y análisis técnico.
 - RabbitMQ permanece separado; no se copia su código ni sus resultados como evidencia Kafka.
-- Primera unidad: contrato `OrderCreated` y validación offline.
-- Infraestructura broker + UI verificada: broker healthy, UI online y `orders.events` con dos particiones. [Comandos PowerShell](kafka/INFRAESTRUCTURA.md) · [resultados reales](docs/verificacion/infraestructura/RESUMEN.md). Todavía no equivale al sistema completo.
+- Contrato `OrderCreated` implementado y validado offline.
+- Infraestructura broker + UI verificada: broker healthy, UI online y `orders.events` con dos particiones. [Comandos PowerShell](kafka/INFRAESTRUCTURA.md) · [resultados reales](docs/verificacion/infraestructura/RESUMEN.md). Esta verificación inicial se complementa con las pruebas de API y consumidores indicadas a continuación.
 - API verificada: HTTP 202, un `OrderCreated` en partición 1/offset 0, mismo pedido en API y log nativo del broker. [Evidencia y límites](docs/verificacion/api/RESUMEN.md). Actualmente **6/6 servicios**, con consumo real en tres grupos: [resultados](docs/verificacion/consumidores/RESUMEN.md).
 - Captura GUI del primer evento recibida y correlacionada, original y SHA-256 en la evidencia anterior.
 - [CP-05 — Consumo de evento Kafka: Cumple](docs/casos/CP05/reporteCP05.md). Tres consumidores recibieron y procesaron el mismo evento; logs del 27 de octubre y capturas registradas el 31 de octubre de 2026. Capturas de grupos y de los tres consumidores conservadas con SHA-256.
@@ -23,7 +23,7 @@ Prueba de concepto del taller de Pruebas de Integración de Aseguramiento de la 
 - [CP-11 — Desacoplamiento temporal: Cumple](docs/casos/CP11/reporteCP11.md). Publicación con inventario apagado y procesamiento posterior del mismo evento.
 - [CP-12 — Recuperación: Cumple](docs/casos/CP12/reporteCP12.md). Mismo contenedor recupera el evento pendiente; lag 1→0, IDs y offset correlacionados. Comparte un único pedido con CP-11.
 - [Cierre mínimo: comandos, evidencia original y límites](docs/verificacion/cierre-minimo-20261101/RESUMEN.md). Sin cambios de aplicación ni infraestructura persistente.
-- Pendientes de presentación: informe PDF global y capturas GUI adicionales si las exige el docente. Las vistas de CP-10/11/12 son derivadas de CLI/JSON, no pantallazos. Validación Windows nativa aún no realizada.
+- Alcance de la evidencia: vistas derivadas de CLI/JSON identificadas como tales; no se afirma validación Windows nativa, alta disponibilidad ni exactly-once.
 - Repositorio de entrega: [Juandavm12/ArquitecturaBasadaEnEventosKafka](https://github.com/Juandavm12/ArquitecturaBasadaEnEventosKafka).
 - Se incluyen código, configuración, pruebas, reportes y evidencias de los casos documentados. Dependencias instaladas, configuración privada y archivos temporales quedan fuera mediante `.gitignore`.
 
@@ -58,11 +58,11 @@ La suite del contrato sigue siendo independiente de Docker. Las dos comprobacion
 | `billing-consumer` | Simular facturación |
 | `notification-consumer` | Simular notificación |
 
-El montaje se verifica por etapas; levantar inicialmente broker y UI no completa esta arquitectura. Para CP-10 se añadió y retiró una instancia temporal de inventario dentro de su mismo grupo, sin modificar esta arquitectura persistente.
+El montaje final tiene seis servicios verificados; la evidencia inicial de broker y UI es una etapa histórica, no una prueba aislada del sistema completo. Para CP-10 se añadió y retiró una instancia temporal de inventario dentro de su mismo grupo, sin modificar esta arquitectura persistente.
 
 [Fuentes técnicas y adaptación del ejemplo Docker](docs/FUENTES_TECNICAS.md).
 
-## Flujo que se implementará
+## Flujo implementado
 
 ```text
 POST /orders → orders-api → Kafka: orders.events
@@ -71,4 +71,4 @@ POST /orders → orders-api → Kafka: orders.events
                               └─ notification-consumer (notification-service-group)
 ```
 
-Los consumidores no intervienen en la respuesta HTTP. Kafka UI permitirá observar eventos, particiones y grupos; los logs y capturas documentarán las ejecuciones reales.
+Los consumidores no intervienen en la respuesta HTTP. Kafka UI permite observar eventos, particiones y grupos; los logs y capturas documentan las ejecuciones reales.

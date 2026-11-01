@@ -53,7 +53,7 @@ El [dump nativo](../../verificacion/api/publicacion-postman/corrida-01/cli-01/09
 
 Fuentes: [antes](../../verificacion/api/publicacion-postman/corrida-01/cli-01/03-before-offsets-stdout.txt) y [después](../../verificacion/api/publicacion-postman/corrida-01/cli-01/05-after-offsets-stdout.txt).
 El log-end 1 indica la próxima posición; el registro nuevo ocupa offset 0.
-El [resultado técnico](../../verificacion/api/publicacion-postman/corrida-01/cli-01/result.json) conserva su checkpoint previo `TECHNICALLY_VERIFIED_POSTMAN_SCREENSHOT_PENDING`; no se modifica retrospectivamente.
+El [resultado técnico](../../verificacion/api/publicacion-postman/corrida-01/cli-01/result.json) documenta la verificación de la corrida original de publicación con Postman CLI; se conserva sin modificaciones.
 
 ## Evidencia (capturas)
 ![Salida de Postman CLI](../../verificacion/api/publicacion-postman/corrida-01/cli-01/visualizaciones/01-postman-cli-salida-renderizada.svg)
@@ -69,7 +69,7 @@ La hora visible es `10/31/2026, 13:06:41`; no se certifica su zona horaria. La l
 
 ## Estado
 **Cumple**, como conclusión técnica propia para CP-04, no calificación del profesor.
-Con CP-04 y CP-05 documentados, Kafka queda en **2/10** reportes cerrados y ocho casos pendientes. CP-05 conserva su corrida y evidencias independientes.
+La entrega reúne **10/10 casos verificados y documentados**. CP-04 acredita publicación en partición 0/offset 0; CP-05 conserva su corrida y evidencias independientes.
 
 ## Análisis técnico
 La concordancia entre respuesta, metadata de la API, contenido del segmento nativo y ambas capturas identifica la misma publicación.

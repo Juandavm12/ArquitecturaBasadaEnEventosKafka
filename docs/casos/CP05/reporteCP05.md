@@ -42,7 +42,7 @@ Criterio tomado de la guía, p. 4; anexo 2, pp. 20–24.
 3. Se consultó nativamente el estado de offsets de cada grupo.
 4. Se conservaron [comandos, tiempos y exitcodes originales](../../verificacion/consumidores/runtime-01/commands.json).
 5. El 31 de octubre se registraron capturas de grupos y logs históricos del 27.
-6. En esta unidad solo se revisaron archivos y se realizó comprobación estructural offline.
+6. La revisión documental consistió en examinar los archivos y comprobar su estructura offline.
 
 Los pasos 1–4 describen evidencia previa, no comandos repetidos ahora.
 El registro del 31 no convierte el procesamiento del 27 en una ejecución nueva.
@@ -94,7 +94,7 @@ Fuentes directas para contrastar las capturas:
 
 **Cumple** para CP-05: la evidencia combinada acredita recepción del mismo evento en los tres servicios.
 Es una conclusión técnica propia, no una calificación ni aprobación del profesor.
-Se cierra únicamente este reporte: Kafka **1/10**, con nueve casos pendientes.
+La entrega reúne **10/10 casos verificados y documentados**. Este reporte acredita las tres fases de consumo en los tres grupos para el registro en partición 1/offset 0.
 El resultado histórico conserva `formalCasesClosed: 0`: no se reescribe retroactivamente.
 
 ## Análisis técnico

@@ -49,7 +49,7 @@ La partición 0 permanece current/end=1/1, lag=0 en ambas consultas. El offset c
 **Vista derivada de CLI/JSON, no captura GUI.** [Corrida compartida y comandos](../../verificacion/cierre-minimo-20261101/RESUMEN.md) · [pendiente antes del arranque](../../verificacion/cierre-minimo-20261101/pendiente-offsets.stdout.txt) · [contenedor antes](../../verificacion/cierre-minimo-20261101/inventory-antes.txt) · [mismo contenedor reiniciado](../../verificacion/cierre-minimo-20261101/inventory-reiniciado.txt) · [logs originales](../../verificacion/cierre-minimo-20261101/recuperacion-inventory.stdout.jsonl) · [offsets posteriores](../../verificacion/cierre-minimo-20261101/recuperado-offsets.stdout.txt) · [trazas correlacionadas](../../verificacion/cierre-minimo-20261101/resumen-trazas.json) · [validación](../../verificacion/cierre-minimo-20261101/validacion.json).
 
 ## Estado
-**Cumple**, conclusión técnica propia para recuperación del evento pendiente probado. Si el profesor exige capturas GUI, deben adjuntarse por separado.
+**Cumple**, conclusión técnica propia para recuperación del evento pendiente probado. La evidencia presentada es CLI/JSON, no una captura GUI.
 
 ## Análisis técnico
 El grupo conserva su offset confirmado y lee el registro pendiente del log al incorporarse nuevamente. La evidencia acredita recuperación del mismo evento, no una comparación de cantidades sin identidad. Se comparte ejecución con CP-11 porque el escenario satisface ambos objetivos, diferenciados en los reportes. No se simula crash abrupto durante una acción de negocio, fallo de broker ni pérdida de discos; tampoco se demuestra ausencia universal de pérdidas, deduplicación o exactly-once. El código simula acciones de negocio, sin transacción atómica con sistemas externos.

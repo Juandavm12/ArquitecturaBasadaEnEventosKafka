@@ -12,7 +12,7 @@ Comprobar que un evento publicado con el consumidor apagado se procesa cuando es
 ## Precondiciones
 - API y broker existentes en ejecución; API `/health` responde `{"status":"ok"}`.
 - Inventario inicialmente figura healthy, pero su grupo no tiene miembros: no se interpreta el healthcheck como prueba de consumo.
-- Se autoriza detener y arrancar el mismo inventario, sin recrearlo ni cambiar broker o volúmenes.
+- El procedimiento detiene y arranca el mismo inventario, sin recrearlo ni cambiar broker o volúmenes.
 - No hay una segunda réplica durante esta prueba. La réplica de CP-10 se crea después.
 
 ## Datos de entrada
@@ -53,7 +53,7 @@ La consulta posterior muestra partición 1 current/end=4/4 y lag=0; partición 0
 **Vista derivada de CLI/JSON, no captura GUI.** [Resumen y comandos](../../verificacion/cierre-minimo-20261101/RESUMEN.md) · [estado apagado](../../verificacion/cierre-minimo-20261101/inventory-apagado.txt) · [respuesta HTTP](../../verificacion/cierre-minimo-20261101/pedido-pendiente.response.json) · [offsets pendiente](../../verificacion/cierre-minimo-20261101/pendiente-offsets.stdout.txt) · [logs recuperación](../../verificacion/cierre-minimo-20261101/recuperacion-inventory.stdout.jsonl) · [offsets recuperados](../../verificacion/cierre-minimo-20261101/recuperado-offsets.stdout.txt) · [validación](../../verificacion/cierre-minimo-20261101/validacion.json).
 
 ## Estado
-**Cumple**, conclusión técnica propia. Si el profesor exige capturas GUI, deben adjuntarse por separado; no se inventa una captura de Postman.
+**Cumple**, conclusión técnica propia. La evidencia presentada es CLI/JSON, no una captura GUI de Postman.
 
 ## Análisis técnico
 La disponibilidad del consumidor no es precondición para publicar. Kafka retiene el registro y el grupo avanza su offset después de procesarlo. Se verifican identidad del evento y avance de offsets, no solamente disponibilidad HTTP. La ventana se sustenta en la secuencia stop → estado exited → POST → consulta de pendiente → start. Esta corrida no acredita salud de los otros grupos, disponibilidad indefinida fuera de la retención ni exactly-once.

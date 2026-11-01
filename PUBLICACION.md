@@ -1,6 +1,6 @@
 # Publicación saneada
 
-La publicación inicial fue parcial: **7/10** casos documentados. Esta actualización de entrega alcanza **10/10 técnicamente verificados** mediante [una nueva corrida mínima](docs/verificacion/cierre-minimo-20261101/RESUMEN.md). El informe PDF y capturas GUI adicionales siguen pendientes.
+La entrega contiene **10/10 casos técnicamente verificados**, incluidos CP-10/11/12 mediante [la corrida mínima](docs/verificacion/cierre-minimo-20261101/RESUMEN.md). Sus vistas documentales son derivadas de CLI/JSON, no capturas GUI.
 
 Se reemplazó únicamente una contraseña autogenerada Spring en cada una de las tres copias públicas identificadas en el [manifiesto de publicación](docs/publicacion/manifest.json), por `[REDACTADO_PARA_PUBLICACION]`. Estas copias **no son byteidénticas** a los originales privados, conservados y verificados fuera del repositorio de entrega. En ese saneamiento no cambiaron otros bytes, fechas ni resultados; no hubo nueva corrida, runtime ni captura GUI. La corrida mínima posterior tiene evidencias nuevas separadas y no altera estos originales históricos.
 

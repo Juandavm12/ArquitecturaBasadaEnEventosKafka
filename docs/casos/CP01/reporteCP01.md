@@ -53,10 +53,10 @@ Salida íntegra de **Postman CLI**, compartida con CP-04. Se conserva su título
 
 ## Estado
 **Cumple**, como conclusión técnica propia de CP-01, no calificación del profesor.
-Kafka queda en **3/10** reportes cerrados: CP-01, CP-04 y CP-05; siete casos pendientes. Los reportes y evidencias de CP-04 y CP-05 permanecen intactos.
+La entrega reúne **10/10 casos verificados y documentados**. Este caso acredita la recepción HTTP 202; CP-04 y CP-05 conservan sus evidencias independientes.
 
 ## Análisis técnico
 La petición coincide entre request archivado, colección y consola; la respuesta confirma aceptación y devuelve el identificador generado del mismo pedido. Esto sustenta el objetivo acotado de CP-01.
 El mensaje de respuesta no prueba por sí solo persistencia o consumo: CP-04 conserva su evidencia de publicación y CP-05 su corrida independiente. No se deduce consumo de este evento ni cierre de CP-06/CP-07.
 Los 370 ms son una observación puntual, no un SLA ni demostración de independencia del consumidor. La validación documental es offline; no representa una nueva ejecución funcional.
-El resultado técnico histórico conserva su checkpoint previo, sin corregirlo retrospectivamente.
+El resultado técnico original se conserva sin modificaciones.
